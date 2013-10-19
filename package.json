@@ -1,0 +1,20 @@
+{
+  "name": "nodebb-theme-vanilla",
+  "version": "0.0.1",
+  "description": "Vanilla theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-theme-vanilla"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "themes"
+  ],
+  "author": "Andrew Rodrigues <andrew@designcreateplay.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-theme-vanilla/issues"
+  }
+}
