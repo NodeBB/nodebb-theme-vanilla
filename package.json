@@ -1,20 +1,38 @@
 {
   "name": "nodebb-theme-vanilla",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Vanilla theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-vanilla"
+    "url": "https://github.com/designcreateplay/nodebb-theme-vanilla"
   },
   "keywords": [
     "nodebb",
     "theme",
-    "themes"
+    "themes",
+    "bootstrap",
+    "vanila"
   ],
-  "author": "Andrew Rodrigues <andrew@designcreateplay.com>",
+  "contributors": [
+    {
+      "name": "Andrew Rodrigues",
+      "email": "andrew@designcreateplay.com",
+      "url": "https://github.com/psychobunny"
+    },
+    {
+      "name": "Julian Lam",
+      "email": "julian@designcreateplay.com",
+      "url": "https://github.com/julianlam"
+    },
+    {
+      "name": "Barış Soner Uşaklı",
+      "email": "baris@designcreateplay.com",
+      "url": "https://github.com/barisusakli"
+    }
+  ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-vanilla/issues"
+    "url": "https://github.com/designcreateplay/nodebb-theme-vanilla/issues"
   }
 }
