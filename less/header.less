@@ -10,7 +10,6 @@
 	#user_label {
 		img {
 			border: 1px solid #454;
-			margin: -2px 8px 0 0;
 			width: 24px;
 			height: 24px;
 		}
@@ -18,7 +17,6 @@
 		span {
 			font-size: 14px;
 			font-weight: 400;
-			color: #ded;
 		}
 	}
 
@@ -26,6 +24,12 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 		margin: 0px;
+	}
+
+	.forum-logo {
+		float: left;
+		max-height: 50px;
+		width: auto;
 	}
 
 	.pagination-block {
@@ -51,6 +55,18 @@
 
 			&.unread {
 				background: #eceff5;
+			}
+
+			&.pagelink {
+				margin-top: 1em;
+				border-top: 1px solid rgba(163, 163, 163, 0.5);
+
+				a {
+					display: block;
+					text-align: center;
+					padding-top: 0.5em;
+					font-weight: 600;
+				}
 			}
 		}
 	}
