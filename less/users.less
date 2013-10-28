@@ -8,10 +8,7 @@
 		margin-top: 20px;
 		text-align: center;
 		vertical-align: top;
-		max-width: 104px;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
+		width: 104px;
 
 		img {
 			width:80px;
@@ -19,7 +16,12 @@
 		}
 
 		a {
-			margin:5px;
+			.inline-block;
+			max-width: 94px;
+			margin: 5px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
 		}
 	}
 
