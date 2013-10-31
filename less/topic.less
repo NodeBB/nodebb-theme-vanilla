@@ -111,24 +111,27 @@
 			}
 		}
 
+		.profile-image-block {
+			padding-left: 30px;
+			padding-right: 0px;
+		}
+
 		.img-thumbnail {
+			float:none;
 			padding: 2px;
 			border-radius: 0;
-			margin-left: 16px;
+			margin-bottom: 5px;
 		}
 	}
 
 	.main-post {
-		h3 {
-			margin: 0;
 
-			.topic-title {
-				line-height: 1.5em;
-				width: auto;
-				overflow: hidden;
-				margin: 0 0 -5px 0;
-				padding: 0 0 5px 0
-			}
+		.topic-title {
+			line-height: 1.5em;
+			width: auto;
+			overflow: hidden;
+			margin: 0 0 -5px 0;
+			padding: 0 0 5px 0
 		}
 
 		.avatar {
@@ -159,6 +162,9 @@
 		}
 
 		.post-block {
+			>h3 {
+				margin:0px;
+			}
 			.topic-buttons {
 				background: rgba(0, 0, 0, 0.02);
 				border: 1px solid rgba(0, 0, 0, 0.06);
