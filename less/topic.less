@@ -189,8 +189,13 @@
 		display: none;
 		z-index: 9999;
 
+		/*
+				This causes clutter when writing/replying
+				and has very little value, on mobile it should be
+				as svelte as possible.
+		 */
 		@media (max-width: 767px) {
-			display: block;
+			display: none;
 			position: fixed;
 			width: 100%;
 			margin-left: -15px;
