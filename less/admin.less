@@ -1,40 +1,50 @@
 @import "mixins";
 
 .admin {
-	.entry-row {
-		border-radius: 10px;
-		margin-bottom: 10px;
-		padding: 10px;
-		cursor: move;
-	}
-
-	input.description {
-		width: 400px;
-	}
-
-	.admin-categories {
-		margin-top: 20px;
-		form {
-			margin: 0 0 0px;
+	.categories {
+		.entry-row {
+			border-radius: 10px;
+			margin-bottom: 10px;
+			padding: 10px;
+			cursor: move;
+			list-style-type: none;
+			color: white;
 		}
 
-		input, select {
-			width: 150px;
-		}
+		.admin-categories {
+			margin-top: 20px;
+			form {
+				margin: 0 0 0px;
+			}
 
-		.category_description {
-			width: 300px;
-		}
+			input, select {
+				width: 150px;
+			}
 
-		.icon{
-			width: 30px;
-			height: 30px;
-			text-align: center;
-			line-height: 40px;
-			display: inline-block;
-			margin: 0 5px 0 5px;
-			i {
-				vertical-align: -20%;
+			.category_description {
+				width: 300px;
+			}
+
+			.icon{
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				line-height: 40px;
+				display: inline-block;
+				margin: 0 5px 0 5px;
+				i {
+					vertical-align: -20%;
+				}
+			}
+
+			input {
+				&[data-name="bgColor"], &[data-name="color"] {
+					width: 90px;
+				}
+
+				&.description {
+					width: 350px;
+				}
 			}
 		}
 	}
