@@ -36,6 +36,20 @@
 		}
 	}
 
+	.well {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.topic-stats {
+		height: 34px;
+		line-height: 34px;
+	}
+
+	.topic-main-buttons {
+		padding-bottom: 0px;
+	}
+
 	@media (max-width: 767px) {
 		.topic-main-buttons {
 			margin-bottom: 0px;
@@ -85,6 +99,7 @@
 			.post-content {
 				padding: 10px 5px 0 5px;
 				word-wrap: break-word;
+				clear: left;
 			}
 
 			.post-images{
@@ -188,8 +203,13 @@
 		display: none;
 		z-index: 9999;
 
+		/*
+				This causes clutter when writing/replying
+				and has very little value, on mobile it should be
+				as svelte as possible.
+		 */
 		@media (max-width: 767px) {
-			display: block;
+			display: none;
 			position: fixed;
 			width: 100%;
 			margin-left: -15px;
@@ -254,7 +274,11 @@
 	}
 
 	.anonymous-box {
-		padding: 5px;
-		border: 1px solid #dddddd;
+		border: 1px solid #ddd;
+		width: 24px;
+		height: 24px;
+		top: 2px;
+		position: relative;
+		text-align: center;
 	}
 }
