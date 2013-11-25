@@ -220,42 +220,6 @@
 		}
 	}
 
-	.mobile-author-overlay {
-		display: none;
-		z-index: 9999;
-
-		/*
-				This causes clutter when writing/replying
-				and has very little value, on mobile it should be
-				as svelte as possible.
-		 */
-		@media (max-width: 767px) {
-			display: none;
-			position: fixed;
-			width: 100%;
-			margin-left: -15px;
-			bottom: -50px;
-			height: 50px;
-			background: rgba(0,0,0,0.8);
-			-webkit-transition: bottom 150ms linear;
-			   -moz-transition: bottom 150ms linear;
-				-ms-transition: bottom 150ms linear;
-				 -o-transition: bottom 150ms linear;
-				    transition: bottom 150ms linear;
-		}
-
-		img {
-			padding: 5px;
-		}
-
-		h4 {
-			color: white;
-			margin: 16px 0 0 -35px;
-			font-weight: 300;
-			font-size: 16px;
-		}
-	}
-
 	// styling the chat button in the dropdown to match. surely there's a better way...
 	.chat {
 		display: block;
