@@ -36,13 +36,27 @@
 		}
 	}
 
+	.well {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.topic-stats {
+		height: 34px;
+		line-height: 34px;
+	}
+
+	.topic-main-buttons {
+		padding-bottom: 0px;
+	}
+
 	@media (max-width: 767px) {
 		.topic-main-buttons {
 			margin-bottom: 0px;
 		}
 	}
 
-	.main-post, .sub-posts {
+	.posts {
 		.post-info, .post-block {
 			position: relative;
 			border: 1px solid rgba(0, 0, 0, 0.06);
@@ -66,6 +80,7 @@
 
 		.post-block {
 			border-radius: 5px;
+			margin-bottom: 15px;
 
 			.topic-buttons {
 				background: rgba(0, 0, 0, 0.02);
@@ -85,6 +100,7 @@
 			.post-content {
 				padding: 10px 5px 0 5px;
 				word-wrap: break-word;
+				clear: left;
 			}
 
 			.post-images{
@@ -93,7 +109,11 @@
 		}
 	}
 
-	.sub-posts {
+	.posts {
+		.main-post {
+			display: none;
+		}
+
 		.post-block {
 			.post-signature {
 				margin-left: 15px;
@@ -124,7 +144,23 @@
 		}
 	}
 
-	.main-post {
+	.posts li:first-child {
+		.sub-post {
+			display: none !important;
+		}
+
+		.main-post {
+			display: block;
+		}
+
+		.col-md-11 {
+			width: 100%;
+		}
+
+		.caret {
+			display: none;
+		}
+
 
 		.topic-title {
 			line-height: 1.5em;
@@ -184,37 +220,6 @@
 		}
 	}
 
-	.mobile-author-overlay {
-		display: none;
-		z-index: 9999;
-
-		@media (max-width: 767px) {
-			display: block;
-			position: fixed;
-			width: 100%;
-			margin-left: -15px;
-			bottom: -50px;
-			height: 50px;
-			background: rgba(0,0,0,0.8);
-			-webkit-transition: bottom 150ms linear;
-			   -moz-transition: bottom 150ms linear;
-				-ms-transition: bottom 150ms linear;
-				 -o-transition: bottom 150ms linear;
-				    transition: bottom 150ms linear;
-		}
-
-		img {
-			padding: 5px;
-		}
-
-		h4 {
-			color: white;
-			margin: 16px 0 0 -35px;
-			font-weight: 300;
-			font-size: 16px;
-		}
-	}
-
 	// styling the chat button in the dropdown to match. surely there's a better way...
 	.chat {
 		display: block;
@@ -245,6 +250,12 @@
 			}
 		}
 	}
+
+	.loading-indicator {
+		display: inline-block;
+		font-size: 14px;
+		margin-right: 1em;
+	}
 }
 
 .thread_active_users {
@@ -254,7 +265,11 @@
 	}
 
 	.anonymous-box {
-		padding: 5px;
-		border: 1px solid #dddddd;
+		border: 1px solid #ddd;
+		width: 24px;
+		height: 24px;
+		top: 2px;
+		position: relative;
+		text-align: center;
 	}
 }

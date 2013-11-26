@@ -103,12 +103,45 @@
 	}
 
 	@media (max-width: 979px) {
-		position: relative;
-		bottom: 0px !important;
+		position: fixed;
+		
+		height: 100%;
+		z-index: 1;
+		padding-top: 30px;
+		&.row{
+			margin:0 !important;
+		}
 
 		> div {
 			position: static;
 			width: 100% !important;
+			padding-top: 30px;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+
+			.btn-toolbar{
+				&.formatting-bar{
+					-webkit-border-radius: 0;
+					-moz-border-radius: 0;
+					border-radius: 0;
+					padding: 0;
+					background: #222;
+				}
+			}
+			
+			&.action-bar{
+				/* default-background */
+				.btn{
+					background: #ddd;
+				}
+				
+			}
+		} /* end > div */
+
+		input[type=text][readonly]{
+			margin-top: 1em;
 		}
+
 	}
 }

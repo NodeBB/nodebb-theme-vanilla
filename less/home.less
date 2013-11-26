@@ -20,6 +20,12 @@
 		.pointer;
 		margin-bottom: 10px;
 		overflow:hidden;
+		color: white;
+
+		&:hover {
+			filter: brightness(115%);
+			-webkit-filter: brightness(115%);
+		}
 
 		.category-box {
 			height:90px;
@@ -54,8 +60,6 @@
 		h2 {
 			line-height: 25px;
 		}
-
-		.pointer;
 	}
 	padding-top: 15px;
 }
@@ -112,3 +116,15 @@
 	}
 }
 
+.motd {
+	margin-bottom: 1em;
+
+	&.default {
+		background: #f6f6f6;
+		padding: 2em;
+
+		h1 {
+			margin-top: 0;
+		}
+	}
+}
