@@ -46,11 +46,22 @@
 			bottom: 10px;
 			background: #666;
 			width: 70%;
-			margin-left: 15%;
+			margin-left: 5%;
 
 			.progress-bar {
 				background-color: #eee;
 				height: 2px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.progress-container {
+				display: inline-block;
+				position: static;
+				bottom: 0px;
+				margin-left: 1em;
+				width: 100px;
+				margin-bottom: 3px;
 			}
 		}
 	}
