@@ -120,9 +120,14 @@
 	transition: opacity 250ms linear;
 	-moz-opacity: 0.00;
 	opacity: 0.00;
+	min-width: 45px;
 
 	&.active {
 		-moz-opacity: 1;
 		opacity: 1;
+	}
+
+	& +div.tooltip .tooltip-inner {
+		width: 350px;
 	}
 }
