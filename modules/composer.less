@@ -1,0 +1,65 @@
+@topbarHeight: 50px;
+
+.composer {
+	position: fixed;
+	top: 0px;
+	padding-top: @topbarHeight;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.1);
+
+	input.title {
+		width: 95%;
+		margin: 0.5em auto 0 auto;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	textarea {
+		display: block;
+		width: 95%;
+		height: 70%;
+		margin: 0 auto;
+		font-size: 14px;
+	}
+
+	.formatting-bar {
+		span {
+			color: #000;
+		}
+	}
+
+	.resizer {
+		position: absolute;
+		top: 50%;
+		left: -25px;
+		height: 50%;
+		width: 50px;
+		top: 25%;
+		.pointer;
+
+		.trigger {
+			position: absolute;
+			display: block;
+			height: 50px;
+			width: 10px;
+			top: 50%;
+			left: 50%;
+			margin-left: -5px;
+			margin-top: -25px;
+
+			background: #efefef;
+			border: 1px solid #999;
+			.border-radius(2px);
+
+			i {
+				line-height: 50px;
+				font-size: 11px;
+				color: #666;
+			}
+		}
+	}
+}
