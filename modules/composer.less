@@ -22,9 +22,15 @@
 		display: block;
 		text-align: center;
 		font-size: 14px;
+
+		&[readonly] {
+			background: none;
+			border: none;
+			font-weight: 600;
+		}
 	}
 
-	textarea {
+	textarea, .preview {
 		display: block;
 		width: 95%;
 		height: 70%;
@@ -32,7 +38,13 @@
 		font-size: 14px;
 	}
 
+	.preview {
+		display: none;
+	}
+
 	.formatting-bar {
+		margin: 0 2.5%;
+
 		span {
 			color: #000;
 		}
@@ -67,5 +79,26 @@
 				color: #666;
 			}
 		}
+	}
+
+	.action-bar {
+		margin-top: 1em;
+		margin-right: 2.5%;
+	}
+
+	.imagedrop {
+		position: absolute;
+		top: 250px;
+		text-align: center;
+		font-size: 24px;
+		color: #999;
+		width: 100%;
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.composer {
+		width: 100%;
 	}
 }
