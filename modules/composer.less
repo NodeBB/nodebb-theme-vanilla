@@ -1,0 +1,109 @@
+@topbarHeight: 50px;
+
+.composer {
+	position: fixed;
+	top: 0px;
+	padding-top: @topbarHeight;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.1);
+	visibility: hidden;
+
+	.composer-container {
+		min-width: 300px;
+		height: 100%;
+	}
+
+	input.title {
+		width: 95%;
+		margin: 1em auto 0 auto;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+
+		&[readonly] {
+			background: none;
+			border: none;
+			font-weight: 600;
+		}
+	}
+
+	textarea, .preview {
+		display: block;
+		width: 95%;
+		height: 70%;
+		margin: 0 auto;
+		font-size: 14px;
+	}
+
+	.preview {
+		display: none;
+	}
+
+	.formatting-bar {
+		margin: 0 2.5%;
+
+		span {
+			color: #000;
+		}
+	}
+
+	.resizer {
+		position: absolute;
+		top: 50%;
+		left: -25px;
+		height: 50%;
+		width: 50px;
+		top: 25%;
+		.pointer;
+
+		.trigger {
+			position: absolute;
+			display: block;
+			height: 50px;
+			width: 10px;
+			top: 50%;
+			left: 50%;
+			margin-left: -5px;
+			margin-top: -25px;
+
+			background: #efefef;
+			border: 1px solid #999;
+			.border-radius(2px);
+
+			i {
+				line-height: 50px;
+				font-size: 11px;
+				color: #666;
+			}
+		}
+	}
+
+	.action-bar {
+		margin-top: 1em;
+		margin-right: 2.5%;
+	}
+
+	.imagedrop {
+		position: absolute;
+		top: 250px;
+		text-align: center;
+		font-size: 24px;
+		color: #999;
+		width: 100%;
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.composer {
+		width: 100%;
+		background: rgba(224, 224, 224, 1);
+	}
+
+	.resizer {
+		visibility: hidden;
+	}
+}
