@@ -101,6 +101,24 @@
 				padding: 10px 5px 0 5px;
 				word-wrap: break-word;
 				clear: left;
+
+				> ul, ol {
+					padding-bottom: 10px;
+				}
+
+				ul {
+					> li {
+						list-style-type: disc;
+
+						ul > li {
+							list-style-type: circle;
+
+							ul > li {
+								list-style-type: square;
+							}
+						}
+					}
+				}
 			}
 
 			.post-images{
