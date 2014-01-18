@@ -1,3 +1,5 @@
 *.css
-npm-debug.logsftp-config.json
+npm-debug.log
 sftp-config.json
+*.sublime-project
+*.sublime-workspace
