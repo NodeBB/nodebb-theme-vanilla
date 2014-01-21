@@ -24,7 +24,7 @@
 	}
 
 	ul {
-		margin-left: -25px;
+		padding-left: 0px;
 	}
 
 	.meta {
@@ -42,7 +42,6 @@
 
 		border-radius: 5px;
 		padding: 5px 5px 5px 20px;
-		border: 1px solid rgba(0, 0, 0, 0.15);
 
 		small {
 			vertical-align: 2px;
@@ -54,18 +53,13 @@
 			margin: 0;
 			margin-top: 4px;
 			line-height: 25px;
+			white-space: nowrap;
+			text-overflow:ellipsis;
+			overflow: hidden;
 
 			.topic-title {
 				width: 100%;
-				display: inline-block;
 				font-size: 20px;
-				white-space: nowrap;
-				text-overflow:ellipsis;
-				overflow: hidden;
-
-				.badge {
-					margin-right: 6px;
-				}
 			}
 		}
 
@@ -130,6 +124,7 @@
 					display: block;
 					float: left;
 				}
+
 				p {
 					display: block;
 					padding-left: 8px;
