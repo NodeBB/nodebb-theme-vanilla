@@ -163,7 +163,7 @@
 		}
 	}
 
-	.posts li:first-child {
+	.posts li[data-index="0"] {
 		.sub-post {
 			display: none !important;
 		}
@@ -230,6 +230,16 @@
 					display: inline-block!important;
 				}
 			}
+		}
+	}
+
+	.posts {
+		.post-bar {
+			display:none;
+		}
+
+		.post-bar[data-index="0"] {
+			display:block;
 		}
 	}
 
