@@ -81,23 +81,25 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	}
 }
 
-.status-online {
-	color: #060;
+.status {
+	font-size: 10px;
+
+	&.online {
+		color: #060;
+	}
+
+	&.away {
+		color: #cc0;
+	}
+
+	&.dnd {
+		color: #900;
+	}
+
+	&.offline {
+		color: gray;
+	}
 }
-
-.status-away {
-	color: #cc0;
-}
-
-.status-dnd {
-	color: #900;
-}
-
-.status-offline {
-	color: gray;
-}
-
-
 
 @media (max-width: 760px) {
 	.chat-modal {
