@@ -16,16 +16,24 @@
 		}
 
 		a {
-			.inline-block;
 			max-width: 94px;
-			margin: 5px;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			white-space: nowrap;
 		}
 	}
 
-	&.admin {		
+	.user-info {
+		>span {
+			max-width: 94px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline-block;
+		}
+	}
+
+	&.admin {
 		#users-container {
 			padding: 0;
 		}
