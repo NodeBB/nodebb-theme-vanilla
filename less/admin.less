@@ -1,6 +1,20 @@
 @import "mixins";
 
 .admin {
+	.home {
+		> div {
+			margin-bottom: 1em;
+		}
+
+		.version-check {
+			-webkit-transition: background, color 500ms ease-in;
+			-moz-transition: background, color 500ms ease-in;
+			-ms-transition: background, color 500ms ease-in;
+			-o-transition: background, color 500ms ease-in;
+			transition: background, color 500ms ease-in;
+		}
+	}
+
 	.categories {
 		.entry-row {
 			border-radius: 10px;
