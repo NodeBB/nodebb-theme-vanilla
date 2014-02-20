@@ -240,10 +240,15 @@
 		.members {
 			padding: 1em;
 
+			&.current_members {
+				li {
+					margin-right: 1em;
+				}
+			}
+
 			li[data-uid] {
 				display: inline-block;
 				border: 1px solid rgb(200, 200, 200);
-				margin-right: 1em;
 
 				img {
 					width: 32px;
