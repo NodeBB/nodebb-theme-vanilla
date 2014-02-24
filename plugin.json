@@ -1,4 +1,5 @@
 {
+	"id": "nodebb-theme-vanilla",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
