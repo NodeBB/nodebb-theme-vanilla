@@ -292,6 +292,7 @@
 		}
 
 		&::after {
+			.opacity(0);
 			font-family: "FontAwesome";
 			content: "\f11c";
 			padding: 4px 0.25em;
@@ -300,6 +301,10 @@
 			border-bottom: 1px solid @gray-lighter;
 			position: relative;
 			top: 1px;
+		}
+
+		&.replying::after {
+			.opacity(100);
 		}
 	}
 
