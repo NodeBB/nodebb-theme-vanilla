@@ -71,6 +71,7 @@
 	}
 
 	.posts {
+
 		.post-info, .post-block {
 			position: relative;
 			border: 1px solid rgba(0, 0, 0, 0.06);
@@ -285,8 +286,23 @@
 
 .thread_active_users {
 
-	img {
-		height:24px;
+	a[data-uid] {
+		img {
+			height:24px;
+		}
+
+		&::after {
+			.opacity(0);
+			font-family: "FontAwesome";
+			content: "\f11c";
+			padding: 4px 0.25em;
+			position: relative;
+			top: 1px;
+		}
+
+		&.replying::after {
+			.opacity(100);
+		}
 	}
 
 	.anonymous-box {

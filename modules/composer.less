@@ -11,6 +11,7 @@
 	width: 100%;
 	height: 50%;
 
+	background: rgb(224, 224, 224);
 	background: rgba(224, 224, 224, 0.85);
 	visibility: hidden;
 
@@ -45,7 +46,7 @@
 		height:100%;
 	}
 
-	.write, .preview {
+	.write, .preview, .help {
 		display: block;
 		width: 95%;
 		height: 100%;
@@ -105,6 +106,35 @@
 		width: 100%;
 		display: none;
 	}
+
+  .topic-thumb-container {
+    width: 95%;
+    margin-top: 5px;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+  }
+
+  .topic-thumb-btn {
+    cursor: hand;
+    cursor: pointer;
+  }
+
+  .topic-thumb-toggle-btn {
+    margin: -25px 3% 0 0;
+  }
+
+  .topic-thumb-preview {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px
+  }
+
+  .topic-thumb-ctrl.form-group {
+    display: inline-block;
+    vertical-align: -50% !important;
+  }
 }
 
 @media (max-width: 767px) {
