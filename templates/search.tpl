@@ -56,7 +56,7 @@
 			<!-- IF post_matches -->
 			<small>{post_matches} result(s) matching "{search_query}"</small>
 			<!-- ENDIF post_matches -->
-			<div class="alert alert-info {show_no_posts}">[[tropic:no_posts_found]]</div>
+			<div class="alert alert-info {show_no_posts}">[[topic:no_posts_found]]</div>
 
 			<!-- BEGIN posts -->
 			<div class="topic-row panel panel-default clearfix">
