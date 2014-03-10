@@ -115,3 +115,4 @@
 	<!-- ENDIF topics.length -->
 </div>
 
+<!-- IMPORT partials/noscript/paginator.tpl -->

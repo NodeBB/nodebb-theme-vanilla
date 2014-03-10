@@ -314,3 +314,5 @@
 	{widgets.html}
 	<!-- END widgets -->
 </div>
+
+<!-- IMPORT partials/noscript/paginator.tpl -->
