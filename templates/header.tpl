@@ -81,7 +81,7 @@
 					</li>
 					<!-- IF isAdmin -->
 					<li>
-						<a href="{relative_path}/admin"><i class="fa fa-fw fa-cogs" title="[[global:header.admin]]"></i><span class="visible-xs-inline"> [[global:header.admin]]</span></a>
+						<a href="{relative_path}/admin" target="_top"><i class="fa fa-fw fa-cogs" title="[[global:header.admin]]"></i><span class="visible-xs-inline"> [[global:header.admin]]</span></a>
 					</li>
 					<!-- ENDIF isAdmin -->
 
