@@ -28,8 +28,8 @@
 	<script src="{relative_path}/src/templates.js?{cache-buster}"></script>
 	<script src="{relative_path}/src/translator.js?{cache-buster}"></script>
 	<script src="{relative_path}/src/ajaxify.js?{cache-buster}"></script>
-	<script src="{relative_path}/vendor/jquery/timeago/jquery.timeago.js"></script>
-	<script src="{relative_path}/vendor/jquery/js/jquery.form.js"></script>
+	<script src="{relative_path}/vendor/jquery/timeago/jquery.timeago.min.js"></script>
+	<script src="{relative_path}/vendor/jquery/js/jquery.form.min.js"></script>
 	<script src="{relative_path}/vendor/requirejs/require.js"></script>
 	<script src="{relative_path}/vendor/bootbox/bootbox.min.js"></script>
 	<script src="{relative_path}/vendor/colorpicker/colorpicker.js"></script>
