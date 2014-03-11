@@ -36,7 +36,8 @@
 			urlArgs: "{cache-buster}",
 			paths: {
 				'forum': '../forum',
-				'vendor': '../../vendor'
+				'vendor': '../../vendor',
+				'buzz': '../../vendor/buzz/buzz.min'
 			}
 		});
 	</script>
