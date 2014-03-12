@@ -29,7 +29,14 @@
 		<!-- ELSE -->
 		<a href="{relative_path}/category/{categories.slug}" itemprop="url">
 		<!-- ENDIF categories.link -->
-			<div class="category-header icon category-header-image-{categories.imageClass}" style="background: {categories.background}; color: {categories.color};">
+			<div
+				id="category-{categories.cid}" class="category-header icon category-header-image-{categories.imageClass}"
+				style="
+					<!-- IF categories.backgroundImage -->background-image: {categories.backgroundImage};<!-- ENDIF categories.backgroundImage -->
+					<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+					color: {categories.color};
+				"
+			>
 				<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
 					<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
 					<div class="category-box" itemprop="description">{categories.description}</div>
