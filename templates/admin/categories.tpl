@@ -16,7 +16,12 @@
 			<li data-cid="{categories.cid}" class="entry-row">
 				<div class="row">
 					<div class="col-sm-2 hidden-xs text-center">
-						<div class="preview-box" style="background: {categories.background}; color: {categories.color}; background-size:cover;">
+						<div class="preview-box" style="
+							<!-- IF categories.backgroundImage -->background-image: {categories.backgroundImage};<!-- ENDIF categories.backgroundImage -->
+							<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+							color: {categories.color};
+							background-size:cover;
+						">
 							<div class="icon">
 								<i data-name="icon" value="{categories.icon}" class="fa {categories.icon} fa-2x"></i>
 							</div>
