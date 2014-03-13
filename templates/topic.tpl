@@ -24,25 +24,25 @@
 
 	<ul id="post-container" class="posts" data-tid="{tid}">
 		<!-- BEGIN posts -->
-			<li class="post-row infiniteloaded" data-pid="{posts.pid}" data-uid="{posts.uid}" data-username="{posts.username}" data-userslug="{posts.userslug}" data-index="{posts.index}" data-deleted="{posts.deleted}" itemscope itemtype="http://schema.org/Comment">
+			<li class="post-row infiniteloaded" data-pid="{posts.pid}" data-uid="{posts.uid}" data-username="{posts.user.username}" data-userslug="{posts.user.userslug}" data-index="{posts.index}" data-deleted="{posts.deleted}" itemscope itemtype="http://schema.org/Comment">
 				<a id="post_anchor_{posts.pid}" name="{posts.pid}"></a>
 
 				<meta itemprop="datePublished" content="{posts.relativeTime}">
 				<meta itemprop="dateModified" content="{posts.relativeEditTime}">
 
 				<div class="col-md-1 profile-image-block hidden-xs hidden-sm sub-post">
-					<a href="{relative_path}/user/{posts.userslug}">
-						<img src="{posts.picture}" align="left" class="img-thumbnail" itemprop="image" />
-						<!-- IF posts.user_banned -->
+					<a href="{relative_path}/user/{posts.user.userslug}">
+						<img src="{posts.user.picture}" align="left" class="img-thumbnail" itemprop="image" />
+						<!-- IF posts.user.banned -->
 						<span class="label label-danger">[[topic:banned]]</span>
-						<!-- ENDIF posts.user_banned -->
+						<!-- ENDIF posts.user.banned -->
 					</a>
 				</div>
 
 				<div class="col-md-11 panel panel-default post-block topic-item">
 
-					<a class="main-post avatar" href="{relative_path}/user/{posts.userslug}">
-						<img itemprop="image" src="{posts.picture}" align="left" class="img-thumbnail" width=150 height=150 />
+					<a class="main-post avatar" href="{relative_path}/user/{posts.user.userslug}">
+						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" width=150 height=150 />
 					</a>
 					<h3 class="main-post">
 						<p id="topic_title_{posts.pid}" class="topic-title" itemprop="name">{title}</p>
@@ -51,15 +51,15 @@
 					<div class="topic-buttons">
 
 						<div class="btn-group">
-							<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button" title="[[topic:posted_by]] {posts.username}">
+							<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button" title="[[topic:posted_by]] {posts.user.username}">
 								<i class="fa fa-circle status offline"></i>
 								<span class="visible-xs-inline visible-md-inline"><img class="" src="{posts.picture}" width=18 height=18 />&nbsp;</span>
-								<span class="username-field" href="{relative_path}/user/{posts.userslug}" itemprop="author" data-username="{posts.username}">{posts.username}&nbsp;</span>
+								<span class="username-field" href="{relative_path}/user/{posts.user.userslug}" itemprop="author" data-username="{posts.username}">{posts.user.username}&nbsp;</span>
 								<span class="caret"></span>
 							</button>
 
 						    <ul class="dropdown-menu">
-								<li><a href="{relative_path}/user/{posts.userslug}"><i class="fa fa-user"></i> [[topic:profile]]</a></li>
+								<li><a href="{relative_path}/user/{posts.user.userslug}"><i class="fa fa-user"></i> [[topic:profile]]</a></li>
 								<li><a href="#" class="chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
 						    </ul>
 						</div>
@@ -131,9 +131,9 @@
 					</div>
 
 					<div id="content_{posts.pid}" class="post-content" itemprop="text">{posts.content}</div>
-					<!-- IF posts.signature -->
-					<div class="post-signature">{posts.signature}</div>
-					<!-- ENDIF posts.signature -->
+					<!-- IF posts.user.signature -->
+					<div class="post-signature">{posts.user.signature}</div>
+					<!-- ENDIF posts.user.signature -->
 
 					<div class="post-info">
 						<span class="pull-right">
@@ -144,7 +144,7 @@
 							<!-- ENDIF posts.editor -->
 						</span>
 						<span class="pull-left">
-							[[topic:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user_rep}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user_rep}</span>&nbsp;|&nbsp;[[topic:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user_postcount}</span>
+							[[topic:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[topic:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>
 							<!-- BEGIN custom_profile_info -->
 							| {posts.custom_profile_info.content}
 							<!-- END custom_profile_info -->
