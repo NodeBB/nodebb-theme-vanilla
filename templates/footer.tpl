@@ -1,6 +1,6 @@
 	</div><!--END container -->
 
-	<!-- IMPORT partials/upload_picture_modal.tpl -->
+	<!-- IMPORT partials/modals/upload_picture_modal.tpl -->
 
 	<div id="alert_window"></div>
 
