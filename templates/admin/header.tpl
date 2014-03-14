@@ -30,6 +30,8 @@
 	<script src="{relative_path}/src/ajaxify.js?{cache-buster}"></script>
 	<script src="{relative_path}/vendor/jquery/timeago/jquery.timeago.min.js"></script>
 	<script src="{relative_path}/vendor/jquery/js/jquery.form.min.js"></script>
+	<script src="{relative_path}/vendor/jquery/deserialize/jquery.deserialize.min.js"></script>
+	<script src="{relative_path}/vendor/jquery/serializeObject/jquery.ba-serializeobject.min.js"></script>
 	<script src="{relative_path}/vendor/requirejs/require.js"></script>
 	<script src="{relative_path}/vendor/bootbox/bootbox.min.js"></script>
 	<script src="{relative_path}/vendor/colorpicker/colorpicker.js"></script>
