@@ -73,8 +73,8 @@
 					<div>
 						<small>
 							<span class="pull-right">
-								<a href="../../user/{posts.userslug}">
-									<img title="{posts.username}" class="img-rounded user-img" src="{posts.picture}">
+								<a href="../../user/{posts.user.userslug}">
+									<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 								</a>
 								<a href="../../topic/{posts.topic.slug}#{posts.pid}"> [[global:posted]]</a>
 								[[global:in]]
