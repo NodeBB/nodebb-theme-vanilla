@@ -33,10 +33,13 @@
 			<span id='postcount'>{users.postcount}</span>
 		</div>
 		<div>
-			<a href="#" class="btn btn-default admin-btn">Make Admin</a>
+			<a href="#" class="btn btn-default admin-btn">Admin</a>
 		</div>
 		<div>
 			<a href="#" class="btn btn-default ban-btn">Ban</a>
+		</div>
+		<div>
+			<a href="#" class="btn btn-default btn-danger delete-btn">Delete</a>
 		</div>
 	</div>
 	<!-- END users -->
