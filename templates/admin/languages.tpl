@@ -12,7 +12,7 @@
 	<form class="row">
 		<div class="form-group col-sm-6">
 			<label for="defaultLang">Default Language</label>
-			<select data-field="defaultLang" class="form-control">
+			<select id="language" data-field="defaultLang" class="form-control">
 				<!-- BEGIN languages -->
 				<option value="{languages.code}">{languages.name} ({languages.code})</option>
 				<!-- END languages -->
@@ -22,3 +22,6 @@
 </div>
 
 <button class="btn btn-primary" id="save">Save</button>
+<script type="text/javascript">
+$('#language').val(translator.getLanguage());
+</script>
