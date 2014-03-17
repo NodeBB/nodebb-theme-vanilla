@@ -11,7 +11,7 @@
 </p>
 
 <blockquote>
-	{reset_link}
+	<a href="{reset_link}">{reset_link}</a>
 </blockquote>
 
 <p>
