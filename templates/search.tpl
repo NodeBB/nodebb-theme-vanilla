@@ -14,7 +14,7 @@
 </form>
 
 <div class="search">
-	<div class="{show_results} row">
+	<div class="row">
 
 		<div id="topic-results" class="col-md-12" data-search-query="{search_query}">
 
@@ -22,8 +22,9 @@
 
 			<!-- IF topic_matches -->
 			<small>{topic_matches} result(s) matching "{search_query}"</small>
+			<!-- ELSE -->
+			<div class="alert alert-info">[[topic:no_topics_found]]</div>
 			<!-- ENDIF topic_matches -->
-			<div class="alert alert-info {show_no_topics}">[[topic:no_topics_found]]</div>
 
 			<!-- BEGIN topics -->
 			<div class="topic-row panel panel-default clearfix">
@@ -55,8 +56,9 @@
 
 			<!-- IF post_matches -->
 			<small>{post_matches} result(s) matching "{search_query}"</small>
+			<!-- ELSE -->
+			<div class="alert alert-info">[[topic:no_posts_found]]</div>
 			<!-- ENDIF post_matches -->
-			<div class="alert alert-info {show_no_posts}">[[topic:no_posts_found]]</div>
 
 			<!-- BEGIN posts -->
 			<div class="topic-row panel panel-default clearfix">
@@ -71,8 +73,8 @@
 					<div>
 						<small>
 							<span class="pull-right">
-								<a href="../../user/{posts.userslug}">
-									<img title="{posts.username}" class="img-rounded user-img" src="{posts.picture}">
+								<a href="../../user/{posts.user.userslug}">
+									<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 								</a>
 								<a href="../../topic/{posts.topic.slug}#{posts.pid}"> [[global:posted]]</a>
 								[[global:in]]

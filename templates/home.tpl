@@ -8,7 +8,7 @@
 
 <div class="row home" itemscope itemtype="http://www.schema.org/ItemList">
 	<!-- BEGIN categories -->
-	<div class="{categories.class}">
+	<div class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 		<meta itemprop="name" content="{categories.name}">
 		<h4>
 			<!-- IF !categories.link -->
@@ -43,8 +43,8 @@
 					<!-- BEGIN posts -->
 					<div class="category-box">
 						<div class="post-preview">
-							<img src="{categories.posts.picture}" class="pull-left" />
-							<p class=""><strong>{categories.posts.username}</strong>: {categories.posts.content}</p>
+							<img src="{categories.posts.user.picture}" class="pull-left" />
+							<p class=""><strong>{categories.posts.user.username}</strong>: {categories.posts.content}</p>
 						</div>
 					</div>
 					<!-- END posts -->

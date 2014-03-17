@@ -13,12 +13,12 @@
 			<!-- BEGIN posts -->
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
-					<a href="../../user/{posts.userslug}">
-						<img title="{posts.username}" class="img-rounded user-img" src="{posts.picture}">
+					<a href="../../user/{posts.user.userslug}">
+						<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 					</a>
 
-					<a href="../../user/{posts.userslug}">
-						<strong><span>{posts.username}</span></strong>
+					<a href="../../user/{posts.user.userslug}">
+						<strong><span>{posts.user.username}</span></strong>
 					</a>
 					<p>{posts.content}</p>
 

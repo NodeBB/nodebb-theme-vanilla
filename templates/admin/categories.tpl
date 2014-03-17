@@ -78,7 +78,11 @@
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
 										<label for="cid-{categories.cid}-imageClass">Image Class</label>
-										<input id="cid-{categories.cid}-imageClass" type="text" class="form-control" placeholder="default" data-name="imageClass" value="{categories.imageClass}" />
+										<select id="cid-{categories.cid}-imageClass" class="form-control" data-name="imageClass" data-value="{categories.imageClass}">
+											<option value="auto">auto</option>
+											<option value="cover">cover</option>
+											<option value="contain">contain</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-sm-4 col-xs-12">
