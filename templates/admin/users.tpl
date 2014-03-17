@@ -20,9 +20,9 @@
 <ul id="users-container" class="users admin">
 	<!-- BEGIN users -->
 	<div class="users-box" data-uid="{users.uid}" data-admin="{users.administrator}" data-username="{users.username}" data-banned="{users.banned}">
-		<a href="{relative_path}/user/{users.userslug}"><img src="{users.picture}" class="img-thumbnail"/></a>
+		<a href="{relative_path}/user/{users.userslug}" target="_blank"><img src="{users.picture}" class="img-thumbnail"/></a>
 		<br/>
-		<a href="{relative_path}/user/{users.userslug}">{users.username}</a>
+		<a href="{relative_path}/user/{users.userslug}" target="_blank">{users.username}</a>
 		<br/>
 		<div title="reputation">
 			<i class='fa fa-star'></i>
