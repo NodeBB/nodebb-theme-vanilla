@@ -20,10 +20,6 @@
 	    <script>__lt_ie_9__ = 1;</script>
 	<![endif]-->
 
-	<!-- BEGIN scripts -->
-	<script type="text/javascript" src="{scripts.src}"></script>
-	<!-- END scripts -->
-
 	<script src="{relative_path}/vendor/jquery/js/jquery.js"></script>
 	<script src="{relative_path}/vendor/jquery/js/jquery-ui-1.10.4.custom.js"></script>
 	<script src="{relative_path}/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -58,7 +54,10 @@
 
 	<script src="{relative_path}/src/overrides.js"></script>
 	<script src="{relative_path}/src/utils.js"></script>
-
+	
+	<!-- BEGIN scripts -->
+	<script type="text/javascript" src="{scripts.src}"></script>
+	<!-- END scripts -->
 </head>
 
 <body class="admin">
