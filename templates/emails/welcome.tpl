@@ -11,7 +11,7 @@
 </p>
 
 <blockquote>
-	{confirm_link}
+	<a href="{confirm_link}">{confirm_link}</a>
 </blockquote>
 
 <p>
