@@ -7,7 +7,6 @@
 	<li><a href="#email" data-toggle="tab">Email</a></li>
 	<li><a href="#user" data-toggle="tab">User</a></li>
 	<li><a href="#post" data-toggle="tab">Post</a></li>
-	<li><a href="#sounds" data-toggle="tab">Sounds</a></li>
 	<li><a href="#pagination" data-toggle="tab">Pagination</a></li>
 	<li><a href="#web-crawler" data-toggle="tab">Web Crawler</a></li>
 </ul>
@@ -160,24 +159,6 @@
 					</label>
 				</div>
 				<strong>Maximum File Size</strong><br /> <input type="text" class="form-control" value="2048" data-field="maximumFileSize"><br />
-			</div>
-		</form>
-	</div>
-
-	<div class="tab-pane" id="sounds">
-		<form>
-			<div class="alert alert-warning">
-				<div class="row">
-					<label for="sound:notification">Notifications</label>
-					<select class="form-group" id="sound:notification" data-field="sound:notification">
-						<!-- BEGIN sounds -->
-						<option value="{sounds.name}">{sounds.name}</option>
-						<!-- END sounds -->
-					</select>
-					<div class="btn-group pull-right">
-						<button class="btn btn-sm btn-default" data-action="play">Play <i class="fa fa-play"></i></button>
-					</div>
-				</div>
 			</div>
 		</form>
 	</div>
