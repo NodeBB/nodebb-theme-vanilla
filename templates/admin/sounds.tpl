@@ -29,10 +29,10 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">Chat</div>
 			<div class="panel-body">
-				<label for="chatIncoming">Incoming Message</label>
+				<label for="chat-incoming">Incoming Message</label>
 				<div class="row">
 					<div class="form-group col-xs-9">
-						<select class="form-control" id="chatIncoming" name="chatIncoming">
+						<select class="form-control" id="chat-incoming" name="chat-incoming">
 							<!-- BEGIN sounds -->
 							<option value="{sounds.name}">{sounds.name}</option>
 							<!-- END sounds -->
@@ -43,10 +43,10 @@
 					</div>
 				</div>
 
-				<label for="chatOutgoing">Outgoing Message</label>
+				<label for="chat-outgoing">Outgoing Message</label>
 				<div class="row">
 					<div class="form-group col-xs-9">
-						<select class="form-control" id="chatOutgoing" name="chatOutgoing">
+						<select class="form-control" id="chat-outgoing" name="chat-outgoing">
 							<!-- BEGIN sounds -->
 							<option value="{sounds.name}">{sounds.name}</option>
 							<!-- END sounds -->
