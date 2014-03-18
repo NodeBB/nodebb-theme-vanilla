@@ -25,6 +25,15 @@
 				<strong>[[user:posts_per_page]]</strong><br /> <input type="text" class="form-control" data-property="postsPerPage"><br />
 			</div>
 
+			<h4>[[global:header.notifications]]</h4>
+			<div class="well">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="notificationSounds"> <strong>[[user:notification_sounds]]</strong>
+					</label>
+				</div>
+			</div>
+
 			<!-- BEGIN settings -->
 			<h4>{settings.title}</h4>
 			<div class="well">
