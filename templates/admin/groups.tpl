@@ -8,7 +8,12 @@
 		<li data-gid="{groups.gid}">
 			<div class="row">
 				<div class="col-lg-8">
-					<h2>{groups.name}</h2>
+					<h2>
+						{groups.name}
+						<!-- IF groups.system -->
+						<span class="badge">System Group</span>
+						<!-- ENDIF groups.system -->
+					</h2>
 					<p>{groups.description}</p>
 					<!-- IF groups.deletable -->
 					<div class="btn-group">
@@ -19,7 +24,8 @@
 				</div>
 				<div class="col-lg-4">
 					<ul class="pull-right members">
-					<!-- BEGIN members --><li data-uid="{groups.members.uid}" title="{groups.members.username}"><img src="{groups.members.picture}" /></li><!-- END members -->
+					<!-- BEGIN members --><li data-uid="{groups.members.uid}" data-toggle="tooltip" title="{groups.members.username}"><img src="{groups.members.picture}" /></li><!-- END members -->
+					<!-- IF groups.truncated --><li data-toggle="tooltip" title="Total: {groups.memberCount}" class="more"><i class="fa fa-users fa-2x"></i></li><!-- ENDIF groups.truncated -->
 					</ul>
 				</div>
 			</div>
