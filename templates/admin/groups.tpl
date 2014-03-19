@@ -1,8 +1,14 @@
 <h1><i class="fa fa-group"></i> Groups</h1>
 
+<div>
+	<button class="btn btn-primary" id="create">New Group</button>
+</div>
+
 <hr />
 
 <div class="groups">
+
+
 	<ul id="groups-list">
 	<!-- BEGIN groups -->
 		<li data-gid="{groups.gid}">
@@ -33,9 +39,7 @@
 	<!-- END groups -->
 	</ul>
 
-	<div class="text-center">
-		<button class="btn btn-primary" id="create">New Group</button>
-	</div>
+
 
 	<div class="modal fade" id="create-modal">
 		<div class="modal-dialog">
