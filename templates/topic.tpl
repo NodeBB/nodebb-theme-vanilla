@@ -145,9 +145,11 @@
 						</span>
 						<span class="pull-left">
 							[[topic:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[topic:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>
-							<!-- BEGIN custom_profile_info -->
-							| {posts.custom_profile_info.content}
-							<!-- END custom_profile_info -->
+							<!-- IF custom_profile_info -->
+								<!-- BEGIN custom_profile_info -->
+								| {posts.custom_profile_info.content}
+								<!-- END custom_profile_info -->
+							<!-- ENDIF custom_profile_info -->
 						</span>
 						<div style="clear:both;"></div>
 					</div>
