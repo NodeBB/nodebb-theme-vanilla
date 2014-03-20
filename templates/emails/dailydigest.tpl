@@ -20,7 +20,7 @@
 <ul>
 	<!-- BEGIN recent -->
 	<li style="text-decoration: none; list-style-type: none; padding-bottom: 0.5em;">
-		<a href="{url}/topics/{recent.slug}"><img style="vertical-align: middle; width: 16px; height: 16px; padding-right: 1em;" src="{recent.teaser.picture}" title="{recent.teaser.username}" /> {recent.title}</a>
+		<a href="{url}/topic/{recent.slug}"><img style="vertical-align: middle; width: 16px; height: 16px; padding-right: 1em;" src="{recent.teaser.picture}" title="{recent.teaser.username}" /> {recent.title}</a>
 	</li>
 	<!-- END recent -->
 </ul>
