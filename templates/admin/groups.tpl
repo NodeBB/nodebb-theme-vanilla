@@ -11,7 +11,7 @@
 
 	<ul id="groups-list">
 	<!-- BEGIN groups -->
-		<li data-gid="{groups.gid}">
+		<li data-groupname="{groups.name}">
 			<div class="row">
 				<div class="col-lg-8">
 					<h2>

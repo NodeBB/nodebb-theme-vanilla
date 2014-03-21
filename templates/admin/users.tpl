@@ -1,6 +1,6 @@
 <h1><i class="fa fa-user"></i> Users</h1>
 
-<button id="createUser" class="btn btn-primary">Create User</button>
+<button id="createUser" class="btn btn-primary">New User</button>
 <a target="_blank" href="/admin/users/csv" class="btn btn-primary">Download CSV</a>
 <hr />
 <ul class="nav nav-pills">
