@@ -54,7 +54,7 @@
 
 	<script src="{relative_path}/src/overrides.js"></script>
 	<script src="{relative_path}/src/utils.js"></script>
-	
+
 	<!-- BEGIN scripts -->
 	<script type="text/javascript" src="{scripts.src}"></script>
 	<!-- END scripts -->
@@ -119,7 +119,6 @@
 						<li><a href="{relative_path}/admin/categories/active"><i class="fa fa-fw fa-folder"></i> Categories</a></li>
 						<li><a href="{relative_path}/admin/users/latest"><i class="fa fa-fw fa-user"></i> Users</a></li>
 						<li><a href="{relative_path}/admin/groups"><i class="fa fa-fw fa-group"></i> Groups</a></li>
-						<li><a href="{relative_path}/admin/topics"><i class="fa fa-fw fa-book"></i> Topics</a></li>
 						<li><a href="{relative_path}/admin/settings"><i class="fa fa-fw fa-cogs"></i> General Settings</a></li>
 						<li><a href="{relative_path}/admin/themes"><i class="fa fa-fw fa-th"></i> Themes</a></li>
 						<li><a href="{relative_path}/admin/plugins"><i class="fa fa-fw fa-code-fork"></i> Plugins</a></li>
