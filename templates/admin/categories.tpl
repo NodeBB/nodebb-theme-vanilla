@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="col-sm-2 hidden-xs text-center">
 						<div class="preview-box" style="
-							<!-- IF categories.backgroundImage -->background-image: {categories.backgroundImage};<!-- ENDIF categories.backgroundImage -->
+							<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
 							<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
 							color: {categories.color};
 							background-size:cover;
