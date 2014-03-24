@@ -5,7 +5,6 @@
 	<!-- BEGIN metaTags -->
 	<meta<!-- IF metaTags.name --> name="{metaTags.name}"<!-- ENDIF metaTags.name --><!-- IF metaTags.property --> property="{metaTags.property}"<!-- ENDIF metaTags.property --><!-- IF metaTags.content --> content="{metaTags.content}"<!-- ENDIF metaTags.content --> />
 	<!-- END metaTags -->
-	<link rel="stylesheet" href="{relative_path}/vendor/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{cache-buster}" />
 	<!-- IF bootswatchCSS --><link href="{bootswatchCSS}" rel="stylesheet" media="screen"><!-- ENDIF bootswatchCSS -->
 	<!-- BEGIN linkTags -->
@@ -26,9 +25,7 @@
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
 	<script src="{relative_path}/socket.io/socket.io.js"></script>
-	<!-- BEGIN clientScripts -->
-	<script src="{relative_path}/{clientScripts.script}?{cache-buster}"></script>
-	<!-- END clientScripts -->
+	<script src="{relative_path}/nodebb.min.js?{cache-buster}"></script>
 	<script>
 		require.config({
 			baseUrl: "{relative_path}/src/modules",
