@@ -107,11 +107,7 @@
 	</div>
 
 	<!-- IF topics.length -->
-	<div widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar">
-		<!-- BEGIN widgets -->
-		{widgets.html}
-		<!-- END widgets -->
-	</div>
+	<div widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar"></div>
 	<!-- ENDIF topics.length -->
 </div>
 

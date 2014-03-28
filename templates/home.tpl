@@ -1,9 +1,5 @@
-<div widget-area="motd" class="hidden">
-	<!-- BEGIN widgets -->
-	<div class="motd">
-		{widgets.html}
-	</div>
-	<!-- END widgets -->
+<div class="motd">
+	<div widget-area="motd" class="hidden"></div>
 </div>
 
 <div class="row home" itemscope itemtype="http://www.schema.org/ItemList">
@@ -56,10 +52,6 @@
 	<!-- END categories -->
 </div>
 
-<div widget-area="footer" class="hidden">
-	<!-- BEGIN widgets -->
-	<div class="footer">
-		{widgets.html}
-	</div>
-	<!-- END widgets -->
+<div class="footer">
+	<div widget-area="footer" class="hidden"></div>
 </div>

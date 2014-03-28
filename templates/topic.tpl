@@ -312,10 +312,6 @@
 
 </div>
 
-<div widget-area="footer" class="col-xs-12">
-	<!-- BEGIN widgets -->
-	{widgets.html}
-	<!-- END widgets -->
-</div>
+<div widget-area="footer" class="col-xs-12"></div>
 
 <!-- IMPORT partials/noscript/paginator.tpl -->
