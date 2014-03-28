@@ -30,7 +30,9 @@
 						<a href="{relative_path}/popular"><i class="fa fa-fw fa-fire" title="[[global:header.popular]]"></i><span class="visible-xs-inline"> [[global:header.popular]]</span></a>
 					</li>
 					<li>
+						<!-- IF function.displayUsersLink -->
 						<a href="{relative_path}/users"><i class="fa fa-fw fa-users" title="[[global:header.users]]"></i><span class="visible-xs-inline"> [[global:header.users]]</span></a>
+						<!-- ENDIF function.displayUsersLink -->
 					</li>
 					<!-- IF isAdmin -->
 					<li>
