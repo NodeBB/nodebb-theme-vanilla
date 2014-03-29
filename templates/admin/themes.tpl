@@ -4,17 +4,13 @@
 <div class="themes">
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="#" data-target="#themes" data-toggle="tab">Themes</a></li>
+		<li><a href="#" data-target="#skins" data-toggle="tab">Skins</a></li>
 		<li><a href="#" data-target="#customise" data-toggle="tab">Customise</a></li>
 		<li><a href="#" data-target="#widgets" data-toggle="tab">Widgets</a></li>
 	</ul>
 
 	<div class="tab-content">
 		<div class="tab-pane active" id="themes">
-			<h3>Revert to Default</h3>
-			<p class="alert">
-				<button class="btn btn-warning" id="revert_theme">Revert</button> This will remove any custom theme applied to your NodeBB, and restore the base theme.
-			</p>
-
 			<h3>Installed Themes</h3>
 			<p>
 				The following themes are currently installed in this NodeBB instance.
@@ -22,7 +18,8 @@
 			<ul class="directory" id="installed_themes">
 				<li><i class="fa fa-refresh fa-spin"></i> Checking for installed themes...</li>
 			</ul>
-
+		</div>
+		<div class="tab-pane" id="skins">
 			<h3>Bootswatch Themes</h3>
 			<p>
 				NodeBB Themes are powered by Bootswatch, a repository containing themes built
@@ -32,6 +29,10 @@
 				<li><i class="fa fa-refresh fa-spin"></i> Loading Themes</li>
 			</ul>
 
+			<h3>Revert to Default</h3>
+			<p class="alert">
+				<button class="btn btn-warning" id="revert_theme">Revert</button> This will remove any custom theme applied to your NodeBB, and restore the base theme.
+			</p>
 		</div>
 		<div class="tab-pane" id="customise">
 			<h3>Custom CSS</h3>
