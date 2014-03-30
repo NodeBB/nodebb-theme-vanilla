@@ -60,10 +60,6 @@
 				</ul>
 
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right hide pull-right">
-					<li>
-						<a href="#" id="reconnect" class="hide" title="Connection to {title} has been lost, attempting to reconnect..."><i class="fa fa-check"></i></a>
-					</li>
-
 					<li class="notifications dropdown text-center hidden-xs">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="notif_dropdown"><i class="fa fa-fw fa-bell-o" data-content="0" title="[[global:header.notifications]]"></i></a>
 						<ul id="notif-list" class="dropdown-menu" aria-labelledby="notif_dropdown">
@@ -146,6 +142,12 @@
 					</li>
 				</ul>
 				<!-- ENDIF searchEnabled -->
+
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li>
+						<a href="#" id="reconnect" class="hide" title="Connection to {title} has been lost, attempting to reconnect..."><i class="fa fa-check"></i></a>
+					</li>
+				</ul>
 
 				<ul class="nav navbar-nav navbar-right pagination-block hidden visible-lg visible-md">
 					<li>
