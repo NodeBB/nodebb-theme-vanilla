@@ -71,7 +71,7 @@
 						<h4>Available Widgets <small>Drag and drop widgets into templates</small></h4>
 						<div class="row">
 							<!-- BEGIN widgets -->
-							<div class="col-xs-6">
+							<div class="col-lg-6 col-md-12">
 								<div data-widget="{widgets.widget}" class="panel panel-default pointer">
 									<div class="panel-heading">
 										<strong>{widgets.name}</strong>
