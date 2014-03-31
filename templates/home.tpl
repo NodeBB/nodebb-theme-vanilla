@@ -51,7 +51,3 @@
 	</div>
 	<!-- END categories -->
 </div>
-
-<div class="footer">
-	<div widget-area="footer" class="hidden"></div>
-</div>
