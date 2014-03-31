@@ -69,16 +69,19 @@
 				<div class="col-xs-6 pull-left">
 					<div class="available-widgets">
 						<h4>Available Widgets <small>Drag and drop widgets into templates</small></h4>
-						<div>
+						<div class="row">
 							<!-- BEGIN widgets -->
-							<div data-widget="{widgets.widget}" class="panel panel-default pointer">
-								<div class="panel-heading">
-									<strong>{widgets.name}</strong> <small>{widgets.description}</small>
-								</div>
-								<div class="panel-body hidden">
-									<form>
-										{widgets.content}
-									</form>
+							<div class="col-xs-6">
+								<div data-widget="{widgets.widget}" class="panel panel-default pointer">
+									<div class="panel-heading">
+										<strong>{widgets.name}</strong>
+										<small><br />{widgets.description}</small>
+									</div>
+									<div class="panel-body hidden">
+										<form>
+											{widgets.content}
+										</form>
+									</div>
 								</div>
 							</div>
 							<!-- END widgets -->
