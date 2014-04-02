@@ -18,42 +18,42 @@
 					<div class="control-group">
 						<label class="control-label" for="inputUsername">[[user:username]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputUsername" placeholder="Username" value="{username}">
+							<input class="form-control" type="text" id="inputUsername" placeholder="[[user:username]]" value="{username}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">[[user:email]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputEmail" placeholder="Email" value="{email}">
+							<input class="form-control" type="text" id="inputEmail" placeholder="[[user:email]]" value="{email}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputFullname">[[user:fullname]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputFullname" placeholder="Full Name" value="{fullname}">
+							<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]" value="{fullname}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputWebsite">[[user:website]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputWebsite" placeholder="http://website.com" value="{website}">
+							<input class="form-control" type="text" id="inputWebsite" placeholder="[[user:website_placeholder]]" value="{website}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputLocation">[[user:location]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputLocation" placeholder="Location" value="{location}">
+							<input class="form-control" type="text" id="inputLocation" placeholder="[[user:location]]" value="{location}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
 						<div class="controls">
-							<input class="form-control" type="date" id="inputBirthday" placeholder="mm/dd/yyyy" value="{birthday}">
+							<input class="form-control" type="date" id="inputBirthday" placeholder="[[user:birthday_placeholder]]" value="{birthday}">
 						</div>
 					</div>
 
@@ -84,14 +84,14 @@
 					<div class="control-group">
 						<label class="control-label" for="inputCurrentPassword">[[user:current_password]]</label>
 						<div class="controls">
-							<input class="form-control" type="password" id="inputCurrentPassword" placeholder="Current Password" value=""<!-- IF !hasPassword --> disabled<!-- ENDIF !hasPassword-->>
+							<input class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current_password]]" value=""<!-- IF !hasPassword --> disabled<!-- ENDIF !hasPassword-->>
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputNewPassword">[[user:password]]</label>
 						<div class="input-group">
-							<input class="form-control" type="password" id="inputNewPassword" placeholder="New Password" value="">
+							<input class="form-control" type="password" id="inputNewPassword" placeholder="[[user:password]]" value="">
 							<span class="input-group-addon">
 								<span id="password-notify"><i class="fa fa-circle-o"></i></span>
 							</span>
@@ -101,7 +101,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputNewPasswordAgain">[[user:confirm_password]]</label>
 						<div class="input-group">
-							<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="Confirm Password" value="">
+							<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="[[user:confirm_password]]" value="">
 							<span class="input-group-addon">
 								<span id="password-confirm-notify"><i class="fa fa-circle-o"></i></span>
 							</span>
