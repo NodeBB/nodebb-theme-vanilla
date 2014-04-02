@@ -39,7 +39,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputWebsite">[[user:website]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputWebsite" placeholder="[[user:website_placeholder]]" value="{website}">
+							<input class="form-control" type="text" id="inputWebsite" placeholder="http://..." value="{website}">
 						</div>
 					</div>
 
@@ -53,7 +53,7 @@
 					<div class="control-group">
 						<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
 						<div class="controls">
-							<input class="form-control" type="date" id="inputBirthday" placeholder="[[user:birthday_placeholder]]" value="{birthday}">
+							<input class="form-control" type="date" id="inputBirthday" value="{birthday}">
 						</div>
 					</div>
 
