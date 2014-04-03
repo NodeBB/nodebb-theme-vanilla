@@ -1,6 +1,5 @@
-<div class="account-username-box clearfix" data-userslug="{userslug}">
 
-</div>
+<!-- IMPORT partials/account_menu.tpl -->
 
 <div class="users account">
 	<div>

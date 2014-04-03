@@ -1,7 +1,6 @@
 
-<div class="account-username-box" data-userslug="{userslug}">
 
-</div>
+<!-- IMPORT partials/account_menu.tpl -->
 
 <div class="account">
 
