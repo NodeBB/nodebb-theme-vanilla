@@ -9,6 +9,7 @@
 	<li><a href="#post" data-toggle="tab">Post</a></li>
 	<li><a href="#pagination" data-toggle="tab">Pagination</a></li>
 	<li><a href="#web-crawler" data-toggle="tab">Web Crawler</a></li>
+	<li><a href="#sockets" data-toggle="tab">Sockets</a></li>
 </ul>
 
 <div class="tab-content">
@@ -68,6 +69,7 @@
 			</div>
 		</form>
 	</div>
+
 	<div class="tab-pane" id="email">
 		<form>
 			<div class="alert alert-warning">
@@ -183,6 +185,17 @@
 			<div class="alert alert-warning">
 				<strong>Custom Robots.txt <small>Leave blank for default</small></strong><br />
 				<textarea class="form-control" data-field="robots.txt"></textarea>
+			</div>
+		</form>
+	</div>
+
+	<div class="tab-pane" id="sockets">
+		<form>
+			<div class="alert alert-warning">
+				<label>Max Reconnection Attempts</label>
+				<input class="form-control" type="text" value="5" data-field="maxReconnectionAttempts" /><br />
+				<label>Reconnection Delay</label>
+				<input class="form-control" type="text" value="200" data-field="reconnectionDelay" /><br />
 			</div>
 		</form>
 	</div>
