@@ -24,6 +24,7 @@
 		"^user.*settings": "accountsettings",
 		"^user.*favourites": "favourites",
 		"^user.*posts": "accountposts",
+		"^user.*topics": "accounttopics",
 		"^user/.*": "account",
 
 		"^recent/.*": "recent",
