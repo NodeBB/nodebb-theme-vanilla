@@ -58,13 +58,14 @@
 			<div class="row">
 				<div class="col-xs-6 pull-right">
 					<!-- BEGIN areas -->
-					<div class="area">
-						<h4>{areas.name} <small>{areas.template} / {areas.location}</small> <button data-template="{areas.template}" data-location="{areas.location}" class="btn btn-success btn-xs pull-right">Save</button></h4>
+					<div class="area" data-template="{areas.template}" data-location="{areas.location}">
+						<h4>{areas.name} <small>{areas.template} / {areas.location}</small></h4>
 						<div class="well widget-area">
 
 						</div>
 					</div>
 					<!-- END areas -->
+					<button class="btn btn-success save pull-right">Save</button>
 				</div>
 				<div class="col-xs-6 pull-left">
 					<div class="available-widgets">
