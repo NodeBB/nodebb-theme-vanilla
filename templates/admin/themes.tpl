@@ -70,6 +70,9 @@
 				<div class="col-xs-6 pull-left">
 					<div class="available-widgets">
 						<h4>Available Widgets <small>Drag and drop widgets into templates</small></h4>
+						<!-- IF !widgets.length -->
+						<div class="alert alert-info">No widgets found! Activate the essential widgets plugin in the <a href="/admin/plugins">plugins</a> control panel.</div>
+						<!-- ENDIF !widgets.length -->
 						<div class="row">
 							<!-- BEGIN widgets -->
 							<div class="col-lg-6 col-md-12">
