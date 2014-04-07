@@ -16,7 +16,7 @@
 				<strong>[[login:failed_login_attempt]]</strong> <p></p>
 			</div>
 
-			<form class="form-horizontal" role="form">
+			<form class="form-horizontal" role="form" method="post">
 				<div class="form-group">
 					<label for="username" class="col-lg-2 control-label">[[login:username]]</label>
 					<div class="col-lg-10">
@@ -41,7 +41,7 @@
 				<div class="form-group">
 					<div class="col-lg-offset-2 col-lg-10">
 						<hr />
-						<button class="btn btn-primary btn-lg btn-block" id="login" type="button">[[login:login]]</button>
+						<button class="btn btn-primary btn-lg btn-block" id="login" type="submit">[[login:login]]</button>
 						<!-- IF showResetLink -->
 						&nbsp; <a id="reset-link" href="{relative_path}/reset">[[login:forgot_password]]</a>
 						<!-- ENDIF showResetLink -->
