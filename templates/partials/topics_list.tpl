@@ -1,11 +1,16 @@
 		<ul id="topics-container" data-nextstart="{nextStart}">
 			<!-- BEGIN topics -->
-			<li class="category-item<!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted --><!-- IF topics.unread --> unread<!-- ENDIF topics.unread -->" data-tid="{topics.tid}">
+			<li class="category-item<!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted --><!-- IF topics.unread --> unread<!-- ENDIF topics.unread -->" data-tid="{topics.tid}" data-cid="{topics.cid}">
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
+
+					<!-- IF showSelect -->
+					<i class="fa fa-fw fa-square-o pull-left select"></i>
+					<!-- ENDIF showSelect -->
+
 					<a href="{relative_path}/user/{topics.user.userslug}" class="pull-left">
 						<img class="img-rounded user-img" src="{topics.user.picture}" title="{topics.user.username}" />
 					</a>
-					
+
 					<h3>
 						<a href="{relative_path}/topic/{topics.slug}">
 							<strong><!-- IF topics.pinned --><i class="fa fa-thumb-tack"></i><!-- ENDIF topics.pinned --> <!-- IF topics.locked --><i class="fa fa-lock"></i><!-- ENDIF topics.locked --></strong>
