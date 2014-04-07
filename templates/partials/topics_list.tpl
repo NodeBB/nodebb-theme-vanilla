@@ -4,7 +4,7 @@
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
 
 					<!-- IF showSelect -->
-					<i class="fa fa-fw fa-square-o pull-left select"></i>
+					<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
 					<!-- ENDIF showSelect -->
 
 					<a href="{relative_path}/user/{topics.user.userslug}" class="pull-left">
