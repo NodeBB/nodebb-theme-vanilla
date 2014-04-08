@@ -19,12 +19,10 @@
 	    <script>__lt_ie_9__ = 1;</script>
 	<![endif]-->
 
-	<script src="{relative_path}/src/utils.js"></script>
 	<script src="{relative_path}/vendor/jquery/js/jquery.js"></script>
 	<script src="{relative_path}/vendor/jquery/js/jquery-ui-1.10.4.custom.js"></script>
 	<script src="{relative_path}/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="{relative_path}/socket.io/socket.io.js"></script>
-	<script src="{relative_path}/src/app.js?{cache-buster}"></script>
 	<script src="{relative_path}/src/templates.js?{cache-buster}"></script>
 	<script src="{relative_path}/src/translator.js?{cache-buster}"></script>
 	<script src="{relative_path}/src/ajaxify.js?{cache-buster}"></script>
@@ -40,6 +38,8 @@
 	<script src="{relative_path}/vendor/xregexp/xregexp.js"></script>
 	<script src="{relative_path}/vendor/xregexp/unicode/unicode-base.js"></script>
 	<script src="{relative_path}/vendor/tabIndent/tabIndent.js"></script>
+	<script src="{relative_path}/src/utils.js"></script>
+	<script src="{relative_path}/src/app.js?{cache-buster}"></script>
 
 	<script>
 		require.config({
