@@ -9,6 +9,7 @@
 
 
 <div class="row">
+	<!-- IF allowLocalLogin -->
 	<div class="{login_window:spansize}">
 		<div class="well well-lg">
 			<div class="alert alert-danger" id="login-error-notify" style="display:none">
@@ -52,6 +53,7 @@
 
 		</div>
 	</div>
+	<!-- ENDIF allowLocalLogin -->
 
 	<!-- IF alternate_logins -->
 	<div class="col-md-6">

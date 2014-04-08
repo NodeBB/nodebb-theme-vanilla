@@ -97,6 +97,11 @@
 				</div>
 				<div class="checkbox">
 					<label>
+						<input type="checkbox" data-field="allowLocalLogin" checked> <strong>Allow local login</strong>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
 						<input type="checkbox" data-field="privateUserInfo"> <strong>Make user info private</strong>
 					</label>
 				</div>
