@@ -10,7 +10,7 @@
 
 <div class="row">
 	<!-- IF allowLocalLogin -->
-	<div class="{login_window:spansize}">
+	<div class="<!-- IF alternate_logins -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF alternate_logins -->">
 		<div class="well well-lg">
 			<div class="alert alert-danger" id="login-error-notify" style="display:none">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -56,7 +56,7 @@
 	<!-- ENDIF allowLocalLogin -->
 
 	<!-- IF alternate_logins -->
-	<div class="col-md-6">
+	<div class="<!-- IF allowLocalLogin -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF allowLocalLogin -->">
 		<div class="well well-lg">
 			<h4>[[login:alternative_logins]]</h4>
 			<ul class="alt-logins">
