@@ -26,7 +26,7 @@
 </ul>
 
 <p>
-	<a href="{url}">Click here visit {site_title}</a>
+	<a href="{url}">Click here to visit {site_title}</a>
 </p>
 
 <p>
