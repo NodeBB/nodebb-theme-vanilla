@@ -35,7 +35,9 @@
 				"
 			>
 				<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
+					<!-- IF categories.icon -->
 					<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
+					<!-- ENDIF categories.icon -->
 					<div class="category-box" itemprop="description">{categories.description}</div>
 					<!-- BEGIN posts -->
 					<div class="category-box">
@@ -45,7 +47,9 @@
 						</div>
 					</div>
 					<!-- END posts -->
+					<!-- IF categories.icon -->
 					<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
+					<!-- ENDIF categories.icon -->
 				</div>
 			</div>
 		</a>
