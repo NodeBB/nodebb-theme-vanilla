@@ -33,6 +33,16 @@
 				</div>
 			</div>
 
+			<h4>[[global:language]]</h4>
+			<div class="well">
+				<select data-property="language" class="form-control">
+					<!-- BEGIN languages -->
+					<option value="{languages.code}">{languages.name} ({languages.code})</option>
+					<!-- END languages -->
+				</select>
+			</div>
+
+
 			<!-- BEGIN settings -->
 			<h4>{settings.title}</h4>
 			<div class="well">
@@ -47,5 +57,5 @@
 	</div>
 </div>
 
-<input type="hidden" template-variable="yourid" value="{yourid}" />
-<input type="hidden" template-variable="theirid" value="{theirid}" />
+<input type="hidden" template-variable="yourid" value="{user.yourid}" />
+<input type="hidden" template-variable="theirid" value="{user.theirid}" />
