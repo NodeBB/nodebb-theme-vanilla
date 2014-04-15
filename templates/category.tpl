@@ -14,29 +14,29 @@
 	</li>
 </ol>
 
-<div>
-	<!-- IF privileges.write -->
-	<button id="new_post" class="btn btn-primary">[[category:new_topic_button]]</button>
-	<!-- ENDIF privileges.write -->
-	<!-- IF !config.disableSocialButtons -->
-	<div class="inline-block pull-right">
-		<a href="#" class="facebook-share"><i class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
-		<a href="#" class="twitter-share"><i class="fa fa-twitter-square fa-2x"></i></a>&nbsp;
-		<a href="#" class="google-share"><i class="fa fa-google-plus-square fa-2x"></i></a>&nbsp;
-	</div>
-	<!-- ENDIF !config.disableSocialButtons -->
-</div>
-
-<hr/>
-
-<!-- IF !topics.length -->
-<div class="alert alert-warning" id="category-no-topics">
-	[[category:no_topics]]
-</div>
-<!-- ENDIF !topics.length -->
-
 <div class="category row">
 	<div class="{topic_row_size}" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
+
+		<div class="header" class="category-tools">
+			<!-- IF privileges.write -->
+			<button id="new_post" class="btn btn-primary">[[category:new_topic_button]]</button>
+			<!-- ENDIF privileges.write -->
+
+			<span class="dropdown share-dropdown pull-right">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					[[topic:share]] <span class="caret"></span>
+				</button>
+				<!-- IMPORT partials/share_dropdown.tpl -->
+			</span>
+
+		</div>
+
+		<!-- IF !topics.length -->
+		<div class="alert alert-warning" id="category-no-topics">
+			[[category:no_topics]]
+		</div>
+		<!-- ENDIF !topics.length -->
+
 		<ul id="topics-container" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}">
 			<meta itemprop="itemListOrder" content="descending">
 			<!-- BEGIN topics -->
