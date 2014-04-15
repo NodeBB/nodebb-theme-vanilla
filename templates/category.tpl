@@ -44,11 +44,6 @@
 
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
 
-					<!--
-						todo: tidy this up, not sure what to do with the topic thumbs
-						todo: fix this nesting if issue#1065 is a win
-						todo: add a check for config.allowTopicsThumbnail if issue#1066 is a win
-					-->
 					<a href="../../user/{topics.user.userslug}" class="pull-left">
 						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
 					</a>
