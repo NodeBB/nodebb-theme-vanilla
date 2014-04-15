@@ -24,6 +24,12 @@
 		<br/>
 		<a href="{relative_path}/user/{users.userslug}" target="_blank">{users.username}</a>
 		<br/>
+
+		<div title="uid">
+			<i class='fa fa-user'></i>
+			<span>{users.uid}</span>
+		</div>
+
 		<div title="reputation">
 			<i class='fa fa-star'></i>
 			<span id='reputation'>{users.reputation}</span>

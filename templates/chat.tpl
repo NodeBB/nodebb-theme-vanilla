@@ -8,7 +8,11 @@
 
 			</div>
 			<div class="modal-body">
-				<ul id="chat-content" class="well well-sm"></ul>
+				<ul id="chat-content" class="well well-sm">
+
+					<span class="user-typing hide"></span>
+				</ul>
+
 				<div class="input-group">
 					<input id="chat-message-input" type="text" placeholder="[[modules:chat.placeholder]]" name="chat-message" class="form-control">
 					<span class="input-group-btn">
