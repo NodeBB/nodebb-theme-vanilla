@@ -4,14 +4,25 @@
 <div class="account">
 	<div class="row">
 		<div class="col-xs-12">
-			<h4>[[global:privacy]]</h4>
+			<h4>[[global:email]]</h4>
 			<div class="well">
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" data-property="showemail" /> <strong>[[user:show_email]]</strong>
 					</label>
 				</div>
+				<div class="form-group">
+					<label for="dailyDigestFreq">[[user:digest_label]]</label>
+					<select class="form-control" id="dailyDigestFreq" data-property="dailyDigestFreq">
+						<option value="off">[[user:digest_off]]</option>
+						<option value="daily">[[user:digest_daily]]</option>
+						<option value="weekly" disabled="disabled">[[user:digest_weekly]]</option>
+						<option value="monthly" disabled="disabled">[[user:digest_monthly]]</option>
+					</select>
+					<p class="help-block">[[user:digest_description]]</p>
+				</div>
 			</div>
+
 			<h4>[[global:pagination]]</h4>
 			<div class="well">
 				<div class="checkbox">
