@@ -17,10 +17,13 @@
 			<div class="panel-heading">Notices</div>
 			<div class="panel-body">
 				<div>
-					<!-- IF emailerInstalled --><i class="fa fa-check alert-success"></i><!-- ELSE --><i class="fa fa-times alert-danger"></i><!-- ENDIF emailerInstalled --> Emailer Installed
+					<!-- IF !restartRequired --><i class="fa fa-fw fa-check alert-success"></i> Restart not required<!-- ELSE --><i class="fa fa-fw fa-times alert-danger"></i> Restart Required<!-- ENDIF !restartRequired -->
 				</div>
 				<div>
-					<!-- IF searchInstalled --><i class="fa fa-check alert-success"></i><!-- ELSE --><i class="fa fa-times alert-danger"></i><!-- ENDIF searchInstalled --> Search Plugin Installed
+					<!-- IF emailerInstalled --><i class="fa fa-fw fa-check alert-success"></i><!-- ELSE --><i class="fa fa-fw fa-times alert-danger"></i><!-- ENDIF emailerInstalled --> Emailer Installed
+				</div>
+				<div>
+					<!-- IF searchInstalled --><i class="fa fa-fw fa-check alert-success"></i><!-- ELSE --><i class="fa fa-fw fa-times alert-danger"></i><!-- ENDIF searchInstalled --> Search Plugin Installed
 				</div>
 			</div>
 		</div>
