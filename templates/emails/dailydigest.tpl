@@ -2,6 +2,7 @@
 	Hello {username},
 </p>
 
+<!-- IF notifications.length -->
 <p>
 	You have some unread notifications from {site_title}:
 </p>
@@ -15,14 +16,21 @@
 </ul>
 
 <hr />
+<!-- ENDIF notifications.length -->
 
 <p>Latest topics from {site_title}</p>
 <ul>
+	<!-- IF recent.length -->
 	<!-- BEGIN recent -->
 	<li style="text-decoration: none; list-style-type: none; padding-bottom: 0.5em;">
 		<a href="{url}/topic/{recent.slug}"><img style="vertical-align: middle; width: 16px; height: 16px; padding-right: 1em;" src="{recent.teaser.picture}" title="{recent.teaser.username}" /> {recent.title}</a>
 	</li>
 	<!-- END recent -->
+	<!-- ELSE -->
+	<li style="text-decoration: none; list-style-type: none; padding-bottom: 0.5em; font-style: italic;">
+		There have been no active topics in the past day
+	</li>
+	<!-- ENDIF recent.length -->
 </ul>
 
 <p>
