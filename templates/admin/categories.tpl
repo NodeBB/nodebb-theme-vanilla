@@ -1,9 +1,8 @@
 
 <div class="categories">
-	<h1><i class="fa fa-folder"></i> Categories</h1>
-	<hr />
-
-	<button class="btn btn-primary" id="addNew">New Category</button>
+	<h1><i class="fa fa-folder"></i> Categories
+		<div class="pull-right"><button class="btn btn-primary" id="addNew">New Category</button></div>
+	</h1>
 	<hr />
 	<ul class="nav nav-pills">
 		<li class='active'><a href='/admin/categories/active'>Active</a></li>
