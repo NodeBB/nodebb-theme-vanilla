@@ -14,71 +14,46 @@
 		<ul class="col-md-12" id="entry-container">
 		<!-- BEGIN categories -->
 			<li data-cid="{categories.cid}" class="entry-row">
-				<div class="row">
-					<div class="col-sm-2 hidden-xs text-center">
-						<div class="preview-box" style="
-							<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
-							<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
-							color: {categories.color};
-							background-size:cover;
-						">
-							<div class="icon">
-								<i data-name="icon" value="{categories.icon}" class="fa {categories.icon} fa-2x"></i>
+				<div class="well">
+					<form class="form">
+						<div class="row">
+							<div class="col-sm-2 hidden-xs text-center">
+								<div class="preview-box" style="
+									<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
+									<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+									color: {categories.color};
+									background-size:cover;
+								">
+									<div class="icon">
+										<i data-name="icon" value="{categories.icon}" class="fa {categories.icon} fa-2x"></i>
+									</div>
+								</div><br />
+								<!-- IF categories.image -->
+								<small class="pointer delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> Delete Image</small>
+								<!-- ENDIF categories.image -->
 							</div>
-						</div><br />
-						<!-- IF categories.image -->
-						<small class="pointer delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> Delete Image</small>
-						<!-- ENDIF categories.image -->
-					</div>
-					<div class="col-sm-10">
-						<form class="form">
-							<div class="row">
+							<div class="col-sm-10">
+								<h3 data-edit-target="#cid-{categories.cid}-name"><span>{categories.name}</span> <small><i class="fa fa-edit"></i></small></h3>
+								<input id="cid-{categories.cid}-name" type="text" class="form-control hide" placeholder="Category Name" data-name="name" value="{categories.name}" />
+								<h4 data-edit-target="#cid-{categories.cid}-description"><span>{categories.description}</span> <small><i class="fa fa-edit"></i></small></h4>
+								<input id="cid-{categories.cid}-description" data-name="description" placeholder="Category Description" value="{categories.description}" class="form-control category_description input-sm description hide"></input>
+
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
-										<label for="cid-{categories.cid}-name">Category Name</label>
-										<input id="cid-{categories.cid}-name" type="text" class="form-control" placeholder="Category Name" data-name="name" value="{categories.name}" />
+										<label for="cid-{categories.cid}-bgColor">Background Colour</label>
+										<input id="cid-{categories.cid}-bgColor" placeholder="#0059b2" data-name="bgColor" value="{categories.bgColor}" class="form-control category_bgColor" />
 									</div>
 								</div>
-								<div class="col-sm-4 hidden-xs">
-									<div class="form-group">
-										<div class="form-group">
-											<label for="cid-{categories.cid}-bgColor">Background Colour</label>
-											<input id="cid-{categories.cid}-bgColor" placeholder="#0059b2" data-name="bgColor" value="{categories.bgColor}" class="form-control category_bgColor" />
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4 hidden-xs">
-									<div class="form-group">
-										<div class="form-group">
-											<label for="cid-{categories.cid}-color">Text Colour</label>
-											<input id="cid-{categories.cid}-color" placeholder="#fff" data-name="color" value="{categories.color}" class="form-control category_color" />
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12">
-									<div class="form-group">
-										<div class="form-group">
-											<label for="cid-{categories.cid}-description">Description</label>
-											<input id="cid-{categories.cid}-description" data-name="description" placeholder="Category Description" value="{categories.description}" class="form-control category_description description"></input>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="row">
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
-										<label for="cid-{categories.cid}-class">Custom Class</label>
-										<input id="cid-{categories.cid}-class" type="text" class="form-control" placeholder="col-md-6 col-xs-6" data-name="class" value="{categories.class}" />
+										<label for="cid-{categories.cid}-color">Text Colour</label>
+										<input id="cid-{categories.cid}-color" placeholder="#fff" data-name="color" value="{categories.color}" class="form-control category_color" />
 									</div>
 								</div>
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
 										<label for="cid-{categories.cid}-imageClass">Image Class</label>
-										<select id="cid-{categories.cid}-imageClass" class="form-control" data-name="imageClass" data-value="{categories.imageClass}">
+											<select id="cid-{categories.cid}-imageClass" class="form-control" data-name="imageClass" data-value="{categories.imageClass}">
 											<option value="auto">auto</option>
 											<option value="cover">cover</option>
 											<option value="contain">contain</option>
@@ -87,13 +62,16 @@
 								</div>
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
+										<label for="cid-{categories.cid}-class">Custom Class</label>
+										<input id="cid-{categories.cid}-class" type="text" class="form-control" placeholder="col-md-6 col-xs-6" data-name="class" value="{categories.class}" />
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-12">
+									<div class="form-group">
 										<label for="cid-{categories.cid}-numRecentReplies"># of Recent Replies Displayed</label>
 										<input id="cid-{categories.cid}-numRecentReplies" type="text" class="form-control" placeholder="2" data-name="numRecentReplies" value="{categories.numRecentReplies}" />
 									</div>
 								</div>
-
-							</div>
-							<div class="row">
 								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
 										<label for="cid-{categories.cid}-link">External Link</label>
@@ -102,8 +80,6 @@
 								</div>
 								<div class="col-sm-8 col-xs-12">
 									<div class="form-group">
-
-										<label>&nbsp;</label>
 										<div class="dropdown">
 											<button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-cogs"></i> Options</button>
 											<ul class="dropdown-menu" role="menu">
@@ -121,15 +97,13 @@
 
 											<button class="btn btn-primary save">Save</button>
 										</div>
-
 									</div>
 								</div>
+
+								<input type="hidden" data-name="order" data-value="{categories.order}"></input>
 							</div>
-
-
-							<input type="hidden" data-name="order" data-value="{categories.order}"></input>
-						</form>
-					</div>
+						</div>
+					</form>
 				</div>
 			</li>
 
