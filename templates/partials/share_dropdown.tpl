@@ -1,5 +1,5 @@
 
-<ul class="dropdown-menu" role="menu">
+<ul class="dropdown-menu pull-right" role="menu">
 
 	<li role="presentation" class="dropdown-header">[[category:share_this_category]]</li>
 	<!-- IF !config.disableSocialButtons -->
