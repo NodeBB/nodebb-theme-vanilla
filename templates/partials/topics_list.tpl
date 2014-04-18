@@ -20,12 +20,12 @@
 
 					<small>
 						<span class="topic-stats">
-							[[category:posts]]
+							[[global:posts]]
 							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
 						</span>
 						|
 						<span class="topic-stats">
-							[[category:views]]
+							[[global:views]]
 							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
 						</span>
 						|

@@ -1,8 +1,8 @@
 <div class="inline-block">
 	<small class="topic-stats">
-		<span>[[category:posts]]</span>
+		<span>[[global:posts]]</span>
 		<strong><span class="topic-post-count" class="human-readable-number" title="{postcount}">{postcount}</span></strong> |
-		<span>[[category:views]]</span>
+		<span>[[global:views]]</span>
 		<strong><span class="human-readable-number" title="{viewcount}">{viewcount}</span></strong> |
 		<span>[[category:browsing]]</span>
 	</small>
