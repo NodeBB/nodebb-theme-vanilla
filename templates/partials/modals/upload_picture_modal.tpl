@@ -18,7 +18,7 @@
 
 					<div id="upload-progress-box" class="progress progress-striped">
 						<div id="upload-progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0">
-							<span class="sr-only"> [[footer:success]]</span>
+							<span class="sr-only"> [[success:success]]</span>
 						</div>
 					</div>
 

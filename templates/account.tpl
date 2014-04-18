@@ -39,12 +39,12 @@
 				<div class="panel-body">
 					<div class="inline-block text-center">
 						<div class="human-readable-number" title="{reputation}">{reputation}</div>
-						<div class="account-bio-label">[[user:reputation]]</div>
+						<div class="account-bio-label">[[global:reputation]]</div>
 					</div>
 
 					<div class="inline-block text-center">
 						<div class="human-readable-number" title="{postcount}">{postcount}</div>
-						<div class="account-bio-label">[[user:posts]]</div>
+						<div class="account-bio-label">[[global:posts]]</div>
 					</div>
 
 					<div class="inline-block text-center">
@@ -137,12 +137,8 @@
 						<p>{posts.content}</p>
 						<small>
 							<span class="pull-right">
-								<a href="../../topic/{posts.tid}/#{posts.pid}">[[global:posted]]</a>
-								[[global:in]]
-								<a href="../../category/{posts.category.slug}">
-									<i class="fa {posts.category.icon}"></i> {posts.category.name}
-								</a>
-								<span class="timeago" title="{posts.relativeTime}"></span>
+								[[global:posted_in_ago, ../../category/{posts.category.slug}, {posts.category.icon}, {posts.category.name}, {posts.relativeTime}]] &bull;
+								<a href="../../topic/{posts.tid}/#{posts.pid}">[[global:read_more]] <i class="fa fa-chevron-circle-right"></i></a>
 							</span>
 						</small>
 					</div>

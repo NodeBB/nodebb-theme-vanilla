@@ -30,10 +30,7 @@
 						</span>
 						|
 						<span>
-							[[category:posted]] [[global:in]]
-							<a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>
-							<span class="timeago" title="{topics.relativeTime}"></span>
-							</span>
+							[[global:posted_in_ago_by, {relative_path}/category/{topics.category.slug}, {topics.category.icon}, {topics.category.name}, {topics.relativeTime}, {topics.user.username}]]
 						</span>
 
 						<span class="pull-right">
@@ -44,9 +41,8 @@
 								<img class="teaser-pic" src="{topics.teaser.picture}" title="{topics.teaser.username}"/>
 							</a>
 							<a href="{relative_path}/topic/{topics.slug}#{topics.teaser.pid}">
-								[[category:replied]]
+								[[global:replied_ago, {topics.teaser.timestamp}]]
 							</a>
-							<span class="timeago" title="{topics.teaser.timestamp}"></span>
 							<!-- ENDIF topics.unreplied -->
 						</span>
 					</small>

@@ -74,7 +74,7 @@
 						</span>
 						|
 						<span>
-							[[category:posted]] <span class="timeago" title="{topics.relativeTime}"></span>
+							[[global:posted_ago, {topics.relativeTime}]]
 						</span>
 
 						<span class="pull-right">
@@ -85,9 +85,8 @@
 								<img class="teaser-pic" src="{topics.teaser.picture}" title="{topics.teaser.username}"/>
 							</a>
 							<a href="../../topic/{topics.slug}#{topics.teaser.pid}">
-								[[category:replied]]
+								[[global:replied_ago, {topics.teaser.timestamp}]]
 							</a>
-							<span class="timeago" title="{topics.teaser.timestamp}"></span>
 							<!-- ENDIF topics.unreplied -->
 						</span>
 					</small>

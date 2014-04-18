@@ -3,7 +3,7 @@
 		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
 	</li>
 	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">[[login:login]]</span>
+		<span itemprop="title">[[global:login]]</span>
 	</li>
 </ol>
 
@@ -25,9 +25,9 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="password" class="col-lg-2 control-label">[[login:password]]</label>
+					<label for="password" class="col-lg-2 control-label">[[user:password]]</label>
 					<div class="col-lg-10">
-						<input class="form-control" type="password" placeholder="[[login:password]]" name="password" id="password" />
+						<input class="form-control" type="password" placeholder="[[user:password]]" name="password" id="password" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -42,7 +42,7 @@
 				<div class="form-group">
 					<div class="col-lg-offset-2 col-lg-10">
 						<hr />
-						<button class="btn btn-primary btn-lg btn-block" id="login" type="submit">[[login:login]]</button>
+						<button class="btn btn-primary btn-lg btn-block" id="login" type="submit">[[global:login]]</button>
 						<!-- IF showResetLink -->
 						&nbsp; <a id="reset-link" href="{relative_path}/reset">[[login:forgot_password]]</a>
 						<!-- ENDIF showResetLink -->

@@ -132,14 +132,13 @@
 
 					<div class="post-info">
 						<span class="pull-right">
-							[[category:posted]] <span class="relativeTimeAgo timeago" title="{posts.relativeTime}"></span>
+							[[global:posted_ago, {posts.relativeTime}]]
 							<!-- IF posts.editor.username -->
-							<span>| [[category:last_edited_by]] <strong><a href="{relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong></span>
-							<span class="timeago" title="{posts.relativeEditTime}"></span>
+							<span>| [[global:last_edited_by_ago, {relative_path}/user/{posts.editor.userslug}, {posts.editor.username}, {posts.relativeTime}]]</span>
 							<!-- ENDIF posts.editor.username -->
 						</span>
 						<span class="pull-left">
-							[[topic:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[topic:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>
+							[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>
 							<!-- IF custom_profile_info -->
 								<!-- BEGIN custom_profile_info -->
 								| {posts.custom_profile_info.content}
