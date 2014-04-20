@@ -37,8 +37,8 @@
 							<!-- IF topics.unreplied -->
 							[[category:no_replies]]
 							<!-- ELSE -->
-							<a href="{relative_path}/user/{topics.teaser.userslug}">
-								<img class="teaser-pic" src="{topics.teaser.picture}" title="{topics.teaser.username}"/>
+							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
+								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
 							</a>
 							<a href="{relative_path}/topic/{topics.slug}#{topics.teaser.pid}">
 								[[global:replied_ago, {topics.teaser.timestamp}]]
