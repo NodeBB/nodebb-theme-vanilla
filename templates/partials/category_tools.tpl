@@ -7,6 +7,7 @@
 		<li><a href="#" class="lock_thread"><i class="fa fa-fw fa-lock"></i> [[topic:thread_tools.lock]]</a></li>
 		<li class="divider"></li>
 		<li><a href="#" class="move_thread"><i class="fa fa-fw fa-arrows"></i> [[topic:thread_tools.move]]</a></li>
+		<li><a href="#" class="move_all_threads"><i class="fa fa-fw fa-arrows"></i> [[topic:thread_tools.move_all]]</a></li>
 		<li class="divider"></li>
 		<li><a href="#" class="delete_thread"><span><i class="fa fa-fw fa-trash-o"></i> [[topic:thread_tools.delete]]</span></a></li>
 		<!-- BEGIN thread_tools -->
