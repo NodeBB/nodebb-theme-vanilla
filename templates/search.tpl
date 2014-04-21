@@ -36,7 +36,7 @@
 					<div>
 						<small>
 							<span class="pull-right">
-								[[global:posted_in_ago, ../../category/{topics.category.slug}, {topics.category.icon}, {topics.category.name}, {topics.relativeTime}]]
+								[[global:posted_in_ago, <a href="../../category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
 							</span>
 						</small>
 					</div>
@@ -67,7 +67,7 @@
 					<div>
 						<small>
 							<span class="pull-right">
-								[[global:posted_in_ago, ../../category/{posts.category.slug}, {posts.category.icon}, {posts.category.name}, {posts.relativeTime}]]
+								[[global:posted_in_ago, <a href="../../category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
 							</span>
 						</small>
 					</div>
