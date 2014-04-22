@@ -30,18 +30,22 @@
 						</span>
 						|
 						<span>
-							[[global:posted_in_ago_by, {relative_path}/category/{topics.category.slug}, {topics.category.icon}, {topics.category.name}, {topics.relativeTime}, {topics.user.username}]]
+							<!-- IF topics.user.userslug -->
+								[[global:posted_in_ago_by, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, {topics.user.username}]]
+							<!-- ELSE -->
+								[[global:posted_in_ago_by_guest, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
+							<!-- ENDIF topics.user.userslug -->
 						</span>
 
 						<span class="pull-right">
 							<!-- IF topics.unreplied -->
 							[[category:no_replies]]
 							<!-- ELSE -->
-							<a href="{relative_path}/user/{topics.teaser.userslug}">
-								<img class="teaser-pic" src="{topics.teaser.picture}" title="{topics.teaser.username}"/>
+							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
+								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
 							</a>
 							<a href="{relative_path}/topic/{topics.slug}#{topics.teaser.pid}">
-								[[global:replied_ago, {topics.teaser.timestamp}]]
+								[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 							</a>
 							<!-- ENDIF topics.unreplied -->
 						</span>

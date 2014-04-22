@@ -45,7 +45,7 @@
 			<br/>
 			<div class="user-info">
 				<span id="online_anon_count">{anonymousUserCount}</span>
-				<span>Anonymous</span>
+				<span>[[global:guests]]</span>
 			</div>
 		</li>
 

@@ -35,7 +35,7 @@
 				<meta itemprop="dateModified" content="{posts.relativeEditTime}">
 
 				<div class="col-md-1 profile-image-block hidden-xs hidden-sm sub-post">
-					<a href="{relative_path}/user/{posts.user.userslug}">
+					<a href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 						<img src="{posts.user.picture}" align="left" class="img-thumbnail" itemprop="image" />
 						<!-- IF posts.user.banned -->
 						<span class="label label-danger">[[topic:banned]]</span>
@@ -45,7 +45,7 @@
 
 				<div class="col-md-11 panel panel-default post-block topic-item">
 
-					<a class="main-post avatar" href="{relative_path}/user/{posts.user.userslug}">
+					<a class="main-post avatar" href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" width=150 height=150 />
 					</a>
 					<h3 class="main-post">
@@ -55,15 +55,15 @@
 					<div class="topic-buttons">
 
 						<div class="btn-group">
-							<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button" title="[[topic:posted_by]] {posts.user.username}">
+							<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button" title="[[topic:posted_by, {posts.user.username}]]">
 								<i class="fa fa-circle status offline"></i>
 								<span class="visible-xs-inline visible-md-inline"><img class="" src="{posts.picture}" width=18 height=18 />&nbsp;</span>
-								<span class="username-field" href="{relative_path}/user/{posts.user.userslug}" itemprop="author" data-username="{posts.username}">{posts.user.username}&nbsp;</span>
+								<span class="username-field" href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.username}">{posts.user.username}&nbsp;</span>
 								<span class="caret"></span>
 							</button>
 
 						    <ul class="dropdown-menu">
-								<li><a href="{relative_path}/user/{posts.user.userslug}"><i class="fa fa-user"></i> [[topic:profile]]</a></li>
+								<li><a href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->"><i class="fa fa-user"></i> [[topic:profile]]</a></li>
 								<li><a href="#" class="chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
 						    </ul>
 						</div>
@@ -132,9 +132,9 @@
 
 					<div class="post-info">
 						<span class="pull-right">
-							[[global:posted_ago, {posts.relativeTime}]]
+							[[global:posted_ago, <span class="timeago" title="{posts.relativeTime}"></span>]]
 							<!-- IF posts.editor.username -->
-							<span>| [[global:last_edited_by_ago, {relative_path}/user/{posts.editor.userslug}, {posts.editor.username}, {posts.relativeEditTime}]]</span>
+							<span>| [[global:last_edited_by_ago, <strong><a href="{relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</span>
 							<!-- ENDIF posts.editor.username -->
 						</span>
 						<span class="pull-left">
