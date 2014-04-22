@@ -134,7 +134,7 @@
 						<span class="pull-right">
 							[[global:posted_ago, {posts.relativeTime}]]
 							<!-- IF posts.editor.username -->
-							<span>| [[global:last_edited_by_ago, {relative_path}/user/{posts.editor.userslug}, {posts.editor.username}, {posts.relativeTime}]]</span>
+							<span>| [[global:last_edited_by_ago, {relative_path}/user/{posts.editor.userslug}, {posts.editor.username}, {posts.relativeEditTime}]]</span>
 							<!-- ENDIF posts.editor.username -->
 						</span>
 						<span class="pull-left">
