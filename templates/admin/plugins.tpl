@@ -19,7 +19,7 @@
 
 
 			<!-- IF plugins.installed -->
-			<button data-action="toggleInstall" class="btn btn-warning"><i class="fa fa-trash-o"></i> Uninstall</button>
+			<button data-action="toggleInstall" class="btn btn-danger"><i class="fa fa-trash-o"></i> Uninstall</button>
 			<!-- ELSE -->
 			<button data-action="toggleInstall" class="btn btn-success"><i class="fa fa-download"></i> Install</button>
 			<!-- ENDIF plugins.installed -->
