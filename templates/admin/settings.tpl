@@ -24,12 +24,15 @@
 				<input type="text" class="form-control" placeholder="A short description about your community" data-field="description" /><br />
 				<label>Site Keywords</label>
 				<input type="text" class="form-control" placeholder="Keywords describing your community, comma-seperated" data-field="keywords" /><br />
+
 				<label>Site Logo</label>
 				<input id="logoUrl" type="text" class="form-control" placeholder="Path to a logo to display on forum header" data-field="brand:logo" /><br />
-				<input id="uploadLogoBtn" type="button" class="btn btn-default" value="Upload Logo"></input> <br /> <br/>
+				<input data-action="upload" data-target="logoUrl" data-route="{relative_path}/admin/uploadlogo" type="button" class="btn btn-default" value="Upload Logo"></input> <br /> <br/>
+
 				<label>Favicon</label><br />
 				<input id="faviconUrl" type="text" class="form-control" placeholder="favicon.ico" data-field="brand:favicon" /><br />
-				<input id="uploadFaviconBtn" type="button" class="btn btn-default" value="Upload Favicon"></input> <br />
+				<input data-action="upload" data-target="faviconUrl" data-route="{relative_path}/admin/uploadfavicon" type="button" class="btn btn-default" value="Upload"></input> <br /> <br/>
+
 				<hr/>
 				<div class="checkbox">
 					<label>
@@ -115,6 +118,25 @@
 						<input type="checkbox" data-field="profile:convertProfileImageToPNG"> <strong>Convert profile image uploads to PNG</strong>
 					</label>
 				</div>
+
+				<div class="form-group">
+					<label>Default Gravatar Image</label>
+					<select class="form-control" data-field="defaultGravatarImage">
+						<option value="">default</option>
+						<option value="identicon">identicon</option>
+						<option value="mm">mystery-man</option>
+						<option value="monsterid">monsterid</option>
+						<option value="wavatar">wavatar</option>
+						<option value="retro">retro</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label>Custom Gravatar Default Image</label>
+					<input id="customGravatarDefaultImage" type="text" class="form-control" placeholder="A custom image to use instead of gravatar defaults" data-field="customGravatarDefaultImage" /><br />
+					<input data-action="upload" data-target="customGravatarDefaultImage" data-route="{relative_path}/admin/uploadgravatardefault" type="button" class="btn btn-default" value="Upload"></input>
+				</div>
+
 				<div class="form-group">
 					<label>Days to remember user login sessions</label>
 					<input type="text" class="form-control" data-field="loginDays" placeholder="14" />
