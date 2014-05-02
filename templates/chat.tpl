@@ -10,7 +10,7 @@
 			<div class="modal-body">
 				<ul id="chat-content" class="well well-sm">
 
-					<span class="user-typing hide"></span>
+					<span class="user-typing hide"><i class="fa fa-pencil"></i> <span class="text"></span></span>
 				</ul>
 
 				<div class="input-group">
