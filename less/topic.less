@@ -1,4 +1,37 @@
 .topic {
+	.post-content {
+		> blockquote {
+			blockquote, p {
+				display: none;
+			}
+
+
+			> *:first-child {
+				display: block;
+
+				blockquote {
+					> p:first-child {
+						display: block;
+					}
+				}
+			}
+
+			> *:first-child + blockquote {
+				display: block;
+
+				> p:first-child {
+					display: block;
+				}
+			}
+		}
+
+		> blockquote.uncollapsed {
+			blockquote, p {
+				display: block;
+			}
+		}
+	}
+	
 
 	&.deleted {
 		-moz-opacity: 0.30;
