@@ -8,20 +8,38 @@
 	<li class=''><a href='{relative_path}/admin/users/sort-posts'>Top Posters</a></li>
 	<li class=''><a href='{relative_path}/admin/users/sort-reputation'>Most Reputation</a></li>
 	<li class=''><a href='{relative_path}/admin/users/search'>Search</a></li>
+
+	<div class="btn-group pull-right">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Edit <span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="#" class="admin-user"><i class="fa fa-fw fa-shield"></i> Make Admin</a></li>
+			<li><a href="#" class="remove-admin-user"><i class="fa fa-fw fa-ban"></i> Remove Admin</a></li>
+			<li class="divider"></li>
+			<li><a href="#" class="ban-user"><i class="fa fa-fw fa-gavel"></i> Ban User</a></li>
+			<li><a href="#" class="unban-user"><i class="fa fa-fw fa-comment-o"></i> Unban User</a></li>
+			<li class="divider"></li>
+			<li><a href="#" class="delete-user"><i class="fa fa-fw fa-trash-o"></i> Delete User</a></li>
+		</ul>
+	</div>
 </ul>
 
 <br />
+
 <div class="search {search_display} well">
 	<input class="form-control" id="search-user" type="text" placeholder="Enter a username to search"/><br />
 	<i class="fa fa-spinner fa-spin none"></i>
 	<span id="user-notfound-notify" class="label label-danger hide">User not found!</span><br/>
 </div>
 
+
 <ul id="users-container" class="users admin">
 	<!-- BEGIN users -->
-	<div class="users-box" data-uid="{users.uid}" data-admin="{users.administrator}" data-username="{users.username}" data-banned="{users.banned}">
+	<div class="users-box" data-uid="{users.uid}" data-username="{users.username}">
+
 		<a href="{relative_path}/user/{users.userslug}" target="_blank"><img src="{users.picture}" class="img-thumbnail"/></a>
 		<br/>
+
+		<i class="fa fa-fw fa-square-o select pointer"></i>
 		<a href="{relative_path}/user/{users.userslug}" target="_blank">{users.username}</a>
 		<br/>
 
@@ -30,23 +48,12 @@
 			<span>{users.uid}</span>
 		</div>
 
-		<div title="reputation">
-			<i class='fa fa-star'></i>
-			<span id='reputation'>{users.reputation}</span>
-		</div>
-		<div title="post count">
-			<i class='fa fa-pencil'></i>
-			<span id='postcount'>{users.postcount}</span>
-		</div>
-		<div>
-			<a href="#" class="btn btn-default admin-btn">Admin</a>
-		</div>
-		<div>
-			<a href="#" class="btn btn-default ban-btn">Ban</a>
-		</div>
-		<div>
-			<a href="#" class="btn btn-default btn-danger delete-btn">Delete</a>
-		</div>
+		<span class="administrator label label-primary <!-- IF !users.administrator -->hide<!-- ENDIF !users.administrator -->">Admin</span>
+
+		<br/>
+
+		<span class="ban label label-danger <!-- IF !users.banned -->hide<!-- ENDIF !users.banned -->">Banned</span>
+
 	</div>
 	<!-- END users -->
 </ul>
