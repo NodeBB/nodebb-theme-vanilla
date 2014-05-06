@@ -62,7 +62,8 @@
 					<!-- END navigation -->
 				</ul>
 
-				<ul id="logged-in-menu" class="nav navbar-nav navbar-right hide pull-right">
+				<!-- IF isLoggedIn -->
+				<ul id="logged-in-menu" class="nav navbar-nav navbar-right pull-right">
 					<li class="notifications dropdown text-center hidden-xs">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="notif_dropdown"><i class="fa fa-fw fa-bell-o" data-content="0" title="[[global:header.notifications]]"></i></a>
 						<ul id="notif-list" class="dropdown-menu" aria-labelledby="notif_dropdown">
@@ -87,11 +88,11 @@
 
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
-							<img src=""/>
+							<img id="user-header-picture" src="{user.picture}"/>
 						</a>
 						<ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
-								<a id="user-profile-link" href=""><i class="fa fa-circle status-offline"></i><span>[[global:header.profile]]</span></a>
+								<a id="user-profile-link" href="{relative_path}/user/{user.userslug}"><i class="fa fa-circle status {user.status}"></i> <span id="user-header-name">{user.username}</span></a>
 							</li>
 							<li id="logout-link">
 								<a href="#">[[global:logout]]</a>
@@ -112,7 +113,7 @@
 						</ul>
 					</li>
 				</ul>
-
+				<!-- ELSE -->
 				<ul id="logged-out-menu" class="nav navbar-nav navbar-right pull-right">
 					<!-- IF allowRegistration -->
 					<li>
@@ -129,9 +130,9 @@
 						</a>
 					</li>
 				</ul>
-
+				<!-- ENDIF isLoggedIn -->
 				<!-- IF searchEnabled -->
-				<ul id="logged-conditional-menu" class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
 							<div class="hide" id="search-fields">
@@ -140,7 +141,7 @@
 								</div>
 								<button type="submit" class="btn btn-default hide">[[global:search]]</button>
 							</div>
-							<button id="search-button" type="button" class="btn btn-link hide"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
+							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
 						</form>
 					</li>
 				</ul>
