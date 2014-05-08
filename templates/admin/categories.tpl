@@ -181,7 +181,7 @@
 							<input class="form-control" type="text" id="permission-search" />
 						</div>
 					</form>
-					<ul class="search-results"></ul>
+					<ul class="search-results users"></ul>
 
 					<hr />
 					<form role="form">
@@ -189,7 +189,7 @@
 							<label for="permission-group-pick">User Groups</label>
 						</div>
 					</form>
-					<table class="table table-striped groups-results"></table>
+					<ul class="search-results groups"></ul>
 
 				</div>
 			</div>
