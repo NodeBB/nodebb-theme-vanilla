@@ -4,7 +4,11 @@
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 			Privileges <span class="caret"></span>
 		</button>
-		<!-- IMPORT partials/admin/categories/privilege-list.tpl -->
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#" data-priv="groups:read" class="<!-- IF groups.privileges.groups:read -->active<!-- ENDIF groups.privileges.groups:read -->">Access &amp; Read</a></li>
+			<li><a href="#" data-priv="groups:topics:create" class="<!-- IF groups.privileges.groups:topics:create -->active<!-- ENDIF groups.privileges.groups:topics:create -->">Create Topics</a></li>
+			<li><a href="#" data-priv="groups:topics:reply" class="<!-- IF groups.privileges.groups:topics:reply -->active<!-- ENDIF groups.privileges.groups:topics:reply -->">Reply to Topics</a></li>
+		</ul>
 	</div>
 	{groups.name}
 </li>
