@@ -4,6 +4,15 @@
 <div class="account">
 	<div class="row">
 		<div class="col-xs-12">
+			<h4>[[user:browsing]]</h4>
+			<div class="well">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="openOutgoingLinksInNewTab" /> <strong>[[user:open_links_in_new_tab]]</strong>
+					</label>
+				</div>
+			</div>
+
 			<h4>[[global:email]]</h4>
 			<div class="well">
 				<div class="checkbox">
