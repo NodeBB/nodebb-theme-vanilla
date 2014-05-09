@@ -26,3 +26,7 @@ Click here to visit {site_title}: {url}
 Thanks!
 
 {site_title}
+
+===
+
+This digest was sent to you due to your subscription settings. Click on the following link to alter those settings: {url}/user/{username}/settings

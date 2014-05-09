@@ -41,3 +41,8 @@
 	Thanks!<br />
 	<strong>{site_title}</strong>
 </p>
+
+<hr />
+<p>
+	This digest was sent to you due to your subscription settings. <a href="{url}/user/{username}/settings">Click here to alter those settings</a>.
+</p>
