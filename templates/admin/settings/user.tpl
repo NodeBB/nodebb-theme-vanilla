@@ -1,5 +1,5 @@
 	<div class="tab-pane" id="user">
-		<form>
+		<form role="form">
 			<div class="alert alert-warning">
 				<div class="checkbox">
 					<label>
@@ -16,11 +16,8 @@
 						<input type="checkbox" data-field="privateUserInfo"> <strong>Make user info private</strong>
 					</label>
 				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" data-field="disableSignatures"> <strong>Disable signatures</strong>
-					</label>
-				</div>
+
+				<h3>Avatars</h3>
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" data-field="profile:convertProfileImageToPNG"> <strong>Convert profile image uploads to PNG</strong>
@@ -45,10 +42,24 @@
 					<input data-action="upload" data-target="customGravatarDefaultImage" data-route="{relative_path}/admin/uploadgravatardefault" type="button" class="btn btn-default" value="Upload"></input>
 				</div>
 
+				<h3>Account Protection</h3>
+				<div class="form-group">
+					<label for="loginAttempts">Login attempts per hour</label>
+					<input id="loginAttempts" type="text" class="form-control" data-field="loginAttempts" placeholder="5" />
+					<p class="help-block">
+						If login attempts to a user&apos;s account exceeds this threshold, that account will be locked for a pre-configured amount of time
+					</p>
+				</div>
+				<div class="form-group">
+					<label for="lockoutDuration">Account Lockout Duration (minutes)</label>
+					<input id="lockoutDuration" type="text" class="form-control" data-field="lockoutDuration" placeholder="60" />
+				</div>
 				<div class="form-group">
 					<label>Days to remember user login sessions</label>
 					<input type="text" class="form-control" data-field="loginDays" placeholder="14" />
 				</div>
+
+				<h3>Other</h3>
 				<div class="form-group">
 					<label>Maximum User Image File Size</label>
 					<input type="text" class="form-control" placeholder="Maximum size of uploaded user images in kilobytes" data-field="maximumProfileImageSize" />
