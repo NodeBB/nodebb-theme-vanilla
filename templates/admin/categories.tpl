@@ -165,14 +165,8 @@
 					<h3>Category Permissions</h3>
 				</div>
 				<div class="modal-body">
-					<p>The following users can view &amp; read Topics in this Category</p>
-					<ul class="members" id="category-permissions-read"></ul>
-
-					<p>The following users can post and reply to Topics in this Category</p>
-					<ul class="members" id="category-permissions-write"></ul>
-
-					<p>The following users are moderators of this Category</p>
-					<ul class="members" id="category-permissions-mods"></ul>
+					<p>The following users have access control permissions in this Category</p>
+					<ul class="members"></ul>
 
 					<hr />
 					<form role="form">

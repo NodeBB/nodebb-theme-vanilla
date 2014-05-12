@@ -99,12 +99,12 @@
 							</button>
 						</div>
 
-						<!-- IF privileges.write -->
+						<!-- IF privileges.meta.topics:reply -->
 						<div class="btn-group">
 							<button class="btn btn-sm btn-default quote" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i></button>
 							<button class="btn btn-sm btn-primary btn post_reply" type="button">[[topic:reply]] <i class="fa fa-reply"></i></button>
 						</div>
-						<!-- ENDIF privileges.write -->
+						<!-- ENDIF privileges.meta.topics:reply -->
 
 						<div class="pull-right">
 							<div class="btn-group post-tools">
