@@ -61,6 +61,10 @@
 
 				<h3>Other</h3>
 				<div class="form-group">
+					<label>Number of flags to ban user</label>
+					<input type="text" class="form-control" value="3" placeholder="" data-field="flagsForBan" />
+				</div>
+				<div class="form-group">
 					<label>Maximum User Image File Size</label>
 					<input type="text" class="form-control" placeholder="Maximum size of uploaded user images in kilobytes" data-field="maximumProfileImageSize" />
 				</div>
