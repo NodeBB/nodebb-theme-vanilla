@@ -1,0 +1,31 @@
+.chats-list {
+	margin-top: 1em;
+	padding: 0;
+
+	li {
+		clear: both;
+		list-style-type: none;
+		padding: 1em;
+		margin-bottom: 0.5em;
+		.zebra;
+		.pointer;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			display: block;
+			.text-ellipsis;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.user-img {
+			width:24px;
+			height:24px;
+		}
+	}
+}
