@@ -40,6 +40,7 @@
 	<script src="{relative_path}/vendor/tabIndent/tabIndent.js"></script>
 	<script src="{relative_path}/src/utils.js"></script>
 	<script src="{relative_path}/src/app.js?{cache-buster}"></script>
+	<script src="{relative_path}/src/admin.js?{cache-buster}"></script>
 
 	<script>
 		require.config({
