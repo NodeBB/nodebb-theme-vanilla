@@ -22,8 +22,8 @@
 		<div class="tab-pane" id="skins">
 			<h3>Bootswatch Themes</h3>
 			<p>
-				NodeBB Themes are powered by Bootswatch, a repository containing themes built
-				with Bootstrap as a base theme.
+				NodeBB's skins are powered by Bootswatch, a repository containing themes built
+				with Bootstrap as a base theme. Currently, the Vanilla base theme is best optimized for use with Bootswatch.
 			</p>
 			<ul class="directory" id="bootstrap_themes">
 				<li><i class="fa fa-refresh fa-spin"></i> Loading Themes</li>
