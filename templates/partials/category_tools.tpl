@@ -17,4 +17,4 @@
 		<!-- END thread_tools -->
 	</ul>
 </div>
-<!-- ENDIF privileges.editable -->
+<!-- ENDIF privileges.meta.editable -->
