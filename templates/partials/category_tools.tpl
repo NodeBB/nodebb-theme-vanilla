@@ -1,4 +1,4 @@
-<!-- IF privileges.editable -->
+<!-- IF privileges.meta.editable -->
 <div class="btn-group thread-tools">
 	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">[[topic:thread_tools.title]] <span class="caret"></span></button>
 	<ul class="dropdown-menu pull-right">

@@ -48,9 +48,9 @@
 			<li class="category-item<!-- IF topics.locked --> locked<!-- ENDIF topics.locked --><!-- IF topics.pinned --> pinned<!-- ENDIF topics.pinned --><!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted --><!-- IF topics.unread --> unread<!-- ENDIF topics.unread -->" itemprop="itemListElement" data-tid="{topics.tid}" data-index="{topics.index}">
 
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
-					<!-- IF privileges.editable -->
+					<!-- IF privileges.meta.editable -->
 						<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
-					<!-- ENDIF privileges.editable -->
+					<!-- ENDIF privileges.meta.editable -->
 					<a href="../../user/{topics.user.userslug}" class="pull-left">
 						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
 					</a>
