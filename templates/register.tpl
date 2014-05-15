@@ -58,6 +58,16 @@
 						</div>
 					</div>
 				</div>
+
+                <!-- IF captcha -->
+                <div class="form-group">
+                    <label for="register-captcha" class="col-lg-4 control-label">Captcha</label>
+                    <div id="register-captcha" class="col-lg-8">
+                        {captcha}
+                    </div>
+                </div>
+                <!-- ENDIF captcha -->
+
 				<!-- IF termsOfUse -->
 				<div class="form-group">
 					<label class="col-lg-4 control-label">&nbsp;</label>
