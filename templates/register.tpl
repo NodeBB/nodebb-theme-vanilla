@@ -61,9 +61,9 @@
 
                 <!-- IF captcha -->
                 <div class="form-group">
-                    <label for="register-captcha" class="col-lg-4 control-label">Captcha</label>
+                    <label for="register-captcha" class="col-lg-4 control-label">{captcha.label}</label>
                     <div id="register-captcha" class="col-lg-8">
-                        {captcha}
+                        {captcha.html}
                     </div>
                 </div>
                 <!-- ENDIF captcha -->
