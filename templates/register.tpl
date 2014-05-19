@@ -16,9 +16,9 @@
 					<div class="col-lg-8">
 						<div class="input-group">
 							<input class="form-control" type="text" placeholder="[[register:email_address_placeholder]]" name="email" id="email" />
-					        <span class="input-group-addon">
-					        	<span id="email-notify"><i class="fa fa-circle-o"></i></span>
-					        </span>
+							<span class="input-group-addon">
+								<span id="email-notify"><i class="fa fa-circle-o"></i></span>
+							</span>
 						</div>
 						<span class="help-block">[[register:help.email]]</span>
 					</div>
@@ -28,9 +28,9 @@
 					<div class="col-lg-8">
 						<div class="input-group">
 							<input class="form-control" type="text" placeholder="[[register:username_placeholder]]" name="username" id="username" />
-					        <span class="input-group-addon">
-					        	<span id="username-notify"><i class="fa fa-circle-o"></i></span>
-					        </span>
+							<span class="input-group-addon">
+								<span id="username-notify"><i class="fa fa-circle-o"></i></span>
+							</span>
 						</div>
 						<span class="help-block">[[register:help.username_restrictions, {minimumUsernameLength}, {maximumUsernameLength}]]</span>
 					</div>
@@ -40,9 +40,9 @@
 					<div class="col-lg-8">
 						<div class="input-group">
 							<input class="form-control" type="password" placeholder="[[register:password_placeholder]]" name="password" id="password" />
-					        <span class="input-group-addon">
-					        	<span id="password-notify"><i class="fa fa-circle-o"></i></span>
-					        </span>
+							<span class="input-group-addon">
+								<span id="password-notify"><i class="fa fa-circle-o"></i></span>
+							</span>
 						</div>
 						<span class="help-block">[[register:help.minimum_password_length, {minimumPasswordLength}]]</span>
 					</div>
@@ -59,14 +59,14 @@
 					</div>
 				</div>
 
-                <!-- IF captcha -->
-                <div class="form-group">
-                    <label for="register-captcha" class="col-lg-4 control-label">{captcha.label}</label>
-                    <div id="register-captcha" class="col-lg-8">
-                        {captcha.html}
-                    </div>
-                </div>
-                <!-- ENDIF captcha -->
+				<!-- IF captcha -->
+				<div class="form-group">
+					<label for="register-captcha" class="col-lg-4 control-label">{captcha.label}</label>
+					<div id="register-captcha" class="col-lg-8">
+						{captcha.html}
+					</div>
+				</div>
+				<!-- ENDIF captcha -->
 
 				<!-- IF termsOfUse -->
 				<div class="form-group">
