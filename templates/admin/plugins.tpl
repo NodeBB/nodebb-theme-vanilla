@@ -5,7 +5,7 @@
 		<strong>Interested in writing plugins for NodeBB?</strong>
 	</p>
 	<p>
-		Full documentation regarding plugin authoring can be found in the <a target="_blank" href="https://github.com/designcreateplay/NodeBB/wiki/Writing-Plugins-for-NodeBB">NodeBB Wiki</a>.
+		Full documentation regarding plugin authoring can be found in the <a target="_blank" href="https://docs.nodebb.org/en/latest/plugins/create.html">NodeBB Wiki</a>.
 	</p>
 </div>
 
