@@ -7,18 +7,28 @@
 	<div class="row">
 		<div class="col-md-5 account-block">
 
-			<div class="text-center account-picture-block panel panel-default">
+			<div class="account-picture-block panel panel-default">
 				<div class="panel-body">
-					<div>
+					<div class="text-center">
 						<a href="{relative_path}/user/{userslug}"><img src="{picture}" class="user-profile-picture img-thumbnail"/></a>
 					</div>
 
 					<div>
-						<div>
+						<div class="text-center">
 							<span>
 								<i class="account-online-status fa fa-circle status offline" title="[[global:{status}]]"></i>
 								<span class="account-username"> {username}</span>
 							</span>
+
+							<div class="btn-group text-left">
+								<i class="fa fa-cogs dropdown-toggle" data-toggle="dropdown"></i>
+								<ul class="dropdown-menu">
+									<li><a id="chat-btn" href="#" class="hide">[[user:chat]]</a></li>
+									<li class="divider"></li>
+									<li><a id="follow-btn" href="#" class="hide">[[user:follow]]</a></li>
+									<li><a id="unfollow-btn" href="#" class="hide">[[user:unfollow]]</a></li>
+								</ul>
+							</div>
 						</div>
 
 						<!-- IF banned -->
@@ -26,36 +36,32 @@
 							<span class="label label-danger">[[user:banned]]</span>
 						</div>
 						<!-- ENDIF banned -->
-						<div>
-							<a id="chat-btn" href="#" class="btn btn-primary hide">[[user:chat]]</a>
-							<a id="follow-btn" href="#" class="btn btn-success hide">[[user:follow]]</a>
-							<a id="unfollow-btn" href="#" class="btn btn-warning hide">[[user:unfollow]]</a>
+						<hr/>
+						<div class="text-center account-stats">
+
+							<div class="inline-block text-center">
+								<span class="human-readable-number" title="{reputation}">{reputation}</span>
+								<span class="account-bio-label">[[global:reputation]]</span>
+							</div>
+
+							<div class="inline-block text-center">
+								<span class="human-readable-number" title="{postcount}">{postcount}</span>
+								<span class="account-bio-label">[[global:posts]]</span>
+							</div>
+
+							<div class="inline-block text-center">
+								<span class="human-readable-number" title="{profileviews}">{profileviews}</span>
+								<span class="account-bio-label">[[user:profile_views]]</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="text-center account-stats panel panel-default">
-				<div class="panel-body">
-					<div class="inline-block text-center">
-						<div class="human-readable-number" title="{reputation}">{reputation}</div>
-						<div class="account-bio-label">[[global:reputation]]</div>
-					</div>
 
-					<div class="inline-block text-center">
-						<div class="human-readable-number" title="{postcount}">{postcount}</div>
-						<div class="account-bio-label">[[global:posts]]</div>
-					</div>
-
-					<div class="inline-block text-center">
-						<div class="human-readable-number" title="{profileviews}">{profileviews}</div>
-						<div class="account-bio-label">[[user:profile_views]]</div>
-					</div>
-				</div>
-			</div>
 
 			<div class="panel panel-default">
-				<div class="panel-body">
+				<div class="panel-body text-center">
 
 					<!-- IF email -->
 					<span class="account-bio-label">[[user:email]]</span>
