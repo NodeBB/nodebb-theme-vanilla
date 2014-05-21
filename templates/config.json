@@ -29,7 +29,9 @@
 
 		"^recent/.*": "recent",
 
-		"reset/.*": "reset_code"
+		"reset/.*": "reset_code",
+
+		"^tags/.*": "tag"
 	},
 	"force_refresh": {
 		"logout": true

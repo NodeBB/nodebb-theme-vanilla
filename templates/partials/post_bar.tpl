@@ -1,4 +1,13 @@
 <div class="inline-block">
+
+	<!-- BEGIN tags -->
+	<a href="{relative_path}/tags/{tags.name}"><span class="label label-info">{tags.name}</span></a>
+	<!-- END tags -->
+
+	<!-- IF tags.length -->
+	<span>|</span>
+	<!-- ENDIF tags.length -->
+
 	<small class="topic-stats">
 		<span>[[global:posts]]</span>
 		<strong><span class="topic-post-count" class="human-readable-number" title="{postcount}">{postcount}</span></strong> |

@@ -23,7 +23,13 @@
 				</div>
 			</form>
 		</div>
-        <!--  ENDIF allowTopicsThumbnail -->
+		<!--  ENDIF allowTopicsThumbnail -->
+
+		<!-- IF showTags -->
+		<div class="tags-container">
+			<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here]]" tabIndex="2"/>
+		</div>
+		<!-- ENDIF showTags -->
 
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
@@ -61,13 +67,13 @@
 			<li class="hidden"><a data-pane=".tab-help" data-toggle="tab">[[topic:composer.help]]</a></li>
 			<li class="btn-group pull-right action-bar">
 				<button class="btn btn-default" data-action="discard" tabIndex="5"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-				<button data-action="post" class="btn btn-default btn-primary" tabIndex="3"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
+				<button data-action="post" class="btn btn-default btn-primary" tabIndex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
 			</li>
 		</ul>
 
 		<div class="tab-content">
 			<div class="tab-pane active tab-write">
-				<textarea class="write" tabIndex="2"></textarea>
+				<textarea class="write" tabIndex="3"></textarea>
 			</div>
 			<div class="tab-pane tab-preview">
 				<div class="preview well"></div>
