@@ -13,10 +13,10 @@
 	<div class="category row">
 		<div class="col-md-12 clearfix">
 			<!-- BEGIN tags -->
-			<a href="{relative_path}/tags/{tags.name}" class="pull-left">
+			<a href="{relative_path}/tags/{tags.value}" class="pull-left">
 				<h3>
-				<span class="label label-info">{tags.name}</span>
-				 <small>x</small><span class="tag-topic-count">{tags.topicCount}</span>
+				<span class="label label-info">{tags.value}</span>
+				 <small>x</small><span class="tag-topic-count">{tags.score}</span>
 				</h3>
 			</a>
 			<!-- END tags -->

@@ -37,6 +37,7 @@
 							<!-- ENDIF topics.user.userslug -->
 						</span>
 
+
 						<span class="pull-right">
 							<!-- IF topics.unreplied -->
 							[[category:no_replies]]
@@ -49,6 +50,7 @@
 							</a>
 							<!-- ENDIF topics.unreplied -->
 						</span>
+						<!-- IMPORT partials/category_tags.tpl -->
 					</small>
 				</div>
 			</li>

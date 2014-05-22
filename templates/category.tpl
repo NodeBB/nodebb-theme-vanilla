@@ -91,10 +91,10 @@
 							</a>
 							<!-- ENDIF topics.unreplied -->
 						</span>
+
+						<!-- IMPORT partials/category_tags.tpl -->
 					</small>
-
 				</div>
-
 			</li>
 			<!-- END topics -->
 		</ul>
