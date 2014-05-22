@@ -18,9 +18,9 @@
 	<div class="{topic_row_size}" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
 
 		<div class="header category-tools clearfix">
-			<!-- IF privileges.meta.topics:create -->
+			<!-- IF privileges.topics:create -->
 			<button id="new_post" class="btn btn-primary">[[category:new_topic_button]]</button>
-			<!-- ENDIF privileges.meta.topics:create -->
+			<!-- ENDIF privileges.topics:create -->
 
 			<span class="pull-right">
 				<!-- IMPORT partials/thread_tools.tpl -->
@@ -48,9 +48,9 @@
 			<li class="category-item<!-- IF topics.locked --> locked<!-- ENDIF topics.locked --><!-- IF topics.pinned --> pinned<!-- ENDIF topics.pinned --><!-- IF topics.deleted --> deleted<!-- ENDIF topics.deleted --><!-- IF topics.unread --> unread<!-- ENDIF topics.unread -->" itemprop="itemListElement" data-tid="{topics.tid}" data-index="{topics.index}">
 
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
-					<!-- IF privileges.meta.editable -->
+					<!-- IF privileges.editable -->
 						<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
-					<!-- ENDIF privileges.meta.editable -->
+					<!-- ENDIF privileges.editable -->
 					<a href="../../user/{topics.user.userslug}" class="pull-left">
 						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
 					</a>

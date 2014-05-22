@@ -1,6 +1,6 @@
 
 
-<!-- IF privileges.meta.editable -->
+<!-- IF privileges.editable -->
 <div class="btn-group thread-tools">
 	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">[[topic:thread_tools.title]] <span class="caret"></span></button>
 	<ul class="dropdown-menu pull-right">
@@ -19,4 +19,4 @@
 		<!-- END thread_tools -->
 	</ul>
 </div>
-<!-- ENDIF privileges.meta.editable -->
+<!-- ENDIF privileges.editable -->
