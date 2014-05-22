@@ -4,6 +4,12 @@
 		<li class="active">[[tags:tags]]</li>
 	</ol>
 
+	<!-- IF !tags.length -->
+	<div class="alert alert-warning">
+		<strong>[[tags:no_tags]]</strong>
+	</div>
+	<!-- ENDIF !tags.length -->
+
 	<div class="category row">
 		<div class="col-md-12 clearfix">
 			<!-- BEGIN tags -->
