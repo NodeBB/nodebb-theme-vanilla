@@ -8,6 +8,7 @@
 	<li><a href="#user" data-toggle="tab">User</a></li>
 	<li><a href="#post" data-toggle="tab">Post</a></li>
 	<li><a href="#pagination" data-toggle="tab">Pagination</a></li>
+	<li><a href="#tags" data-toggle="tab">Tags</a></li>
 	<li><a href="#web-crawler" data-toggle="tab">Web Crawler</a></li>
 	<li><a href="#sockets" data-toggle="tab">Sockets</a></li>
 </ul>
@@ -18,6 +19,7 @@
 	<!-- IMPORT admin/settings/user.tpl -->
 	<!-- IMPORT admin/settings/post.tpl -->
 	<!-- IMPORT admin/settings/pagination.tpl -->
+	<!-- IMPORT admin/settings/tags.tpl -->
 	<!-- IMPORT admin/settings/web-crawler.tpl -->
 	<!-- IMPORT admin/settings/sockets.tpl -->
 
