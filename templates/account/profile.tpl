@@ -19,7 +19,7 @@
 								<i class="account-online-status fa fa-circle status offline" title="[[global:{status}]]"></i>
 								<span class="account-username"> {username}</span>
 							</span>
-
+							<!-- IF !isSelf -->
 							<div class="btn-group text-left">
 								<i class="fa fa-cogs dropdown-toggle" data-toggle="dropdown"></i>
 								<ul class="dropdown-menu">
@@ -29,6 +29,7 @@
 									<li><a id="unfollow-btn" href="#" class="hide">[[user:unfollow]]</a></li>
 								</ul>
 							</div>
+							<!-- ENDIF !isSelf -->
 						</div>
 
 						<!-- IF banned -->
