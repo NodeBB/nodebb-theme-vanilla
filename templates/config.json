@@ -28,10 +28,10 @@
 		"^user/.*": "account/profile",
 
 		"^recent/.*": "recent",
-
 		"reset/.*": "reset_code",
-
-		"^tags/.*": "tag"
+		"^tags/.*": "tag",
+		"^groups/?$": "groups/list",
+		"^groups/.*": "groups/details"
 	},
 	"force_refresh": {
 		"logout": true

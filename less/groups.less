@@ -1,0 +1,44 @@
+.groups {
+	.members {
+		padding-left: 0;
+
+		li {
+			list-style-type: none;
+			display: inline-block;
+
+			img {
+				width: 32px;
+			}
+		}
+
+		.truncated {
+			vertical-align: bottom;
+		}
+	}
+
+	.view-full {
+		float: right;
+	}
+
+	&.details {
+		.members {
+			tr {
+				.pointer;
+			}
+
+			img {
+				width: 32px;
+			}
+
+			.member-name {
+				vertical-align: middle;
+			}
+		}
+
+		.latest-posts {
+			img {
+				width: 32px;
+			}
+		}
+	}
+}
