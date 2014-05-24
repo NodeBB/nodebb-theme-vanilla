@@ -13,11 +13,6 @@
 				<strong>Chat Messages To Display</strong><br /> <input type="text" class="form-control" value="50" data-field="chatMessagesToDisplay"><br />
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" data-field="allowGuestPosting"> <strong>Allow guests to post without logging in</strong>
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
 						<input type="checkbox" data-field="allowFileUploads"> <strong>Allow users to upload regular files</strong>
 					</label>
 				</div>
