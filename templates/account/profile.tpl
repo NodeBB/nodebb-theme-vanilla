@@ -19,16 +19,12 @@
 								<i class="account-online-status fa fa-circle status offline" title="[[global:{status}]]"></i>
 								<span class="account-username"> {username}</span>
 							</span>
+
 							<!-- IF !isSelf -->
-							<div class="btn-group text-left">
-								<i class="fa fa-cogs dropdown-toggle" data-toggle="dropdown"></i>
-								<ul class="dropdown-menu">
-									<li><a id="chat-btn" href="#" class="hide">[[user:chat]]</a></li>
-									<li class="divider"></li>
-									<li><a id="follow-btn" href="#" class="hide">[[user:follow]]</a></li>
-									<li><a id="unfollow-btn" href="#" class="hide">[[user:unfollow]]</a></li>
-								</ul>
-							</div>
+							<br/>
+							<a id="chat-btn" href="#" class="btn btn-primary btn-sm">[[user:chat]]</a>
+ 							<a id="follow-btn" href="#" class="btn btn-success btn-sm <!-- IF isFollowing -->hide<!-- ENDIF isFollowing -->">[[user:follow]]</a>
+ 							<a id="unfollow-btn" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
 							<!-- ENDIF !isSelf -->
 						</div>
 
