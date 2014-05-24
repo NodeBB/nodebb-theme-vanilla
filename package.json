@@ -5,7 +5,7 @@
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/designcreateplay/nodebb-theme-vanilla"
+    "url": "https://github.com/NodeBB/nodebb-theme-vanilla"
   },
   "keywords": [
     "nodebb",
@@ -33,6 +33,6 @@
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/designcreateplay/nodebb-theme-vanilla/issues"
+    "url": "https://github.com/NodeBB/nodebb-theme-vanilla/issues"
   }
 }
