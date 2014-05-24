@@ -5,6 +5,5 @@
 		{
 			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
 		}
-	],
-	"staticDir": "./public"
+	]
 }
