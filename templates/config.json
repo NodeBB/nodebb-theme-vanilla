@@ -1,5 +1,7 @@
 {
 	"custom_mapping": {
+		"^\/?$": "home",
+		"^admin/?$": "admin/index",
 		"^admin/testing/categories.*": "admin/testing/categories",
 		"^admin/topics.*": "admin/topics",
 		"^admin/categories.*": "admin/categories",
