@@ -1,5 +1,5 @@
 <div class="motd">
-	<div widget-area="motd" class="hidden"></div>
+	<div widget-area="motd"></div>
 </div>
 
 <div class="row home" itemscope itemtype="http://www.schema.org/ItemList">
