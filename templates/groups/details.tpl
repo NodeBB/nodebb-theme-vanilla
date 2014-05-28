@@ -42,11 +42,11 @@
 
 				<!-- BEGIN posts -->
 				<!-- IF !@first --><hr class="clear" /><!-- ENDIF !@first -->
-				<a href="../../user/{posts.user.userslug}">
+				<a href="{relative_path}/user/{posts.user.userslug}">
 					<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 				</a>
 
-				<a href="../../user/{posts.user.userslug}">
+				<a href="{relative_path}/user/{posts.user.userslug}">
 					<strong><span>{posts.user.username}</span></strong>
 				</a>
 				<p>{posts.content}</p>
@@ -54,8 +54,8 @@
 				<div>
 					<small>
 						<span class="pull-right">
-							[[global:posted_in_ago, <a href="../../category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
-							<a href="../../topic/{posts.tid}/#{posts.pid}">[[global:read_more]] <i class="fa fa-chevron-circle-right"></i></a>
+							[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
+							<a href="{relative_path}/topic/{posts.tid}/#{posts.pid}">[[global:read_more]] <i class="fa fa-chevron-circle-right"></i></a>
 						</span>
 					</small>
 				</div>

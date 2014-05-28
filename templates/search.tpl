@@ -29,14 +29,14 @@
 			<!-- BEGIN topics -->
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
-					<a href="../../topic/{topics.slug}" class="search-result-text">
+					<a href="{relative_path}/topic/{topics.slug}" class="search-result-text">
 						<h4>{topics.title}</h4>
 					</a>
 
 					<div>
 						<small>
 							<span class="pull-right">
-								[[global:posted_in_ago, <a href="../../category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
+								[[global:posted_in_ago, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
 							</span>
 						</small>
 					</div>
@@ -58,7 +58,7 @@
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
 
-					<a href="../../topic/{posts.topic.slug}#{posts.pid}" class="search-result-text">
+					<a href="{relative_path}/topic/{posts.topic.slug}#{posts.pid}" class="search-result-text">
 						<h4>{posts.topic.title}</h4>
 					</a>
 					<div class="search-result-text">
@@ -67,7 +67,7 @@
 					<div>
 						<small>
 							<span class="pull-right">
-								[[global:posted_in_ago, <a href="../../category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
+								[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
 							</span>
 						</small>
 					</div>

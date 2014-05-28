@@ -5,10 +5,10 @@
 	<div>
 		<!-- BEGIN following -->
 		<div class="users-box">
-			<a href="../../user/{following.userslug}"><img src="{following.picture}" class="img-thumbnail"/></a>
+			<a href="{relative_path}/user/{following.userslug}"><img src="{following.picture}" class="img-thumbnail"/></a>
 			<br/>
 			<div class="user-info">
-				<a href="../../user/{following.userslug}">{following.username}</a>
+				<a href="{relative_path}/user/{following.userslug}">{following.username}</a>
 				<br/>
 				<div title="reputation" class="reputation">
 					<span class='formatted-number'>{following.reputation}</span>
