@@ -1,6 +1,6 @@
 
 <div class="languages">
-	<h1><i class="fa fa-comments-o"></i> Languages</h1>
+	<h1><i class="fa fa-language"></i> Languages</h1>
 	<hr />
 	<p>
 		The following setting(s) determine the language settings for your NodeBB.
