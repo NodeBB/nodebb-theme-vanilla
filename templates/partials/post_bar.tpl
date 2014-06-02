@@ -26,6 +26,10 @@
 	<button class="btn btn-primary post_reply" type="button">[[topic:reply]]</button>
 	<!-- ENDIF privileges.topics:reply -->
 
+	<!-- IF !loggedIn -->
+	<a href="/login?next=topic/{slug}" class="btn btn-primary">[[topic:reply]]</a>
+	<!-- ENDIF !loggedIn -->
+
 	<!-- IMPORT partials/thread_tools.tpl -->
 </div>
 <div style="clear:both;"></div>
