@@ -1,5 +1,3 @@
-<div class="home">
-
 	<div class="col-sm-6">
 		<div class="panel panel-default">
 			<div class="panel-heading">Welcome to NodeBB</div>
@@ -79,4 +77,3 @@
 		</div>
 
 	</div>
-</div>
