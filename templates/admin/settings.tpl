@@ -11,6 +11,7 @@
 	<li><a href="#tags" data-toggle="tab">Tags</a></li>
 	<li><a href="#web-crawler" data-toggle="tab">Web Crawler</a></li>
 	<li><a href="#sockets" data-toggle="tab">Sockets</a></li>
+	<li><a href="#advanced" data-toggle="tab">Advanced</a></li>
 </ul>
 
 <div class="tab-content">
@@ -22,6 +23,7 @@
 	<!-- IMPORT admin/settings/tags.tpl -->
 	<!-- IMPORT admin/settings/web-crawler.tpl -->
 	<!-- IMPORT admin/settings/sockets.tpl -->
+	<!-- IMPORT admin/settings/advanced.tpl -->
 
 	<!-- This was not moved into a partial because I am removing it soon (@julianlam) -->
 	<div class="tab-pane" id="privilege-thresholds">
