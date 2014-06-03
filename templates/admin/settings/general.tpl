@@ -1,4 +1,4 @@
-	<div class="tab-pane" id="general">
+	<div class="tab-pane active" id="general">
 		<div class="alert alert-warning">
 			<form>
 				<label>Site Title</label>
