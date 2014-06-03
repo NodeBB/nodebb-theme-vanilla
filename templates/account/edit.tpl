@@ -26,6 +26,15 @@
 						<div class="controls">
 							<input class="form-control" type="text" id="inputEmail" placeholder="[[user:email]]" value="{email}">
 						</div>
+						<!-- IF config.requireEmailConfirmation -->
+						<!-- IF email -->
+						<!-- IF email:confirmed -->
+						<span class="help-block"><i class="fa fa-check text-success"></i> Confirmed</span>
+						<!-- ELSE -->
+						<span class="help-block"><i class="fa fa-times text-danger"></i> Not confirmed <span class="btn btn-primary btn-sm" id="confirm-email">Confirm Now</span></span>
+						<!-- ENDIF email:confirmed -->
+						<!-- ENDIF email -->
+						<!-- ENDIF config.requireEmailConfirmation -->
 					</div>
 
 					<div class="control-group">

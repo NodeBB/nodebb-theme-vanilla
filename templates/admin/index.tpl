@@ -15,13 +15,13 @@
 			<div class="panel-heading">Notices</div>
 			<div class="panel-body">
 				<div>
-					<!-- IF !restartRequired --><i class="fa fa-fw fa-check alert-success"></i> Restart not required<!-- ELSE --><i class="fa fa-fw fa-times alert-danger"></i> Restart Required<!-- ENDIF !restartRequired -->
+					<!-- IF !restartRequired --><i class="fa fa-fw fa-check text-success"></i> Restart not required<!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i> Restart Required<!-- ENDIF !restartRequired -->
 				</div>
 				<div>
-					<!-- IF emailerInstalled --><i class="fa fa-fw fa-check alert-success"></i><!-- ELSE --><i class="fa fa-fw fa-times alert-danger"></i><!-- ENDIF emailerInstalled --> Emailer Installed
+					<!-- IF emailerInstalled --><i class="fa fa-fw fa-check text-success"></i><!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i><!-- ENDIF emailerInstalled --> Emailer Installed
 				</div>
 				<div>
-					<!-- IF searchInstalled --><i class="fa fa-fw fa-check alert-success"></i><!-- ELSE --><i class="fa fa-fw fa-times alert-danger"></i><!-- ENDIF searchInstalled --> Search Plugin Installed
+					<!-- IF searchInstalled --><i class="fa fa-fw fa-check text-success"></i><!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i><!-- ENDIF searchInstalled --> Search Plugin Installed
 				</div>
 			</div>
 		</div>
