@@ -16,7 +16,11 @@
 						<input type="checkbox" data-field="privateUserInfo"> <strong>Make user info private</strong>
 					</label>
 				</div>
-
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-field="requireEmailConfirmation" checked> <strong>Require Email Confirmation</strong>
+					</label>
+				</div>
 				<h3>Avatars</h3>
 				<div class="checkbox">
 					<label>
