@@ -18,7 +18,7 @@
 				</div>
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" data-field="requireEmailConfirmation" checked> <strong>Require Email Confirmation</strong>
+						<input type="checkbox" data-field="requireEmailConfirmation"> <strong>Require Email Confirmation</strong>
 					</label>
 				</div>
 				<h3>Avatars</h3>
