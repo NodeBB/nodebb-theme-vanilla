@@ -18,6 +18,13 @@
 				</div>
 				<strong>Maximum File Size</strong><br /> <input type="text" class="form-control" value="2048" data-field="maximumFileSize"><br />
 
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-field="allowTopicsThumbnail"> <strong>Allow users to upload topic thumbnails</strong>
+					</label>
+				</div>
+				<strong>Topic Thumb Size</strong><br /> <input type="text" class="form-control" value="120" data-field="topicThumbSize"><br />
+
 				<h3>Composer Settings</h3>
 				<p>
 					The following settings govern the functionality and/or appearance of the post composer shown
