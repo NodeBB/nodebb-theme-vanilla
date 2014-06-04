@@ -38,6 +38,9 @@
 			}
 		});
 	</script>
+	<!-- IF useCustomJS -->
+	{customJS}
+	<!-- ENDIF useCustomJS -->
 </head>
 
 <body>

@@ -50,6 +50,21 @@
 				</div>
 			</form>
 
+			<h3>Custom JS</h3>
+			<p>
+				You can enter custom JS here, it will be added to the head tag.
+			</p>
+			<textarea class="well" data-field="customJS" placeholder="Enter your custom JS here..."></textarea>
+
+			<form class="form">
+				<div class="form-group">
+					<label for="useCustomJS">
+						Use Custom JS?
+						<input id="useCustomJS" type="checkbox" data-field="useCustomJS" />
+					</label>
+				</div>
+			</form>
+
 			<button class="btn btn-primary" id="save">Save</button>
 
 			<hr />
