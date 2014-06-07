@@ -1,6 +1,15 @@
 	<div class="tab-pane" id="post">
 		<form>
 			<div class="alert alert-warning">
+				<div class="form-group">
+					<label>Default Post Sorting</label>
+					<select class="form-control" data-field="topicPostSort">
+						<option value="oldest_to_newest">Oldest to Newest</option>
+						<option value="newest_to_oldest">Newest to Oldest</option>
+						<option value="most_votes">Most Votes</option>
+					</select>
+				</div>
+
 				<strong>Post Delay</strong><br /> <input type="text" class="form-control" value="10000" data-field="postDelay"><br />
 				<strong>Minimum Title Length</strong><br /> <input type="text" class="form-control" value="3" data-field="minimumTitleLength"><br />
 				<strong>Maximum Title Length</strong><br /> <input type="text" class="form-control" value="255" data-field="maximumTitleLength"><br />

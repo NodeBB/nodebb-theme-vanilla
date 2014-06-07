@@ -30,6 +30,8 @@
 	<a href="/login?next=topic/{slug}" class="btn btn-primary">[[topic:reply]]</a>
 	<!-- ENDIF !loggedIn -->
 
+	<!-- IMPORT partials/thread_sort.tpl -->
+
 	<!-- IMPORT partials/thread_tools.tpl -->
 </div>
 <div style="clear:both;"></div>
