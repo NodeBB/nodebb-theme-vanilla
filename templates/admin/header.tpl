@@ -91,7 +91,7 @@
 
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
 					<li id="user_label" class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown">
 							<img src="{userpicture}"/>
 						</a>
 						<ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
