@@ -30,7 +30,9 @@
 										<i data-name="icon" value="{categories.icon}" class="fa {categories.icon} fa-2x"></i>
 									</div>
 								</div><br />
+								<button type="button" data-name="image" data-value="{categories.image}" class="btn btn-default upload-button"><i class="fa fa-upload"></i> Image</button>
 								<!-- IF categories.image -->
+								<br/>
 								<small class="pointer delete-image"><i data-name="icon" value="fa-times" class="fa fa-times"></i> Delete Image</small>
 								<!-- ENDIF categories.image -->
 							</div>
@@ -94,10 +96,12 @@
 														<a href="#"><i class="fa fa-power-off"></i> Disable</a>
 													<!-- ENDIF categories.disabled -->
 												</li>
+												<li><a href="#" class="purge"><i class="fa fa-eraser"></i> Purge</a></li>
 											</ul>
-											<button type="button" data-name="image" data-value="{categories.image}" class="btn btn-default upload-button"><i class="fa fa-upload"></i> Image</button>
+
 
 											<button class="btn btn-primary save">Save</button>
+
 										</div>
 									</div>
 								</div>
