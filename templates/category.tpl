@@ -23,7 +23,7 @@
 			<!-- ENDIF privileges.topics:create -->
 
 			<span class="pull-right">
-				<!-- IMPORT partials/thread_tools.tpl -->
+				<!-- IMPORT partials/category_tools.tpl -->
 
 				<div class="dropdown share-dropdown inline-block">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">

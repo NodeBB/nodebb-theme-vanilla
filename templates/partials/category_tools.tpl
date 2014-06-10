@@ -10,6 +10,7 @@
 		<li><a href="#" class="move_all_threads"><i class="fa fa-fw fa-arrows"></i> [[topic:thread_tools.move_all]]</a></li>
 		<li class="divider"></li>
 		<li><a href="#" class="delete_thread"><span><i class="fa fa-fw fa-trash-o"></i> [[topic:thread_tools.delete]]</span></a></li>
+		<li><a href="#" class="purge_thread <!-- IF !deleted -->none<!-- ENDIF !deleted -->"><span><i class="fa fa-fw fa-eraser"></i> [[topic:thread_tools.purge]]</span></a></li>
 		<!-- BEGIN thread_tools -->
 		<li>
 			<a href="#" class="{thread_tools.class}"><i class="fa fa-fw {thread_tools.icon}"></i> {thread_tools.title}</a>
