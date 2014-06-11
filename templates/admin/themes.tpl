@@ -86,14 +86,27 @@
 
 			<div class="row">
 				<div class="col-xs-6 pull-right">
-					<!-- BEGIN areas -->
-					<div class="area" data-template="{areas.template}" data-location="{areas.location}">
-						<h4>{areas.name} <small>{areas.template} / {areas.location}</small></h4>
-						<div class="well widget-area">
+					<ul class="nav nav-pills">
+					<!-- BEGIN templates -->
+						<li class="<!-- IF @first -->active<!-- ENDIF @first -->"><a href="#" data-template="{templates.template}" data-toggle="pill">{templates.template}</a></li>
+					<!-- END templates -->
+					</ul>
 
+					<div class="tab-content">
+					<!-- BEGIN templates -->
+						<div class="tab-pane <!-- IF @first -->active<!-- ENDIF @first -->" data-template="{templates.template}">
+						<!-- BEGIN areas -->
+							<div class="area" data-template="{templates.template}" data-location="{templates.areas.location}">
+								<h4>{templates.areas.name} <small>{templates.template} / {templates.areas.location}</small></h4>
+								<div class="well widget-area">
+
+								</div>
+							</div>
+						<!-- END areas -->
 						</div>
+					<!-- END templates -->
 					</div>
-					<!-- END areas -->
+
 					<button class="btn btn-success save pull-right">Save</button>
 				</div>
 				<div class="col-xs-6 pull-left">
