@@ -21,12 +21,13 @@
 						<!-- ENDIF groups.system -->
 					</h2>
 					<p>{groups.description}</p>
-					<!-- IF groups.deletable -->
+
 					<div class="btn-group">
-						<button class="btn btn-default" data-action="members">Members</button>
+						<button class="btn btn-default" data-action="members">Edit</button>
+						<!-- IF groups.deletable -->
 						<button class="btn btn-danger" data-action="delete">Delete Group</button>
+						<!-- ENDIF groups.deletable -->
 					</div>
-					<!-- ENDIF groups.deletable -->
 				</div>
 				<div class="col-lg-4">
 					<ul class="pull-right members">
@@ -86,6 +87,10 @@
 						<div class="form-group">
 							<label for="group-name">Description</label>
 							<input type="text" class="form-control" id="change-group-desc" placeholder="A short description about your group" />
+						</div>
+						<div class="form-group">
+							<label for="group-name">Title of Members</label>
+							<input type="text" class="form-control" id="change-group-user-title" placeholder="The title of users if they are a member of this group" />
 						</div>
 						<div class="form-group">
 							<label>Members</label>
