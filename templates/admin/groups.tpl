@@ -7,8 +7,6 @@
 <hr />
 
 <div class="groups">
-
-
 	<ul id="groups-list">
 	<!-- BEGIN groups -->
 		<li data-groupname="{groups.name}">
@@ -39,8 +37,6 @@
 		</li>
 	<!-- END groups -->
 	</ul>
-
-
 
 	<div class="modal fade" id="create-modal">
 		<div class="modal-dialog">
@@ -81,16 +77,26 @@
 					<div class="alert alert-danger hide" id="create-modal-error"></div>
 					<form>
 						<div class="form-group">
-							<label for="group-name">Group Name</label>
+							<label for="change-group-name">Group Name</label>
 							<input type="text" class="form-control" id="change-group-name" placeholder="Group Name" readonly="readonly" />
 						</div>
 						<div class="form-group">
-							<label for="group-name">Description</label>
+							<label for="change-group-desc">Description</label>
 							<input type="text" class="form-control" id="change-group-desc" placeholder="A short description about your group" />
 						</div>
 						<div class="form-group">
-							<label for="group-name">Title of Members</label>
+							<label for="change-group-user-title">Title of Members</label>
 							<input type="text" class="form-control" id="change-group-user-title" placeholder="The title of users if they are a member of this group" />
+						</div>
+						<div class="form-group">
+							<label for="change-group-icon">Group Icon</label><br/>
+							<i id="group-icon" class="fa fa-shield fa-2x"></i>
+							<button type="button" class="btn btn-default btn-sm" id="change-group-icon" placeholder="">Change Icon</button>
+						</div>
+						<div class="form-group">
+							<label for="change-group-label-color">Group Label Color</label>
+							<span id="group-label-preview" class="label label-default"></span>
+							<input id="change-group-label-color" placeholder="#0059b2" data-name="bgColor" value="" class="form-control" />
 						</div>
 						<div class="form-group">
 							<label>Members</label>
@@ -111,4 +117,14 @@
 		</div>
 	</div>
 </div>
+
 <input type="hidden" template-variable="yourid" value="{yourid}" />
+
+<div id="icons" style="display:none;">
+	<div class="icon-container">
+		<div class="row fa-icons">
+			<i class="fa fa-doesnt-exist"></i>
+			<!-- IMPORT partials/fontawesome.tpl -->
+		</div>
+	</div>
+</div>
