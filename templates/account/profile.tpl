@@ -137,9 +137,12 @@
 					<!-- ENDIF !posts.length -->
 					<!-- BEGIN posts -->
 					<div class="clearfix">
-						<p>{posts.content}</p>
+						<div class="content">
+							<p>{posts.content}</p>
+							<p class="fade-out"></p>
+						</div>
 						<small>
-							<span class="pull-right">
+							<span class="pull-right footer">
 								[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]] &bull;
 								<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a>
 							</span>
