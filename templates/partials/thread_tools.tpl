@@ -1,7 +1,7 @@
 
 
 <!-- IF privileges.view_thread_tools -->
-<div class="btn-group thread-tools">
+<div class="btn-group thread-tools dropup">
 	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">[[topic:thread_tools.title]] <span class="caret"></span></button>
 	<ul class="dropdown-menu pull-right">
 		<!-- IF privileges.editable -->
