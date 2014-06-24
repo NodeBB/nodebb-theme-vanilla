@@ -47,54 +47,37 @@
 					</span>
 				<!--<![endif]-->
 
+				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
+
 				<form id="fileForm" method="post" enctype="multipart/form-data">
 					<input id="postUploadCsrf" type="hidden" name="_csrf">
 
 					<!--[if gte IE 9]><!-->
-					     <input type="file" id="files" name="files[]" multiple class="gte-ie9 hide"/>
-                    <!--<![endif]-->
+						<input type="file" id="files" name="files[]" multiple class="gte-ie9 hide"/>
+					<!--<![endif]-->
 					<!--[if lt IE 9]>
-					     <input type="file" id="files" name="files[]" class="lt-ie9 hide" value="Upload"/>
+						<input type="file" id="files" name="files[]" class="lt-ie9 hide" value="Upload"/>
 					<![endif]-->
 
 				</form>
+
+			</div>
+			<div class="btn-group pull-right action-bar">
+				<button class="btn btn-default" data-action="discard" tabIndex="5"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
+				<button data-action="post" class="btn btn-default btn-primary" tabIndex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
 			</div>
 		</div>
 
-		<ul class="nav nav-tabs">
-			<li class="active"><a data-pane=".tab-write" data-toggle="tab">[[topic:composer.write]]</a></li>
-			<li class="hidden"><a data-pane=".tab-help" data-toggle="tab">[[topic:composer.help]]</a></li>
-			<li class="btn-group pull-right action-bar">
-				<button class="btn btn-default" data-action="discard" tabIndex="5"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-				<button data-action="post" class="btn btn-default btn-primary" tabIndex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
-			</li>
-		</ul>
-
-		<div class="tab-content">
-			<div class="tab-pane active tab-write">
-				<div class="row">
-					<div class="col-lg-6">
-						<textarea class="write" tabIndex="3"></textarea>
-					</div>
-					<div class="col-lg-6">
-						<div class="preview well"></div>
-					</div>
-				</div>
+		<div class="row write-preview-container">
+			<div class="col-lg-6 write-container">
+				<textarea class="write" tabIndex="3"></textarea>
 			</div>
-
-			<div class="tab-pane tab-help">
-				<div class="help well"></div>
+			<div class="col-lg-6 preview-container">
+				<div class="preview well"></div>
 			</div>
 		</div>
 
 		<div class="imagedrop"><div>[[topic:composer.drag_and_drop_images]]</div></div>
-
-		<div class="text-center instructions">
-			<span>
-				<span class="upload-instructions hide"><small>[[topic:composer.upload_instructions]]</small></span>
-			</span>
-
-		</div>
 
 		<div class="resizer"><div class="trigger text-center"><i class="fa fa-chevron-up"></i></div></div>
 	</div>
