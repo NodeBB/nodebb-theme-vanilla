@@ -29,6 +29,7 @@
 	<div class="tab-pane" id="privilege-thresholds">
 		<form>
 			<div class="alert alert-warning">
+				<h3>Moderator Thresholds</h3>
 				<p>Use <strong>privilege thresholds</strong> to manage how much reputation a user must gain to receive moderator access.</p><br />
 				<strong>Manage Thread</strong><br /> <input type="text" class="form-control" value="1000" data-field="privileges:manage_topic"><br />
 				<strong>Manage Content</strong><br /> <input type="text" class="form-control" value="1000" data-field="privileges:manage_content"><br />
@@ -37,6 +38,11 @@
 						<input type="checkbox" data-field="privileges:disabled"> <strong>Disable Privilege Threshold System</strong>
 					</label>
 				</div>
+			</div>
+
+			<div class="alert alert-warning">
+				<h3>Activity Thresholds</h3>
+				<strong>Minimum reputation to downvote posts</strong><br /> <input type="text" class="form-control" data-field="privileges:downvote"><br />
 			</div>
 		</form>
 	</div>
