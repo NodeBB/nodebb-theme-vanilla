@@ -24,11 +24,11 @@
 	</div>
 	<!-- IF privileges.topics:reply -->
 	<button class="btn btn-primary post_reply" type="button">[[topic:reply]]</button>
+	<!-- ELSE -->
+		<!-- IF !loggedIn -->
+		<a href="/login?next=topic/{slug}" class="btn btn-primary">[[topic:reply]]</a>
+		<!-- ENDIF !loggedIn -->
 	<!-- ENDIF privileges.topics:reply -->
-
-	<!-- IF !loggedIn -->
-	<a href="/login?next=topic/{slug}" class="btn btn-primary">[[topic:reply]]</a>
-	<!-- ENDIF !loggedIn -->
 
 	<!-- IMPORT partials/thread_sort.tpl -->
 
