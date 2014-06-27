@@ -1,11 +1,7 @@
-<p>
-	Hello {username},
-</p>
+<p>[[email:welcome.greeting, {username}]],</p>
 
 <!-- IF notifications.length -->
-<p>
-	You have some unread notifications from {site_title}:
-</p>
+<p>[[email:digest.notifications, {site_title}]]</p>
 
 <ul>
 	<!-- BEGIN notifications -->
@@ -18,7 +14,7 @@
 <hr />
 <!-- ENDIF notifications.length -->
 
-<p>Latest topics from {site_title}</p>
+<p>[[email:digest.latest_topics]]</p>
 <ul>
 	<!-- IF recent.length -->
 	<!-- BEGIN recent -->
@@ -28,21 +24,21 @@
 	<!-- END recent -->
 	<!-- ELSE -->
 	<li style="text-decoration: none; list-style-type: none; padding-bottom: 0.5em; font-style: italic;">
-		There have been no active topics in the past day
+		[[email:digest.daily.no_topics]]
 	</li>
 	<!-- ENDIF recent.length -->
 </ul>
 
 <p>
-	<a href="{url}">Click here to visit {site_title}</a>
+	<a href="{url}">[[email:digest.cta, {site_title}]]</a>
 </p>
 
 <p>
-	Thanks!<br />
+	[[email:closing]]<br />
 	<strong>{site_title}</strong>
 </p>
 
 <hr />
 <p>
-	This digest was sent to you due to your subscription settings. <a href="{url}/user/{username}/settings">Click here to alter those settings</a>.
+	[[email:digest.unsub.info]] <a href="{url}/user/{username}/settings">[[email:digest.unsub.cta]]</a>.
 </p>

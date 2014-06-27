@@ -1,20 +1,14 @@
-<p>
-	Hello,
-</p>
+<p>[[email:greeting_no_name]],</p>
 
-<p>
-	We received a request to reset your password, possibly because you have forgotten it. If this is not the case, please ignore this email.
-</p>
+<p>[[email:reset.text1]]</p>
 
-<p>
-	To continue with the password reset, please click on the following link:
-</p>
+<p>[[email:reset.text2]]</p>
 
 <blockquote>
-	<a href="{reset_link}">{reset_link}</a>
+	<a href="{reset_link}">[[email:reset.cta]]</a>
 </blockquote>
 
 <p>
-	Thanks!<br />
+	[[email:closing]]<br />
 	<strong>{site_title}</strong>
 </p>

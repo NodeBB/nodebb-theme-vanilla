@@ -1,11 +1,11 @@
-Hello {username},
+[[email:greeting_with_name, {username}]],
 
-Thank you for registering with {site_title}!
+[[email:welcome.text1, {site_title}]]
 
-To fully activate your account, we need to verify that you own the email address you registered with. Please visit on the following link:
+[[email:welcome.text2]] [[email:welcome.cta]]:
 
     {confirm_link}
 
 
-Thanks!
+[[email:closing]]
 {site_title}

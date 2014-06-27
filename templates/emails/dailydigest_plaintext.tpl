@@ -1,7 +1,7 @@
-Hello {username},
+[[email:welcome.greeting, {username}]],
 
 <!-- IF notifications.length -->
-You have some unread notifications from {site_title}:
+[[email:digest.notifications, {site_title}]]
 
 <!-- BEGIN notifications -->
 * {notifications.text} ({url}{notifications.path})
@@ -10,23 +10,22 @@ You have some unread notifications from {site_title}:
 ===
 <!-- ENDIF notifications.length -->
 
-Latest topics from {site_title}
+[[email:digest.latest_topics]]
 
 <!-- IF recent.length -->
 <!-- BEGIN recent -->
 * {recent.title} ({url}/topic/{recent.slug})
 <!-- END recent -->
 <!-- ELSE -->
-* There have been no active topics in the past day
+* [[email:digest.daily.no_topics]]
 <!-- ENDIF recent.length -->
 
-Click here to visit {site_title}: {url}
+[[email:digest.cta, {site_title}]]: {url}
 
 
-Thanks!
-
+[[email:closing]]
 {site_title}
 
 ===
 
-This digest was sent to you due to your subscription settings. Click on the following link to alter those settings: {url}/user/{username}/settings
+[[email:digest.cta, {site_title}]] [[email:digest.unsub.cta]]: {url}/user/{username}/settings

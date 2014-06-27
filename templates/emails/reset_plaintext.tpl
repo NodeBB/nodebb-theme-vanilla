@@ -1,10 +1,10 @@
-Hello,
+[[email:greeting_no_name]],
 
-We received a request to reset your password, possibly because you have forgotten it. If this is not the case, please ignore this email.
+[[email:reset.text1]]
 
-To continue with the password reset, please visit the following link:
+[[email:reset.text2]] [[email:reset.cta]]
 
     {reset_link}
 
-Thanks!
+[[email:closing]]
 {site_title}
