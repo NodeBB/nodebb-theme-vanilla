@@ -3,7 +3,7 @@
 
 <ul id="settings-tab" class="nav nav-tabs">
 	<li class="active"><a href="#general" data-toggle="tab">General</a></li>
-	<li><a href="#privilege-thresholds" data-toggle="tab">Privilege Thresholds</a></li>
+	<li><a href="#reputation" data-toggle="tab">Reputation</a></li>
 	<li><a href="#email" data-toggle="tab">Email</a></li>
 	<li><a href="#user" data-toggle="tab">User</a></li>
 	<li><a href="#post" data-toggle="tab">Post</a></li>
@@ -26,10 +26,18 @@
 	<!-- IMPORT admin/settings/advanced.tpl -->
 
 	<!-- This was not moved into a partial because I am removing it soon (@julianlam) -->
-	<div class="tab-pane" id="privilege-thresholds">
+	<div class="tab-pane" id="reputation">
 		<form>
 			<div class="alert alert-warning">
-				<h3>Moderator Thresholds</h3>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-field="reputation:disabled"> <strong>Disable Reputation System</strong>
+					</label>
+				</div>
+			</div>
+
+			<div class="alert alert-warning">
+				<h3>Privilege Thresholds</h3>
 				<p>Use <strong>privilege thresholds</strong> to manage how much reputation a user must gain to receive moderator access.</p><br />
 				<strong>Manage Thread</strong><br /> <input type="text" class="form-control" value="1000" data-field="privileges:manage_topic"><br />
 				<strong>Manage Content</strong><br /> <input type="text" class="form-control" value="1000" data-field="privileges:manage_content"><br />
