@@ -16,7 +16,7 @@
 	<div class="category row">
 		<div class="col-md-12 clearfix tag-list">
 			<!-- BEGIN tags -->
-			<a href="{relative_path}/tags/{tags.value}" class="pull-left">
+			<a href="{relative_path}/tags/{tags.value}" data-value="{tags.value}" class="pull-left">
 				<h3>
 				<span class="label label-info">{tags.value}</span>
 				 <small>x</small><span class="tag-topic-count">{tags.score}</span>
