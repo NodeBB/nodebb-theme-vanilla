@@ -10,8 +10,11 @@
 	</div>
 	<!-- ENDIF !tags.length -->
 
+	<input class="form-control" type="text" id="tag-search"/>
+	<br/>
+
 	<div class="category row">
-		<div class="col-md-12 clearfix">
+		<div class="col-md-12 clearfix tag-list">
 			<!-- BEGIN tags -->
 			<a href="{relative_path}/tags/{tags.value}" class="pull-left">
 				<h3>
