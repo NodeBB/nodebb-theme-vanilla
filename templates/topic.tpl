@@ -89,6 +89,7 @@
 							</button>
 						</div>
 
+						<!-- IF !reputation:disabled -->
 						<div class="btn-group">
 							<button class="upvote btn btn-sm btn-default <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
 								<i class="fa fa-chevron-up"></i>
@@ -98,6 +99,7 @@
 								<i class="fa fa-chevron-down"></i>
 							</button>
 						</div>
+						<!-- ENDIF !reputation:disabled -->
 
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group">
