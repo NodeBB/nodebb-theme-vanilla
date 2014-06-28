@@ -58,7 +58,7 @@
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
 
-					<a href="{relative_path}/topic/{posts.topic.slug}#{posts.pid}" class="search-result-text">
+					<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
 						<h4>{posts.topic.title}</h4>
 					</a>
 					<div class="search-result-text">
