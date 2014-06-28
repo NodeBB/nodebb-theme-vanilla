@@ -29,9 +29,9 @@
 						<!-- IF config.requireEmailConfirmation -->
 						<!-- IF email -->
 						<!-- IF email:confirmed -->
-						<span class="help-block"><i class="fa fa-check text-success"></i> Confirmed</span>
+						<span class="help-block"><i class="fa fa-check text-success"></i> [[user:email.confirmed]]</span>
 						<!-- ELSE -->
-						<span class="help-block"><i class="fa fa-times text-danger"></i> Not confirmed <span class="btn btn-primary btn-sm" id="confirm-email">Confirm Now</span></span>
+						<span class="help-block"><i class="fa fa-times text-danger"></i> [[user:email.not_confirmed]] <span class="btn btn-primary btn-sm" id="confirm-email">[[user:email.confirm_button_text]]</span></span>
 						<!-- ENDIF email:confirmed -->
 						<!-- ENDIF email -->
 						<!-- ENDIF config.requireEmailConfirmation -->
