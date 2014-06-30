@@ -130,5 +130,6 @@
 
 <input type="hidden" template-variable="yourid" value="{yourid}" />
 <input type="hidden" template-variable="theirid" value="{theirid}" />
+<input type="hidden" template-variable="userslug" value="{userslug}" />
 <input type="hidden" template-variable="gravatarpicture" value="{gravatarpicture}" />
 <input type="hidden" template-variable="uploadedpicture" value="{uploadedpicture}" />
