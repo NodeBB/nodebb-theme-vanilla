@@ -26,29 +26,32 @@
 			</div>
 		</div>
 
+		<!-- BEGIN stats -->
 		<div class="panel panel-default">
-			<div class="panel-heading">Unique Visitors</div>
+			<div class="panel-heading">{stats.name}</div>
 			<div class="panel-body">
 				<div id="unique-visitors">
 					<div class="text-center pull-left">
-						<div id="day"></div>
+						<div>{stats.day}</div>
 						<div>Day</div>
 					</div>
 					<div class="text-center pull-left">
-						<div id="week"></div>
+						<div>{stats.week}</div>
 						<div>Week</div>
 					</div>
 					<div class="text-center pull-left">
-						<div id="month"></div>
+						<div>{stats.month}</div>
 						<div>Month</div>
 					</div>
 					<div class="text-center pull-left">
-						<div id="alltime"></div>
+						<div>{stats.alltime}</div>
 						<div>All Time</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- END stats -->
+
 
 	</div>
 
