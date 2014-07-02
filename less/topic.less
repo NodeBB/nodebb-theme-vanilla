@@ -1,37 +1,48 @@
 .topic {
 	.post-content {
 		> blockquote {
-			blockquote, p {
+			> * {
 				display: none;
 			}
-
 
 			> *:first-child {
 				display: block;
 
-				> p:first-child {
+				> *:first-child {
 					display: block;
 				}
 
 				blockquote {
-					> p:first-child {
+					> *:first-child {
 						display: block;
 					}
+				}
+
+				br {
+					display: inline;
 				}
 			}
 
 			> *:first-child + blockquote {
 				display: block;
-
-				> p:first-child {
+				> * {
+					display: none;
+				}
+				> *:first-child {
 					display: block;
 				}
 			}
 		}
 
 		> blockquote.uncollapsed {
-			blockquote, p {
+			> * {
 				display: block;
+
+			}
+			blockquote {
+				> * {
+					display: block;
+				}
 			}
 		}
 
@@ -41,6 +52,7 @@
 			background: #fcfcfc;
 			width: 50px;
 			text-align: center;
+			display:block!important;
 		}
 	}
 
