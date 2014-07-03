@@ -7,6 +7,16 @@
 			<div class="account-picture-block text-center">
 				<img id="user-current-picture" class="user-profile-picture img-thumbnail" src="{picture}" /><br /><br />
 				<a id="changePictureBtn" href="#" class="btn btn-primary">[[user:change_picture]]</a>
+				<br/><br/>
+				<!-- IF config.requireEmailConfirmation -->
+				<!-- IF email -->
+				<!-- IF email:confirmed -->
+				<a id="confirm-email" href="#" class="btn btn-warning hide">[[user:confirm_email]]</a>
+				<!-- ELSE -->
+				<a id="confirm-email" href="#" class="btn btn-warning">[[user:confirm_email]]</a>
+				<!-- ENDIF email:confirmed -->
+				<!-- ENDIF email -->
+				<!-- ENDIF config.requireEmailConfirmation -->
 			</div>
 		</div>
 
@@ -26,15 +36,7 @@
 						<div class="controls">
 							<input class="form-control" type="text" id="inputEmail" placeholder="[[user:email]]" value="{email}">
 						</div>
-						<!-- IF config.requireEmailConfirmation -->
-						<!-- IF email -->
-						<!-- IF email:confirmed -->
-						<span class="help-block"><i class="fa fa-check text-success"></i> [[user:email.confirmed]]</span>
-						<!-- ELSE -->
-						<span class="help-block"><i class="fa fa-times text-danger"></i> [[user:email.not_confirmed]] <span class="btn btn-primary btn-sm" id="confirm-email">[[user:email.confirm_button_text]]</span></span>
-						<!-- ENDIF email:confirmed -->
-						<!-- ENDIF email -->
-						<!-- ENDIF config.requireEmailConfirmation -->
+
 					</div>
 
 					<div class="control-group">
