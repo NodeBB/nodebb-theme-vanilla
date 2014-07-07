@@ -1,15 +1,13 @@
 <div class="col-sm-9">
 	<!-- IF messages.length -->
-	<div class="panel panel-default expanded-chat" data-uid="{chatData.uid}">
+	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}">
 		<div class="panel-heading">
 			<h2 class="panel-title">[[modules:chat.message-history]]</h2>
 		</div>
 		<div class="panel-body">
 			<ul class="well well-sm">
-				<!-- BEGIN messages -->
-				<!-- IMPORT partials/chat_message.tpl -->
-				<!-- END messages -->
-				<span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {chatData.username}]]</span>
+				<!-- IMPORT partials/chat_messages.tpl -->
+				<span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {meta.username}]]</span>
 			</ul>
 			<div class="input-group">
 				<input type="text" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input">
@@ -34,8 +32,8 @@
 			<ul class="chats-list">
 				<!-- BEGIN contacts -->
 				<li data-username="{contacts.username}" data-uid="{contacts.uid}">
-					<img class="user-img" src="{contacts.picture}">
 					<i class="fa fa-circle status {contacts.status}"></i>
+					<img class="user-img" src="{contacts.picture}">
 					<span>{contacts.username}</span>
 				</li>
 				<!-- END contacts -->
@@ -50,8 +48,8 @@
 			<ul class="chats-list">
 				<!-- BEGIN chats -->
 				<li data-username="{chats.username}" data-uid="{chats.uid}">
-					<img class="user-img" src="{chats.picture}">
 					<i class="fa fa-circle status {chats.status}"></i>
+					<img class="user-img" src="{chats.picture}">
 					<span>{chats.username}</span>
 				</li>
 				<!-- END chats -->
