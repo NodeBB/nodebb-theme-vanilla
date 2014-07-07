@@ -16,65 +16,33 @@
 <div class="search">
 	<div class="row">
 
-		<div id="topic-results" class="col-md-12" data-search-query="{search_query}">
-
-			<h3>[[global:topics]]</h3>
-
-			<!-- IF topic_matches -->
-			<small>[[search:results_matching, {topic_matches}, {search_query}]]</small>
-			<!-- ELSE -->
-			<div class="alert alert-info">[[topic:no_topics_found]]</div>
-			<!-- ENDIF topic_matches -->
-
-			<!-- BEGIN topics -->
-			<div class="topic-row panel panel-default clearfix">
-				<div class="panel-body">
-					<a href="{relative_path}/topic/{topics.slug}" class="search-result-text">
-						<h4>{topics.title}</h4>
-					</a>
-
-					<div>
-						<small>
-							<span class="pull-right">
-								[[global:posted_in_ago, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
-							</span>
-						</small>
-					</div>
-				</div>
-			</div>
-			<!-- END topics -->
-		</div>
-
 		<div id="post-results" class="col-md-12" data-search-query="{search_query}">
-			<h3>[[global:posts]]</h3>
-
-			<!-- IF post_matches -->
-			<small>[[search:results_matching, {post_matches}, {search_query}]]</small>
+			<!-- IF matchCount -->
+			<div class="alert alert-info">[[search:results_matching, {matchCount}, {search_query}, {time}]] </div>
 			<!-- ELSE -->
-			<div class="alert alert-info">[[topic:no_posts_found]]</div>
-			<!-- ENDIF post_matches -->
+			<div class="alert alert-warning">[[topic:no_posts_found]]</div>
+			<!-- ENDIF matchCount -->
 
-			<!-- BEGIN posts -->
+			<!-- BEGIN results -->
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
 
-					<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
-						<h4>{posts.topic.title}</h4>
+					<a href="{relative_path}/topic/{results.topic.slug}/{results.index}" class="search-result-text">
+						<h4>{results.topic.title}</h4>
 					</a>
 					<div class="search-result-text">
-						{posts.content}
+						{results.content}
 						<p class="fade-out"></p>
 					</div>
 
 					<small>
 						<span class="pull-right footer">
-							[[global:posted_in_ago, <a href="{relative_path}/category/{posts.category.slug}"><i class="fa {posts.category.icon}"></i> {posts.category.name}</a>, <span class="timeago" title="{posts.relativeTime}"></span>]]
+							[[global:posted_in_ago, <a href="{relative_path}/category/{results.category.slug}"><i class="fa {results.category.icon}"></i> {results.category.name}</a>, <span class="timeago" title="{results.relativeTime}"></span>]]
 						</span>
 					</small>
-
 				</div>
 			</div>
-			<!-- END posts -->
+			<!-- END results -->
 		</div>
 	</div>
 </div>
