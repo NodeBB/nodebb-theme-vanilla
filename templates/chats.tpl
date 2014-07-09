@@ -1,7 +1,8 @@
 <div class="col-sm-9">
 	<!-- IF messages.length -->
-	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}">
+	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
 		<div class="panel-heading">
+			<button type="button" class="close" data-action="pop-out"><span aria-hidden="true"><i class="fa fa-compress"></i></span><span class="sr-only">[[modules:chat.pop-out]]</span></button>
 			<h2 class="panel-title">[[modules:chat.message-history]]</h2>
 		</div>
 		<div class="panel-body">
