@@ -22,9 +22,9 @@
 			</h4>
 
 			<!-- IF categories.link -->
-			<a href="{categories.link}" itemprop="url" target="_blank">
+			<a style="color: {categories.color};" href="{categories.link}" itemprop="url" target="_blank">
 			<!-- ELSE -->
-			<a href="{relative_path}/category/{categories.slug}" itemprop="url">
+			<a style="color: {categories.color};" href="{relative_path}/category/{categories.slug}" itemprop="url">
 			<!-- ENDIF categories.link -->
 				<div
 					id="category-{categories.cid}" class="category-header icon category-header-image-{categories.imageClass}"
@@ -32,7 +32,6 @@
 					style="
 						<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
 						<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
-						color: {categories.color};
 					"
 				>
 					<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
@@ -40,6 +39,7 @@
 						<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
 						<!-- ENDIF categories.icon -->
 						<div class="category-box" itemprop="description">{categories.description}</div>
+
 						<!-- BEGIN posts -->
 						<div class="category-box">
 							<div class="post-preview">
