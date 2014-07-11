@@ -69,10 +69,10 @@
 		</div>
 
 		<div class="row write-preview-container">
-			<div class="col-lg-6 write-container">
+			<div class="col-md-6 col-sm-12 write-container">
 				<textarea class="write" tabIndex="3"></textarea>
 			</div>
-			<div class="col-lg-6 preview-container">
+			<div class="col-md-6 hidden-sm hidden-xs preview-container">
 				<div class="preview well"></div>
 			</div>
 		</div>
