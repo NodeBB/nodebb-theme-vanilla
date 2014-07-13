@@ -44,7 +44,7 @@
 						<hr />
 						<button class="btn btn-primary btn-lg btn-block" id="login" type="submit">[[global:login]]</button>
 						<!-- IF allowRegistration -->
-						<span>[[login:dont_have_account]] <a href="{relative_path}/register">[[register:Register]]</a></span>
+						<span>[[login:dont_have_account]] <a href="{relative_path}/register">[[register:register]]</a></span>
 						<!-- ENDIF allowRegistration -->
 						<!-- IF showResetLink -->
 						&nbsp; <a id="reset-link" href="{relative_path}/reset">[[login:forgot_password]]</a>
