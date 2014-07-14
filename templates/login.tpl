@@ -21,7 +21,7 @@
 				<div class="form-group">
 					<label for="username" class="col-lg-2 control-label">[[login:username]]</label>
 					<div class="col-lg-10">
-						<input class="form-control" type="text" placeholder="[[login:username]]" name="username" id="username" />
+						<input class="form-control" type="text" placeholder="[[login:username]]" name="username" id="username" autocorrect="off" autocapitalize="off" />
 					</div>
 				</div>
 				<div class="form-group">
