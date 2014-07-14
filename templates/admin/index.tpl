@@ -14,15 +14,11 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">Notices</div>
 			<div class="panel-body">
+			<!-- BEGIN notices -->
 				<div>
-					<!-- IF !restartRequired --><i class="fa fa-fw fa-check text-success"></i> Restart not required<!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i> Restart Required<!-- ENDIF !restartRequired -->
+					<!-- IF notices.done --><i class="fa fa-fw fa-check text-success"></i> {notices.doneText}<!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i> {notices.notDoneText}<!-- ENDIF notices.done -->
 				</div>
-				<div>
-					<!-- IF emailerInstalled --><i class="fa fa-fw fa-check text-success"></i><!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i><!-- ENDIF emailerInstalled --> Emailer Installed
-				</div>
-				<div>
-					<!-- IF searchInstalled --><i class="fa fa-fw fa-check text-success"></i><!-- ELSE --><i class="fa fa-fw fa-times text-danger"></i><!-- ENDIF searchInstalled --> Search Plugin Installed
-				</div>
+			<!-- END notices -->
 			</div>
 		</div>
 
