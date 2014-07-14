@@ -15,7 +15,7 @@
 					<label for="email" class="col-lg-4 control-label">[[register:email_address]]</label>
 					<div class="col-lg-8">
 						<div class="input-group">
-							<input class="form-control" type="text" placeholder="[[register:email_address_placeholder]]" name="email" id="email" />
+							<input class="form-control" type="text" placeholder="[[register:email_address_placeholder]]" name="email" id="email" autocorrect="off" autocapitalize="off" />
 							<span class="input-group-addon">
 								<span id="email-notify"><i class="fa fa-circle-o"></i></span>
 							</span>
@@ -27,7 +27,7 @@
 					<label for="username" class="col-lg-4 control-label">[[register:username]]</label>
 					<div class="col-lg-8">
 						<div class="input-group">
-							<input class="form-control" type="text" placeholder="[[register:username_placeholder]]" name="username" id="username" />
+							<input class="form-control" type="text" placeholder="[[register:username_placeholder]]" name="username" id="username" autocorrect="off" autocapitalize="off" />
 							<span class="input-group-addon">
 								<span id="username-notify"><i class="fa fa-circle-o"></i></span>
 							</span>
