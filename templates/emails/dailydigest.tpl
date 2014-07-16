@@ -1,4 +1,4 @@
-<p>[[email:welcome.greeting, {username}]],</p>
+<p>[[email:greeting_with_name, {username}]],</p>
 
 <!-- IF notifications.length -->
 <p>[[email:digest.notifications, {site_title}]]</p>
@@ -14,7 +14,7 @@
 <hr />
 <!-- ENDIF notifications.length -->
 
-<p>[[email:digest.latest_topics]]</p>
+<p>[[email:digest.latest_topics, {site_title}]]</p>
 <ul>
 	<!-- IF recent.length -->
 	<!-- BEGIN recent -->
