@@ -1,46 +1,26 @@
 .topic {
 	.post-content {
 		> blockquote {
-			> * {
+			> *:not(:first-child) {
 				display: none;
 			}
 
-			> *:first-child {
-				display: block;
-
-				> *:first-child {
-					display: block;
-				}
-
-				blockquote {
-					> *:first-child {
-						display: block;
-					}
-				}
-
-				br {
-					display: inline;
-				}
-			}
-
-			> *:first-child + blockquote {
-				display: block;
-				> * {
+			> blockquote {
+				display: block!important;
+				> *:not(:first-child) {
 					display: none;
-				}
-				> *:first-child {
-					display: block;
 				}
 			}
 		}
 
 		> blockquote.uncollapsed {
-			> * {
+			> *:not(:first-child) {
 				display: block;
-
 			}
-			blockquote {
-				> * {
+
+			> blockquote {
+				display: block!important;
+				> *:not(:first-child) {
 					display: block;
 				}
 			}
