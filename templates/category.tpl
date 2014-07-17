@@ -10,7 +10,7 @@
 		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
 	</li>
 	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">{name} <a target="_blank" href="{relative_path}/category/{cid}.rss"><i class="fa fa-rss-square"></i></a></span>
+		<span itemprop="title">{name} <!-- IF !feeds:disableRSS --><a target="_blank" href="{relative_path}/category/{cid}.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></span>
 	</li>
 </ol>
 

@@ -1,7 +1,7 @@
 <div class="popular">
 	<ol class="breadcrumb">
 		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[global:header.popular]] <a href="{relative_path}/popular.rss"><i class="fa fa-rss-square"></i></a></li>
+		<li class="active">[[global:header.popular]] <!-- IF !feeds:disableRSS --><a href="{relative_path}/popular.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></li>
 	</ol>
 
 	<ul class="nav nav-pills">
