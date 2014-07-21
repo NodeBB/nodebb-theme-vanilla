@@ -1,5 +1,11 @@
-<h2>[[notifications:title]]</h2>
 
+
+<!-- IF !notifications.length -->
+	<div class="alert alert-info">
+		[[notifications:no_notifs]]
+	</div>
+<!-- ELSE -->
+<h2>[[notifications:title]]</h2>
 <ul class="notifications-list">
 <!-- BEGIN notifications -->
 	<li data-nid="{notifications.nid}" class="{notifications.readClass}">
@@ -10,3 +16,5 @@
 	</li>
 <!-- END notifications -->
 </ul>
+
+<!-- ENDIF !notifications.length -->
