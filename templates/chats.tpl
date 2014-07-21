@@ -1,5 +1,5 @@
 <div class="col-sm-9">
-	<!-- IF messages.length -->
+	<!-- IF meta -->
 	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
 		<div class="panel-heading">
 			<button type="button" class="close" data-action="pop-out"><span aria-hidden="true"><i class="fa fa-compress"></i></span><span class="sr-only">[[modules:chat.pop-out]]</span></button>
@@ -22,7 +22,7 @@
 	<div class="alert alert-info">
 		[[modules:chat.no-messages]]
 	</div>
-	<!-- ENDIF messages.length -->
+	<!-- ENDIF meta -->
 </div>
 <div class="col-sm-3 hidden-xs">
 	<div class="panel panel-default">
