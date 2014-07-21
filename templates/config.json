@@ -1,21 +1,6 @@
 {
 	"custom_mapping": {
 		"^\/?$": "home",
-		"^admin/?$": "admin/index",
-		"^admin/testing/categories.*": "admin/testing/categories",
-		"^admin/topics.*": "admin/topics",
-		"^admin/categories.*": "admin/categories",
-		"^admin/users.*": "admin/users",
-		"^admin/database.*": "admin/database",
-		"^admin/events.*": "admin/events",
-		"^admin/index.*": "admin/index",
-		"^admin/themes.*": "admin/themes",
-		"^admin/plugins/?$": "admin/plugins",
-		"^admin/languages/?$": "admin/languages",
-		"^admin/settings.*": "admin/settings",
-		"^admin/logger.*": "admin/logger",
-		"^admin/motd/?$": "admin/motd",
-		"^admin/groups/?$": "admin/groups",
 		"^users/sort-posts": "users",
 		"^users/latest": "users",
 		"^users/sort-reputation": "users",
@@ -28,9 +13,7 @@
 		"^user.*posts": "account/posts",
 		"^user.*topics": "account/topics",
 		"^user/.*": "account/profile",
-
-		"^recent/.*": "recent",
-		"reset/.*": "reset_code",
+		"^reset/.*": "reset_code",
 		"^tags/.*": "tag",
 		"^groups/?$": "groups/list",
 		"^groups/.*": "groups/details"
