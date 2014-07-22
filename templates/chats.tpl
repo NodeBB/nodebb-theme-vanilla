@@ -48,7 +48,7 @@
 		<div class="panel-body">
 			<ul class="chats-list">
 				<!-- BEGIN chats -->
-				<li data-username="{chats.username}" data-uid="{chats.uid}">
+				<li data-username="{chats.username}" data-uid="{chats.uid}" class="<!-- IF chats.unread -->unread<!-- ENDIF chats.unread -->">
 					<i class="fa fa-circle status {chats.status}"></i>
 					<img class="user-img" src="{chats.picture}">
 					<span>{chats.username}</span>
