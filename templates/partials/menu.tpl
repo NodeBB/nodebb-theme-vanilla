@@ -77,7 +77,7 @@
 					</li>
 
 					<li class="visible-xs">
-						<a href="{relative_path}/notifications"><i class="fa fa-exclamation-triangle fa-fw" title="[[notifications:title]]"></i> [[notifications:title]]</a>
+						<a href="{relative_path}/notifications"><i class="fa fa-bell-o fa-fw" title="[[notifications:title]]"></i> [[notifications:title]]</a>
 					</li>
 
 					<li class="chats dropdown">
