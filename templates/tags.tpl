@@ -10,7 +10,7 @@
 	</div>
 	<!-- ENDIF !tags.length -->
 
-	<input class="form-control" type="text" id="tag-search"/>
+	<input class="form-control" type="text" id="tag-search" placeholder="[[global:search]]"/>
 	<br/>
 
 	<div class="category row">
