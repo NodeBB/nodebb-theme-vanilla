@@ -59,6 +59,15 @@
 					</div>
 				</div>
 
+				<!-- BEGIN regFormEntry -->
+				<div class="form-group">
+					<label for="register-{regFormEntry.styleName}" class="col-lg-4 control-label">{regFormEntry.label}</label>
+					<div id="register-{regFormEntry.styleName}" class="col-lg-8">
+						{regFormEntry.html}
+					</div>
+				</div>
+				<!-- END regFormEntry -->
+
 				<!-- IF captcha -->
 				<div class="form-group">
 					<label for="register-captcha" class="col-lg-4 control-label">{captcha.label}</label>
