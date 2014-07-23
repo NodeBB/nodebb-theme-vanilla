@@ -78,7 +78,7 @@
 					<form>
 						<div class="form-group">
 							<label for="change-group-name">Group Name</label>
-							<input type="text" class="form-control" id="change-group-name" placeholder="Group Name" readonly="readonly" />
+							<input type="text" class="form-control" id="change-group-name" placeholder="Group Name" />
 						</div>
 						<div class="form-group">
 							<label for="change-group-desc">Description</label>
