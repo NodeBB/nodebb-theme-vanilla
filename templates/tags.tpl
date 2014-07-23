@@ -16,12 +16,10 @@
 	<div class="category row">
 		<div class="col-md-12 clearfix tag-list">
 			<!-- BEGIN tags -->
-			<a href="{relative_path}/tags/{tags.value}" data-value="{tags.value}" class="pull-left">
-				<h3>
-				<span class="label label-info">{tags.value}</span>
-				 <small>x</small><span class="tag-topic-count">{tags.score}</span>
-				</h3>
-			</a>
+			<h3 class="pull-left">
+				<a href="{relative_path}/tags/{tags.value}" data-value="{tags.value}"><span class="label label-info">{tags.value}</span></a>
+				<small>x</small><span class="tag-topic-count">{tags.score}</span>
+			</h3>
 			<!-- END tags -->
 		</div>
 	</div>
