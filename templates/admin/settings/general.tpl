@@ -2,11 +2,23 @@
 		<div class="alert alert-warning">
 			<form>
 				<label>Site Title</label>
-				<input class="form-control" type="text" placeholder="Your Community Name" data-field="title" /><br />
+				<input class="form-control" type="text" placeholder="Your Community Name" data-field="title" />
+
+				<div class="checkbox">
+					<label for="showSiteTitle">
+						<input type="checkbox" id="showSiteTitle" data-field="showSiteTitle" name="showSiteTitle" /> Show Site Title in Header
+					</label>
+				</div>
+
 				<label>Browser Title</label>
-				<input class="form-control" type="text" placeholder="Browser Title" data-field="browserTitle" /><br />
+				<input class="form-control" type="text" placeholder="Browser Title" data-field="browserTitle" />
+				<p class="help-block">
+					If no browser title is specified, the site title will be used
+				</p>
+
 				<label>Site Description</label>
 				<input type="text" class="form-control" placeholder="A short description about your community" data-field="description" /><br />
+
 				<label>Site Keywords</label>
 				<input type="text" class="form-control" placeholder="Keywords describing your community, comma-seperated" data-field="keywords" /><br />
 
