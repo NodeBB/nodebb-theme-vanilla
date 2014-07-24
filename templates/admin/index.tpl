@@ -6,7 +6,7 @@
 					<a target="_blank" href="http://community.nodebb.org" class="btn btn-default btn-sm"><i class="fa fa-comment"></i> NodeBB Community Forum</a>
 					<a target="_blank" href="http://community.nodebb.org/" class="btn btn-default btn-sm"><i class="fa fa-github-alt"></i> Get Plugins and Themes</a>
 					<a target="_blank" href="http://www.twitter.com/NodeBB" class="btn btn-default btn-sm"><i class="fa fa-twitter"></i> Follow @NodeBB</a>
-					<a target="_blank" href="https://github.com/NodeBB/NodeBB/wiki" class="btn btn-default btn-sm"><i class="fa fa-question-circle"></i> NodeBB Wiki</a>
+					<a target="_blank" href="https://docs.nodebb.org/en/latest" class="btn btn-default btn-sm"><i class="fa fa-question-circle"></i> NodeBB Documentation</a>
 				</p>
 			</div>
 		</div>
