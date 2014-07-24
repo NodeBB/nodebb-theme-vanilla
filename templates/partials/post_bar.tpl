@@ -2,7 +2,7 @@
 
 	<span class="tags">
 	<!-- BEGIN tags -->
-	<a href="{relative_path}/tags/{tags.name}"><span class="label label-info">{tags.name}</span></a>
+	<a href="{relative_path}/tags/{tags.name}"><span class="tag-item">&bull; {tags.name}</span></a>
 	<!-- END tags -->
 	</span>
 
