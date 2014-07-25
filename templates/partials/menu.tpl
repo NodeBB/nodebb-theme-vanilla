@@ -22,11 +22,11 @@
 
 			<div class="navbar-collapse collapse navbar-ex1-collapse">
 				<ul id="main-nav" class="nav navbar-nav pull-left">
-					<!-- IF isLoggedIn -->
+					<!-- IF loggedIn -->
 					<li>
 						<a href="{relative_path}/unread"><i id="unread-count" class="fa fa-fw fa-inbox" data-content="0" title="[[global:header.unread]]"></i><span class="visible-xs-inline"> [[global:header.unread]]</span></a>
 					</li>
-					<!-- ENDIF isLoggedIn -->
+					<!-- ENDIF loggedIn -->
 
 					<li>
 						<a href="{relative_path}/recent"><i class="fa fa-fw fa-clock-o" title="[[global:header.recent]]"></i><span class="visible-xs-inline"> [[global:header.recent]]</span></a>
@@ -67,7 +67,7 @@
 					<!-- END navigation -->
 				</ul>
 
-				<!-- IF isLoggedIn -->
+				<!-- IF loggedIn -->
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right pull-right">
 					<li class="notifications dropdown text-center hidden-xs">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="notif_dropdown"><i class="fa fa-fw fa-bell-o" data-content="0" title="[[global:header.notifications]]"></i></a>
@@ -135,7 +135,7 @@
 						</a>
 					</li>
 				</ul>
-				<!-- ENDIF isLoggedIn -->
+				<!-- ENDIF loggedIn -->
 				<!-- IF searchEnabled -->
 				<ul class="nav navbar-nav navbar-right">
 					<li>
