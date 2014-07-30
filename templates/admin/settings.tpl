@@ -26,6 +26,7 @@
 	<!-- IMPORT admin/settings/advanced.tpl -->
 
 	<!-- This was not moved into a partial because I am removing it soon (@julianlam) -->
+	<!-- ^ Heh, when did I add this... this section is still here apparently. (@julianlam July 2014) -->
 	<div class="tab-pane" id="reputation">
 		<form>
 			<div class="alert alert-warning">
