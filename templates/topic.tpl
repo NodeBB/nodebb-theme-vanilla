@@ -149,11 +149,11 @@
 						</span>
 						<span class="pull-left">
 							[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>
-							<!-- IF posts.user.custom_profile_info -->
+							<!-- IF posts.user.custom_profile_info.length -->
 								<!-- BEGIN custom_profile_info -->
 								| {posts.user.custom_profile_info.content}
 								<!-- END custom_profile_info -->
-							<!-- ENDIF posts.user.custom_profile_info -->
+							<!-- ENDIF posts.user.custom_profile_info.length -->
 						</span>
 						<div style="clear:both;"></div>
 					</div>
