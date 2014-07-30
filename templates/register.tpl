@@ -68,15 +68,6 @@
 				</div>
 				<!-- END regFormEntry -->
 
-				<!-- IF captcha -->
-				<div class="form-group">
-					<label for="register-captcha" class="col-lg-4 control-label">{captcha.label}</label>
-					<div id="register-captcha" class="col-lg-8">
-						{captcha.html}
-					</div>
-				</div>
-				<!-- ENDIF captcha -->
-
 				<!-- IF termsOfUse -->
 				<div class="form-group">
 					<label class="col-lg-4 control-label">&nbsp;</label>
