@@ -20,7 +20,7 @@
 
 	<ul id="users-container" class="users-container">
 		<!-- BEGIN users -->
-		<li class="users-box registered-user">
+		<li class="users-box registered-user" data-uid="{users.uid}">
 			<a href="{relative_path}/user/{users.userslug}"><img src="{users.picture}" class="img-thumbnail"/></a>
 			<br/>
 			<div class="user-info">
