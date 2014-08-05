@@ -18,5 +18,12 @@
 					</p>
 				</div>
 			</div>
+			<div class="alert alert-warning">
+				<div class="checkbox">
+					<label for="disableEmailSubscriptions">
+						<input type="checkbox" id="disableEmailSubscriptions" data-field="disableEmailSubscriptions" name="disableEmailSubscriptions" /> Disable subscriber notification emails
+					</label>
+				</div>
+			</div>
 		</form>
 	</div>

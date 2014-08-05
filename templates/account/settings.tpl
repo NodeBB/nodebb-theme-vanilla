@@ -20,6 +20,7 @@
 						<input type="checkbox" data-property="showemail" /> <strong>[[user:show_email]]</strong>
 					</label>
 				</div>
+				<!-- IF !disableEmailSubscriptions -->
 				<div class="form-group">
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
 					<select class="form-control" id="dailyDigestFreq" data-property="dailyDigestFreq">
@@ -30,6 +31,7 @@
 					</select>
 					<p class="help-block">[[user:digest_description]]</p>
 				</div>
+				<!-- ENDIF !disableEmailSubscriptions -->
 			</div>
 
 			<h4>[[global:pagination]]</h4>
