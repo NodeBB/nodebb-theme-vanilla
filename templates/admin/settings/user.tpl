@@ -46,6 +46,12 @@
 					<input data-action="upload" data-target="customGravatarDefaultImage" data-route="{relative_path}/admin/uploadgravatardefault" type="button" class="btn btn-default" value="Upload"></input>
 				</div>
 
+				<div class="form-group">
+					<label for="profileImageDimension">Profile Image Dimension</label>
+					<input id="profileImageDimension" type="text" class="form-control" data-field="profileImageDimension" placeholder="128" />
+				</div>
+
+
 				<h3>Account Protection</h3>
 				<div class="form-group">
 					<label for="loginAttempts">Login attempts per hour</label>
