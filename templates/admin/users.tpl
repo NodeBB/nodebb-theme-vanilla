@@ -18,6 +18,7 @@
 			<li class="divider"></li>
 			<li><a href="#" class="ban-user"><i class="fa fa-fw fa-gavel"></i> Ban User</a></li>
 			<li><a href="#" class="unban-user"><i class="fa fa-fw fa-comment-o"></i> Unban User</a></li>
+			<li><a href="#" class="reset-lockout"><i class="fa fa-fw fa-unlock"></i> Reset Lockout</a></li>
 			<li class="divider"></li>
 			<li><a href="#" class="delete-user"><i class="fa fa-fw fa-trash-o"></i> Delete User</a></li>
 		</ul>
