@@ -9,6 +9,8 @@
 
 				<strong>Topics per Page</strong><br /> <input type="text" class="form-control" value="20" data-field="topicsPerPage"><br />
 				<strong>Posts per Page</strong><br /> <input type="text" class="form-control" value="20" data-field="postsPerPage"><br />
+				<hr/>
+				<strong>Initial Number of Topics to Load (Unread, Recent, Popular etc.)</strong><br /> <input type="text" class="form-control" value="20" data-field="topicsPerList"><br />
 			</div>
 		</form>
 	</div>
