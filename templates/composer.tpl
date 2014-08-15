@@ -1,7 +1,9 @@
 <div class="composer">
 
 	<div class="composer-container">
-		<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
+		<div class="title-container">
+			<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
+		</div>
 
 		<!-- IF allowTopicsThumbnail -->
 		<i class="fa fa-picture-o pull-right topic-thumb-btn topic-thumb-toggle-btn hide" title="[[topic:composer.thumb_title]]"></i>
@@ -25,11 +27,18 @@
 		</div>
 		<!--  ENDIF allowTopicsThumbnail -->
 
-		<!-- IF showTags -->
-		<div class="tags-container">
-			<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here]]" tabIndex="2"/>
+		<div class="row category-tag-row">
+			<!-- IF isTopic -->
+			<div class="col-lg-3 category-list-container">
+				<select class="form-control category-list"></select>
+			</div>
+			<!-- ENDIF isTopic -->
+			<!-- IF showTags -->
+			<div class="tags-container <!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic-->">
+				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here]]" tabIndex="2"/>
+			</div>
+			<!-- ENDIF showTags -->
 		</div>
-		<!-- ENDIF showTags -->
 
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
