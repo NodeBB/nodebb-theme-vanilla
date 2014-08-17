@@ -119,6 +119,7 @@
 						<li class="nav-header">NodeBB</li>
 						<li class="active"><a href="{relative_path}/admin/index"><i class="fa fa-fw fa-home"></i> Home</a></li>
 						<li><a href="{relative_path}/admin/categories/active"><i class="fa fa-fw fa-folder"></i> Categories</a></li>
+						<li><a href="{relative_path}/admin/tags"><i class="fa fa-fw fa-tags"></i> Tags</a></li>
 						<li><a href="{relative_path}/admin/users/latest"><i class="fa fa-fw fa-user"></i> Users</a></li>
 						<li><a href="{relative_path}/admin/groups"><i class="fa fa-fw fa-group"></i> Groups</a></li>
 						<li><a href="{relative_path}/admin/settings"><i class="fa fa-fw fa-cogs"></i> General Settings</a></li>
