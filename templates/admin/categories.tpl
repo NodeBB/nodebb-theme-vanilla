@@ -37,52 +37,7 @@
 								<!-- ENDIF categories.image -->
 							</div>
 							<div class="col-sm-10">
-								<h3 data-edit-target="#cid-{categories.cid}-name"><span>{categories.name}</span> <small><i class="fa fa-edit"></i></small></h3>
-								<input id="cid-{categories.cid}-name" type="text" class="form-control hide" placeholder="Category Name" data-name="name" value="{categories.name}" />
-								<h4 data-edit-target="#cid-{categories.cid}-description"><span>{categories.description}</span> <small><i class="fa fa-edit"></i></small></h4>
-								<input id="cid-{categories.cid}-description" data-name="description" placeholder="Category Description" value="{categories.description}" class="form-control category_description input-sm description hide"></input>
-
-								<div class="col-sm-4 col-xs-12">
-									<div class="form-group">
-										<label for="cid-{categories.cid}-bgColor">Background Colour</label>
-										<input id="cid-{categories.cid}-bgColor" placeholder="#0059b2" data-name="bgColor" value="{categories.bgColor}" class="form-control category_bgColor" />
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-12">
-									<div class="form-group">
-										<label for="cid-{categories.cid}-color">Text Colour</label>
-										<input id="cid-{categories.cid}-color" placeholder="#fff" data-name="color" value="{categories.color}" class="form-control category_color" />
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-12">
-									<div class="form-group">
-										<label for="cid-{categories.cid}-imageClass">Image Class</label>
-											<select id="cid-{categories.cid}-imageClass" class="form-control" data-name="imageClass" data-value="{categories.imageClass}">
-											<option value="auto">auto</option>
-											<option value="cover">cover</option>
-											<option value="contain">contain</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-12">
-									<div class="form-group">
-										<label for="cid-{categories.cid}-class">Custom Class</label>
-										<input id="cid-{categories.cid}-class" type="text" class="form-control" placeholder="col-md-6 col-xs-6" data-name="class" value="{categories.class}" />
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-12">
-									<div class="form-group">
-										<label for="cid-{categories.cid}-numRecentReplies"># of Recent Replies Displayed</label>
-										<input id="cid-{categories.cid}-numRecentReplies" type="text" class="form-control" placeholder="2" data-name="numRecentReplies" value="{categories.numRecentReplies}" />
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-12">
-									<div class="form-group">
-										<label for="cid-{categories.cid}-link">External Link</label>
-										<input id="cid-{categories.cid}-link" type="text" class="form-control" placeholder="http://domain.com" data-name="link" value="{categories.link}" />
-									</div>
-								</div>
-								<div class="col-sm-8 col-xs-12">
+								<div class="pull-right text-right">
 									<div class="form-group">
 										<div class="dropdown">
 											<button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-cogs"></i> Options</button>
@@ -105,6 +60,65 @@
 										</div>
 									</div>
 								</div>
+								<h3 data-edit-target="#cid-{categories.cid}-name"><span>{categories.name}</span> <small><i class="fa fa-edit"></i></small></h3>
+								<input id="cid-{categories.cid}-name" type="text" class="form-control hide" placeholder="Category Name" data-name="name" value="{categories.name}" />
+								<h4 data-edit-target="#cid-{categories.cid}-description"><span>{categories.description}</span> <small><i class="fa fa-edit"></i></small></h4>
+								<input id="cid-{categories.cid}-description" data-name="description" placeholder="Category Description" value="{categories.description}" class="form-control category_description input-sm description hide"></input>
+
+								<fieldset>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-parentCid">Parent Category</label>
+											<!-- IF categories.parentCid -->
+											<button type="button" class="btn btn-default form-control" data-action="setParent" data-parentCid="{categories.parent.cid}"><i class="fa {categories.parent.icon}"></i> {categories.parent.name}</button>
+											<!-- ELSE -->
+											<button type="button" class="btn btn-default form-control" data-action="setParent"><i class="fa fa-sitemap"></i> (None)</button>
+											<!-- ENDIF categories.parentCid -->
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-bgColor">Background Colour</label>
+											<input id="cid-{categories.cid}-bgColor" placeholder="#0059b2" data-name="bgColor" value="{categories.bgColor}" class="form-control category_bgColor" />
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-color">Text Colour</label>
+											<input id="cid-{categories.cid}-color" placeholder="#fff" data-name="color" value="{categories.color}" class="form-control category_color" />
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-imageClass">Image Class</label>
+												<select id="cid-{categories.cid}-imageClass" class="form-control" data-name="imageClass" data-value="{categories.imageClass}">
+												<option value="auto">auto</option>
+												<option value="cover">cover</option>
+												<option value="contain">contain</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-class">Custom Class</label>
+											<input id="cid-{categories.cid}-class" type="text" class="form-control" placeholder="col-md-6 col-xs-6" data-name="class" value="{categories.class}" />
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-numRecentReplies"># of Recent Replies Displayed</label>
+											<input id="cid-{categories.cid}-numRecentReplies" type="text" class="form-control" placeholder="2" data-name="numRecentReplies" value="{categories.numRecentReplies}" />
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="cid-{categories.cid}-link">External Link</label>
+											<input id="cid-{categories.cid}-link" type="text" class="form-control" placeholder="http://domain.com" data-name="link" value="{categories.link}" />
+										</div>
+									</div>
+								</fieldset>
 
 								<input type="hidden" data-name="order" data-value="{categories.order}"></input>
 							</div>
@@ -112,93 +126,20 @@
 					</form>
 				</div>
 			</li>
-
 		<!-- END categories -->
 		</ul>
-
-
 	</div>
 
-	<div id="new-category-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="Add New Modal" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Create New Category</h3>
-				</div>
-				<div class="modal-body">
-					<div>
-						<form class='form-horizontal'>
-							<div class="control-group">
-								<label class="control-label" for="inputName">Name</label>
-								<div class="controls">
-									<input class="form-control" type="text" id="inputName" placeholder="Name" value="">
-								</div>
-							</div>
-
-							<div class="control-group">
-								<label class="control-label" for="inputDescription">Description</label>
-								<div class="controls">
-									<input class="form-control" type="text" id="inputDescription" placeholder="Description" value="">
-								</div>
-							</div>
-
-							<div class="control-group">
-								<label class="control-label" for="inputIcon">Icon</label>
-								<div class="controls">
-									<div class="icon">
-										<i data-name="icon" value="fa-pencil" class="fa fa-pencil fa-2x"></i>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" id="create-category-btn" href="#" class="btn btn-primary btn-lg btn-block">Create</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
-	<div id="category-permissions-modal" class="modal permissions-modal fade" tabindex="-1" role="dialog" aria-labelledby="Category Permissions" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Category Permissions</h3>
-				</div>
-				<div class="modal-body">
-					<p>The following users have access control permissions in this Category</p>
-					<ul class="members"></ul>
-
-					<hr />
-					<form role="form">
-						<div class="form-group">
-							<label for="permission-search">User Search</label>
-							<input class="form-control" type="text" id="permission-search" />
-						</div>
-					</form>
-					<ul class="search-results users"></ul>
-
-					<hr />
-					<form role="form">
-						<div class="form-group">
-							<label for="permission-group-pick">User Groups</label>
-						</div>
-					</form>
-					<ul class="search-results groups"></ul>
-
-				</div>
+	
+	<!-- IMPORT partials/admin/categories/new.tpl -->
+	<!-- IMPORT partials/admin/categories/permissions.tpl -->
+	<!-- IMPORT partials/admin/categories/setParent.tpl -->
+	<div id="icons" style="display:none;">
+		<div class="icon-container">
+			<div class="row fa-icons">
+				<i class="fa fa-doesnt-exist"></i>
+				<!-- IMPORT partials/fontawesome.tpl -->
 			</div>
-		</div>
-	</div>
-
-<div id="icons" style="display:none;">
-	<div class="icon-container">
-		<div class="row fa-icons">
-			<i class="fa fa-doesnt-exist"></i>
-			<!-- IMPORT partials/fontawesome.tpl -->
 		</div>
 	</div>
 </div>
