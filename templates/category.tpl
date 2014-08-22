@@ -11,7 +11,7 @@
 	</li>
 	<!-- IF parent -->
 	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/{parent.slug}" itemprop="url"><span itemprop="title">{parent.name}</span></a>
+		<a href="{relative_path}/category/{parent.slug}" itemprop="url"><span itemprop="title">{parent.name}</span></a>
 	</li>
 	<!-- ENDIF parent -->
 	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
