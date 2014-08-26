@@ -94,7 +94,7 @@
 							<button class="upvote btn btn-sm btn-default <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
 								<i class="fa fa-chevron-up"></i>
 							</button>
-							<button class="votes btn btn-sm btn-default" data-votes="{posts.votes}" disabled>{posts.votes}</button>
+							<button class="votes btn btn-sm btn-default" data-votes="{posts.votes}">{posts.votes}</button>
 							<button class="downvote btn btn-sm btn-default <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
 								<i class="fa fa-chevron-down"></i>
 							</button>
