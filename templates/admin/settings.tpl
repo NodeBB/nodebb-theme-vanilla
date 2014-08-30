@@ -35,6 +35,11 @@
 						<input type="checkbox" data-field="reputation:disabled"> <strong>Disable Reputation System</strong>
 					</label>
 				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-field="downvote:disabled"> <strong>Disable Down Voting</trong>
+					</label>
+				</div>
 			</div>
 
 			<div class="alert alert-warning">
