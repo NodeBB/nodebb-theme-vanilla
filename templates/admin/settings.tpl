@@ -57,6 +57,7 @@
 			<div class="alert alert-warning">
 				<h3>Activity Thresholds</h3>
 				<strong>Minimum reputation to downvote posts</strong><br /> <input type="text" class="form-control" data-field="privileges:downvote"><br />
+				<strong>Minimum reputation to flag posts</strong><br /> <input type="text" class="form-control" data-field="privileges:flag"><br />
 			</div>
 		</form>
 	</div>
