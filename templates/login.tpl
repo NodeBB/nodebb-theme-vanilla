@@ -12,9 +12,10 @@
 	<!-- IF allowLocalLogin -->
 	<div class="<!-- IF alternate_logins -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF alternate_logins -->">
 		<div class="well well-lg">
-			<div class="alert alert-danger" id="login-error-notify" style="display:none">
+			<div class="alert alert-danger" id="login-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				<strong>[[login:failed_login_attempt]]</strong> <p></p>
+				<strong>[[login:failed_login_attempt]]</strong>
+				<p>{error}</p>
 			</div>
 
 			<form class="form-horizontal" role="form" method="post">
