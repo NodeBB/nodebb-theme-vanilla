@@ -1,4 +1,4 @@
-<p>[[email:greeting_with_name, {username}]],,</p>
+<p>[[email:greeting_with_name, {username}]],</p>
 
 <p>
 	<strong>[[email:welcome.text1, {site_title}]]</strong>
