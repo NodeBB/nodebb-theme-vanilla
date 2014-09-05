@@ -74,7 +74,7 @@
 		</div>
 
 		<div class="panel panel-default">
-			<div class="panel-heading">Active Users <small><span class="badge" id="connections"></span> socket connections</small></div>
+			<div class="panel-heading">Active Users</div>
 			<div class="panel-body">
 				<div id="active_users"></div>
 			</div>
