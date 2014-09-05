@@ -71,6 +71,7 @@
 											<label for="cid-{categories.cid}-parentCid">Parent Category</label>
 											<!-- IF categories.parentCid -->
 											<button type="button" class="btn btn-default form-control" data-action="setParent" data-parentCid="{categories.parent.cid}"><i class="fa {categories.parent.icon}"></i> {categories.parent.name}</button>
+											<button type="button" class="btn btn-warning form-control" data-action="removeParent" data-parentCid="{categories.parent.cid}">Remove Parent</button>
 											<!-- ELSE -->
 											<button type="button" class="btn btn-default form-control" data-action="setParent"><i class="fa fa-sitemap"></i> (None)</button>
 											<!-- ENDIF categories.parentCid -->
@@ -130,7 +131,7 @@
 		</ul>
 	</div>
 
-	
+
 	<!-- IMPORT partials/admin/categories/new.tpl -->
 	<!-- IMPORT partials/admin/categories/permissions.tpl -->
 	<!-- IMPORT partials/admin/categories/setParent.tpl -->
