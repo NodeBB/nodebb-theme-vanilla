@@ -74,6 +74,16 @@
 					<label>Number of flags to ban user</label>
 					<input type="text" class="form-control" value="3" placeholder="" data-field="flagsForBan" />
 				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-field="autoban:downvote" checked> <strong>Enable automatic banning for reaching below a reputation threshold</strong>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-field="autoban:downvote:threshold" checked> <strong>Reputation threshold before receiving an automatic ban</strong>
+					</label>
+				</div>
 				<div class="form-group">
 					<label>Maximum User Image File Size</label>
 					<input type="text" class="form-control" placeholder="Maximum size of uploaded user images in kilobytes" data-field="maximumProfileImageSize" />
