@@ -70,8 +70,10 @@
 										<div class="form-group">
 											<label for="cid-{categories.cid}-parentCid">Parent Category</label>
 											<!-- IF categories.parentCid -->
-											<button type="button" class="btn btn-default form-control" data-action="setParent" data-parentCid="{categories.parent.cid}"><i class="fa {categories.parent.icon}"></i> {categories.parent.name}</button>
-											<button type="button" class="btn btn-warning form-control" data-action="removeParent" data-parentCid="{categories.parent.cid}">Remove Parent</button>
+											<div class="btn-group">
+												<button type="button" class="btn btn-default" data-action="setParent" data-parentCid="{categories.parent.cid}"><i class="fa {categories.parent.icon}"></i> {categories.parent.name}</button>
+												<button type="button" class="btn btn-warning" data-action="removeParent" data-parentCid="{categories.parent.cid}"><i class="fa fa-times"></i></button>
+											</div>
 											<!-- ELSE -->
 											<button type="button" class="btn btn-default form-control" data-action="setParent"><i class="fa fa-sitemap"></i> (None)</button>
 											<!-- ENDIF categories.parentCid -->
