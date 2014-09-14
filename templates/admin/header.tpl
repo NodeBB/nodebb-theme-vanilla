@@ -109,8 +109,6 @@
 		</div>
 	</div>
 
-	<input id="csrf_token" type="hidden" template-variable="csrf" value="{csrf}" />
-
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">

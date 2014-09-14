@@ -16,7 +16,6 @@
 							<input type="file" id="userPhotoInput"  name="userPhoto">
 							<p class="help-block"></p>
 						</div>
-						<input id="imageUploadCsrf" type="hidden" name="_csrf" value="" />
 						<input type="hidden" id="params" name="params">
 					</form>
 
