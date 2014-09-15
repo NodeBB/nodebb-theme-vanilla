@@ -46,7 +46,7 @@
 			<h2 class="panel-title">[[modules:chat.recent-chats]]</h2>
 		</div>
 		<div class="panel-body">
-			<ul class="chats-list">
+			<ul class="chats-list recent-chats" data-nextstart="{nextStart}">
 				<!-- BEGIN chats -->
 				<li data-username="{chats.username}" data-uid="{chats.uid}" class="<!-- IF chats.unread -->unread<!-- ENDIF chats.unread -->">
 					<i class="fa fa-circle status {chats.status}"></i>
