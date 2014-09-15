@@ -7,7 +7,7 @@
 		<!-- BEGIN categories -->
 		<div class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 			<meta itemprop="name" content="{categories.name}">
-			<h4>
+			<h4 class="category-title">
 				<!-- IF !categories.link -->
 				<span class="badge {categories.unread-class}">{categories.topic_count} </span>
 				<!-- ENDIF !categories.link -->
@@ -27,7 +27,7 @@
 			<a style="color: {categories.color};" href="{relative_path}/category/{categories.slug}" itemprop="url">
 			<!-- ENDIF categories.link -->
 				<div
-					id="category-{categories.cid}" class="category-header icon category-header-image-{categories.imageClass}"
+					id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"
 					title="{categories.description}"
 					style="
 						<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
