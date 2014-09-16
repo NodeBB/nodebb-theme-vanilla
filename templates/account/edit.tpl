@@ -8,7 +8,9 @@
 				<img id="user-current-picture" class="user-profile-picture img-thumbnail" src="{picture}" /><br /><br />
 				<a id="changePictureBtn" href="#" class="btn btn-primary">[[user:change_picture]]</a>
 				<br/><br/>
+				<!-- IF isSelf -->
 				<a id="deleteAccountBtn" href="#" class="btn btn-danger">[[user:delete_account]]</a>
+				<!-- ENDIF isSelf -->
 				<!-- IF config.requireEmailConfirmation -->
 				<!-- IF email -->
 				<!-- IF email:confirmed -->
