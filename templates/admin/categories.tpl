@@ -132,7 +132,7 @@
 		<!-- END categories -->
 		</ul>
 	</div>
-
+	<span class="hidden" id="csrf" data-csrf="{csrf}"></span>
 
 	<!-- IMPORT partials/admin/categories/new.tpl -->
 	<!-- IMPORT partials/admin/categories/permissions.tpl -->

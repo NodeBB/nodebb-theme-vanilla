@@ -17,6 +17,7 @@
 							<p class="help-block"></p>
 						</div>
 						<input type="hidden" id="params" name="params">
+						<input type="hidden" id="csrfToken" name="_csrf" />
 					</form>
 
 					<div id="upload-progress-box" class="progress progress-striped">
