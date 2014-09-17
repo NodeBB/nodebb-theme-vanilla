@@ -20,7 +20,7 @@
 						<input type="checkbox" data-field="disableSignatures"> <strong>Disable signatures</strong>
 					</label>
 				</div>
-				<strong>Chat Messages To Display</strong><br /> <input type="text" class="form-control" value="50" data-field="chatMessagesToDisplay"><br />
+				<strong>Chat Message Inbox Size</strong><br /> <input type="text" class="form-control" value="250" data-field="chatMessageInboxSize"><br />
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" data-field="allowFileUploads"> <strong>Allow users to upload regular files</strong>
