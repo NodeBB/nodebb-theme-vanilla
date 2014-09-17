@@ -10,7 +10,8 @@
 					</select>
 				</div>
 
-				<strong>Post Delay</strong><br /> <input type="text" class="form-control" value="10000" data-field="postDelay"><br />
+				<strong>Seconds between Posts</strong><br /> <input type="text" class="form-control" value="10" data-field="postDelay"><br />
+				<strong>Seconds before new user can post</strong><br /> <input type="text" class="form-control" value="10" data-field="initialPostDelay"><br />
 				<strong>Minimum Title Length</strong><br /> <input type="text" class="form-control" value="3" data-field="minimumTitleLength"><br />
 				<strong>Maximum Title Length</strong><br /> <input type="text" class="form-control" value="255" data-field="maximumTitleLength"><br />
 				<strong>Minimum Post Length</strong><br /> <input type="text" class="form-control" value="8" data-field="minimumPostLength"><br />

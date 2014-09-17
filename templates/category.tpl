@@ -19,6 +19,12 @@
 	</li>
 </ol>
 
+<div class="subcategories">
+	<!-- BEGIN children -->
+	<!-- IMPORT partials/category_child.tpl -->
+	<!-- END children -->
+</div>
+
 <div class="category row">
 	<div class="{topic_row_size}" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
 

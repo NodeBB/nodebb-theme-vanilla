@@ -4,7 +4,6 @@
 		<li class="active">[[unread:title]]</li>
 	</ol>
 
-
 	<div id="category-no-topics" class="alert alert-warning <!-- IF topics.length -->hidden<!-- ENDIF topics.length -->">
 		<strong>[[unread:no_unread_topics]]</strong>
 	</div>
@@ -26,12 +25,9 @@
 		</ul>
 	</div>
 
-
-
 	<a href="{relative_path}/unread">
 		<div class="alert alert-warning hide" id="new-topics-alert"></div>
 	</a>
-
 
 	<div class="category row">
 		<div class="col-md-12">
