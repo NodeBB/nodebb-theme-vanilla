@@ -6,8 +6,6 @@
 		"
 		class="<!-- IF categories.disabled -->disabled<!-- ENDIF categories.disabled -->"
 		data-cid="{categories.cid}"
-	>
-		<i class="fa fa-fw {categories.icon}"></i> {categories.name}
-	</li>
+	><i class="fa fa-fw {categories.icon}"></i> {categories.name}</li>
 	<!-- END categories -->
 </ul>
