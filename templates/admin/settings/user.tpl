@@ -13,6 +13,11 @@
 				</div>
 				<div class="checkbox">
 					<label>
+						<input type="checkbox" data-field="allowAccountDelete" checked> <strong>Allow account deletion</strong>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
 						<input type="checkbox" data-field="privateUserInfo"> <strong>Make user info private</strong>
 					</label>
 				</div>
