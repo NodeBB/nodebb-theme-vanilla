@@ -22,6 +22,18 @@
 			</div>
 		</div>
 
+		<div class="panel panel-default">
+			<div class="panel-heading">Pageviews</div>
+			<div class="panel-body">
+				<div class="col-xs-6 text-center">
+					<h3>Monthly<br /><small>{pageviews.monthly}</small></h3>
+				</div>
+				<div class="col-xs-6 text-center">
+					<h3>Daily<br /><small>{pageviews.daily}</small></h3>
+				</div>
+			</div>
+		</div>
+
 		<!-- BEGIN stats -->
 		<div class="panel panel-default">
 			<div class="panel-heading">{stats.name}</div>
@@ -60,16 +72,21 @@
 					<p>You are running <strong>NodeBB v<span id="version">{version}</span></strong>.</p>
 				</div>
 				<p>
-					Always make sure that your <strong>NodeBB</strong> is up to date for the latest security patches and bug fixes.
+					Always make sure that your NodeBB is up to date for the latest security patches and bug fixes.
 				</p>
-				<p class="pull-right">
-					<button class="btn btn-warning restart">Restart NodeBB</button>
+				<p class="text-center">
+					<button class="btn btn-warning reload">Reload</button>
+					<button class="btn btn-danger restart">Restart</button>
+				</p>
+				<p class="help-block text-center">
+					Restarting your NodeBB will drop all existing connections. A reload is lighter and is probably
+					what you want 99% of the time.
 				</p>
 			</div>
 		</div>
 
 		<div class="panel panel-default">
-			<div class="panel-heading">Active Users <small><span class="badge" id="connections"></span> socket connections</small></div>
+			<div class="panel-heading">Active Users</div>
 			<div class="panel-body">
 				<div id="active_users"></div>
 			</div>

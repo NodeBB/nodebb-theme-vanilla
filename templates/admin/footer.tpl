@@ -16,8 +16,8 @@
 							<input type="file" id="userPhotoInput"  name="userPhoto">
 							<p class="help-block"></p>
 						</div>
-						<input id="imageUploadCsrf" type="hidden" name="_csrf" value="" />
 						<input type="hidden" id="params" name="params">
+						<input type="hidden" id="csrfToken" name="_csrf" />
 					</form>
 
 					<div id="upload-progress-box" class="progress progress-striped">

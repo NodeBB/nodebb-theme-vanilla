@@ -16,7 +16,7 @@
 					<div>
 						<div class="text-center">
 							<span>
-								<i class="account-online-status fa fa-circle status offline" title="[[global:{status}]]"></i>
+								<i class="account-online-status fa fa-circle status {status}" title="[[global:{status}]]"></i>
 								<span class="account-username"> {username}</span>
 							</span>
 
@@ -126,7 +126,7 @@
 		</div>
 
 
-		<div class="col-md-7 user-recent-posts">
+		<div class="col-md-7 user-recent-posts" data-nextstart="{nextStart}">
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-heading">
 					<h3 class="panel-title">[[global:recentposts]]</h3>
@@ -136,7 +136,7 @@
 					<span>[[user:has_no_posts]]</span>
 					<!-- ENDIF !posts.length -->
 					<!-- BEGIN posts -->
-					<div class="clearfix">
+					<div class="user-post clearfix" data-pid="{posts.pid}">
 						<div class="content">
 							<p>{posts.content}</p>
 							<p class="fade-out"></p>
@@ -150,6 +150,9 @@
 					</div>
 					<hr/>
 					<!-- END posts -->
+					<div class="loading-indicator text-center hidden">
+						<i class="fa fa-refresh fa-spin"></i>
+					</div>
 				</div>
 			</div>
 

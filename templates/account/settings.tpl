@@ -20,6 +20,7 @@
 						<input type="checkbox" data-property="showemail" /> <strong>[[user:show_email]]</strong>
 					</label>
 				</div>
+
 				<!-- IF !disableEmailSubscriptions -->
 				<div class="form-group">
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
@@ -30,6 +31,12 @@
 						<option value="monthly" disabled="disabled">[[user:digest_monthly]]</option>
 					</select>
 					<p class="help-block">[[user:digest_description]]</p>
+				</div>
+
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="sendChatNotifications" /> <strong>[[user:send_chat_notifications]]</strong>
+					</label>
 				</div>
 				<!-- ENDIF !disableEmailSubscriptions -->
 			</div>

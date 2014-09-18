@@ -19,28 +19,10 @@
 	    <script>__lt_ie_9__ = 1;</script>
 	<![endif]-->
 
-	<script src="{relative_path}/vendor/jquery/js/jquery.js"></script>
-	<script src="{relative_path}/vendor/jquery/js/jquery-ui-1.10.4.custom.js"></script>
-	<script src="{relative_path}/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="{relative_path}/socket.io/socket.io.js"></script>
-	<script src="{relative_path}/src/templates.js?{cache-buster}"></script>
-	<script src="{relative_path}/src/translator.js?{cache-buster}"></script>
-	<script src="{relative_path}/src/ajaxify.js?{cache-buster}"></script>
-	<script src="{relative_path}/src/variables.js?{cache-buster}"></script>
-	<script src="{relative_path}/src/widgets.js?{cache-buster}"></script>
-	<script src="{relative_path}/vendor/jquery/timeago/jquery.timeago.min.js"></script>
-	<script src="{relative_path}/vendor/jquery/js/jquery.form.min.js"></script>
-	<script src="{relative_path}/vendor/jquery/deserialize/jquery.deserialize.min.js"></script>
-	<script src="{relative_path}/vendor/jquery/serializeObject/jquery.ba-serializeobject.min.js"></script>
-	<script src="{relative_path}/vendor/requirejs/require.js"></script>
-	<script src="{relative_path}/vendor/bootbox/bootbox.min.js"></script>
+	<script src="{relative_path}/nodebb.min.js"></script>
 	<script src="{relative_path}/vendor/colorpicker/colorpicker.js"></script>
-	<script src="{relative_path}/vendor/xregexp/xregexp.js"></script>
-	<script src="{relative_path}/vendor/xregexp/unicode/unicode-base.js"></script>
 	<script src="{relative_path}/vendor/tabIndent/tabIndent.js"></script>
-	<script src="{relative_path}/vendor/semver/semver.browser.js"></script>
-	<script src="{relative_path}/src/utils.js"></script>
-	<script src="{relative_path}/src/app.js?{cache-buster}"></script>
 	<script src="{relative_path}/src/admin.js?{cache-buster}"></script>
 
 	<script>
@@ -55,8 +37,6 @@
 			}
 		});
 	</script>
-
-	<script src="{relative_path}/src/overrides.js"></script>
 
 	<!-- BEGIN scripts -->
 	<script type="text/javascript" src="{scripts.src}"></script>
@@ -110,8 +90,6 @@
 		</div>
 	</div>
 
-	<input id="csrf_token" type="hidden" template-variable="csrf" value="{csrf}" />
-
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
@@ -120,6 +98,7 @@
 						<li class="nav-header">NodeBB</li>
 						<li class="active"><a href="{relative_path}/admin/index"><i class="fa fa-fw fa-home"></i> Home</a></li>
 						<li><a href="{relative_path}/admin/categories/active"><i class="fa fa-fw fa-folder"></i> Categories</a></li>
+						<li><a href="{relative_path}/admin/tags"><i class="fa fa-fw fa-tags"></i> Tags</a></li>
 						<li><a href="{relative_path}/admin/users/latest"><i class="fa fa-fw fa-user"></i> Users</a></li>
 						<li><a href="{relative_path}/admin/groups"><i class="fa fa-fw fa-group"></i> Groups</a></li>
 						<li><a href="{relative_path}/admin/settings"><i class="fa fa-fw fa-cogs"></i> General Settings</a></li>

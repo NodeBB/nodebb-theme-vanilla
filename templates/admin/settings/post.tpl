@@ -10,7 +10,8 @@
 					</select>
 				</div>
 
-				<strong>Post Delay</strong><br /> <input type="text" class="form-control" value="10000" data-field="postDelay"><br />
+				<strong>Seconds between Posts</strong><br /> <input type="text" class="form-control" value="10" data-field="postDelay"><br />
+				<strong>Seconds before new user can post</strong><br /> <input type="text" class="form-control" value="10" data-field="initialPostDelay"><br />
 				<strong>Minimum Title Length</strong><br /> <input type="text" class="form-control" value="3" data-field="minimumTitleLength"><br />
 				<strong>Maximum Title Length</strong><br /> <input type="text" class="form-control" value="255" data-field="maximumTitleLength"><br />
 				<strong>Minimum Post Length</strong><br /> <input type="text" class="form-control" value="8" data-field="minimumPostLength"><br />
@@ -19,7 +20,7 @@
 						<input type="checkbox" data-field="disableSignatures"> <strong>Disable signatures</strong>
 					</label>
 				</div>
-				<strong>Chat Messages To Display</strong><br /> <input type="text" class="form-control" value="50" data-field="chatMessagesToDisplay"><br />
+				<strong>Chat Message Inbox Size</strong><br /> <input type="text" class="form-control" value="250" data-field="chatMessageInboxSize"><br />
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" data-field="allowFileUploads"> <strong>Allow users to upload regular files</strong>

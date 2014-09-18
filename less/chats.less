@@ -1,5 +1,8 @@
 .chats-list {
 	padding: 0;
+	max-height: 608px;
+	overflow-x: hidden;
+	overflow-y: auto;
 
 	li {
 		clear: both;
@@ -86,6 +89,12 @@
 		margin-top: -1.5em;
 		.opacity(0.5);
 	}
+
+
+	.selected[data-since] {
+		font-weight: bold;
+	}
+
 
 	.modal-dialog {
 		margin: 0 auto;

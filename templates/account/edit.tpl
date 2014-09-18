@@ -8,6 +8,11 @@
 				<img id="user-current-picture" class="user-profile-picture img-thumbnail" src="{picture}" /><br /><br />
 				<a id="changePictureBtn" href="#" class="btn btn-primary">[[user:change_picture]]</a>
 				<br/><br/>
+				<!-- IF config.allowAccountDelete -->
+				<!-- IF isSelf -->
+				<a id="deleteAccountBtn" href="#" class="btn btn-danger">[[user:delete_account]]</a>
+				<!-- ENDIF isSelf -->
+				<!-- ENDIF config.allowAccountDelete -->
 				<!-- IF config.requireEmailConfirmation -->
 				<!-- IF email -->
 				<!-- IF email:confirmed -->
@@ -135,3 +140,5 @@
 <input type="hidden" template-variable="userslug" value="{userslug}" />
 <input type="hidden" template-variable="gravatarpicture" value="{gravatarpicture}" />
 <input type="hidden" template-variable="uploadedpicture" value="{uploadedpicture}" />
+
+<span class="hidden" id="csrf" data-csrf="{csrf}"></span>
