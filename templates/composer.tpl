@@ -73,7 +73,7 @@
 			</div>
 			<div class="btn-group pull-right action-bar">
 				<button class="btn btn-default" data-action="discard" tabIndex="5"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-				<button data-action="post" class="btn btn-default btn-primary" tabIndex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
+				<button class="btn btn-primary" data-action="post" tabIndex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
 			</div>
 		</div>
 
