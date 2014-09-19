@@ -40,9 +40,11 @@
 	<span>Objects</span> <span class="text-right formatted-number">{objects}</span><br/>
 	<span>Avg. Object Size</span> <span class="text-right">{avgObjSize} kb</span><br/>
 	<hr/>
-	<span>Data Size</span> <span class="text-right">{dataSize} kb</span><br/>
-	<span>Storage Size</span> <span class="text-right">{storageSize} kb</span><br/>
-	<span>File Size</span> <span class="text-right">{fileSize} kb</span><br/>
+	<span>Data Size</span> <span class="text-right">{dataSize} mb</span><br/>
+	<span>Storage Size</span> <span class="text-right">{storageSize} mb</span><br/>
+	<span>Index Size</span> <span class="text-right">{indexSize} mb</span><br/>
+	<span>File Size</span> <span class="text-right">{fileSize} mb</span><br/>
+
 </div>
 <hr />
 <h3>Raw Info </h3>
