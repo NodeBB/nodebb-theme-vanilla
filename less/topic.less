@@ -34,6 +34,21 @@
 			text-align: center;
 			display:block!important;
 		}
+
+		pre {
+			max-height: 350px;
+
+			code {
+				white-space: pre;
+				word-wrap: normal;
+			}
+		}
+
+		@media (max-width: @screen-sm-min) {
+			pre {
+				max-height: 250px;
+			}
+		}
 	}
 
 
