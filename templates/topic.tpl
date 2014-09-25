@@ -74,7 +74,7 @@
 						</div>
 
 						<div class="btn-group">
-							<button class="btn btn-sm btn-default follow hide" type="button" title="[[topic:notify_me]]"><i class="fa fa-eye"></i></button>
+							<button class="btn btn-sm btn-default follow hide" type="button" title="[[topic:notify_me]]"><!-- IF isFollowing --><i class="fa fa-eye-slash"><!-- ELSE --><i class="fa fa-eye"><!-- ENDIF isFollowing --></i></button>
 							<!-- IF !posts.selfPost -->
 							<button class="btn btn-sm btn-default flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
 							<!-- ENDIF !posts.selfPost -->
