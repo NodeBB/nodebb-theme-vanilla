@@ -24,7 +24,6 @@
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
-	<script src="{relative_path}/socket.io/socket.io.js"></script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
 	<script>
 		require.config({
