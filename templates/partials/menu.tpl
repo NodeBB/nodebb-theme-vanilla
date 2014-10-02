@@ -21,6 +21,7 @@
 			</div>
 
 			<div class="navbar-collapse collapse navbar-ex1-collapse">
+				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
 					<!-- IF loggedIn -->
 					<li>
@@ -215,4 +216,14 @@
 				<div class="header-topic-title hidden-xs">
 					<span></span>
 				</div>
+				<!-- ELSE -->
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li>
+						<a href="{relative_path}/login">
+							<i class="fa fa-sign-in visible-xs-inline"></i>
+							<span>[[global:login]]</span>
+						</a>
+					</li>
+				</ul>
+				<!-- ENDIF !maintenanceHeader -->
 			</div>
