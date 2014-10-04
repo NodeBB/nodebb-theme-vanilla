@@ -8,7 +8,6 @@
 		<li><a href='{relative_path}/popular/daily'>[[recent:day]]</a></li>
 		<li><a href='{relative_path}/popular/weekly'>[[recent:week]]</a></li>
 		<li><a href='{relative_path}/popular/monthly'>[[recent:month]]</a></li>
-		<li><a href='{relative_path}/popular/yearly'>[[recent:year]]</a></li>
 		<li><a href='{relative_path}/popular/alltime'>[[recent:alltime]]</a></li>
 	</ul>
 
