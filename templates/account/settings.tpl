@@ -13,14 +13,22 @@
 				</div>
 			</div>
 
-			<h4>[[global:email]]</h4>
+			<h4>[[global:privacy]]</h4>
 			<div class="well">
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" data-property="showemail" /> <strong>[[user:show_email]]</strong>
 					</label>
 				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="showfullname" /> <strong>[[user:show_fullname]]</strong>
+					</label>
+				</div>
+			</div>
 
+			<h4>[[global:email]]</h4>
+			<div class="well">
 				<!-- IF !disableEmailSubscriptions -->
 				<div class="form-group">
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
