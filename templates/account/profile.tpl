@@ -29,7 +29,7 @@
 						</div>
 
 						<!-- IF banned -->
-						<div>
+						<div class="text-center">
 							<span class="label label-danger">[[user:banned]]</span>
 						</div>
 						<!-- ENDIF banned -->
