@@ -96,12 +96,14 @@
 		<div class="col-md-5">
 			<div style="vertical-align:top;">
 				<form class='form-horizontal'>
+					<!-- IF isSelf -->
 					<div class="control-group">
 						<label class="control-label" for="inputCurrentPassword">[[user:current_password]]</label>
 						<div class="controls">
 							<input class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current_password]]" value=""<!-- IF !hasPassword --> disabled<!-- ENDIF !hasPassword-->>
 						</div>
 					</div>
+					<!-- ENDIF isSelf -->
 
 					<div class="control-group">
 						<label class="control-label" for="inputNewPassword">[[user:password]]</label>
