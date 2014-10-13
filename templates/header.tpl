@@ -48,6 +48,7 @@
 			<!-- IMPORT partials/menu.tpl -->
 		</div>
 	</div>
-
-	<div class="container" id="content">
-	<!-- IMPORT partials/noscript/warning.tpl -->
+	
+	<div id="frame">
+		<div class="container" id="content">
+		<!-- IMPORT partials/noscript/warning.tpl -->

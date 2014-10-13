@@ -1,4 +1,5 @@
-	</div><!--END container -->
+		</div><!--END container -->
+	</div>
 
 	<!-- IMPORT partials/modals/upload_picture_modal.tpl -->
 
@@ -14,8 +15,12 @@
 	<div class="alert-window alert-right-top"></div>
 	<div class="alert-window alert-right-bottom"></div>
 
-	<script>
-		require(['forum/footer']);
-	</script>
+	<div id="scrollbar">
+		<div class="handle">
+			<div class="mousearea"></div>
+		</div>
+	</div>
+	
+	<script>require(['forum/footer']);</script>
 </body>
 </html>
