@@ -53,9 +53,6 @@
 					</div>
 				</div>
 				<input type="hidden" name="_csrf" value="{token}" id="csrf-token" />
-				<!-- IF previousUrl -->
-				<input type="hidden" name="previousUrl" value="{previousUrl}" />
-				<!-- ENDIF previousUrl -->
 			</form>
 
 		</div>
