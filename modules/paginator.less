@@ -21,6 +21,11 @@ body, html, #frame {
 	bottom: 10px;
 	width: 2px;
 	background: #eee;
+	.transition(opacity 0.5s ease-out);
+
+	&.translucent {
+		opacity: 0.2;
+	}
 }
 
 #scrollbar .handle {
