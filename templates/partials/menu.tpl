@@ -191,28 +191,6 @@
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right pagination-block hidden visible-lg visible-md">
-					<li class="dropdown">
-						<i class="fa fa-angle-double-up pointer fa-fw pagetop"></i>
-						<i class="fa fa-angle-up pointer fa-fw pageup"></i>
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<span id="pagination"></span>
-						</a>
-
-						<i class="fa fa-angle-down pointer fa-fw pagedown"></i>
-						<i class="fa fa-angle-double-down pointer fa-fw pagebottom"></i>
-
-						<div class="progress-container">
-							<div class="progress-bar"></div>
-						</div>
-
-						<ul class="dropdown-menu" role="menu">
-  							<input type="text" class="form-control" id="indexInput" placeholder="[[global:pagination.enter_index]]">
-  						</ul>
-					</li>
-				</ul>
-
 				<div class="header-topic-title hidden-xs">
 					<span></span>
 				</div>
