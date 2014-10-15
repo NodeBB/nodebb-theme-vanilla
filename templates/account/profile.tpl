@@ -29,7 +29,7 @@
 						</div>
 
 						<!-- IF banned -->
-						<div>
+						<div class="text-center">
 							<span class="label label-danger">[[user:banned]]</span>
 						</div>
 						<!-- ENDIF banned -->
@@ -54,7 +54,6 @@
 					</div>
 				</div>
 			</div>
-
 
 
 			<div class="panel panel-default">
@@ -109,6 +108,19 @@
 					<!-- ENDIF !disableSignatures -->
 				</div>
 			</div>
+
+			<!-- IF groups.length -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">[[groups:groups]]</h3>
+				</div>
+				<div class="panel-body">
+				<!-- BEGIN groups -->
+					<a href="{relative_path}/groups/{groups.name}"><span class="label group-label inline-block" style="background-color: {groups.labelColor};"><!-- IF groups.icon --><i class="fa {groups.icon}"></i> <!-- ENDIF groups.icon -->{groups.userTitle}</span></a>
+				<!-- END groups -->
+				</div>
+			</div>
+			<!-- ENDIF groups.length -->
 
 			<!-- IF ips.length -->
 			<div class="panel panel-default">

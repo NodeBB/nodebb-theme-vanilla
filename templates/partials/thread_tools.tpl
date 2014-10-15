@@ -16,7 +16,7 @@
 
 		<!-- IF privileges.deletable -->
 		<li><a href="#" class="delete_thread"><span class="text-error"><i class="fa fa-fw fa-trash-o"></i> [[topic:thread_tools.delete]]</span></a></li>
-		<li><a href="#" class="purge_thread <!-- IF !deleted -->none<!-- ENDIF !deleted -->"><span class="text-error"><i class="fa fa-fw fa-eraser"></i> [[topic:thread_tools.purge]]</span></a></li>
+		<li><a href="#" class="purge_thread <!-- IF !deleted -->hidden<!-- ENDIF !deleted -->"><span class="text-error"><i class="fa fa-fw fa-eraser"></i> [[topic:thread_tools.purge]]</span></a></li>
 		<!-- ENDIF privileges.deletable -->
 
 		<!-- IF privileges.editable -->
