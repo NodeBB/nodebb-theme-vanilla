@@ -18,6 +18,7 @@
 	<div id="scrollbar">
 		<div class="handle">
 			<div class="mousearea"></div>
+			<div id="pagination"></div>
 		</div>
 	</div>
 	
