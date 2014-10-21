@@ -1,5 +1,10 @@
-html.paginated {
+html {
 	overflow: hidden;
+
+	body {
+		margin-right: -20px;
+		overflow-y: scroll;
+	}
 }
 
 body, html, #frame {
@@ -25,6 +30,25 @@ body, html, #frame {
 
 	&.translucent {
 		opacity: 0.2;
+
+		#pagination {
+			opacity: 0;
+		}
+	}
+
+	#pagination {
+		position: absolute;
+		right: 0%;
+		text-align: right;
+		margin-right: 8px;
+		font-size: 11px;
+		top: 0%;
+		padding: 5px;
+		white-space: nowrap;
+		background: #333;
+		color: white;
+
+		.transition(opacity 0.5s ease-out);
 	}
 }
 
