@@ -1,4 +1,9 @@
 <div class="col-sm-9">
+	<!-- IF !allowed -->
+	<div class="alert alert-warning">
+		[[error:chat-restricted]]
+	</div>
+	<!-- END !allowed -->
 	<!-- IF meta -->
 	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
 		<div class="panel-heading">
@@ -12,7 +17,7 @@
 				<span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {meta.username}]]</span>
 			</ul>
 			<div class="input-group">
-				<input type="text" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input">
+				<input type="text" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input" <!-- IF !allowed -->disabled<!-- ENDIF !allowed -->>
 				<span class="input-group-btn">
 					<button class="btn btn-primary" type="button" data-action="send">Send</button>
 				</span>
