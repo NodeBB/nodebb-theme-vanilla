@@ -8,7 +8,7 @@
 			</div>
 			<div class="modal-body">
 				<span class="since-bar">
-				<a href="#" class="selected" data-since="day">[[modules:chat.yesterday]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
+				<a href="#" class="selected" data-since="recent">[[recent:title]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
 				<ul id="chat-content" class="well well-sm">
 
 					<span class="user-typing hide"><i class="fa fa-pencil"></i> <span class="text"></span></span>
