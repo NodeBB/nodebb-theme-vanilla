@@ -1,10 +1,9 @@
-html {
+html, body {
 	overflow: hidden;
+}
 
-	body {
-		margin-right: -20px;
-		overflow-y: scroll;
-	}
+body, html {
+	width: 100%;
 }
 
 body, html, #frame {
@@ -12,7 +11,8 @@ body, html, #frame {
 }
 
 #frame {
-	padding: 0;
+	margin-right: -20px;
+	overflow-y: scroll;
 
 	#content {
 		margin: 0px 16px 0px 0px;
@@ -45,10 +45,12 @@ body, html, #frame {
 		top: 0%;
 		padding: 5px;
 		white-space: nowrap;
-		background: #333;
+		background: @gray-dark;
 		color: white;
+		border: 1px solid;
+		border-color: @gray-dark;
 
-		.transition(opacity 0.5s ease-out);
+		.transition(all 0.5s ease-out);
 	}
 }
 
@@ -57,12 +59,48 @@ body, html, #frame {
 	height: 100px;
 	background: #292a33;
 	cursor: pointer;
+
+	max-height: 200px;
+	min-height: 25px;
 }
 
 #scrollbar .handle .mousearea {
 	position: absolute;
 	top: 0;
-	left: -15px;
+	left: -18px;
 	width: 30px;
 	height: 100%;
 }
+
+body {
+	#pagination-overlay {
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: #333;
+		.transition(opacity 0.5s ease-out);
+		.opacity(0);
+	}
+
+	&.paginating {
+		.user-select(none);
+
+		#pagination-overlay {
+			.opacity(0.05);
+			z-index: 1000;
+		}
+
+		#scrollbar {
+			z-index: 1001;
+
+			#pagination {
+				color: @btn-info-color;
+				background: @btn-info-bg;
+				border-color: @btn-info-border;
+			}
+		}
+	}
+}	
