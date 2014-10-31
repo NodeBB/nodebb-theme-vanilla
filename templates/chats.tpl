@@ -3,7 +3,7 @@
 	<div class="alert alert-warning">
 		[[error:chat-restricted]]
 	</div>
-	<!-- END !allowed -->
+	<!-- ENDIF !allowed -->
 	<!-- IF meta -->
 	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
 		<div class="panel-heading">
