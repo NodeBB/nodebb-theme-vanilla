@@ -1,21 +1,40 @@
 html, body {
 	overflow: hidden;
-}
-
-body, html {
 	width: 100%;
 }
 
-body, html, #frame {
+html, body, #frame {
 	height: 100%;
+	overflow-x: hidden;
 }
 
-#frame {
-	margin-right: -20px;
-	overflow-y: scroll;
+body {
+	padding-top: 0px;
+	
+	#frame {
+		padding-top: 70px; // moved BS padding-top on body to #frame - mobile
+		overflow-x: hidden;
+		overflow-y: scroll;
 
-	#content {
-		margin: 0px 16px 0px 0px;
+		margin-right: -20px;
+		
+		#content {
+			margin: 0px 16px 0px 0px;
+		}
+	}
+
+	&.paginating {
+		.user-select(none);
+
+		#scrollbar {
+			z-index: 1001;
+
+			#pagination {
+				color: @btn-info-color;
+				background: @btn-info-bg;
+				border-color: @btn-info-border;
+			}
+		}
 	}
 }
 
@@ -71,19 +90,3 @@ body, html, #frame {
 	width: 30px;
 	height: 100%;
 }
-
-body {
-	&.paginating {
-		.user-select(none);
-
-		#scrollbar {
-			z-index: 1001;
-
-			#pagination {
-				color: @btn-info-color;
-				background: @btn-info-bg;
-				border-color: @btn-info-border;
-			}
-		}
-	}
-}	
