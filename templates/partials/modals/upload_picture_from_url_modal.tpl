@@ -7,10 +7,6 @@
 				</div>
 				<div class="modal-body">
 					<input id="uploadFromUrl" class="form-control" type="text"/>
-
-					<div id="alert-status" class="alert alert-info hide"></div>
-					<div id="alert-success" class="alert alert-success hide"></div>
-					<div id="alert-error" class="alert alert-danger hide"></div>
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>

@@ -1,4 +1,9 @@
 <div class="col-sm-9">
+	<!-- IF !allowed -->
+	<div class="alert alert-warning">
+		[[error:chat-restricted]]
+	</div>
+	<!-- ENDIF !allowed -->
 	<!-- IF meta -->
 	<div class="panel panel-default expanded-chat" data-uid="{meta.uid}" data-username="{meta.username}">
 		<div class="panel-heading">
@@ -6,13 +11,13 @@
 			<h2 class="panel-title">[[modules:chat.message-history]]</h2>
 		</div>
 		<div class="panel-body">
-			<span class="since-bar"><a href="#" class="selected" data-since="day">[[modules:chat.yesterday]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
+			<span class="since-bar"><a href="#" class="selected" data-since="recent">[[recent:title]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
 			<ul class="chat-content well well-sm">
 				<!-- IMPORT partials/chat_messages.tpl -->
 				<span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {meta.username}]]</span>
 			</ul>
 			<div class="input-group">
-				<input type="text" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input">
+				<input type="text" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input"  >
 				<span class="input-group-btn">
 					<button class="btn btn-primary" type="button" data-action="send">Send</button>
 				</span>

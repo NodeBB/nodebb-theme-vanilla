@@ -33,32 +33,19 @@
 		</div>
 		<!--  ENDIF allowTopicsThumbnail -->
 
-		<div class="row category-tag-row">
-			<!-- IF isTopic -->
-			<div class="col-lg-3 category-list-container hidden-xs hidden-sm">
-				<select class="form-control category-list">
-				</select>
-			</div>
-			<!-- ENDIF isTopic -->
-			<!-- IF showTags -->
-			<div class="tags-container <!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic-->">
-				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here_short]]"/>
-			</div>
-			<!-- ENDIF showTags -->
-		</div>
-
-		<div class="btn-toolbar formatting-bar hidden-xs hidden-sm">
+		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
 				<span class="btn btn-link"><i class="fa fa-bold"></i></span>
 				<span class="btn btn-link"><i class="fa fa-italic"></i></span>
 				<span class="btn btn-link"><i class="fa fa-list"></i></span>
 				<span class="btn btn-link"><i class="fa fa-link"></i></span>
+				<span class="btn btn-link"><i class="fa fa-tags"></i></span>
 
 				<!--[if gte IE 9]><!-->
-					<span class="btn btn-link img-upload-btn hide"">
+					<span class="btn btn-link img-upload-btn hide">
 						<i class="fa fa-picture-o"></i>
 					</span>
-					<span class="btn btn-link file-upload-btn hide"">
+					<span class="btn btn-link file-upload-btn hide">
 						<i class="fa fa-upload"></i>
 					</span>
 				<!--<![endif]-->
@@ -77,6 +64,20 @@
 
 				</form>
 			</div>
+		</div>
+
+		<div class="row category-tag-row">
+			<!-- IF isTopic -->
+			<div class="col-lg-3 category-list-container hidden-xs hidden-sm">
+				<select class="form-control category-list">
+				</select>
+			</div>
+			<!-- ENDIF isTopic -->
+			<!-- IF showTags -->
+			<div class="tags-container <!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic--> hidden">
+				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here_short]]"/>
+			</div>
+			<!-- ENDIF showTags -->
 		</div>
 
 		<div class="row write-preview-container">
