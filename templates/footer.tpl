@@ -21,7 +21,6 @@
 			<div id="pagination" class="hidden"></div>
 		</div>
 	</div>
-	<div id="pagination-overlay"></div>
 	
 	<script>require(['forum/footer']);</script>
 </body>

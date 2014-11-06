@@ -73,25 +73,8 @@ body, html, #frame {
 }
 
 body {
-	#pagination-overlay {
-		position: fixed;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background: #333;
-		.transition(opacity 0.5s ease-out);
-		.opacity(0);
-	}
-
 	&.paginating {
 		.user-select(none);
-
-		#pagination-overlay {
-			.opacity(0.05);
-			z-index: 1000;
-		}
 
 		#scrollbar {
 			z-index: 1001;
