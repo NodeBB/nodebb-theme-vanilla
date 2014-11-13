@@ -86,7 +86,7 @@
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right pull-right">
 					<li class="notifications dropdown text-center hidden-xs">
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
-							<i class="fa fa-fw fa-bell-o" data-content="0"></i>
+							<i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
 						<ul id="notif-list" class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
@@ -97,7 +97,7 @@
 
 					<li class="visible-xs">
 						<a href="{relative_path}/notifications" title="[[notifications:title]]">
-							<i class="fa fa-bell-o fa-fw"></i> [[notifications:title]]
+							<i class="notification-icon fa fa-bell-o fa-fw" data-content="0"></i> [[notifications:title]]
 						</a>
 					</li>
 
