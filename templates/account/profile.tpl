@@ -22,7 +22,9 @@
 
 							<!-- IF !isSelf -->
 							<br/>
+							<!-- IF !disableChat -->
 							<a id="chat-btn" href="#" class="btn btn-primary btn-sm">[[user:chat]]</a>
+							<!-- ENDIF !disableChat -->
  							<a id="follow-btn" href="#" class="btn btn-success btn-sm <!-- IF isFollowing -->hide<!-- ENDIF isFollowing -->">[[user:follow]]</a>
  							<a id="unfollow-btn" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
 							<!-- ENDIF !isSelf -->

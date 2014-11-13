@@ -10,16 +10,12 @@
 				<br/><br/>
 				<!-- IF config.allowAccountDelete -->
 				<!-- IF isSelf -->
-				<a id="deleteAccountBtn" href="#" class="btn btn-danger">[[user:delete_account]]</a>
+				<a id="deleteAccountBtn" href="#" class="btn btn-danger">[[user:delete_account]]</a><br/><br/>
 				<!-- ENDIF isSelf -->
 				<!-- ENDIF config.allowAccountDelete -->
 				<!-- IF config.requireEmailConfirmation -->
 				<!-- IF email -->
-				<!-- IF email:confirmed -->
-				<a id="confirm-email" href="#" class="btn btn-warning hide">[[user:confirm_email]]</a>
-				<!-- ELSE -->
-				<a id="confirm-email" href="#" class="btn btn-warning">[[user:confirm_email]]</a>
-				<!-- ENDIF email:confirmed -->
+				<a id="confirm-email" href="#" class="btn btn-warning <!-- IF email:confirmed -->hide<!-- ENDIF email:confirmed -->">[[user:confirm_email]]</a>
 				<!-- ENDIF email -->
 				<!-- ENDIF config.requireEmailConfirmation -->
 			</div>
