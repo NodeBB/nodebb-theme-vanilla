@@ -67,7 +67,11 @@
 								<li><a href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->"><i class="fa fa-user"></i> [[topic:profile]]</a></li>
 								<!-- IF !posts.selfPost -->
 								<!-- IF posts.user.userslug -->
+								<!-- IF loggedIn -->
+								<!-- IF !disableChat -->
 								<li><a href="#" class="chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
+								<!-- ENDIF !disableChat -->
+								<!-- ENDIF loggedIn -->
 								<!-- ENDIF posts.user.userslug -->
 								<!-- ENDIF !posts.selfPost -->
 						    </ul>
