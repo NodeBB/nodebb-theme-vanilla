@@ -10,6 +10,11 @@
 <div class="row">
 	<div class="{register_window:spansize}">
 		<div class="well well-lg">
+			<div class="alert alert-danger" id="register-error-notify" <!-- IF error -->style="display:block"<!-- ELSE -->style="display: none;"<!-- ENDIF error -->>
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>[[error:registration-error]]</strong>
+				<p>{error}</p>
+			</div>
 			<form class="form-horizontal" role="form" action="{relative_path}/register" method="post">
 				<div class="form-group">
 					<label for="email" class="col-lg-4 control-label">[[register:email_address]]</label>
