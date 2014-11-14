@@ -15,7 +15,9 @@
 				<!-- ENDIF config.allowAccountDelete -->
 				<!-- IF config.requireEmailConfirmation -->
 				<!-- IF email -->
+				<!-- IF isSelf -->
 				<a id="confirm-email" href="#" class="btn btn-warning <!-- IF email:confirmed -->hide<!-- ENDIF email:confirmed -->">[[user:confirm_email]]</a>
+				<!-- ENDIF isSelf -->
 				<!-- ENDIF email -->
 				<!-- ENDIF config.requireEmailConfirmation -->
 			</div>
