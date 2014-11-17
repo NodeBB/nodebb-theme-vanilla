@@ -39,9 +39,9 @@
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
 					<select class="form-control" id="dailyDigestFreq" data-property="dailyDigestFreq">
 						<option value="off">[[user:digest_off]]</option>
-						<option value="daily">[[user:digest_daily]]</option>
-						<option value="weekly" disabled="disabled">[[user:digest_weekly]]</option>
-						<option value="monthly" disabled="disabled">[[user:digest_monthly]]</option>
+						<option value="day">[[user:digest_daily]]</option>
+						<option value="week">[[user:digest_weekly]]</option>
+						<option value="month">[[user:digest_monthly]]</option>
 					</select>
 					<p class="help-block">[[user:digest_description]]</p>
 				</div>
