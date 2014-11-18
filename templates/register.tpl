@@ -94,7 +94,6 @@
 						<button class="btn btn-primary btn-lg btn-block" id="register" type="submit">[[register:register_now_button]]</button>
 					</div>
 				</div>
-				<input type="hidden" name="_csrf" value="{token}" />
 				<input id="referrer" type="hidden" name="referrer" value="" />
 			</form>
 		</div>

@@ -27,7 +27,6 @@
 				<div class="form-group topic-thumb-ctrl">
 					<i class="fa fa-spinner fa-spin hide topic-thumb-spinner" title="[[topic:composer.uploading]]"></i>
 					<i class="fa fa-times topic-thumb-btn hide topic-thumb-clear-btn" title="[[topic:composer.thumb_remove]]"></i>
-					<input id="thumbUploadCsrf" type="hidden" name="_csrf">
 				</div>
 			</form>
 		</div>
@@ -53,8 +52,6 @@
 				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
 
 				<form id="fileForm" method="post" enctype="multipart/form-data">
-					<input id="postUploadCsrf" type="hidden" name="_csrf">
-
 					<!--[if gte IE 9]><!-->
 						<input type="file" id="files" name="files[]" multiple class="gte-ie9 hide"/>
 					<!--<![endif]-->

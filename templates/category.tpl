@@ -127,8 +127,6 @@
 	<!-- IF topics.length -->
 	<div widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar"></div>
 	<!-- ENDIF topics.length -->
-
-	<span class="hidden" id="csrf" data-csrf="{csrf}"></span>
 </div>
 
 <!-- IMPORT partials/move_thread_modal.tpl -->

@@ -18,7 +18,7 @@
 				<p>{error}</p>
 			</div>
 
-			<form class="form-horizontal" role="form" method="post" id="login-form">
+			<form class="form-horizontal" role="form" method="post" target="login" id="login-form">
 				<div class="form-group">
 					<label for="username" class="col-lg-2 control-label">[[login:username]]</label>
 					<div class="col-lg-10">
@@ -52,7 +52,6 @@
 						<!-- ENDIF showResetLink -->
 					</div>
 				</div>
-				<input type="hidden" name="_csrf" value="{token}" id="csrf-token" />
 			</form>
 
 		</div>

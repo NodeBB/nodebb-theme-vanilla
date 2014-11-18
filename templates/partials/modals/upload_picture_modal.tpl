@@ -13,7 +13,6 @@
 							<p class="help-block">[[user:image_spec]] <span id="file-size-block" class="hide"> ([[user:max]] <span id="upload-file-size"></span> kbs.)</span></p>
 						</div>
 						<input type="hidden" id="params" name="params" />
-						<input type="hidden" id="csrfToken" name="_csrf" />
 					</form>
 
 					<div id="upload-progress-box" class="progress progress-striped">
