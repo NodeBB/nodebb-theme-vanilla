@@ -68,9 +68,9 @@
 								<!-- IF !posts.selfPost -->
 								<!-- IF posts.user.userslug -->
 								<!-- IF loggedIn -->
-								<!-- IF !disableChat -->
+								<!-- IF !config.disableChat -->
 								<li><a href="#" class="chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
-								<!-- ENDIF !disableChat -->
+								<!-- ENDIF !config.disableChat -->
 								<!-- ENDIF loggedIn -->
 								<!-- ENDIF posts.user.userslug -->
 								<!-- ENDIF !posts.selfPost -->
