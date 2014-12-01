@@ -11,6 +11,12 @@
 						<input type="checkbox" data-property="openOutgoingLinksInNewTab" /> <strong>[[user:open_links_in_new_tab]]</strong>
 					</label>
 				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="topicSearchEnabled" /> <strong>[[user:enable_topic_searching]]</strong>
+					</label>
+				</div>
+				<p class="help-block">[[user:topic_search_help]]</p>
 			</div>
 
 			<h4>[[global:privacy]]</h4>
