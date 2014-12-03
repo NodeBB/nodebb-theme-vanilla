@@ -40,7 +40,7 @@
 
 						<span class="pull-right">
 							<!-- IF topics.unreplied -->
-							[[category:no_replies]]
+							<a href="{relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a>
 							<!-- ELSE -->
 							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
 								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
