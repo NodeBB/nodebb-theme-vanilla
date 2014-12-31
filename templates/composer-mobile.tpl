@@ -1,12 +1,19 @@
 <div class="composer">
 
 	<div class="composer-container">
-		<div class="title-container">
-			<div class="input-group">
-				<input class="title form-control" type="text" placeholder="[[topic:composer.title_placeholder]]" />
-				<div class="input-group-btn action-bar">
-					<button class="btn btn-default" data-action="discard"><i class="fa fa-times"></i></button>
-					<button class="btn btn-primary" data-action="post"><i class="fa fa-check"></i></button>
+		<div class="title-container row">
+			<!-- IF allowGuestHandles -->
+			<div class="col-xs-3">
+				<input class="handle form-control" type="text" tabIndex="1" placeholder="[[topic:composer.handle_placeholder]]" />
+			</div>
+			<!-- ENDIF allowGuestHandles -->
+			<div class="<!-- IF allowGuestHandles -->col-xs-9<!-- ELSE -->col-xs-12<!-- ENDIF allowGuestHandles -->">
+				<div class="input-group">
+					<input class="title form-control" type="text" placeholder="[[topic:composer.title_placeholder]]" />
+					<div class="input-group-btn action-bar">
+						<button class="btn btn-default" data-action="discard"><i class="fa fa-times"></i></button>
+						<button class="btn btn-primary" data-action="post"><i class="fa fa-check"></i></button>
+					</div>
 				</div>
 			</div>
 		</div>

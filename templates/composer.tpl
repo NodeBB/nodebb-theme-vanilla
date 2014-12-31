@@ -1,8 +1,17 @@
 <div class="composer">
 
 	<div class="composer-container">
-		<div class="title-container">
+		<div class="title-container row">
+			<!-- IF allowGuestHandles -->
+			<div class="col-sm-3">
+				<input class="handle form-control" type="text" tabIndex="1" placeholder="[[topic:composer.handle_placeholder]]" />
+			</div>
+			<div class="col-sm-9">
+				<input class="title form-control" type="text" tabIndex="2" placeholder="[[topic:composer.title_placeholder]]" />
+			</div>
+			<!-- ELSE -->
 			<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
+			<!-- ENDIF allowGuestHandles -->
 		</div>
 
 		<!-- IF allowTopicsThumbnail -->
@@ -28,12 +37,12 @@
 
 		<div class="row category-tag-row">
 			<!-- IF isTopic -->
-			<div class="col-lg-3 category-list-container">
+			<div class="col-sm-3 category-list-container">
 				<select class="form-control category-list"></select>
 			</div>
 			<!-- ENDIF isTopic -->
 			<!-- IF showTags -->
-			<div class="tags-container <!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic-->">
+			<div class="tags-container <!-- IF isTopic -->col-sm-9<!-- ELSE -->col-sm-12<!-- ENDIF isTopic-->">
 				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here]]" tabIndex="2"/>
 			</div>
 			<!-- ENDIF showTags -->
