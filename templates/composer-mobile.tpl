@@ -2,12 +2,12 @@
 
 	<div class="composer-container">
 		<div class="title-container row">
-			<!-- IF allowGuestHandles -->
+			<!-- IF showHandleInput -->
 			<div class="col-xs-3">
 				<input class="handle form-control" type="text" tabIndex="1" placeholder="[[topic:composer.handle_placeholder]]" />
 			</div>
-			<!-- ENDIF allowGuestHandles -->
-			<div class="<!-- IF allowGuestHandles -->col-xs-9<!-- ELSE -->col-xs-12<!-- ENDIF allowGuestHandles -->">
+			<!-- ENDIF showHandleInput -->
+			<div class="<!-- IF showHandleInput -->col-xs-9<!-- ELSE -->col-xs-12<!-- ENDIF showHandleInput -->">
 				<div class="input-group">
 					<input class="title form-control" type="text" placeholder="[[topic:composer.title_placeholder]]" />
 					<div class="input-group-btn action-bar">

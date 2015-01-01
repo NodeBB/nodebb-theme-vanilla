@@ -2,16 +2,18 @@
 
 	<div class="composer-container">
 		<div class="title-container row">
-			<!-- IF allowGuestHandles -->
+			<!-- IF showHandleInput -->
 			<div class="col-sm-3">
-				<input class="handle form-control" type="text" tabIndex="1" placeholder="[[topic:composer.handle_placeholder]]" />
+				<input class="handle form-control" type="text" tabIndex="1" placeholder="[[topic:composer.handle_placeholder]]" value="{handle}" />
 			</div>
 			<div class="col-sm-9">
 				<input class="title form-control" type="text" tabIndex="2" placeholder="[[topic:composer.title_placeholder]]" />
 			</div>
 			<!-- ELSE -->
-			<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
-			<!-- ENDIF allowGuestHandles -->
+			<div class="col-lg-12">
+				<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
+			</div>
+			<!-- ENDIF showHandleInput -->
 		</div>
 
 		<!-- IF allowTopicsThumbnail -->
