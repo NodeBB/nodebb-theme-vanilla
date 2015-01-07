@@ -7,7 +7,7 @@
 <div class="search">
 	<div class="row">
 
-		<div class="col-md-12">
+		<div class="well col-md-12">
 			<form id="advanced-search">
 				<div class="form-group">
 					<label>[[global:search]]</label>
@@ -27,7 +27,6 @@
 				</div>
 				<button type="submit" class="btn btn-default">[[global:search]]</button>
 			</form>
-			<hr/>
 		</div>
 
 		<div id="results" class="col-md-12" data-search-query="{search_query}">
