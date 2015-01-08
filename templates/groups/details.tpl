@@ -16,13 +16,29 @@
 			<div class="panel-body">
 				<table class="table table-striped table-hover members">
 					<!-- BEGIN members -->
-					<tr data-slug="{group.members.userslug}">
+					<tr data-uid="{group.members.uid}">
 						<td>
-							<img src="{group.members.picture}" />
+							<a href="../user/{group.members.userslug}"><img src="{group.members.picture}" /></a>
 						</td>
 						<td class="member-name">
-							{group.members.username}
+							<a href="../user/{group.members.userslug}">{group.members.username}</a> <i title="[[groups:owner]]" class="fa fa-star text-warning <!-- IF !group.members.isOwner -->hidden<!-- ENDIF !group.members.isOwner -->"></i>
 						</td>
+						<!-- IF group.isOwner -->
+						<td>
+							<div class="btn-group pull-right">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									More <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#" data-ajaxify="false" data-action="toggleOwnership">
+											Grant/Rescind Ownership
+										</a>
+									</li>
+								</ul>
+							</div>
+						</td>
+						<!-- ENDIF group.isOwner -->
 					</tr>
 					<!-- END members -->
 				</table>
@@ -66,3 +82,5 @@
 		</div>
 	</div>
 </div>
+
+<input type="hidden" template-variable="group_name" value="{group.name}" />
