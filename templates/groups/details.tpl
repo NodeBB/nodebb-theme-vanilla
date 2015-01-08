@@ -7,6 +7,9 @@
 			<div class="panel-body">
 				<h1>{group.name}</h1>
 				<p>{group.description}</p>
+				<div class="pull-right">
+					{function.membershipBtn}
+				</div>
 			</div>
 		</div>
 		<div class="panel panel-default">
@@ -21,7 +24,7 @@
 							<a href="../user/{group.members.userslug}"><img src="{group.members.picture}" /></a>
 						</td>
 						<td class="member-name">
-							<a href="../user/{group.members.userslug}">{group.members.username}</a> <i title="[[groups:owner]]" class="fa fa-star text-warning <!-- IF !group.members.isOwner -->hidden<!-- ENDIF !group.members.isOwner -->"></i>
+							<a href="../user/{group.members.userslug}">{group.members.username}</a> <i title="[[groups:owner]]" class="fa fa-star text-warning <!-- IF !group.members.isOwner -->invisible<!-- ENDIF !group.members.isOwner -->"></i>
 						</td>
 						<!-- IF group.isOwner -->
 						<td>
