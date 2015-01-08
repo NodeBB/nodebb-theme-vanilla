@@ -8,7 +8,7 @@
 				<h1>{group.name}</h1>
 				<p>{group.description}</p>
 				<div class="pull-right">
-					{function.membershipBtn}
+					{function.membershipBtn, group}
 				</div>
 			</div>
 		</div>
