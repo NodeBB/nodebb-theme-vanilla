@@ -16,6 +16,13 @@
 				<span id="user-notfound-notify"><i class="fa fa-search"></i></span>
 			</span>
 		</div>
+		<div class="form-group">
+			<label>[[search:by]]</label>
+			<select class="form-control">
+				<option value="username">[[user:username]]</option>
+				<option value="fullname">[[user:fullname]]</option>
+			</select>
+		</div>
 	</div>
 
 	<ul id="users-container" class="users-container">
