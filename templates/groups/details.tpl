@@ -47,6 +47,38 @@
 				</table>
 			</div>
 		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">[[groups:details.pending]]</h3>
+			</div>
+			<div class="panel-body">
+				<table class="table table-striped table-hover pending">
+					<!-- BEGIN pending -->
+					<tr data-uid="{group.pending.uid}">
+						<td>
+							<a href="../user/{group.pending.userslug}"><img src="{group.pending.picture}" /></a>
+						</td>
+						<td class="member-name">
+							<a href="../user/{group.pending.userslug}">{group.pending.username}</a>
+						</td>
+						<!-- IF group.isOwner -->
+						<td>
+							<div class="btn-group pull-right">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									More <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#" data-ajaxify="false" data-action="accept">Accept</a></li>
+									<li><a href="#" data-ajaxify="false" data-action="reject">Reject</a></li>
+								</ul>
+							</div>
+						</td>
+						<!-- ENDIF group.isOwner -->
+					</tr>
+					<!-- END pending -->
+				</table>
+			</div>
+		</div>
 	</div>
 	<div class="col-lg-6 col-xs-12 latest-posts">
 		<div class="panel panel-default">
