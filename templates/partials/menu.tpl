@@ -49,9 +49,14 @@
 					<li>
 						<!-- IF function.displayUsersLink -->
 						<a href="{relative_path}/users" title="[[global:header.users]]">
-							<i class="fa fa-fw fa-users"></i><span class="visible-xs-inline"> [[global:header.users]]</span>
+							<i class="fa fa-fw fa-user"></i><span class="visible-xs-inline"> [[global:header.users]]</span>
 						</a>
 						<!-- ENDIF function.displayUsersLink -->
+					</li>
+					<li>
+						<a href="{relative_path}/groups" title="[[global:header.groups]]">
+							<i class="fa fa-fw fa-group"></i><span class="visible-xs-inline"> [[global:header.groups]]</span>
+						</a>
 					</li>
 					<!-- IF isAdmin -->
 					<li>

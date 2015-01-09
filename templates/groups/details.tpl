@@ -2,7 +2,14 @@
 	<div class="col-lg-6 col-xs-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">[[groups:details.title]]</h3>
+				<h3 class="panel-title">
+					<!-- IF group.private -->
+					<span class="label label-warning pull-right">[[groups:details.private]]</span>
+					<!-- ELSE -->
+					<span class="label label-primary pull-right">[[groups:details.public]]</span>
+					<!-- ENDIF group.private -->
+					[[groups:details.title]]
+				</h3>
 			</div>
 			<div class="panel-body">
 				<h1>{group.name}</h1>
