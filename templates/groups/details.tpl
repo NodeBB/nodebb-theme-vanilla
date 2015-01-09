@@ -8,7 +8,7 @@
 					<!-- ELSE -->
 					<span class="label label-primary pull-right">[[groups:details.public]]</span>
 					<!-- ENDIF group.private -->
-					[[groups:details.title]]
+					<i class="fa fa-list-ul"></i> [[groups:details.title]]
 				</h3>
 			</div>
 			<div class="panel-body">
@@ -21,7 +21,7 @@
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">[[groups:details.members]]</h3>
+				<h3 class="panel-title"><i class="fa fa-users"></i> [[groups:details.members]]</h3>
 			</div>
 			<div class="panel-body">
 				<table class="table table-striped table-hover members">
@@ -56,7 +56,7 @@
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">[[groups:details.pending]]</h3>
+				<h3 class="panel-title"><i class="fa fa-clock-o"></i> [[groups:details.pending]]</h3>
 			</div>
 			<div class="panel-body">
 				<table class="table table-striped table-hover pending">
@@ -89,8 +89,56 @@
 	</div>
 	<div class="col-lg-6 col-xs-12 latest-posts">
 		<div class="panel panel-default">
+			<div class="panel-heading pointer" data-toggle="collapse" data-target=".options">
+				<h3 class="panel-title">
+					<i class="fa fa-caret-down pull-right"></i>
+					<i class="fa fa-cogs"></i> [[groups:details.owner_options]]
+				</h3>
+			</div>
+
+			<div class="panel-body options collapse">
+				<form role="form">
+					<div class="form-group">
+						<label for="name">Group Name</label>
+						<input class="form-control" name="name" id="name" type="text" value="{group.name}" />
+					</div>
+					<div class="form-group">
+						<label for="userTitle">Badge Text</label>
+						<input class="form-control" name="userTitle" id="userTitle" type="text" value="{group.userTitle}" />
+					</div>
+					<div class="form-group">
+						<label for="name">Description</label>
+						<input class="form-control" name="description" id="description" type="text" value="{group.description}" />
+					</div>
+					<div class="form-group">
+						<label>Badge Preview</label>
+						<span class="label" style="background-color: {group.labelColor}"><i class="fa {group.icon} fa-2x icon"></i> {group.userTitle}</span>
+
+						<button type="button" class="btn btn-default btn-sm" data-action="icon-select">Change Icon</button>
+						<button type="button" class="btn btn-default btn-sm" data-action="color-select">Change Colour</button>
+						<input type="hidden" name="labelColor" value="{group.labelColor}" />
+						<input type="hidden" name="icon" value="{group.icon}" />
+					</div>
+					<div class="form-group">
+						<label for="labelColor">Badge Color</label>
+					</div>
+					<hr />
+					<div class="checkbox">
+						<label>
+							<input name="private" type="checkbox"<!-- IF group.private --> checked<!-- ENDIF group.private-->> <strong>Private</strong>
+							<p class="help-block">
+								If enabled, joining of groups requires approval from a group owner
+							</p>
+						</label>
+					</div>
+
+					<button class="btn btn-primary pull-right" type="button" data-action="update">Save</button>
+				</form>
+			</div>
+		</div>
+		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">[[groups:details.latest_posts]]</h3>
+				<h3 class="panel-title"><i class="fa fa-edit"></i> [[groups:details.latest_posts]]</h3>
 			</div>
 
 			<div class="panel-body">
