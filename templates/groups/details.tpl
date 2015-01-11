@@ -112,12 +112,20 @@
 					</div>
 					<div class="form-group">
 						<label>Badge Preview</label>
-						<span class="label" style="background-color: {group.labelColor}"><i class="fa {group.icon} fa-2x icon"></i> {group.userTitle}</span>
+						<span class="label" style="background-color: {group.labelColor}"><i class="fa {group.icon} icon"></i> {group.userTitle}</span>
 
 						<button type="button" class="btn btn-default btn-sm" data-action="icon-select">Change Icon</button>
 						<button type="button" class="btn btn-default btn-sm" data-action="color-select">Change Colour</button>
 						<input type="hidden" name="labelColor" value="{group.labelColor}" />
 						<input type="hidden" name="icon" value="{group.icon}" />
+						<div id="icons" style="display:none;">
+							<div class="icon-container">
+								<div class="row fa-icons">
+									<i class="fa fa-doesnt-exist"></i>
+									<!-- IMPORT partials/fontawesome.tpl -->
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
 						<label for="labelColor">Badge Color</label>

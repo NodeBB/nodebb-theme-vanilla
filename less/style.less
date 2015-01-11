@@ -176,6 +176,25 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	background-image: -o-linear-gradient(top, transparent, white);
 }
 
+.icon-container {
+	.row {
+		margin: 0;
+		i {
+			width:20px;
+			height:20px;
+			margin: 1px;
+			.pointer;
+			line-height: 20px;
+			text-align: center;
+
+			&:hover, &.selected {
+				background: black;
+				color: white;
+			}
+		}
+	}
+}
+
 @media (max-width: 760px) {
 	.chat-modal {
 		width: 100%;
