@@ -127,9 +127,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="form-group">
-						<label for="labelColor">Badge Color</label>
-					</div>
 					<hr />
 					<div class="checkbox">
 						<label>
