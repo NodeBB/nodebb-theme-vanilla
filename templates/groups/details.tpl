@@ -86,6 +86,7 @@
 				</table>
 			</div>
 		</div>
+		<div widget-area="left"></div>
 	</div>
 	<div class="col-lg-6 col-xs-12 latest-posts">
 		<div class="panel panel-default">
@@ -175,6 +176,7 @@
 				<!-- END posts -->
 			</div>
 		</div>
+		<div widget-area="right"></div>
 	</div>
 </div>
 
