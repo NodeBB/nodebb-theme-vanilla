@@ -1,6 +1,6 @@
 <button class="btn btn-primary" data-action="new"><i class="fa fa-plus"></i> [[groups:new_group]]</button>
 
-<div class="groups row">
+<div class="groups list row">
 	<!-- IF groups.length -->
 	<!-- BEGIN groups -->
 	<div class="col-lg-4 col-md-6 col-sm-12" data-group="{groups.name}">

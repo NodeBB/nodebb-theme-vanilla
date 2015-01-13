@@ -1,4 +1,12 @@
 <div class="groups details row">
+	<!-- IF group.cover:url -->
+	<div class="col-xs-12 group-cover" style="background-image: url({group.cover:url}); background-position: {group.cover:position};">
+		<div class="change">[[groups:cover-change]] <i class="fa fa-fw fa-pencil-square-o"></i></div>
+		<div class="save">[[groups:cover-save]] <i class="fa fa-fw fa-floppy-o"></i></div>
+		<div class="indicator">[[groups:cover-saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
+		<div class="instructions">[[groups:cover-instructions]]</div>
+	</div>
+	<!-- ENDIF group.cover:url -->
 	<div class="col-lg-6 col-xs-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -104,10 +112,6 @@
 						<input class="form-control" name="name" id="name" type="text" value="{group.name}" />
 					</div>
 					<div class="form-group">
-						<label for="userTitle">Badge Text</label>
-						<input class="form-control" name="userTitle" id="userTitle" type="text" value="{group.userTitle}" />
-					</div>
-					<div class="form-group">
 						<label for="name">Description</label>
 						<input class="form-control" name="description" id="description" type="text" value="{group.description}" />
 					</div>
@@ -117,8 +121,8 @@
 
 						<button type="button" class="btn btn-default btn-sm" data-action="icon-select">Change Icon</button>
 						<button type="button" class="btn btn-default btn-sm" data-action="color-select">Change Colour</button>
-						<input type="hidden" name="labelColor" value="{group.labelColor}" />
-						<input type="hidden" name="icon" value="{group.icon}" />
+						<input type="hidden" name="labelColor" value="<!-- IF group.labelColor -->{group.labelColor}<!-- ENDIF group.labelColor -->" />
+						<input type="hidden" name="icon" value="<!-- IF group.icon -->{group.icon}<!-- ENDIF group.icon -->" />
 						<div id="icons" style="display:none;">
 							<div class="icon-container">
 								<div class="row fa-icons">
@@ -127,6 +131,10 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="form-group">
+						<label for="userTitle">Badge Text</label>
+						<input class="form-control" name="userTitle" id="userTitle" type="text" value="{group.userTitle}" />
 					</div>
 					<hr />
 					<div class="checkbox">
