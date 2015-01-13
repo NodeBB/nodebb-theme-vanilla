@@ -21,10 +21,6 @@
 					<li class="truncated"><i class="fa fa-ellipsis-h"></i></li>
 					<!-- ENDIF groups.truncated -->
 				</ul>
-				<div class="btn-group pull-right">
-					{function.membershipBtn}
-					<a href="{relative_path}/groups/{groups.name}" class="btn btn-default">[[groups:view_group]]</a>
-				</div>
 			</div>
 		</div>
 	</div>
