@@ -24,10 +24,7 @@
 	</div>
 
 	<!-- IF !followers.length -->
-	<div class="alert alert-warning hide">[[user:has_no_follower]]</div>
+	<div class="alert alert-warning">[[user:has_no_follower]]</div>
 	<!-- ENDIF !followers.length -->
 </div>
-
-<input type="hidden" template-variable="yourid" value="{yourid}" />
-<input type="hidden" template-variable="theirid" value="{theirid}" />
 

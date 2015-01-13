@@ -23,9 +23,8 @@
 
 		<!-- END following -->
 	</div>
-	<div id="no-following-notice" class="alert alert-warning hide">[[user:follows_no_one]]</div>
+	<!-- IF !following.length -->
+	<div class="alert alert-warning">[[user:follows_no_one]]</div>
+	<!-- ENDIF !following.length -->
 </div>
 
-<input type="hidden" template-variable="yourid" value="{yourid}" />
-<input type="hidden" template-variable="theirid" value="{theirid}" />
-<input type="hidden" template-variable="followingCount" value="{followingCount}" />
