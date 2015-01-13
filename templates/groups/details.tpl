@@ -94,7 +94,8 @@
 		</div>
 		<div widget-area="left"></div>
 	</div>
-	<div class="col-lg-6 col-xs-12 latest-posts">
+	<div class="col-lg-6 col-xs-12">
+		<!-- IF group.isOwner -->
 		<div class="panel panel-default">
 			<div class="panel-heading pointer" data-toggle="collapse" data-target=".options">
 				<h3 class="panel-title">
@@ -149,12 +150,13 @@
 				</form>
 			</div>
 		</div>
+		<!-- ENDIF group.isOwner -->
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title"><i class="fa fa-edit"></i> [[groups:details.latest_posts]]</h3>
 			</div>
 
-			<div class="panel-body">
+			<div class="panel-body latest-posts">
 				<!-- IF !posts.length -->
 				<div class="alert alert-info">[[groups:details.has_no_posts]]</div>
 				<!-- ENDIF !posts.length -->
@@ -188,3 +190,4 @@
 </div>
 
 <input type="hidden" template-variable="group_name" value="{group.name}" />
+<input type="hidden" template-variable="is_owner" value="{group.isOwner}" />

@@ -29,9 +29,14 @@
 			min-height: 250px;
 		}
 
-		&:hover {
+		.change {
+			visibility: hidden;
+		}
+
+		&.initialised:hover {
 			.change {
 				.opacity(1);
+				visibility: visible;
 			}
 		}
 
