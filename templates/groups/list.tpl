@@ -29,6 +29,7 @@
 	<div class="col-xs-12">
 		<div class="alert alert-warning">
 		[[groups:no_groups_found]]
+		</div>
 	</div>
 	<!-- ENDIF groups.length -->
 </div>
