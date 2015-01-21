@@ -9,7 +9,7 @@
 
 <div class="groups list row">
 	<!-- IF groups.length -->
-	<!-- IMPORT partials/group_list.tpl -->
+	<!-- IMPORT partials/groups/list.tpl -->
 	<!-- ELSE -->
 	<div class="col-xs-12">
 		<div class="alert alert-warning">
