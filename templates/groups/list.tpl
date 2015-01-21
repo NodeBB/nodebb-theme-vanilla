@@ -7,7 +7,7 @@
 
 <button class="btn btn-primary" data-action="new"><i class="fa fa-plus"></i> [[groups:new_group]]</button>
 
-<div class="groups list row">
+<div class="groups list row" id="groups-list">
 	<!-- IF groups.length -->
 	<!-- IMPORT partials/groups/list.tpl -->
 	<!-- ELSE -->
