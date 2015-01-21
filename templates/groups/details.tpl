@@ -60,6 +60,7 @@
 				</table>
 			</div>
 		</div>
+		<!-- IF group.isOwner -->
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title"><i class="fa fa-clock-o"></i> [[groups:details.pending]]</h3>
@@ -92,6 +93,7 @@
 				</table>
 			</div>
 		</div>
+		<!-- ENDIF group.isOwner -->
 		<div widget-area="left"></div>
 	</div>
 	<div class="col-lg-6 col-xs-12">
