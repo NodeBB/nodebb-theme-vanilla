@@ -7,6 +7,7 @@
 			<select class="form-control" id="search-sort">
 				<option value="alpha">Group Name</option>
 				<option value="count">Member Count</option>
+				<option value="date">Creation Date</option>
 			</select>
 		</div>
 		<div class="col-xs-5 text-left pull-right">
