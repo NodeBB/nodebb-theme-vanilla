@@ -75,7 +75,6 @@
 						<td class="member-name">
 							<a href="../user/{group.pending.userslug}">{group.pending.username}</a>
 						</td>
-						<!-- IF group.isOwner -->
 						<td>
 							<div class="btn-group pull-right">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -87,7 +86,6 @@
 								</ul>
 							</div>
 						</td>
-						<!-- ENDIF group.isOwner -->
 					</tr>
 					<!-- END pending -->
 				</table>
