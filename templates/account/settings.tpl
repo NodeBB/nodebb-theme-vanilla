@@ -57,6 +57,12 @@
 						<input type="checkbox" data-property="sendChatNotifications" /> <strong>[[user:send_chat_notifications]]</strong>
 					</label>
 				</div>
+
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="sendPostNotifications" /> <strong>[[user:send_post_notifications]]</strong>
+					</label>
+				</div>
 				<!-- ENDIF !disableEmailSubscriptions -->
 			</div>
 
