@@ -34,10 +34,10 @@
 					<!-- BEGIN members -->
 					<tr data-uid="{group.members.uid}">
 						<td>
-							<a href="../user/{group.members.userslug}"><img src="{group.members.picture}" /></a>
+							<a href="{config.relative_path}/user/{group.members.userslug}"><img src="{group.members.picture}" /></a>
 						</td>
 						<td class="member-name">
-							<a href="../user/{group.members.userslug}">{group.members.username}</a> <i title="[[groups:owner]]" class="fa fa-star text-warning <!-- IF !group.members.isOwner -->invisible<!-- ENDIF !group.members.isOwner -->"></i>
+							<a href="{config.relative_path}/user/{group.members.userslug}">{group.members.username}</a> <i title="[[groups:owner]]" class="fa fa-star text-warning <!-- IF !group.members.isOwner -->invisible<!-- ENDIF !group.members.isOwner -->"></i>
 						</td>
 						<!-- IF group.isOwner -->
 						<td>
@@ -70,10 +70,10 @@
 					<!-- BEGIN pending -->
 					<tr data-uid="{group.pending.uid}">
 						<td>
-							<a href="../user/{group.pending.userslug}"><img src="{group.pending.picture}" /></a>
+							<a href="{config.relative_path}/user/{group.pending.userslug}"><img src="{group.pending.picture}" /></a>
 						</td>
 						<td class="member-name">
-							<a href="../user/{group.pending.userslug}">{group.pending.username}</a>
+							<a href="{config.relative_path}/user/{group.pending.userslug}">{group.pending.username}</a>
 						</td>
 						<td>
 							<div class="btn-group pull-right">
