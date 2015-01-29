@@ -1,8 +1,4 @@
-<ol class="breadcrumb">
-	<li><a href="{relative_path}/">[[global:home]]</a></li>
-	<li class="active">[[global:search]]</li>
-</ol>
-
+<!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="search">
 	<div class="row">

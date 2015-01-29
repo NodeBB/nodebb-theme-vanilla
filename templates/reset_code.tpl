@@ -1,14 +1,4 @@
-<ol class="breadcrumb">
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
-	</li>
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/reset" itemprop="url"><span itemprop="title">[[reset_password:reset_password]]</span></a>
-	</li>
-	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">[[reset_password:update_password]]</span>
-	</li>
-</ol>
+<!-- IMPORT partials/breadcrumbs.tpl -->
 
 
 <div class="well">

@@ -1,12 +1,4 @@
-<ol class="breadcrumb">
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
-	</li>
-	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">[[global:login]]</span>
-	</li>
-</ol>
-
+<!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
 	<!-- IF allowLocalLogin -->

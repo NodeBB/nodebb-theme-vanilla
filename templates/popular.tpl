@@ -1,8 +1,6 @@
 <div class="popular">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[global:header.popular]] <!-- IF !feeds:disableRSS --><a href="{relative_path}/popular.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></li>
-	</ol>
+
+	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<ul class="nav nav-pills">
 		<li><a href='{relative_path}/popular/daily'>[[recent:day]]</a></li>

@@ -1,8 +1,5 @@
 <div class="tags">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[tags:tags]]</li>
-	</ol>
+	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<!-- IF !tags.length -->
 	<div class="alert alert-warning">
