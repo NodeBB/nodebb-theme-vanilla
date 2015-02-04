@@ -20,9 +20,11 @@
 			<div class="panel-body">
 				<h1>{group.name}</h1>
 				<p>{group.description}</p>
+				<!-- IF loggedIn -->
 				<div class="pull-right">
 					{function.membershipBtn, group}
 				</div>
+				<!-- ENDIF loggedIn -->
 			</div>
 		</div>
 		<div class="panel panel-default">
