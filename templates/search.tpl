@@ -92,6 +92,8 @@
 			<!-- IF tags.length -->
 			<!-- IMPORT partials/tags_list.tpl -->
 			<!-- ENDIF tags.length -->
+
+			<!-- IMPORT partials/paginator.tpl -->
 		</div>
 	</div>
 </div>
