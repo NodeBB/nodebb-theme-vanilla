@@ -17,12 +17,13 @@
 						<option value="tags">[[tags:tags]]</option>
 					</select>
 				</div>
-				<div class="form-group by-container<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
+
+				<div class="form-group post-search-item<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
 					<label>[[search:by]]</label>
 					<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
 				</div>
 
-				<div class="form-group">
+				<div class="form-group post-search-item">
 					<label>[[search:in-categories]]</label>
 					<select multiple class="form-control" id="posted-in-categories">
 						<option value="all">All Categories</option>
@@ -32,6 +33,21 @@
 						<!-- END categories -->
 					</select>
 					<input type="checkbox" id="search-children"> [[search:search-child-categories]]
+				</div>
+
+				<div class="form-group post-search-item">
+					<label>[[search:reply-count]]</label>
+					<div class="row">
+						<div class="col-md-6">
+							<select id="reply-count-filter" class="form-control">
+								<option value="atleast">[[search:at-least]]</option>
+								<option value="atmost">[[search:at-most]]</option>
+							</select>
+						</div>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="reply-count">
+						</div>
+					</div>
 				</div>
 
 				<button type="submit" class="btn btn-default">[[global:search]]</button>
