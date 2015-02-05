@@ -11,7 +11,7 @@
 				</div>
 				<div class="form-group">
 					<label>[[search:in]]</label>
-					<select class="form-control">
+					<select id="search-in" class="form-control">
 						<option value="posts">[[global:posts]]</option>
 						<option value="users">[[global:users]]</option>
 						<option value="tags">[[tags:tags]]</option>
@@ -19,8 +19,21 @@
 				</div>
 				<div class="form-group by-container<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
 					<label>[[search:by]]</label>
-					<input type="text" class="form-control" id="posted-by-input" placeholder="[[search:posted-by]]">
+					<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
 				</div>
+
+				<div class="form-group">
+					<label>[[search:in-categories]]</label>
+					<select multiple class="form-control" id="posted-in-categories">
+						<option value="all">All Categories</option>
+						<option value="watched">Watched Categories</option>
+						<!-- BEGIN categories -->
+						<option value="{categories.cid}">{categories.name}</option>
+						<!-- END categories -->
+					</select>
+					<input type="checkbox" id="search-children"> [[search:search-child-categories]]
+				</div>
+
 				<button type="submit" class="btn btn-default">[[global:search]]</button>
 			</form>
 		</div>
