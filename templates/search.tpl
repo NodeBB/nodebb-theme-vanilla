@@ -3,55 +3,62 @@
 <div class="search">
 	<div class="row">
 
-		<div class="well col-md-12">
-			<form id="advanced-search">
-				<div class="form-group">
-					<label>[[global:search]]</label>
-					<input type="text" class="form-control" id="search-input" placeholder="[[global:search]]">
+		<div class="col-xs-12">
+			<div class="panel panel-default">
+				<div class="panel-heading" data-toggle="collapse" data-target=".search-options">
+					<h3 class="panel-title"><i class="fa fa-caret-down"></i> [[global:search]]</h3>
 				</div>
-				<div class="form-group">
-					<label>[[search:in]]</label>
-					<select id="search-in" class="form-control">
-						<option value="posts">[[global:posts]]</option>
-						<option value="users">[[global:users]]</option>
-						<option value="tags">[[tags:tags]]</option>
-					</select>
-				</div>
-
-				<div class="form-group post-search-item<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
-					<label>[[search:by]]</label>
-					<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
-				</div>
-
-				<div class="form-group post-search-item">
-					<label>[[search:in-categories]]</label>
-					<select multiple class="form-control" id="posted-in-categories">
-						<option value="all">All Categories</option>
-						<option value="watched">Watched Categories</option>
-						<!-- BEGIN categories -->
-						<option value="{categories.cid}">{categories.name}</option>
-						<!-- END categories -->
-					</select>
-					<input type="checkbox" id="search-children"> [[search:search-child-categories]]
-				</div>
-
-				<div class="form-group post-search-item">
-					<label>[[search:reply-count]]</label>
-					<div class="row">
-						<div class="col-md-6">
-							<select id="reply-count-filter" class="form-control">
-								<option value="atleast">[[search:at-least]]</option>
-								<option value="atmost">[[search:at-most]]</option>
+				<div class="panel-body search-options collapse">
+					<form id="advanced-search">
+						<div class="form-group">
+							<label>[[global:search]]</label>
+							<input type="text" class="form-control" id="search-input" placeholder="[[global:search]]">
+						</div>
+						<div class="form-group">
+							<label>[[search:in]]</label>
+							<select id="search-in" class="form-control">
+								<option value="posts">[[global:posts]]</option>
+								<option value="users">[[global:users]]</option>
+								<option value="tags">[[tags:tags]]</option>
 							</select>
 						</div>
-						<div class="col-md-6">
-							<input type="text" class="form-control" id="reply-count">
-						</div>
-					</div>
-				</div>
 
-				<button type="submit" class="btn btn-default">[[global:search]]</button>
-			</form>
+						<div class="form-group post-search-item<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
+							<label>[[search:by]]</label>
+							<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
+						</div>
+
+						<div class="form-group post-search-item">
+							<label>[[search:in-categories]]</label>
+							<select multiple class="form-control" id="posted-in-categories">
+								<option value="all">All Categories</option>
+								<option value="watched">Watched Categories</option>
+								<!-- BEGIN categories -->
+								<option value="{categories.cid}">{categories.name}</option>
+								<!-- END categories -->
+							</select>
+							<input type="checkbox" id="search-children"> [[search:search-child-categories]]
+						</div>
+
+						<div class="form-group post-search-item">
+							<label>[[search:reply-count]]</label>
+							<div class="row">
+								<div class="col-md-6">
+									<select id="reply-count-filter" class="form-control">
+										<option value="atleast">[[search:at-least]]</option>
+										<option value="atmost">[[search:at-most]]</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="reply-count">
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-default">[[global:search]]</button>
+					</form>
+				</div>
+			</div>
 		</div>
 
 		<div id="results" class="col-md-12" data-search-query="{search_query}">
