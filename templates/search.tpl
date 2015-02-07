@@ -11,16 +11,20 @@
 				<div class="panel-body search-options collapse">
 					<form id="advanced-search">
 						<div class="form-group">
-							<label>[[global:search]]</label>
-							<input type="text" class="form-control" id="search-input" placeholder="[[global:search]]">
-						</div>
-						<div class="form-group">
-							<label>[[search:in]]</label>
-							<select id="search-in" class="form-control">
-								<option value="posts">[[global:posts]]</option>
-								<option value="users">[[global:users]]</option>
-								<option value="tags">[[tags:tags]]</option>
-							</select>
+							<div class="row">
+								<div class="col-md-6">
+									<label>[[global:search]]</label>
+									<input type="text" class="form-control" id="search-input" placeholder="[[global:search]]">
+								</div>
+								<div class="col-md-6">
+									<label>[[search:in]]</label>
+									<select id="search-in" class="form-control">
+										<option value="posts">[[global:posts]]</option>
+										<option value="users">[[global:users]]</option>
+										<option value="tags">[[tags:tags]]</option>
+									</select>
+								</div>
+							</div>
 						</div>
 
 						<div class="form-group post-search-item<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
@@ -51,6 +55,30 @@
 								</div>
 								<div class="col-md-6">
 									<input type="text" class="form-control" id="reply-count">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group post-search-item">
+							<label>[[search:post-time]]</label>
+							<div class="row">
+								<div class="col-md-6">
+									<select id="post-time-filter" class="form-control">
+										<option value="newer">[[search:newer-than]]</option>
+										<option value="older">[[search:older-than]]</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select id="post-time-range" class="form-control">
+										<option value="">[[search:any-date]]</option>
+										<option value="86400">[[search:yesterday]]</option>
+										<option value="604800">[[search:one-week]]</option>
+										<option value="1209600">[[search:two-weeks]]</option>
+										<option value="2592000">[[search:one-month]]</option>
+										<option value="7776000">[[search:three-months]]</option>
+										<option value="15552000">[[search:six-months]]</option>
+										<option value="31104000">[[search:one-year]]</option>
+									</select>
 								</div>
 							</div>
 						</div>
