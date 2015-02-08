@@ -19,6 +19,8 @@
 								<div class="col-md-6">
 									<label>[[search:in]]</label>
 									<select id="search-in" class="form-control">
+										<option value="titlesposts">[[search:titles-posts]]</option>
+										<option value="titles">[[search:titles]]</option>
 										<option value="posts">[[global:posts]]</option>
 										<option value="users">[[global:users]]</option>
 										<option value="tags">[[tags:tags]]</option>
@@ -27,7 +29,7 @@
 							</div>
 						</div>
 
-						<div class="form-group post-search-item<!-- IF hidePostedBy --> hide<!-- ENDIF hidePostedBy -->">
+						<div class="form-group post-search-item">
 							<label>[[search:by]]</label>
 							<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
 						</div>
@@ -78,6 +80,30 @@
 										<option value="7776000">[[search:three-months]]</option>
 										<option value="15552000">[[search:six-months]]</option>
 										<option value="31104000">[[search:one-year]]</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group post-search-item">
+							<label>[[search:sort-by]]</label>
+							<div class="row">
+								<div class="col-md-6">
+									<select id="post-sort-by" class="form-control">
+										<option value="timestamp">[[search:post-time]]</option>
+										<option value="teaser.timestamp">[[search:last-reply-time]]</option>
+										<option value="topic.title">[[search:topic-title]]</option>
+										<option value="topic.postcount">[[search:number-of-replies]]</option>
+										<option value="topic.viewcount">[[search:number-of-views]]</option>
+										<option value="topic.timestamp">[[search:topic-start-date]]</option>
+										<option value="user.username">[[search:username]]</option>
+										<option value="category.name">[[search:category]]</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select id="post-sort-direction" class="form-control">
+										<option value="desc">[[search:descending]]</option>
+										<option value="asc">[[search:ascending]]</option>
 									</select>
 								</div>
 							</div>
