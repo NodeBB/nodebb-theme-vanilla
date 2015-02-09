@@ -109,6 +109,19 @@
 							</div>
 						</div>
 
+						<div class="form-group post-search-item">
+							<label>[[search:show-results-as]]</label>
+							<div class="btn-group" data-toggle="buttons" id="show-results-as">
+								<label class="btn btn-primary active">
+									<input type="radio" name="options" id="show-as-posts" autocomplete="off" checked> [[global:posts]]
+								</label>
+								<label class="btn btn-primary">
+									<input type="radio" name="options" id="show-as-topics" autocomplete="off"> [[global:topics]]
+								</label>
+							</div>
+						</div>
+
+
 						<button type="submit" class="btn btn-default">[[global:search]]</button>
 						<a id="save-preferences" href="#">[[search:save-preferences]]</a>
 						<a id="clear-preferences" href="#">[[search:clear-preferences]]</a>
@@ -131,10 +144,12 @@
 					<a href="{relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
 						<h4>{posts.topic.title}</h4>
 					</a>
+					<!-- IF showAsPosts -->
 					<div class="search-result-text">
 						{posts.content}
 						<p class="fade-out"></p>
 					</div>
+					<!-- ENDIF showAsPosts -->
 
 					<small>
 						<span class="pull-right footer">
