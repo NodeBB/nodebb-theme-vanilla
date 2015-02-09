@@ -110,6 +110,8 @@
 						</div>
 
 						<button type="submit" class="btn btn-default">[[global:search]]</button>
+						<a id="save-preferences" href="#">[[search:save-preferences]]</a>
+						<a id="clear-preferences" href="#">[[search:clear-preferences]]</a>
 					</form>
 				</div>
 			</div>
