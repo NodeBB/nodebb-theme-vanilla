@@ -53,6 +53,11 @@
 											Grant/Rescind Ownership
 										</a>
 									</li>
+									<li>
+										<a href="#" data-ajaxify="false" data-action="kick">
+											Kick
+										</a>
+									</li>
 								</ul>
 							</div>
 						</td>
