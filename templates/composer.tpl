@@ -45,7 +45,7 @@
 			<!-- ENDIF isTopic -->
 			<!-- IF showTags -->
 			<div class="tags-container <!-- IF isTopic -->col-sm-9<!-- ELSE -->col-sm-12<!-- ENDIF isTopic-->">
-				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here]]" tabIndex="2"/>
+				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here, {minimumTagLength}, {maximumTagLength}]]" tabIndex="2"/>
 			</div>
 			<!-- ENDIF showTags -->
 		</div>
