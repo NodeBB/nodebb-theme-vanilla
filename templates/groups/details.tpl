@@ -50,12 +50,12 @@
 								<ul class="dropdown-menu" role="menu">
 									<li>
 										<a href="#" data-ajaxify="false" data-action="toggleOwnership">
-											Grant/Rescind Ownership
+											[[groups:details.grant]]
 										</a>
 									</li>
 									<li>
 										<a href="#" data-ajaxify="false" data-action="kick">
-											Kick
+											[[groups:details.kick]]
 										</a>
 									</li>
 								</ul>

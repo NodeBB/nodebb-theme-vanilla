@@ -4,15 +4,15 @@
 		<div class="title-container row">
 			<!-- IF showHandleInput -->
 			<div class="col-xs-3">
-				<input class="handle form-control" type="text" tabIndex="1" placeholder="[[topic:composer.handle_placeholder]]" />
+				<input class="handle form-control" type="text" placeholder="[[topic:composer.handle_placeholder]]" />
 			</div>
 			<!-- ENDIF showHandleInput -->
 			<div class="<!-- IF showHandleInput -->col-xs-9<!-- ELSE -->col-xs-12<!-- ENDIF showHandleInput -->">
 				<div class="input-group">
-					<input class="title form-control" type="text" placeholder="[[topic:composer.title_placeholder]]" />
+					<input class="title form-control" type="text" tabindex="1" placeholder="[[topic:composer.title_placeholder]]" />
 					<div class="input-group-btn action-bar">
-						<button class="btn btn-default" data-action="discard"><i class="fa fa-times"></i></button>
-						<button class="btn btn-primary" data-action="post"><i class="fa fa-check"></i></button>
+						<button class="btn btn-default" data-action="discard" tabindex="5"><i class="fa fa-times"></i></button>
+						<button class="btn btn-primary" data-action="post" tabindex="4"><i class="fa fa-check"></i></button>
 					</div>
 				</div>
 			</div>
@@ -79,14 +79,14 @@
 			<!-- ENDIF isTopic -->
 			<!-- IF showTags -->
 			<div class="tags-container <!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic--> hidden">
-				<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here_short]]"/>
+				<input class="tags" type="text" tabindex="2" class="form-control" placeholder="[[tags:enter_tags_here_short]]"/>
 			</div>
 			<!-- ENDIF showTags -->
 		</div>
 
 		<div class="row write-preview-container">
 			<div class="col-md-6 col-sm-12 write-container">
-				<textarea class="write"></textarea>
+				<textarea class="write" tabindex="3"></textarea>
 			</div>
 			<div class="col-md-6 hidden-xs hidden-sm preview-container">
 				<div class="preview well"></div>
