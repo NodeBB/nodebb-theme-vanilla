@@ -12,9 +12,9 @@
 
 			<form class="form-horizontal" role="form" method="post" target="login" id="login-form">
 				<div class="form-group">
-					<label for="username" class="col-lg-2 control-label">[[login:username]]</label>
+					<label for="username" class="col-lg-2 control-label">{allowLoginWith}</label>
 					<div class="col-lg-10">
-						<input class="form-control" type="text" placeholder="[[login:username]]" name="username" id="username" autocorrect="off" autocapitalize="off" />
+						<input class="form-control" type="text" placeholder="{allowLoginWith}" name="username" id="username" autocorrect="off" autocapitalize="off" />
 					</div>
 				</div>
 				<div class="form-group">
