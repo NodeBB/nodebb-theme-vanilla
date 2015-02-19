@@ -53,7 +53,11 @@
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
 				<!-- BEGIN formatting -->
-				<span class="btn btn-link" tabindex="-1" data-format="{formatting.name}"><i class="{formatting.className}"></i></span>
+					<!-- IF formatting.spacer -->
+					<span class="btn spacer"></span>
+					<!-- ELSE -->
+					<span class="btn btn-link" tabindex="-1" data-format="{formatting.name}"><i class="{formatting.className}"></i></span>
+					<!-- ENDIF formatting.spacer -->
 				<!-- END formatting -->
 
 				<!--[if gte IE 9]><!-->
