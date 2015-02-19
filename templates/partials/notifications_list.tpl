@@ -10,6 +10,7 @@
 	<img src="{notifications.image}" />
 	<!-- ENDIF notifications.image -->
 
+	<div class="pull-right mark-read" aria-label="Mark Read"></div>
 	<span class="pull-right relTime">{notifications.timeago}</span>
 
 	<span class="text">{notifications.bodyShort}</span>

@@ -93,7 +93,7 @@
 				white-space: normal;
 				overflow: hidden;
 				margin: 0;
-				padding: 3px 20px;
+				padding: 3px 5px 3px 20px;
 				text-overflow: ellipsis;
 
 				img {
@@ -121,7 +121,27 @@
 			}
 
 			&.unread {
-    			.bg-variant(@state-warning-bg);
+				.bg-variant(@state-warning-bg);
+
+				.mark-read:after {
+					content: "\f111";
+				}
+			}
+
+			.mark-read {
+				color: @text-muted;
+
+				&:after {
+					font-family: "FontAwesome";
+					content: "\f10c";
+					padding: 4px 1rem;
+					position: relative;
+					top: 1px;
+				}
+
+				&:hover {
+					color: @gray-dark;
+				}
 			}
 		}
 	}
