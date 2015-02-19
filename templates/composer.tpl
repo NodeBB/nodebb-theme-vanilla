@@ -52,10 +52,9 @@
 
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-bold"></i></span>
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-italic"></i></span>
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-list"></i></span>
-				<span class="btn btn-link" tabindex="-1"><i class="fa fa-link"></i></span>
+				<!-- BEGIN formatting -->
+				<span class="btn btn-link" tabindex="-1" data-format="{formatting.name}"><i class="{formatting.className}"></i></span>
+				<!-- END formatting -->
 
 				<!--[if gte IE 9]><!-->
 					<span class="btn btn-link img-upload-btn hide" tabindex="-1">
