@@ -2,7 +2,6 @@
 
 <div class="search">
 	<div class="row">
-
 		<div class="col-xs-12">
 			<div class="panel panel-default">
 				<div class="panel-heading" data-toggle="collapse" data-target=".search-options">
@@ -129,7 +128,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
+	<div class="row">
 		<div id="results" class="col-md-12" data-search-query="{search_query}">
 			<!-- IF matchCount -->
 			<div class="alert alert-info">[[search:results_matching, {matchCount}, {search_query}, {time}]] </div>
