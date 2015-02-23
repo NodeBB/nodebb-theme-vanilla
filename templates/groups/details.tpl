@@ -9,12 +9,9 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					<!-- IF group.private -->
-					<span class="label label-warning pull-right">[[groups:details.private]]</span>
-					<!-- ELSE -->
-					<span class="label label-primary pull-right">[[groups:details.public]]</span>
-					<!-- ENDIF group.private -->
 					<i class="fa fa-list-ul"></i> [[groups:details.title]]
+					<!-- IF group.private --><span class="label label-info">[[groups:details.private]]</span><!-- ENDIF group.private -->
+					<!-- IF group.hidden --><span class="label label-info">[[groups:details.hidden]]</span>&nbsp;<!-- ENDIF group.hidden -->
 				</h3>
 			</div>
 			<div class="panel-body">
@@ -88,8 +85,8 @@
 									More <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="#" data-ajaxify="false" data-action="accept">Accept</a></li>
-									<li><a href="#" data-ajaxify="false" data-action="reject">Reject</a></li>
+									<li><a href="#" data-ajaxify="false" data-action="accept">[[groups:pending.accept]]</a></li>
+									<li><a href="#" data-ajaxify="false" data-action="reject">[[groups:pending.reject]]</a></li>
 								</ul>
 							</div>
 						</td>
@@ -114,19 +111,19 @@
 			<div class="panel-body options collapse">
 				<form role="form">
 					<div class="form-group">
-						<label for="name">Group Name</label>
+						<label for="name">[[groups:details.group_name]]</label>
 						<input class="form-control" name="name" id="name" type="text" value="{group.name}" />
 					</div>
 					<div class="form-group">
-						<label for="name">Description</label>
+						<label for="name">[[groups:details.description]]</label>
 						<textarea class="form-control" name="description" id="description" type="text">{group.description}</textarea>
 					</div>
 					<div class="form-group">
-						<label>Badge Preview</label>
+						<label>[[groups:details.badge_preview]]</label>
 						<span class="label" style="background-color: {group.labelColor}"><i class="fa {group.icon} icon"></i> {group.userTitle}</span>
 
-						<button type="button" class="btn btn-default btn-sm" data-action="icon-select">Change Icon</button>
-						<button type="button" class="btn btn-default btn-sm" data-action="color-select">Change Colour</button>
+						<button type="button" class="btn btn-default btn-sm" data-action="icon-select">[[groups:details.change_icon]]</button>
+						<button type="button" class="btn btn-default btn-sm" data-action="color-select">[[groups:details.change_colour]]</button>
 						<input type="hidden" name="labelColor" value="<!-- IF group.labelColor -->{group.labelColor}<!-- ENDIF group.labelColor -->" />
 						<input type="hidden" name="icon" value="<!-- IF group.icon -->{group.icon}<!-- ENDIF group.icon -->" />
 						<div id="icons" style="display:none;">
@@ -139,15 +136,23 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="userTitle">Badge Text</label>
+						<label for="userTitle">[[groups:details.badge_text]]</label>
 						<input class="form-control" name="userTitle" id="userTitle" type="text" value="{group.userTitle}" />
 					</div>
 					<hr />
 					<div class="checkbox">
 						<label>
-							<input name="private" type="checkbox"<!-- IF group.private --> checked<!-- ENDIF group.private-->> <strong>Private</strong>
+							<input name="private" type="checkbox"<!-- IF group.private --> checked<!-- ENDIF group.private-->> <strong>[[groups:details.private]]</strong>
 							<p class="help-block">
-								If enabled, joining of groups requires approval from a group owner
+								[[groups:details.private_help]]
+							</p>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input name="hidden" type="checkbox"<!-- IF group.hidden --> checked<!-- ENDIF group.hidden-->> <strong>[[groups:details.hidden]]</strong>
+							<p class="help-block">
+								[[groups:details.hidden_help]]
 							</p>
 						</label>
 					</div>
