@@ -7,7 +7,7 @@
 				<div class="panel-heading" data-toggle="collapse" data-target=".search-options">
 					<h3 class="panel-title"><i class="fa fa-caret-down"></i> [[global:search]]</h3>
 				</div>
-				<div class="panel-body search-options collapse">
+				<div class="panel-body search-options collapse <!-- IF expandSearch -->in<!-- ENDIF expandSearch -->">
 					<form id="advanced-search">
 						<div class="form-group">
 							<div class="row">
