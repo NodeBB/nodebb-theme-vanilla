@@ -11,13 +11,9 @@
 
 	<br />
 
-	<a href="{relative_path}/popular">
-		<div class="alert alert-warning hide" id="new-topics-alert"></div>
-	</a>
-
 	<!-- IF !topics.length -->
 	<div class="alert alert-warning" id="category-no-topics">
-		<strong>There are no popular topics.</strong>
+		<strong>[[recent:no_popular_topics]]</strong>
 	</div>
 	<!-- ENDIF !topics.length -->
 
