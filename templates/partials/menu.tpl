@@ -94,11 +94,13 @@
 							<i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
-							<ul id="notif-list">
-								<li>
-									<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
-								</li>
-							</ul>
+							<li>
+								<ul id="notif-list">
+									<li>
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+									</li>
+								</ul>
+							</li>
 							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
 							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
 						</ul>
@@ -115,10 +117,15 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown">
 							<i id="chat-count" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
-						<ul id="chat-list" class="dropdown-menu" aria-labelledby="chat_dropdown">
+						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
-								<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+								<ul id="chat-list">
+									<li>
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+									</li>
+								</ul>
 							</li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/chats">[[modules:chat.see_all]]</a></li>
 						</ul>
 					</li>
 					<!-- ENDIF !disableChat -->
