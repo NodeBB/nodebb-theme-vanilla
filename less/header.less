@@ -83,40 +83,38 @@
 	}
 
 	#notif-list {
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-height: 250px;
+		padding: 0;
+
 		li {
 			font-size: 12px;
 			width: 300px;
 			text-align: left;
 			margin-bottom: 5px;
+			list-style-type: none;
+			padding: 0.5em;
+			clear: both;
+
+			img {
+				max-width: 32px;
+				max-height: 32px;
+				float: left;
+			}
 
 			a {
+				color: @text-color;
 				white-space: normal;
 				overflow: hidden;
 				margin: 0;
-				padding: 3px 5px 3px 20px;
+				// padding: 3px 5px 3px 20px;
 				text-overflow: ellipsis;
-
-				img {
-					max-width: 32px;
-					max-height: 32px;
-					float: left;
-				}
 
 				.text {
 					margin-left: 40px;
 					display: block;
-				}
-			}
-
-			&.pagelink {
-				margin-top: 1em;
-				border-top: 1px solid rgba(163, 163, 163, 0.5);
-
-				a {
-					display: block;
-					text-align: center;
-					padding-top: 0.5em;
-					font-weight: 600;
+					min-height: 32px;
 				}
 			}
 
@@ -125,6 +123,10 @@
 
 				.mark-read:after {
 					content: "\f111";
+				}
+
+				.mark-read:hover:after {
+					content: "\f10c";
 				}
 			}
 
@@ -141,8 +143,25 @@
 
 				&:hover {
 					color: @gray-dark;
+					.pointer;
+
+					&:after {
+						content: "\f111";
+					}
 				}
 			}
+		}
+	}
+
+	.notif-dropdown-link {
+		// margin-top: 1em;
+		border-top: 1px solid rgba(163, 163, 163, 0.5);
+
+		a {
+			display: block;
+			text-align: center;
+			padding: 0.5em 0;
+			font-weight: 600;
 		}
 	}
 

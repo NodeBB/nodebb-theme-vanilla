@@ -93,10 +93,14 @@
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
 							<i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
-						<ul id="notif-list" class="dropdown-menu" aria-labelledby="notif_dropdown">
-							<li>
-								<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
-							</li>
+						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
+							<ul id="notif-list">
+								<li>
+									<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+								</li>
+							</ul>
+							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
+							<li class="notif-dropdown-link"><a href="{config.relative_path}/notifications">[[notifications:see_all]]</a></li>
 						</ul>
 					</li>
 
