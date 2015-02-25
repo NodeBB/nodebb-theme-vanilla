@@ -100,7 +100,7 @@
 								</li>
 							</ul>
 							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
-							<li class="notif-dropdown-link"><a href="{config.relative_path}/notifications">[[notifications:see_all]]</a></li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
 						</ul>
 					</li>
 
