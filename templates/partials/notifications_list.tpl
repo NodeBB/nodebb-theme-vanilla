@@ -6,7 +6,11 @@
 <!-- BEGIN notifications -->
 <li class="{notifications.readClass}">
 	<!-- IF notifications.image -->
+	<!-- IF notifications.from -->
 	<a href="{relative_path}/user/{notifications.user.userslug}"><img src="{notifications.image}" /></a>
+	<!-- ENDIF notifications.from -->
+	<!-- ELSE -->
+	<img src="{notifications.image}" />
 	<!-- ENDIF notifications.image -->
 
 	<div class="pull-right mark-read" aria-label="Mark Read"></div>
