@@ -4,7 +4,7 @@
 <!-- ENDIF !notifications.length -->
 
 <!-- BEGIN notifications -->
-<li class="{notifications.readClass}">
+<li class="{notifications.readClass}" data-nid="{notifications.nid}">
 	<!-- IF notifications.image -->
 	<!-- IF notifications.from -->
 	<a href="{relative_path}/user/{notifications.user.userslug}"><img src="{notifications.image}" /></a>
@@ -14,7 +14,7 @@
 	<!-- ENDIF notifications.image -->
 
 	<div class="pull-right mark-read" aria-label="Mark Read"></div>
-	<a href="{notifications.path}" data-nid="{notifications.nid}">
+	<a href="{notifications.path}">
 		<span class="pull-right relTime">{notifications.timeago}</span>
 		<span class="text">{notifications.bodyShort}</span>
 	</a>
