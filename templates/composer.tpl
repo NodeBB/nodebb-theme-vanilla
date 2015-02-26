@@ -61,10 +61,10 @@
 				<!-- END formatting -->
 
 				<!--[if gte IE 9]><!-->
-					<span class="btn btn-link img-upload-btn hide" tabindex="-1">
+					<span class="btn btn-link img-upload-btn hide" data-format="picture" tabindex="-1">
 						<i class="fa fa-picture-o"></i>
 					</span>
-					<span class="btn btn-link file-upload-btn hide" tabindex="-1">
+					<span class="btn btn-link file-upload-btn hide" data-format="upload" tabindex="-1">
 						<i class="fa fa-upload"></i>
 					</span>
 				<!--<![endif]-->
