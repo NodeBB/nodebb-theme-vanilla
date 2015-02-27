@@ -118,7 +118,7 @@
 
 			<h4>[[global:language]]</h4>
 			<div class="well">
-				<select data-property="language" class="form-control">
+				<select data-property="userLang" class="form-control">
 					<!-- BEGIN languages -->
 					<option value="{languages.code}">{languages.name} ({languages.code})</option>
 					<!-- END languages -->
