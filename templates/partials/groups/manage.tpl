@@ -20,16 +20,26 @@
 				<label for="description">Group Description</label>
 				<input class="form-control" type="text" id="description" name="description" <!-- IF current.description -->value="{current.description}"<!-- ENDIF current.description --> />
 			</div>
-			<div class="form-group col-xs-12 user-title-option">
+			<div class="checkbox col-xs-12">
+				<label>
+					<input name="userTitleEnabled" type="checkbox"<!-- IF group.userTitleEnabled --> checked<!-- ENDIF group.userTitleEnabled-->> <strong>[[groups:details.userTitleEnabled]]</strong>
+					<div class="help-block">
+						A publicly displayed badge allows users to select this group to display next to their posts
+					</div>
+				</label>
+			</div>
+			<div class="form-group col-xs-6 user-title-option">
 				<label for="userTitle">[[groups:details.badge_text]]</label>
 				<input class="form-control" name="userTitle" id="userTitle" type="text" value="{current.userTitle}"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled --> />
 			</div>
-			<div class="form-group col-xs-12 user-title-option">
-				<label>[[groups:details.badge_preview]]</label><br />
-				<span class="label<!-- IF !userTitleEnabled --> hide<!-- ENDIF !userTitleEnabled -->" style="background-color: {current.labelColor}"><i class="fa {current.icon} icon"></i> <!-- IF group.userTitle -->{current.userTitle}<!-- ELSE -->{current.name}<!-- ENDIF group.userTitle --></span>
+			<div class="form-group col-xs-6 user-title-option">
+				<label>[[groups:details.badge_preview]]</label>
+				<span class="label<!-- IF !userTitleEnabled --> hide<!-- ENDIF !userTitleEnabled -->" style="background-color: {current.labelColor}"><i class="fa {current.icon} icon"></i> <!-- IF group.userTitle -->{current.userTitle}<!-- ELSE -->{current.name}<!-- ENDIF group.userTitle --></span><br />
 
-				<button type="button" class="btn btn-default btn-sm" data-action="icon-select"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled -->>[[groups:details.change_icon]]</button>
-				<button type="button" class="btn btn-default btn-sm" data-action="color-select"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled -->>[[groups:details.change_colour]]</button>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default btn-sm" data-action="icon-select"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled -->>[[groups:details.change_icon]]</button>
+					<button type="button" class="btn btn-default btn-sm" data-action="color-select"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled -->>[[groups:details.change_colour]]</button>
+				</div>
 				<input type="hidden" name="labelColor" value="<!-- IF group.labelColor -->{current.labelColor}<!-- ENDIF group.labelColor -->" />
 				<input type="hidden" name="icon" value="<!-- IF group.icon -->{current.icon}<!-- ENDIF group.icon -->" />
 				<div id="icons" style="display:none;">
@@ -43,14 +53,6 @@
 			</div>
 			<div class="checkbox col-xs-12">
 				<hr />
-				<label>
-					<input name="userTitleEnabled" type="checkbox"<!-- IF group.userTitleEnabled --> checked<!-- ENDIF group.userTitleEnabled-->> <strong>[[groups:details.userTitleEnabled]]</strong>
-					<div class="help-block">
-						A publicly displayed badge allows users to select this group to display next to their posts
-					</div>
-				</label>
-			</div>
-			<div class="checkbox col-xs-12">
 				<label>
 					<input id="private" name="private" type="checkbox" <!-- IF current.private -->checked="checked"<!-- ENDIF current.private --> /> <strong>Make this group private</strong>
 					<div class="help-block">
