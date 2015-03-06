@@ -38,9 +38,9 @@
 				</div>
 			</div>
 
+			<!-- IF !disableEmailSubscriptions -->
 			<h4>[[global:email]]</h4>
 			<div class="well">
-				<!-- IF !disableEmailSubscriptions -->
 				<div class="form-group">
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
 					<select class="form-control" id="dailyDigestFreq" data-property="dailyDigestFreq">
@@ -63,8 +63,8 @@
 						<input type="checkbox" data-property="sendPostNotifications" /> <strong>[[user:send_post_notifications]]</strong>
 					</label>
 				</div>
-				<!-- ENDIF !disableEmailSubscriptions -->
 			</div>
+			<!-- ENDIF !disableEmailSubscriptions -->
 
 			<h4>[[user:follow]]</h4>
 			<div class="well">
