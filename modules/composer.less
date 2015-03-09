@@ -153,6 +153,16 @@
 				top: 3px;
 				color: #FFF;
 				font-size: 16px;
+
+				&:before {
+					content: @fa-var-chevron-up;
+				}
+			}
+		}
+
+		&.maximized {
+			.trigger i:before {
+				content: @fa-var-chevron-down;
 			}
 		}
 	}
