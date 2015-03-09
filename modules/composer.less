@@ -87,14 +87,14 @@
 		border-radius: 0px;
 		resize:none;
 		overflow: auto;
-		padding: 15px 20px;
+		padding: 20px;
 	}
 
 	.write-container, .preview-container {
 		.help-text {
 			text-transform: uppercase;
 			position: absolute;
-			right: 20px;
+			right: 35px;
 			top: 8px;
 			font-size: 10px;
 			color: #999;
@@ -162,8 +162,12 @@
 	}
 
 	&.maximized {
-		.resizer .trigger i:before {
-			content: @fa-var-chevron-down;
+		.resizer .trigger i {
+			top: 4px;
+		
+			&:before {
+				content: @fa-var-chevron-down;
+			}
 		}
 
 		z-index: 10000;
