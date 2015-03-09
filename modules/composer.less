@@ -159,12 +159,15 @@
 				}
 			}
 		}
+	}
 
-		&.maximized {
-			.trigger i:before {
-				content: @fa-var-chevron-down;
-			}
+	&.maximized {
+		.resizer .trigger i:before {
+			content: @fa-var-chevron-down;
 		}
+
+		z-index: 10000;
+		box-shadow: none;
 	}
 
 	.imagedrop {
