@@ -10,9 +10,14 @@
 				<input class="title form-control" type="text" tabIndex="2" placeholder="[[topic:composer.title_placeholder]]" />
 			</div>
 			<!-- ELSE -->
-			<div class="col-lg-12">
+			<div class="<!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic -->">
 				<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
 			</div>
+			<!-- IF isTopic -->
+			<div class="category-list-container col-lg-3">
+				<select class="form-control category-list"></select>
+			</div>
+			<!-- ENDIF isTopic -->
 			<!-- ENDIF showHandleInput -->
 		</div>
 
@@ -80,11 +85,6 @@
 					<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here, {minimumTagLength}, {maximumTagLength}]]" tabIndex="2"/>
 				</div>
 				<!-- ENDIF showTags -->
-				<!-- IF isTopic -->
-				<div class="category-list-container">
-					<select class="form-control category-list"></select>
-				</div>
-				<!-- ENDIF isTopic -->
 			</div>
 		</div>
 
