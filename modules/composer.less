@@ -70,7 +70,6 @@
 	}
 
 	.write {
-		padding: 14px;
 		border: 1px solid #EDEDED;
 		.border-radius(0px);
 		.box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.05));
@@ -87,6 +86,23 @@
 		border-radius: 0px;
 		resize:none;
 		overflow: auto;
+		padding: 15px 20px;
+	}
+
+	.write-container, .preview-container {
+		.help-text {
+			text-transform: uppercase;
+			position: absolute;
+			right: 20px;
+			top: 8px;
+			font-size: 10px;
+			color: #999;
+			z-index: 1;
+		}
+	}
+
+	.help {
+		.pointer;
 	}
 
 	.preview {

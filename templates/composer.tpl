@@ -71,8 +71,6 @@
 					</span>
 				<!--<![endif]-->
 
-				<span class="btn btn-link help hidden" tab-index="-1"><i class="fa fa-question"></i></span>
-
 				<form id="fileForm" method="post" enctype="multipart/form-data">
 					<!--[if gte IE 9]><!-->
 						<input type="file" id="files" name="files[]" multiple class="gte-ie9 hide"/>
@@ -92,9 +90,11 @@
 
 		<div class="row write-preview-container">
 			<div class="col-md-6 col-sm-12 write-container">
+				<div class="help-text">Compose <span class="help hidden"><i class="fa fa-question-circle"></i></span></div>
 				<textarea class="write" tabIndex="3"></textarea>
 			</div>
 			<div class="col-md-6 hidden-sm hidden-xs preview-container">
+				<div class="help-text">Preview</div>
 				<div class="preview well"></div>
 			</div>
 		</div>
