@@ -101,6 +101,6 @@
 
 		<div class="imagedrop"><div>[[topic:composer.drag_and_drop_images]]</div></div>
 
-		<div class="resizer"><div class="trigger text-center"><i class="fa fa-chevron-up"></i></div></div>
+		<div class="resizer"><div class="trigger text-center"><i class="fa"></i></div></div>
 	</div>
 </div>
