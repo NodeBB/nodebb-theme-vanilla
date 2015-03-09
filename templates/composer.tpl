@@ -56,7 +56,9 @@
 					<!-- IF formatting.spacer -->
 					<span class="btn spacer"></span>
 					<!-- ELSE -->
+					<!-- IF !formatting.mobile -->
 					<span class="btn btn-link" tabindex="-1" data-format="{formatting.name}"><i class="{formatting.className}"></i></span>
+					<!-- ENDIF !formatting.mobile -->
 					<!-- ENDIF formatting.spacer -->
 				<!-- END formatting -->
 

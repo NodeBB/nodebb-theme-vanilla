@@ -41,17 +41,19 @@
 
 		<div class="btn-toolbar formatting-bar">
 			<div class="btn-group">
-				<span class="btn btn-link"><i class="fa fa-bold"></i></span>
-				<span class="btn btn-link"><i class="fa fa-italic"></i></span>
-				<span class="btn btn-link"><i class="fa fa-list"></i></span>
-				<span class="btn btn-link"><i class="fa fa-link"></i></span>
-				<span class="btn btn-link"><i class="fa fa-tags"></i></span>
+				<!-- BEGIN formatting -->
+					<!-- IF formatting.spacer -->
+					<span class="btn spacer"></span>
+					<!-- ELSE -->
+					<span class="btn btn-link" tabindex="-1" data-format="{formatting.name}"><i class="{formatting.className}"></i></span>
+					<!-- ENDIF formatting.spacer -->
+				<!-- END formatting -->
 
 				<!--[if gte IE 9]><!-->
-					<span class="btn btn-link img-upload-btn hide">
+					<span class="btn btn-link img-upload-btn hide" data-format="picture" tabindex="-1">
 						<i class="fa fa-picture-o"></i>
 					</span>
-					<span class="btn btn-link file-upload-btn hide">
+					<span class="btn btn-link file-upload-btn hide" data-format="upload" tabindex="-1">
 						<i class="fa fa-upload"></i>
 					</span>
 				<!--<![endif]-->
