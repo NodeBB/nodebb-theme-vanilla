@@ -3,10 +3,10 @@
 	<div class="composer-container">
 		<nav class="navbar navbar-fixed-top mobile-navbar">
 			<span class="pull-left">
-				<button class="btn btn-primary" data-action="discard" tabindex="-1"><i class="fa fa-arrow-left"></i></button>
+				<button class="btn btn-primary" data-action="discard" tabindex="-1"><i class="fa fa-times"></i></button>
 			</span>
 			<span class="pull-right">
-				<button class="btn btn-primary" data-action="post" tabindex="-1"><i class="fa fa-check"></i></button>
+				<button class="btn btn-primary" data-action="post" tabindex="-1"><i class="fa fa-chevron-right"></i></button>
 			</span>
 		</nav>
 		<div class="title-container row">
