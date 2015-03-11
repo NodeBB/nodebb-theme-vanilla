@@ -10,11 +10,11 @@
 				<input class="title form-control" type="text" tabIndex="2" placeholder="[[topic:composer.title_placeholder]]" />
 			</div>
 			<!-- ELSE -->
-			<div class="<!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic -->">
+			<div class="<!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic --> col-md-12">
 				<input class="title form-control" type="text" tabIndex="1" placeholder="[[topic:composer.title_placeholder]]" />
 			</div>
 			<!-- IF isTopic -->
-			<div class="category-list-container col-lg-3">
+			<div class="category-list-container col-lg-3 col-md-12">
 				<select class="form-control category-list"></select>
 			</div>
 			<!-- ENDIF isTopic -->
@@ -75,7 +75,7 @@
 						<![endif]-->
 					</form>
 				</div>
-				<div class="btn-group pull-right action-bar">
+				<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
 					<button class="btn btn-default" data-action="discard" tabIndex="5"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
 					<button class="btn btn-primary" data-action="post" tabIndex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
 				</div>
