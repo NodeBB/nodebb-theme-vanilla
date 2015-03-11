@@ -90,11 +90,16 @@
 
 		<div class="row write-preview-container">
 			<div class="col-md-6 col-sm-12 write-container">
-				<div class="help-text">Compose <span class="help hidden"><i class="fa fa-question-circle"></i></span></div>
+				<div class="help-text">
+					Compose <span class="help hidden"><i class="fa fa-question-circle"></i></span>
+					<span class="toggle-preview hide">Show Preview</span>
+				</div>
 				<textarea class="write" tabIndex="3"></textarea>
 			</div>
 			<div class="col-md-6 hidden-sm hidden-xs preview-container">
-				<div class="help-text">Preview</div>
+				<div class="help-text">
+					<span class="toggle-preview">Hide Preview</span>
+				</div>
 				<div class="preview well"></div>
 			</div>
 		</div>
