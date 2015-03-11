@@ -10,9 +10,10 @@ html.composing {
 		padding: 0;
 
 		.composer-container {
-			overflow-y: scroll;
+			overflow-y: visible;
 			overflow-x: hidden;
 			padding: 0;
+			padding-top: 50px;
 			height: 100%;
 			background: white;
 		}
@@ -38,6 +39,17 @@ html.composing {
 		.formatting-bar {
 			margin: 0;
 			padding: 0;
+		}
+
+		.mobile-navbar {
+			background: @btn-primary-bg;
+			color: @btn-primary-color;
+
+			button {
+				font-size: 20px;
+			}
+
+			
 		}
 	}
 

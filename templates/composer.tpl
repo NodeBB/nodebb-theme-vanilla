@@ -1,6 +1,14 @@
 <div class="composer">
 
 	<div class="composer-container">
+		<nav class="navbar navbar-fixed-top mobile-navbar">
+			<span class="pull-left">
+				<button class="btn btn-primary" data-action="discard" tabindex="-1"><i class="fa fa-arrow-left"></i></button>
+			</span>
+			<span class="pull-right">
+				<button class="btn btn-primary" data-action="post" tabindex="-1"><i class="fa fa-check"></i></button>
+			</span>
+		</nav>
 		<div class="title-container row">
 			<!-- IF showHandleInput -->
 			<div class="col-sm-3 col-md-12">
