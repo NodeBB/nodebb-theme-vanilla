@@ -68,7 +68,7 @@
 					<!-- IF !disableChat -->
 					<li class="chats dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown">
-							<i id="chat-count" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs">[[global:header.chats]]</span>
+							<i id="chat-count" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
@@ -126,14 +126,14 @@
 					<!-- IF allowRegistration -->
 					<li>
 						<a href="{relative_path}/register">
-							<i class="fa fa-pencil visible-xs"></i>
+							<i class="fa fa-pencil visible-xs-inline"></i>
 							<span>[[global:register]]</span>
 						</a>
 					</li>
 					<!-- ENDIF allowRegistration -->
 					<li>
 						<a href="{relative_path}/login">
-							<i class="fa fa-sign-in visible-xs"></i>
+							<i class="fa fa-sign-in visible-xs-inline"></i>
 							<span>[[global:login]]</span>
 						</a>
 					</li>
@@ -192,7 +192,7 @@
 				<ul class="nav navbar-nav navbar-right pull-right">
 					<li>
 						<a href="{relative_path}/login">
-							<i class="fa fa-sign-in visible-xs"></i>
+							<i class="fa fa-sign-in visible-xs-inline"></i>
 							<span>[[global:login]]</span>
 						</a>
 					</li>
