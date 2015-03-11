@@ -1,7 +1,7 @@
 <div class="composer">
 
 	<div class="composer-container">
-		<nav class="navbar navbar-fixed-top mobile-navbar">
+		<nav class="navbar navbar-fixed-top mobile-navbar visible-xs">
 			<span class="pull-left">
 				<button class="btn btn-primary" data-action="discard" tabindex="-1"><i class="fa fa-times"></i></button>
 			</span>
