@@ -76,13 +76,13 @@
 					</form>
 				</div>
 				<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
-					<button class="btn btn-default" data-action="discard" tabindex="5"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-					<button class="btn btn-primary" data-action="post" tabindex="4"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
+					<button class="btn btn-default" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
+					<button class="btn btn-primary" data-action="post" tabindex="-1"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
 				</div>
 
 				<!-- IF showTags -->
 				<div class="tags-container inline-block">
-					<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here, {minimumTagLength}, {maximumTagLength}]]" tabindex="3"/>
+					<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here, {minimumTagLength}, {maximumTagLength}]]" tabindex="4"/>
 				</div>
 				<!-- ENDIF showTags -->
 			</div>
@@ -94,7 +94,7 @@
 					Compose <span class="help hidden"><i class="fa fa-question-circle"></i></span>
 					<span class="toggle-preview hide">Show Preview</span>
 				</div>
-				<textarea class="write" tabindex="4"></textarea>
+				<textarea class="write" tabindex="5"></textarea>
 			</div>
 			<div class="col-md-6 hidden-sm hidden-xs preview-container">
 				<div class="help-text">
