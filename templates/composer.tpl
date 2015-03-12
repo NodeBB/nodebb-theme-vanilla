@@ -85,7 +85,7 @@
 				</div>
 				<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
 					<button class="btn btn-default" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-					<button class="btn btn-primary" data-action="post" tabindex="-1"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
+					<button class="btn btn-primary" data-action="post" tabindex="5"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
 				</div>
 
 				<!-- IF showTags -->
