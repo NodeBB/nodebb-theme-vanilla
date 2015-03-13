@@ -1,8 +1,5 @@
 <div class="tags">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[tags:tags]]</li>
-	</ol>
+	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<!-- IF !tags.length -->
 	<div class="alert alert-warning">
@@ -15,11 +12,7 @@
 
 	<div class="category row">
 		<div class="col-md-12 clearfix tag-list" data-nextstart="{nextStart}">
-			<!-- BEGIN tags -->
-			<h3 class="pull-left">
-				<a href="{relative_path}/tags/{tags.value}" data-value="{tags.value}"><span class="tag-item" data-tag="{tags.value}" style="<!-- IF tags.color -->color: {tags.color};<!-- ENDIF tags.color --><!-- IF tags.bgColor -->background-color: {tags.bgColor};<!-- ENDIF tags.bgColor -->">{tags.value}</span><span class="tag-topic-count">{tags.score}</span></a>
-			</h3>
-			<!-- END tags -->
+			<!-- IMPORT partials/tags_list.tpl -->
 		</div>
 	</div>
 </div>

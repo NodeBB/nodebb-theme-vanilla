@@ -20,56 +20,13 @@
 				</div>
 			</div>
 
-			<div class="navbar-collapse collapse navbar-ex1-collapse">
+			<div class="navbar-collapse collapse navbar-ex1-collapse" id="nav-dropdown">
 				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
-					<!-- IF loggedIn -->
-					<li>
-						<a href="{relative_path}/unread" title="[[global:header.unread]]">
-							<i id="unread-count" class="fa fa-fw fa-inbox" data-content="0" ></i><span class="visible-xs-inline"> [[global:header.unread]]</span>
-						</a>
-					</li>
-					<!-- ENDIF loggedIn -->
-
-					<li>
-						<a href="{relative_path}/recent" title="[[global:header.recent]]">
-							<i class="fa fa-fw fa-clock-o"></i><span class="visible-xs-inline"> [[global:header.recent]]</span>
-						</a>
-					</li>
-					<li>
-						<a href="{relative_path}/tags" title="[[global:header.tags]]">
-							<i class="fa fa-fw fa-tags"></i><span class="visible-xs-inline"> [[global:header.tags]]</span>
-						</a>
-					</li>
-					<li>
-						<a href="{relative_path}/popular" title="[[global:header.popular]]">
-							<i class="fa fa-fw fa-fire"></i><span class="visible-xs-inline"> [[global:header.popular]]</span>
-						</a>
-					</li>
-					<li>
-						<!-- IF function.displayUsersLink -->
-						<a href="{relative_path}/users" title="[[global:header.users]]">
-							<i class="fa fa-fw fa-users"></i><span class="visible-xs-inline"> [[global:header.users]]</span>
-						</a>
-						<!-- ENDIF function.displayUsersLink -->
-					</li>
-					<!-- IF isAdmin -->
-					<li>
-						<a href="{relative_path}/admin" title="[[global:header.admin]]" target="_top">
-							<i class="fa fa-fw fa-cogs"></i><span class="visible-xs-inline"> [[global:header.admin]]</span>
-						</a>
-					</li>
-					<!-- ENDIF isAdmin -->
-					<!-- IF searchEnabled -->
-					<li class="visible-xs">
-						<a href="{relative_path}/search" title="[[global:header.search]]" id="mobile-search-button" >
-							<i class="fa fa-search fa-fw" ></i> [[global:header.search]]
-						</a>
-					</li>
-					<!-- ENDIF searchEnabled -->
 					<!-- BEGIN navigation -->
+					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
-						<a href="{relative_path}{navigation.route}" title="{navigation.title}">
+						<a href="{relative_path}{navigation.route}" title="{navigation.title}" id="{navigation.id}" target="{navigation.properties.target}">
 							<!-- IF navigation.iconClass -->
 							<i class="fa fa-fw {navigation.iconClass}"></i>
 							<!-- ENDIF navigation.iconClass -->
@@ -79,6 +36,7 @@
 							<!-- ENDIF navigation.text -->
 						</a>
 					</li>
+					<!-- ENDIF function.displayMenuItem -->
 					<!-- END navigation -->
 				</ul>
 
@@ -88,10 +46,16 @@
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
 							<i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
-						<ul id="notif-list" class="dropdown-menu" aria-labelledby="notif_dropdown">
+						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
-								<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+								<ul id="notif-list">
+									<li>
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
+									</li>
+								</ul>
 							</li>
+							<li class="notif-dropdown-link"><a href="#" class="mark-all-read">[[notifications:mark_all_read]]</a></li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/notifications">[[notifications:see_all]]</a></li>
 						</ul>
 					</li>
 
@@ -106,10 +70,15 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown">
 							<i id="chat-count" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
 						</a>
-						<ul id="chat-list" class="dropdown-menu" aria-labelledby="chat_dropdown">
+						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
-								<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+								<ul id="chat-list">
+									<li>
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+									</li>
+								</ul>
 							</li>
+							<li class="notif-dropdown-link"><a href="{relative_path}/chats">[[modules:chat.see_all]]</a></li>
 						</ul>
 					</li>
 					<!-- ENDIF !disableChat -->

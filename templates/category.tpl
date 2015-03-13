@@ -1,36 +1,30 @@
 
 <input type="hidden" template-variable="category_id" value="{cid}" />
 <input type="hidden" template-variable="category_name" value="{name}" />
+<input type="hidden" template-variable="category_slug" value="{slug}" />
 <input type="hidden" template-variable="topic_count" value="{topic_count}" />
 <input type="hidden" template-variable="currentPage" value="{currentPage}" />
 <input type="hidden" template-variable="pageCount" value="{pageCount}" />
 
-<ol class="breadcrumb">
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
-	</li>
-	<!-- IF parent -->
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/category/{parent.slug}" itemprop="url"><span itemprop="title">{parent.name}</span></a>
-	</li>
-	<!-- ENDIF parent -->
-	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">{name} <!-- IF !feeds:disableRSS --><a target="_blank" href="{relative_path}/category/{cid}.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></span>
-	</li>
-</ol>
-
-<div class="subcategories row">
-	<!-- BEGIN children -->
-	<!-- IMPORT partials/category_child.tpl -->
-	<!-- END children -->
-</div>
 
 <div class="category row">
 	<div class="{topic_row_size}" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
 
+		<!-- IMPORT partials/breadcrumbs.tpl -->
+
+		<div class="subcategories row">
+			<!-- BEGIN children -->
+			<!-- IMPORT partials/category_child.tpl -->
+			<!-- END children -->
+		</div>
+
 		<div class="header category-tools clearfix">
 			<!-- IF privileges.topics:create -->
 			<button id="new_post" class="btn btn-primary">[[category:new_topic_button]]</button>
+			<!-- ELSE -->
+				<!-- IF !loggedIn -->
+				<a href="/login?next=category/{slug}" class="btn btn-primary">[[category:guest-login-post]]</a>
+				<!-- ENDIF !loggedIn -->
 			<!-- ENDIF privileges.topics:create -->
 
 			<span class="pull-right">
@@ -40,6 +34,8 @@
 				<!-- ENDIF loggedIn -->
 
 				<!-- IMPORT partials/category_tools.tpl -->
+
+				<!-- IMPORT partials/category_sort.tpl -->
 
 				<div class="dropdown share-dropdown inline-block">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -115,20 +111,13 @@
 			<!-- END topics -->
 		</ul>
 		<!-- IF config.usePagination -->
-		<div class="text-center">
-			<ul class="pagination">
-				<li class="previous pull-left"><a href="#"><i class="fa fa-chevron-left"></i> [[global:previouspage]]</a></li>
-				<li class="next pull-right"><a href="#">[[global:nextpage]] <i class="fa fa-chevron-right"></i></a></li>
-			</ul>
-		</div>
+			<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
 	</div>
 
 	<!-- IF topics.length -->
 	<div widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar"></div>
 	<!-- ENDIF topics.length -->
-
-	<span class="hidden" id="csrf" data-csrf="{csrf}"></span>
 </div>
 
 <!-- IMPORT partials/move_thread_modal.tpl -->

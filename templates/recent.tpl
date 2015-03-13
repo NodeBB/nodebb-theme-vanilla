@@ -1,8 +1,14 @@
 <div class="recent">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[recent:title]] <!-- IF !feeds:disableRSS --><a href="{relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></li>
-	</ol>
+
+	<!-- IMPORT partials/breadcrumbs.tpl -->
+
+	<!-- IF loggedIn -->
+	<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+	<!-- ELSE -->
+	<a href="/login?next=recent" class="btn btn-primary">[[category:guest-login-post]]</a>
+	<!-- ENDIF loggedIn -->
+
+	<br/><br/>
 
 	<a href="{relative_path}/recent">
 		<div class="alert alert-warning hide" id="new-topics-alert"></div>

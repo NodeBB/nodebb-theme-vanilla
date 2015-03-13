@@ -1,8 +1,6 @@
 <div class="unread">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[unread:title]]</li>
-	</ol>
+
+	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<div id="category-no-topics" class="alert alert-warning <!-- IF topics.length -->hidden<!-- ENDIF topics.length -->">
 		<strong>[[unread:no_unread_topics]]</strong>

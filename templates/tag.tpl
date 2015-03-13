@@ -2,11 +2,7 @@
 <input type="hidden" template-variable="tag" value="{tag}" />
 
 <div class="tag">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li><a href="{relative_path}/tags">[[tags:tags]]</a></li>
-		<li class="active">{tag}</li>
-	</ol>
+	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<!-- IF !topics.length -->
 	<div class="alert alert-warning">

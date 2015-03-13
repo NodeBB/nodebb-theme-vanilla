@@ -11,20 +11,7 @@
 <input type="hidden" template-variable="viewcount" value="{viewcount}" />
 
 <div class="topic">
-	<ol class="breadcrumb">
-		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
-		</li>
-		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<a href="{relative_path}/category/{category.slug}" itemprop="url"><span itemprop="title">{category.name}</span></a>
-		</li>
-		<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<span itemprop="title">{title} <!-- IF !feeds:disableRSS --><a target="_blank" href="{relative_path}/topic/{tid}.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></span>
-		</li>
-		<div class="loading-indicator pull-right" done="0" style="display:none;">
-			<i class="fa fa-refresh fa-spin"></i>
-		</div>
-	</ol>
+	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<ul id="post-container" class="posts" data-tid="{tid}">
 		<!-- BEGIN posts -->
@@ -68,9 +55,9 @@
 								<!-- IF !posts.selfPost -->
 								<!-- IF posts.user.userslug -->
 								<!-- IF loggedIn -->
-								<!-- IF !disableChat -->
+								<!-- IF !config.disableChat -->
 								<li><a href="#" class="chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
-								<!-- ENDIF !disableChat -->
+								<!-- ENDIF !config.disableChat -->
 								<!-- ENDIF loggedIn -->
 								<!-- ENDIF posts.user.userslug -->
 								<!-- ENDIF !posts.selfPost -->
@@ -78,7 +65,9 @@
 						</div>
 
 						<div class="btn-group">
-							<button class="btn btn-sm btn-default follow hide" type="button" title="[[topic:notify_me]]"><!-- IF isFollowing --><i class="fa fa-eye-slash"><!-- ELSE --><i class="fa fa-eye"><!-- ENDIF isFollowing --></i></button>
+							<!-- IF !posts.index -->
+							<button class="btn btn-sm btn-default follow" type="button" title="[[topic:notify_me]]"><!-- IF isFollowing --><i class="fa fa-eye-slash"><!-- ELSE --><i class="fa fa-eye"><!-- ENDIF isFollowing --></i></button>
+							<!-- ENDIF !posts.index -->
 							<!-- IF !posts.selfPost -->
 							<button class="btn btn-sm btn-default flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
 							<!-- ENDIF !posts.selfPost -->
@@ -180,18 +169,12 @@
 	</div>
 
 	<!-- IF config.usePagination -->
-	<div class="text-center">
-		<ul class="pagination">
-			<li class="previous pull-left"><a href="#"><i class="fa fa-chevron-left"></i> [[global:previouspage]]</a></li>
-			<li class="next pull-right"><a href="#">[[global:nextpage]] <i class="fa fa-chevron-right"></i></a></li>
-		</ul>
-	</div>
+		<!-- IMPORT partials/paginator.tpl -->
 	<!-- ENDIF config.usePagination -->
 
 	<!-- IMPORT partials/move_thread_modal.tpl -->
 	<!-- IMPORT partials/fork_thread_modal.tpl -->
 	<!-- IMPORT partials/move_post_modal.tpl -->
-	<span class="hidden" id="csrf" data-csrf="{csrf}"></span>
 </div>
 
 <div widget-area="footer" class="col-xs-12"></div>

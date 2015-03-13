@@ -15,7 +15,9 @@
 				<!-- ENDIF config.allowAccountDelete -->
 				<!-- IF config.requireEmailConfirmation -->
 				<!-- IF email -->
+				<!-- IF isSelf -->
 				<a id="confirm-email" href="#" class="btn btn-warning <!-- IF email:confirmed -->hide<!-- ENDIF email:confirmed -->">[[user:confirm_email]]</a>
+				<!-- ENDIF isSelf -->
 				<!-- ENDIF email -->
 				<!-- ENDIF config.requireEmailConfirmation -->
 			</div>
@@ -122,7 +124,7 @@
 					</div>
 					<br/>
 					<div class="form-actions">
-						<a id="changePasswordBtn" href="#" class="btn btn-primary">[[user:change_password]]</a>
+						<a id="changePasswordBtn" href="#" class="btn btn-primary"><i class="hide fa fa-spinner fa-spin"></i> [[user:change_password]]</a>
 					</div>
 
 				</form>
@@ -139,5 +141,3 @@
 <input type="hidden" template-variable="userslug" value="{userslug}" />
 <input type="hidden" template-variable="gravatarpicture" value="{gravatarpicture}" />
 <input type="hidden" template-variable="uploadedpicture" value="{uploadedpicture}" />
-
-<span class="hidden" id="csrf" data-csrf="{csrf}"></span>

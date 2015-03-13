@@ -1,12 +1,4 @@
-<ol class="breadcrumb">
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
-	</li>
-	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">[[global:login]]</span>
-	</li>
-</ol>
-
+<!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
 	<!-- IF allowLocalLogin -->
@@ -18,11 +10,11 @@
 				<p>{error}</p>
 			</div>
 
-			<form class="form-horizontal" role="form" method="post" id="login-form">
+			<form class="form-horizontal" role="form" method="post" target="login" id="login-form">
 				<div class="form-group">
-					<label for="username" class="col-lg-2 control-label">[[login:username]]</label>
+					<label for="username" class="col-lg-2 control-label">{allowLoginWith}</label>
 					<div class="col-lg-10">
-						<input class="form-control" type="text" placeholder="[[login:username]]" name="username" id="username" autocorrect="off" autocapitalize="off" />
+						<input class="form-control" type="text" placeholder="{allowLoginWith}" name="username" id="username" autocorrect="off" autocapitalize="off" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -52,7 +44,6 @@
 						<!-- ENDIF showResetLink -->
 					</div>
 				</div>
-				<input type="hidden" name="_csrf" value="{token}" id="csrf-token" />
 			</form>
 
 		</div>

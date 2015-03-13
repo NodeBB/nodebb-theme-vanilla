@@ -1,7 +1,6 @@
 
 <div class="notifications">
 	<h2>[[notifications:title]]</h2>
-	<button class="btn btn-danger delete <!-- IF !notifications.length -->hidden<!-- ENDIF !notifications.length -->">[[global:delete_all]]</button>
 
 	<div class="alert alert-info <!-- IF notifications.length -->hidden<!-- ENDIF notifications.length -->">
 		[[notifications:no_notifs]]

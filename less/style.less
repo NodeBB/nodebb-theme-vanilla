@@ -170,6 +170,29 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	background-image: -o-linear-gradient(top, transparent, white);
 }
 
+.icon-container {
+	.row {
+		margin: 0;
+		i {
+			width:20px;
+			height:20px;
+			margin: 1px;
+			.pointer;
+			line-height: 20px;
+			text-align: center;
+
+			&:hover, &.selected {
+				background: black;
+				color: white;
+			}
+		}
+	}
+}
+
+.bootbox {
+	z-index: 100001;
+}
+
 @media (max-width: 760px) {
 	.chat-modal {
 		width: 100%;
@@ -193,13 +216,6 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	.hidden-mobile {
 		// BS2/3's hidden-xs does not support inline-block, so here it is for now.
 		display: none !important;
-	}
-}
-
-@media (min-width: 760px) {
-	.container > .navbar-header, .container > .navbar-collapse {
-		padding-right: 0;
-		margin-right: -11px;
 	}
 }
 

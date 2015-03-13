@@ -11,6 +11,12 @@
 						<input type="checkbox" data-property="openOutgoingLinksInNewTab" /> <strong>[[user:open_links_in_new_tab]]</strong>
 					</label>
 				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="topicSearchEnabled" /> <strong>[[user:enable_topic_searching]]</strong>
+					</label>
+				</div>
+				<p class="help-block">[[user:topic_search_help]]</p>
 			</div>
 
 			<h4>[[global:privacy]]</h4>
@@ -32,16 +38,16 @@
 				</div>
 			</div>
 
+			<!-- IF !disableEmailSubscriptions -->
 			<h4>[[global:email]]</h4>
 			<div class="well">
-				<!-- IF !disableEmailSubscriptions -->
 				<div class="form-group">
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
 					<select class="form-control" id="dailyDigestFreq" data-property="dailyDigestFreq">
 						<option value="off">[[user:digest_off]]</option>
-						<option value="daily">[[user:digest_daily]]</option>
-						<option value="weekly" disabled="disabled">[[user:digest_weekly]]</option>
-						<option value="monthly" disabled="disabled">[[user:digest_monthly]]</option>
+						<option value="day">[[user:digest_daily]]</option>
+						<option value="week">[[user:digest_weekly]]</option>
+						<option value="month">[[user:digest_monthly]]</option>
 					</select>
 					<p class="help-block">[[user:digest_description]]</p>
 				</div>
@@ -51,8 +57,14 @@
 						<input type="checkbox" data-property="sendChatNotifications" /> <strong>[[user:send_chat_notifications]]</strong>
 					</label>
 				</div>
-				<!-- ENDIF !disableEmailSubscriptions -->
+
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" data-property="sendPostNotifications" /> <strong>[[user:send_post_notifications]]</strong>
+					</label>
+				</div>
 			</div>
+			<!-- ENDIF !disableEmailSubscriptions -->
 
 			<h4>[[user:follow]]</h4>
 			<div class="well">
@@ -67,6 +79,21 @@
 					</label>
 				</div>
 			</div>
+
+			<h4>[[groups:groups]]</h4>
+			<div class="well">
+				<div class="form-group">
+					<label for="grouptitle">[[user:grouptitle]]</label>
+					<select class="form-control" id="grouptitle" data-property="groupTitle">
+						<!-- BEGIN userGroups -->
+						<!-- IF userGroups.userTitleEnabled -->
+						<option value="{userGroups.name}">{userGroups.userTitle}</option>
+						<!-- ENDIF userGroups.userTitleEnabled -->
+						<!-- END userGroups -->
+					</select>
+				</div>
+			</div>
+
 
 			<h4>[[global:pagination]]</h4>
 			<div class="well">
@@ -91,7 +118,7 @@
 
 			<h4>[[global:language]]</h4>
 			<div class="well">
-				<select data-property="language" class="form-control">
+				<select data-property="userLang" class="form-control">
 					<!-- BEGIN languages -->
 					<option value="{languages.code}">{languages.name} ({languages.code})</option>
 					<!-- END languages -->
