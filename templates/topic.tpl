@@ -1,22 +1,10 @@
-<input type="hidden" template-variable="topic_id" value="{tid}" />
-<input type="hidden" template-variable="topic_slug" value="{slug}" />
-<input type="hidden" template-variable="category_id" value="{category.cid}" />
-<input type="hidden" template-variable="currentPage" value="{currentPage}" />
-<input type="hidden" template-variable="pageCount" value="{pageCount}" />
-<input type="hidden" template-variable="locked" template-type="boolean" value="{locked}" />
-<input type="hidden" template-variable="deleted" template-type="boolean" value="{deleted}" />
-<input type="hidden" template-variable="pinned" template-type="boolean" value="{pinned}" />
-<input type="hidden" template-variable="topic_name" value="{title}" />
-<input type="hidden" template-variable="postcount" value="{postcount}" />
-<input type="hidden" template-variable="viewcount" value="{viewcount}" />
-
 <div class="topic">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
-	<ul id="post-container" class="posts" data-tid="{tid}">
+	<ul component="topic" id="post-container" class="posts" data-tid="{tid}">
 		<!-- BEGIN posts -->
-			<li class="post-row<!-- IF posts.deleted --> deleted<!-- ENDIF posts.deleted -->" data-pid="{posts.pid}" data-uid="{posts.uid}" data-username="{posts.user.username}" data-userslug="{posts.user.userslug}" data-index="{posts.index}" data-timestamp="{posts.timestamp}" data-votes="{posts.votes}" itemscope itemtype="http://schema.org/Comment">
-				<a id="post_anchor_{posts.index}" name="{posts.index}"></a>
+			<li component="post" class="post-row <!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
+				<a component="post/anchor" name="{posts.index}"></a>
 
 				<meta itemprop="datePublished" content="{posts.relativeTime}">
 				<meta itemprop="dateModified" content="{posts.relativeEditTime}">
@@ -36,7 +24,7 @@
 						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" width=150 height=150 />
 					</a>
 					<h3 class="main-post">
-						<p id="topic_title_{posts.pid}" class="topic-title" itemprop="name"><i class="fa fa-thumb-tack hide"></i> <i class="fa fa-lock hide"></i> {title}</p>
+						<p component="post/header" class="topic-title" itemprop="name"><i class="fa fa-thumb-tack hide"></i> <i class="fa fa-lock hide"></i> {title}</p>
 					</h3>
 
 					<div class="topic-buttons">
@@ -56,7 +44,7 @@
 								<!-- IF posts.user.userslug -->
 								<!-- IF loggedIn -->
 								<!-- IF !config.disableChat -->
-								<li><a href="#" class="chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
+								<li><a href="#" class="chat" component="post/chat"><i class="fa fa-comment"></i> [[topic:chat]]</a></li>
 								<!-- ENDIF !config.disableChat -->
 								<!-- ENDIF loggedIn -->
 								<!-- ENDIF posts.user.userslug -->
@@ -66,14 +54,14 @@
 
 						<div class="btn-group">
 							<!-- IF !posts.index -->
-							<button class="btn btn-sm btn-default follow" type="button" title="[[topic:notify_me]]"><!-- IF isFollowing --><i class="fa fa-eye-slash"><!-- ELSE --><i class="fa fa-eye"><!-- ENDIF isFollowing --></i></button>
+							<button component="topic/follow" class="btn btn-sm btn-default follow" type="button" title="[[topic:notify_me]]"><!-- IF isFollowing --><i class="fa fa-eye-slash"><!-- ELSE --><i class="fa fa-eye"><!-- ENDIF isFollowing --></i></button>
 							<!-- ENDIF !posts.index -->
 							<!-- IF !posts.selfPost -->
-							<button class="btn btn-sm btn-default flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
+							<button component="post/flag" class="btn btn-sm btn-default flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
 							<!-- ENDIF !posts.selfPost -->
-							<button data-favourited="{posts.favourited}" class="favourite favourite-tooltip btn btn-sm btn-default <!-- IF posts.favourited --> btn-warning <!-- ENDIF posts.favourited -->" type="button">
+							<button component="post/favourite" data-favourited="{posts.favourited}" class="favourite favourite-tooltip btn btn-sm btn-default <!-- IF posts.favourited --> btn-warning <!-- ENDIF posts.favourited -->" type="button">
 								<span class="favourite-text">[[topic:favourite]]</span>
-								<span class="favouriteCount" data-favourites="{posts.reputation}">{posts.reputation}</span>&nbsp;
+								<span component="post/favourite-count" class="favouriteCount" data-favourites="{posts.reputation}">{posts.reputation}</span>&nbsp;
 								<!-- IF posts.favourited -->
 								<i class="fa fa-star"></i>
 								<!-- ELSE -->
@@ -84,12 +72,12 @@
 
 						<!-- IF !reputation:disabled -->
 						<div class="btn-group">
-							<button class="upvote btn btn-sm btn-default <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
+							<button component="post/upvote" class="upvote btn btn-sm btn-default <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
 								<i class="fa fa-chevron-up"></i>
 							</button>
-							<button class="votes btn btn-sm btn-default" data-votes="{posts.votes}">{posts.votes}</button>
+							<button component="post/vote-count" class="votes btn btn-sm btn-default" data-votes="{posts.votes}">{posts.votes}</button>
 							<!-- IF !downvote:disabled -->
-							<button class="downvote btn btn-sm btn-default <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
+							<button component="post/downvote" class="downvote btn btn-sm btn-default <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
 								<i class="fa fa-chevron-down"></i>
 							</button>
 							<!-- ENDIF !downvote:disabled -->
@@ -98,8 +86,8 @@
 
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group">
-							<button class="btn btn-sm btn-default quote" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i></button>
-							<button class="btn btn-sm btn-primary btn post_reply" type="button">[[topic:reply]] <i class="fa fa-reply"></i></button>
+							<button component="post/quote" class="btn btn-sm btn-default quote" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i></button>
+							<button component="post/reply" class="btn btn-sm btn-primary btn post_reply" type="button">[[topic:reply]] <i class="fa fa-reply"></i></button>
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
 
@@ -116,12 +104,12 @@
 								<div class="dropdown">
 									<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
 									<ul class="dropdown-menu text-center pull-right" role="menu" aria-labelledby="dLabel">
-										<button class="btn btn-sm btn-default edit" type="button" title="[[topic:edit]]"><i class="fa fa-pencil"></i></button>
-										<button class="btn btn-sm btn-default delete" type="button" title="[[topic:delete]]"><i class="fa fa-trash-o"></i></button>
-										<button class="btn btn-sm btn-default purge <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:purge]]"><i class="fa fa-eraser"></i></button>
+										<button component="post/edit" class="btn btn-sm btn-default edit" type="button" title="[[topic:edit]]"><i class="fa fa-pencil"></i></button>
+										<button component="post/delete" class="btn btn-sm btn-default delete" type="button" title="[[topic:delete]]"><i class="fa fa-trash-o"></i></button>
+										<button component="post/purge" class="btn btn-sm btn-default purge <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:purge]]"><i class="fa fa-eraser"></i></button>
 
 										<!-- IF posts.display_move_tools -->
-										<button class="btn btn-sm btn-default move" type="button" title="[[topic:move]]"><i class="fa fa-arrows"></i></button>
+										<button component="post/move" class="btn btn-sm btn-default move" type="button" title="[[topic:move]]"><i class="fa fa-arrows"></i></button>
 										<!-- ENDIF posts.display_move_tools -->
 									</ul>
 								</div>
@@ -130,7 +118,7 @@
 						</div>
 					</div>
 
-					<div id="content_{posts.pid}" class="post-content" itemprop="text">{posts.content}</div>
+					<div component="post/content" class="post-content" itemprop="text">{posts.content}</div>
 					<!-- IF posts.user.signature -->
 					<div class="post-signature">{posts.user.signature}</div>
 					<!-- ENDIF posts.user.signature -->
@@ -143,7 +131,7 @@
 							<!-- ENDIF posts.editor.username -->
 						</span>
 						<span class="pull-left">
-							[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>
+							[[global:reputation]]: <i class='fa fa-star'></i> <span component="user/reputation" data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number' component="user/postcount" data-uid="{posts.uid}" data-postcount="{posts.user.postcount}">{posts.user.postcount}</span>
 							<!-- IF posts.user.custom_profile_info.length -->
 								<!-- BEGIN custom_profile_info -->
 								| {posts.user.custom_profile_info.content}
@@ -180,3 +168,4 @@
 <div widget-area="footer" class="col-xs-12"></div>
 
 <!-- IMPORT partials/noscript/paginator.tpl -->
+<!-- IMPORT partials/variables/topic.tpl -->
