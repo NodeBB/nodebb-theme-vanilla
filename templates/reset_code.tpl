@@ -24,7 +24,7 @@
 		<button class="btn btn-primary btn-block" id="reset" type="submit">[[reset_password:reset_password]]</button>
 	</form>
 </div>
-<input type="hidden" template-variable="reset_code" value="{reset_code}" />
+<input type="hidden" template-variable="reset_code" value="{code}" />
 <!-- ELSE -->
 <div class="panel panel-default panel-danger">
 	<div class="panel-heading">
