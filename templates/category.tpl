@@ -77,7 +77,7 @@
 
 					<h3>
 						<a href="{relative_path}/topic/{topics.slug}" itemprop="url">
-							<meta itemprop="name" content="{topics.title}">
+							<meta itemprop="name" content="{function.stripTags, title}">
 
 							<strong><i component="topic/pinned" class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i component="topic/locked" class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
 							<span class="topic-title">{topics.title}</span>
