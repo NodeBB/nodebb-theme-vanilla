@@ -137,7 +137,7 @@
 			<!-- ELSE -->
 			<!-- IF search_query -->
 			<div class="alert alert-warning">[[search:no-matches]]</div>
-			<!-- ELSE search_query -->
+			<!-- ENDIF search_query -->
 			<!-- ENDIF matchCount -->
 
 			<!-- BEGIN posts -->
