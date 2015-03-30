@@ -3,7 +3,10 @@
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
 		}
+	],
+	"scripts": [
+		"lib/vanilla.js"
 	]
 }
