@@ -26,7 +26,9 @@
 			<input class="form-control" type="password" placeholder="[[reset_password:repeat_password]]" id="repeat" /><br />
 		</div>
 
-		<button class="btn btn-primary btn-block" id="reset" type="submit">[[reset_password:reset_password]]</button>
+		<div class="col-xs-12">
+			<button class="btn btn-primary btn-block" id="reset" type="submit">[[reset_password:reset_password]]</button>
+		</div>
 	</form>
 </div>
 <!-- IMPORT partials/variables/reset_code.tpl -->
