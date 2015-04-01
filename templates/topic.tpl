@@ -16,6 +16,9 @@
 						<span class="label label-danger">[[user:banned]]</span>
 						<!-- ENDIF posts.user.banned -->
 					</a>
+
+					<!-- IMPORT partials/topic/badge.tpl -->
+
 				</div>
 
 				<div class="col-md-11 panel panel-default post-block topic-item">
