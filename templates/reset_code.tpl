@@ -2,6 +2,11 @@
 
 <!-- IF valid -->
 <div class="well">
+	<!-- IF displayExpiryNotice -->
+	<div class="alert alert-warning">
+		[[reset_password:password_expired]]
+	</div>
+	<!-- ENDIF displayExpiryNotice -->
 	<div class="alert alert-success" id="success" style="display:none">
 		<button type="button" class="close" data-dismiss="alert">&times;</button>
 		<strong>[[reset_password:password_changed.title]]</strong>
