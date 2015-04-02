@@ -75,7 +75,7 @@
 						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
 					</a>
 
-					<h3>
+					<h3 component="topic/header">
 						<a href="{relative_path}/topic/{topics.slug}" itemprop="url">
 							<meta itemprop="name" content="{function.stripTags, title}">
 
