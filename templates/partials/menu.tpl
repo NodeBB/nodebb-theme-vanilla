@@ -59,11 +59,20 @@
 						</ul>
 					</li>
 
+					<!-- IF searchEnabled -->
+					<li class="visible-xs">
+						<a href="{relative_path}/search">
+							<i class="fa fa-search fa-fw"></i> [[global:search]]
+						</a>
+					</li>
+					<!-- ENDIF searchEnabled -->
+
 					<li class="visible-xs">
 						<a href="{relative_path}/notifications" title="[[notifications:title]]">
 							<i class="notification-icon fa fa-bell-o fa-fw" data-content="0"></i> [[notifications:title]]
 						</a>
 					</li>
+
 
 					<!-- IF !disableChat -->
 					<li class="chats dropdown">
