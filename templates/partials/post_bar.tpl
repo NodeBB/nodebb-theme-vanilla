@@ -12,7 +12,7 @@
 
 	<small class="topic-stats">
 		<span>[[global:posts]]</span>
-		<strong><span component="topic/post-count" class=" human-readable-number" title="{postcount}">{postcount}</span></strong> |
+		<strong><span component="topic/post-count" class="human-readable-number" title="{postcount}">{postcount}</span></strong> |
 		<span>[[global:views]]</span>
 		<strong><span class="human-readable-number" title="{viewcount}">{viewcount}</span></strong>
 	</small>
