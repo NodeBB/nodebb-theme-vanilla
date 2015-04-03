@@ -30,13 +30,8 @@
 	<div class="loading-indicator" done="0" style="display:none;">
 		<span class="hidden-xs">[[topic:loading_more_posts]]</span> <i class="fa fa-refresh fa-spin"></i>
 	</div>
-	<!-- IF privileges.topics:reply -->
-	<button component="topic/reply" class="btn btn-primary post_reply" type="button">[[topic:reply]]</button>
-	<!-- ELSE -->
-		<!-- IF !loggedIn -->
-		<a href="/login?next=topic/{slug}" class="btn btn-primary">[[topic:guest-login-reply]]</a>
-		<!-- ENDIF !loggedIn -->
-	<!-- ENDIF privileges.topics:reply -->
+
+	<!-- IMPORT partials/topic/reply-button.tpl -->
 
 	<!-- IMPORT partials/thread_sort.tpl -->
 
