@@ -65,7 +65,7 @@
 							<!-- ENDIF !posts.index -->
 
 							<!-- IF !posts.selfPost -->
-							<button component="post/flag" class="btn btn-sm btn-default flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
+							<button component="post/flag" class="btn btn-sm btn-default" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
 							<!-- ENDIF !posts.selfPost -->
 							<button component="post/favourite" data-favourited="{posts.favourited}" class="favourite favourite-tooltip btn btn-sm btn-default <!-- IF posts.favourited --> btn-warning <!-- ENDIF posts.favourited -->" type="button">
 								<span class="favourite-text">[[topic:favourite]]</span>
@@ -92,8 +92,8 @@
 
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group">
-							<button component="post/quote" class="btn btn-sm btn-default quote" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i></button>
-							<button component="post/reply" class="btn btn-sm btn-primary btn post_reply" type="button">[[topic:reply]] <i class="fa fa-reply"></i></button>
+							<button component="post/quote" class="btn btn-sm btn-default" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i></button>
+							<button component="post/reply" class="btn btn-sm btn-primary" type="button">[[topic:reply]] <i class="fa fa-reply"></i></button>
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
 
@@ -110,13 +110,13 @@
 								<div class="dropdown">
 									<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
 									<ul class="dropdown-menu text-center pull-right" role="menu" aria-labelledby="dLabel">
-										<button component="post/edit" class="btn btn-sm btn-default edit" type="button" title="[[topic:edit]]"><i class="fa fa-pencil"></i></button>
+										<button component="post/edit" class="btn btn-sm btn-default" type="button" title="[[topic:edit]]"><i class="fa fa-pencil"></i></button>
 										<button component="post/delete" class="btn btn-sm btn-default <!-- IF posts.deleted -->none<!-- ENDIF posts.deleted -->" type="button" title="[[topic:delete]]"><i class="fa fa-trash-o"></i></button>
 										<button component="post/restore" class="btn btn-sm btn-default <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:restore]]"><i class="fa fa-history"></i></button>
-										<button component="post/purge" class="btn btn-sm btn-default purge <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:purge]]"><i class="fa fa-eraser"></i></button>
+										<button component="post/purge" class="btn btn-sm btn-default <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:purge]]"><i class="fa fa-eraser"></i></button>
 
 										<!-- IF posts.display_move_tools -->
-										<button component="post/move" class="btn btn-sm btn-default move" type="button" title="[[topic:move]]"><i class="fa fa-arrows"></i></button>
+										<button component="post/move" class="btn btn-sm btn-default" type="button" title="[[topic:move]]"><i class="fa fa-arrows"></i></button>
 										<!-- ENDIF posts.display_move_tools -->
 									</ul>
 								</div>
