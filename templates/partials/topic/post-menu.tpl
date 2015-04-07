@@ -1,4 +1,3 @@
-<!-- IF posts.display_moderator_tools -->
 <li role="presentation" class="dropdown-header">[[topic:tools]]</li>
 <li role="presentation">
 	<a component="post/edit" role="menuitem" tabindex="-1" href="#">
@@ -20,15 +19,14 @@
 		<span class="menu-icon"><i class="fa fa-eraser"></i></span> [[topic:purge]]
 	</a>
 </li>
-<!-- IF posts.display_move_tools -->
+
 <li role="presentation">
 	<a component="post/move" role="menuitem" tabindex="-1" href="#">
 		<span class="menu-icon"><i class="fa fa-arrows"></i></span> [[topic:move]]
 	</a>
 </li>
-<!-- ENDIF posts.display_move_tools -->
+
 <li role="presentation" class="divider"></li>
-<!-- ENDIF posts.display_moderator_tools -->
 
 <li role="presentation">
 	<a component="post/favourite" role="menuitem" tabindex="-1" href="#" data-favourited="{posts.favourited}">

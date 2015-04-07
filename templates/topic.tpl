@@ -98,7 +98,7 @@
 						<!-- ENDIF privileges.topics:reply -->
 
 						<div class="pull-right">
-							<div class="dropdown moderator-tools">
+							<div class="dropdown moderator-tools" component="post/tools">
 								<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
 								<ul class="dropdown-menu dropdown-menu-right" role="menu">
 									<!-- IMPORT partials/topic/post-menu.tpl -->
