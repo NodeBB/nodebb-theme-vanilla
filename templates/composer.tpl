@@ -110,11 +110,11 @@
 					<!-- ENDIF !isEditing -->
 				</div>
 
-				<!-- IF showTags -->
+				<!-- IF isTopicOrMain -->
 				<div class="tags-container inline-block">
 					<input class="tags" type="text" class="form-control" placeholder="[[tags:enter_tags_here, {minimumTagLength}, {maximumTagLength}]]" tabindex="4"/>
 				</div>
-				<!-- ENDIF showTags -->
+				<!-- ENDIF isTopicOrMain -->
 			</div>
 		</div>
 
