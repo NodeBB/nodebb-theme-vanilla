@@ -20,6 +20,7 @@
 
 	<ul id="users-container" class="users-container">
 		<!-- IMPORT partials/users_list.tpl -->
+		<!-- IF anonymousUserCount -->
 		<li class="users-box {show_anon} anon-user">
 			<img src="https://secure.gravatar.com/avatar/" class="img-thumbnail"/>
 			<br/>
@@ -28,6 +29,7 @@
 				<span>[[global:guests]]</span>
 			</div>
 		</li>
+		<!-- ENDIF anonymousUserCount -->
 	</ul>
 
 	<div class="text-center {loadmore_display}">
