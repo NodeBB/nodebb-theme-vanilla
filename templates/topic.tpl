@@ -98,30 +98,12 @@
 						<!-- ENDIF privileges.topics:reply -->
 
 						<div class="pull-right">
-							<div class="btn-group post-tools">
-								<div class="dropdown share-dropdown pull-right">
-									<button title="[[topic:share]]"class="btn btn-sm btn-default share" data-toggle="dropdown" href="#"><i class="fa fa-share-square-o"></i></button>
-									<!-- IMPORT partials/share_dropdown.tpl -->
-								</div>
+							<div class="dropdown moderator-tools">
+								<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
+								<ul class="dropdown-menu dropdown-menu-right" role="menu">
+									<!-- IMPORT partials/topic/post-menu.tpl -->
+								</ul>
 							</div>
-
-							<!-- IF posts.display_moderator_tools -->
-							<div class="btn-group post-tools">
-								<div class="dropdown">
-									<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
-									<ul class="dropdown-menu text-center pull-right" role="menu" aria-labelledby="dLabel">
-										<button component="post/edit" class="btn btn-sm btn-default" type="button" title="[[topic:edit]]"><i class="fa fa-pencil"></i></button>
-										<button component="post/delete" class="btn btn-sm btn-default <!-- IF posts.deleted -->none<!-- ENDIF posts.deleted -->" type="button" title="[[topic:delete]]"><i class="fa fa-trash-o"></i></button>
-										<button component="post/restore" class="btn btn-sm btn-default <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:restore]]"><i class="fa fa-history"></i></button>
-										<button component="post/purge" class="btn btn-sm btn-default <!-- IF !posts.deleted -->none<!-- ENDIF !posts.deleted -->" type="button" title="[[topic:purge]]"><i class="fa fa-eraser"></i></button>
-
-										<!-- IF posts.display_move_tools -->
-										<button component="post/move" class="btn btn-sm btn-default" type="button" title="[[topic:move]]"><i class="fa fa-arrows"></i></button>
-										<!-- ENDIF posts.display_move_tools -->
-									</ul>
-								</div>
-							</div>
-							<!-- ENDIF posts.display_moderator_tools -->
 						</div>
 					</div>
 
