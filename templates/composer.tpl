@@ -16,17 +16,17 @@
 			</div>
 			<div class="col-sm-9 col-md-12">
 				<!-- IF isTopicOrMain -->
-				<input class="title form-control" type="text" tabindex="1" placeholder="[[topic:composer.title_placeholder]]" value="{title}" />
+				<input class="title form-control" type="text" tabindex="1" placeholder="[[topic:composer.title_placeholder]]" value="{title}"/>
 				<!-- ELSE -->
-				<span class="title form-control">[[topic:composer.replying_to, "{title}"]]</span>
+				<span class="title form-control">[[topic:composer.replying_to, "{function.escape, title}"]]</span>
 				<!-- ENDIF isTopicOrMain -->
 			</div>
 			<!-- ELSE -->
 			<div class="<!-- IF isTopic -->col-lg-9<!-- ELSE -->col-lg-12<!-- ENDIF isTopic --> col-md-12">
 				<!-- IF isTopicOrMain -->
-				<input class="title form-control" type="text" tabindex="1" placeholder="[[topic:composer.title_placeholder]]" value="{title}" />
+				<input class="title form-control" type="text" tabindex="1" placeholder="[[topic:composer.title_placeholder]]" value="{title}"/>
 				<!-- ELSE -->
-				<span class="title form-control">[[topic:composer.replying_to, "{title}"]]</span>
+				<span class="title form-control">[[topic:composer.replying_to, "{function.escape, title}"]]</span>
 				<!-- ENDIF isTopicOrMain -->
 			</div>
 			<!-- IF isTopic -->
