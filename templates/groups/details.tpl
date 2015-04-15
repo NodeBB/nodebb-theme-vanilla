@@ -29,7 +29,7 @@
 				<h3 class="panel-title"><i class="fa fa-users"></i> [[groups:details.members]]</h3>
 			</div>
 			<div class="panel-body">
-				<table component="groups/members" class="table table-striped table-hover members">
+				<table component="groups/members" class="table table-striped table-hover">
 					<!-- BEGIN members -->
 					<tr data-uid="{group.members.uid}">
 						<td>
