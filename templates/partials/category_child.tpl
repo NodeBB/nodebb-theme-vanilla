@@ -8,7 +8,7 @@
 				<!-- IF children.link -->
 				<a href="{children.link}" itemprop="url" target="_blank">
 				<!-- ELSE -->
-				<a href="{relative_path}/category/{children.slug}" itemprop="url">
+				<a href="{config.relative_path}/category/{children.slug}" itemprop="url">
 				<!-- ENDIF children.link -->
 				{children.name}
 				</a>
@@ -17,7 +17,7 @@
 			<!-- IF children.link -->
 			<a style="color: {children.color};" href="{children.link}" itemprop="url" target="_blank">
 			<!-- ELSE -->
-			<a style="color: {children.color};" href="{relative_path}/category/{children.slug}" itemprop="url">
+			<a style="color: {children.color};" href="{config.relative_path}/category/{children.slug}" itemprop="url">
 			<!-- ENDIF children.link -->
 				<div
 					id="category-{children.cid}" class="category-header category-header-image-{children.imageClass}"

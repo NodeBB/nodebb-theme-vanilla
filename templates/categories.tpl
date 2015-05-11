@@ -15,7 +15,7 @@
 				<!-- IF categories.link -->
 				<a href="{categories.link}" itemprop="url" target="_blank">
 				<!-- ELSE -->
-				<a href="{relative_path}/category/{categories.slug}" itemprop="url">
+				<a href="{config.relative_path}/category/{categories.slug}" itemprop="url">
 				<!-- ENDIF categories.link -->
 				{categories.name}
 				</a>
@@ -24,7 +24,7 @@
 			<!-- IF categories.link -->
 			<a style="color: {categories.color};" href="{categories.link}" itemprop="url" target="_blank">
 			<!-- ELSE -->
-			<a style="color: {categories.color};" href="{relative_path}/category/{categories.slug}" itemprop="url">
+			<a style="color: {categories.color};" href="{config.relative_path}/category/{categories.slug}" itemprop="url">
 			<!-- ENDIF categories.link -->
 				<div
 					id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"

@@ -7,12 +7,12 @@
 					<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
 					<!-- ENDIF showSelect -->
 
-					<a href="{relative_path}/user/{topics.user.userslug}" class="pull-left">
+					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
 						<img class="img-rounded user-img" src="{topics.user.picture}" title="{topics.user.username}" />
 					</a>
 
 					<h3>
-						<a href="{relative_path}/topic/{topics.slug}">
+						<a href="{config.relative_path}/topic/{topics.slug}">
 							<strong><!-- IF topics.pinned --><i class="fa fa-thumb-tack"></i><!-- ENDIF topics.pinned --> <!-- IF topics.locked --><i class="fa fa-lock"></i><!-- ENDIF topics.locked --></strong>
 							<span class="topic-title">{topics.title}</span>
 						</a>
@@ -31,21 +31,21 @@
 						|
 						<span>
 							<!-- IF topics.user.userslug -->
-								[[global:posted_in_ago_by, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, {topics.user.username}]]
+								[[global:posted_in_ago_by, <a href="{config.relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, {topics.user.username}]]
 							<!-- ELSE -->
-								[[global:posted_in_ago_by_guest, <a href="{relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
+								[[global:posted_in_ago_by_guest, <a href="{config.relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
 							<!-- ENDIF topics.user.userslug -->
 						</span>
 
 
 						<span class="pull-right">
 							<!-- IF topics.unreplied -->
-							<a href="{relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a>
+							<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a>
 							<!-- ELSE -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
+							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
 								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
 							</a>
-							<a href="{relative_path}/topic/{topics.slug}/{topics.teaser.index}">
+							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 							</a>
 							<!-- ENDIF topics.unreplied -->

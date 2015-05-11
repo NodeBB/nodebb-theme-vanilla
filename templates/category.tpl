@@ -71,12 +71,12 @@
 					<!-- IF privileges.editable -->
 						<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
 					<!-- ENDIF privileges.editable -->
-					<a href="{relative_path}/user/{topics.user.userslug}" class="pull-left">
+					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
 						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
 					</a>
 
 					<h3 component="topic/header">
-						<a href="{relative_path}/topic/{topics.slug}" itemprop="url">
+						<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">
 							<meta itemprop="name" content="{function.stripTags, title}">
 
 							<strong><i component="topic/pinned" class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i component="topic/locked" class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
@@ -103,10 +103,10 @@
 							<!-- IF topics.unreplied -->
 							[[category:no_replies]]
 							<!-- ELSE -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
+							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
 								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
 							</a>
-							<a href="{relative_path}/topic/{topics.slug}/{topics.teaser.index}">
+							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 							</a>
 							<!-- ENDIF topics.unreplied -->
