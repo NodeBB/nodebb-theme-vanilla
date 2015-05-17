@@ -9,7 +9,7 @@
 			<meta itemprop="name" content="{categories.name}">
 			<h4 class="category-title">
 				<!-- IF !categories.link -->
-				<span class="badge {categories.unread-class}">{categories.topic_count} </span>
+				<span class="badge {categories.unread-class}">{categories.totalTopicCount} </span>
 				<!-- ENDIF !categories.link -->
 
 				<!-- IF categories.link -->
@@ -34,7 +34,7 @@
 						<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
 					"
 				>
-					<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
+					<div id="category-{categories.cid}" class="category-slider-{categories.numRecentReplies}">
 						<!-- IF categories.icon -->
 						<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
 						<!-- ENDIF categories.icon -->

@@ -2,7 +2,7 @@
 			<meta itemprop="name" content="{children.name}">
 			<h4 class="category-title">
 				<!-- IF !children.link -->
-				<span class="badge {children.unread-class}">{children.topic_count} </span>
+				<span class="badge {children.unread-class}">{children.totalTopicCount} </span>
 				<!-- ENDIF !children.link -->
 
 				<!-- IF children.link -->
@@ -27,7 +27,7 @@
 						<!-- IF children.bgColor -->background-color: {children.bgColor};<!-- ENDIF children.bgColor -->
 					"
 				>
-					<div id="category-{children.cid}" class="category-slider-{children.post_count}">
+					<div id="category-{children.cid}" class="category-slider-{children.numRecentReplies}">
 						<!-- IF children.icon -->
 						<div class="category-box"><i class="fa {children.icon} fa-4x"></i></div>
 						<!-- ENDIF children.icon -->
