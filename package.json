@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-vanilla",
-  "version": "1.0.136",
+  "version": "1.0.137",
   "description": "Vanilla theme for NodeBB",
   "main": "theme.less",
   "repository": {
