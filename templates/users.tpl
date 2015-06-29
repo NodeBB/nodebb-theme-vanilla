@@ -7,6 +7,9 @@
 		<!-- IF function.displayUserSearch, {config.allowGuestUserSearching} -->
 		<li class=''><a href='{config.relative_path}/users/search'>[[users:search]]</a></li>
 		<!-- ENDIF function.displayUserSearch -->
+		<!-- IF inviteOnly -->
+		<button component="users/invite" class="btn btn-success pull-right"><i class="fa fa-users"></i> [[users:invite]]</button>
+		<!-- ENDIF inviteOnly -->
 	</ul>
 
 	<br />
