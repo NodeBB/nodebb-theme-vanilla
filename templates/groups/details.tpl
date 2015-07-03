@@ -29,6 +29,7 @@
 				<h3 class="panel-title"><i class="fa fa-users"></i> [[groups:details.members]]</h3>
 			</div>
 			<div class="panel-body">
+				<input class="form-control" type="text" component="groups/members/search" placeholder="[[global:search]]"/><br/>
 				<table component="groups/members" class="table table-striped table-hover">
 					<!-- BEGIN members -->
 					<tr data-uid="{group.members.uid}">
@@ -83,7 +84,7 @@
 				</h3>
 			</div>
 			<div class="panel-body">
-				<table component="groups/members" class="table table-striped table-hover">
+				<table component="groups/pending" class="table table-striped table-hover">
 					<!-- BEGIN pending -->
 					<tr data-uid="{group.pending.uid}">
 						<td>
