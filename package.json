@@ -34,5 +34,8 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/NodeBB/nodebb-theme-vanilla/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^0.7.1"
   }
 }
