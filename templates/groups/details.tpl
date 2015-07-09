@@ -15,7 +15,7 @@
 				</h3>
 			</div>
 			<div class="panel-body">
-				<h1>{group.name}</h1>
+				<h1>{group.displayName}</h1>
 				<p>{group.descriptionParsed}</p>
 				<!-- IF loggedIn -->
 				<div class="pull-right">
@@ -112,7 +112,7 @@
 				<form component="groups/settings" role="form">
 					<div class="form-group">
 						<label for="name">[[groups:details.group_name]]</label>
-						<input class="form-control" name="name" id="name" type="text" value="{group.name}" />
+						<input class="form-control" name="name" id="name" type="text" value="{group.displayName}" />
 					</div>
 					<div class="form-group">
 						<label for="name">[[groups:details.description]]</label>
@@ -124,7 +124,7 @@
 					</div>
 					<div class="form-group">
 						<label>[[groups:details.badge_preview]]</label><br />
-						<span class="label<!-- IF !userTitleEnabled --> hide<!-- ENDIF !userTitleEnabled -->" style="background-color: {group.labelColor}"><i class="fa {group.icon} icon"></i> <!-- IF group.userTitle -->{group.userTitle}<!-- ELSE -->{group.name}<!-- ENDIF group.userTitle --></span>
+						<span class="label<!-- IF !userTitleEnabled --> hide<!-- ENDIF !userTitleEnabled -->" style="background-color: {group.labelColor}"><i class="fa {group.icon} icon"></i> <!-- IF group.userTitle -->{group.userTitle}<!-- ELSE -->{group.displayName}<!-- ENDIF group.userTitle --></span>
 
 						<button component="groups/userTitleOption" type="button" class="btn btn-default btn-sm" data-action="icon-select"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled -->>[[groups:details.change_icon]]</button>
 						<button component="groups/userTitleOption" type="button" class="btn btn-default btn-sm" data-action="color-select"<!-- IF !userTitleEnabled --> disabled<!-- ENDIF !userTitleEnabled -->>[[groups:details.change_colour]]</button>
