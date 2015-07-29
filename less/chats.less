@@ -71,10 +71,13 @@
 		resize: none;
 		word-wrap: break-word;
 
-		li {
+		li.chat-message {
 			list-style-type: none;
-			margin-bottom: 10px;
 			font-weight: 300;
+
+			&[data-break="true"] {
+				margin-top: 7px;
+			}
 
 			.chat-user-image {
 				width: 20px;
@@ -90,7 +93,13 @@
 			}
 
 			.message-body {
+				margin-left: 14px;
 				clear: both;
+
+				p {
+					margin: 7px 0 0 0;
+					line-height: 2rem;
+				}
 			}
 
 			&[data-self="0"] + [data-self="0"], &[data-self="1"] + [data-self="1"] {
