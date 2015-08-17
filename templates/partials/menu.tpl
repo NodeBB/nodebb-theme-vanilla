@@ -6,7 +6,7 @@
 				</button>
 				<div>
 					<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
-						<img class="{brand:logo:display} forum-logo" src="{brand:logo}" />
+						<img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
 					</a>
 					<!-- IF showSiteTitle -->
 					<a href="{relative_path}/">
