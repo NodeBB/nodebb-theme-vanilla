@@ -1,7 +1,7 @@
 {
     "id": "nodebb-theme-vanilla",
-    "name": "NodeBB Vanilla",
-    "description": "Vanilla Theme for NodeBB",
+    "name": "Vanilla",
+    "description": "A simple forum layout with a Modern UI inspired homepage.",
     "url": "https://github.com/NodeBB/nodebb-theme-vanilla",
     "screenshot": "screenshot.png"
 }
