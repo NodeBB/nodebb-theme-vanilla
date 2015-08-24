@@ -8,10 +8,13 @@
 	<!-- ENDIF !posts.length -->
 
 	<div class="row">
-		<!-- IMPORT partials/posts_list.tpl -->
-		<!-- IF config.usePagination -->
-			<!-- IMPORT partials/paginator.tpl -->
-		<!-- ENDIF config.usePagination -->
+		<div class="col-xs-12">
+			<!-- IMPORT partials/posts_list.tpl -->
+
+			<!-- IF config.usePagination -->
+				<!-- IMPORT partials/paginator.tpl -->
+			<!-- ENDIF config.usePagination -->
+		</div>
 	</div>
 </div>
 
