@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-vanilla",
-  "version": "3.0.17",
+  "version": "3.1.0",
   "description": "Vanilla theme for NodeBB",
   "main": "theme.less",
   "repository": {
@@ -36,6 +36,6 @@
     "url": "https://github.com/NodeBB/nodebb-theme-vanilla/issues"
   },
   "nbbpm": {
-    "compatibility": "^0.7.1"
+    "compatibility": "^0.7.4"
   }
 }
