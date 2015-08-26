@@ -94,12 +94,12 @@
 
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
-							<img id="user-header-picture" src="{user.picture}"/>
+							<img component="header/userpicture" src="{user.picture}"/>
 						</a>
 						<ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
-								<a id="user-profile-link" href="{relative_path}/user/{user.userslug}">
-									<i class="fa fa-fw fa-circle status {user.status}"></i> <span id="user-header-name">{user.username}</span>
+								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+									<i class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 								</a>
 							</li>
 							<li role="presentation" class="divider"></li>
