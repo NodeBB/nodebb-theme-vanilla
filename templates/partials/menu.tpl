@@ -44,7 +44,7 @@
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right pull-right">
 					<li class="notifications dropdown text-center hidden-xs">
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
-							<i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
+							<i component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
@@ -69,7 +69,7 @@
 
 					<li class="visible-xs">
 						<a href="{relative_path}/notifications" title="[[notifications:title]]">
-							<i class="notification-icon fa fa-bell-o fa-fw" data-content="0"></i> [[notifications:title]]
+							<i component="notifications/icon" class="notification-icon fa fa-bell-o fa-fw" data-content="0"></i> [[notifications:title]]
 						</a>
 					</li>
 
@@ -94,12 +94,12 @@
 
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
-							<img id="user-header-picture" src="{user.picture}"/>
+							<img component="header/userpicture" src="{user.picture}"/>
 						</a>
-						<ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
+						<ul component="header/usercontrol" id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
-								<a id="user-profile-link" href="{relative_path}/user/{user.userslug}">
-									<i class="fa fa-fw fa-circle status {user.status}"></i> <span id="user-header-name">{user.username}</span>
+								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+									<i class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 								</a>
 							</li>
 							<li role="presentation" class="divider"></li>
@@ -124,7 +124,7 @@
 								</a>
 							</li>
 							<li role="presentation" class="divider"></li>
-							<li id="logout-link">
+							<li component="user/logout">
 								<a href="#"><i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span></a>
 							</li>
 						</ul>
