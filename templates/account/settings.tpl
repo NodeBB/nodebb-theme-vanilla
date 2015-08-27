@@ -147,5 +147,3 @@
 		<a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
 	</div>
 </div>
-
-<!-- IMPORT partials/variables/account.tpl -->

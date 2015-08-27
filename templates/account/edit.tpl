@@ -142,6 +142,3 @@
 	<!-- IMPORT partials/modals/change_picture_modal.tpl -->
 	<!-- IMPORT partials/modals/upload_picture_from_url_modal.tpl -->
 </div>
-
-<!-- IMPORT partials/variables/account.tpl -->
-<!-- IMPORT partials/variables/account/edit.tpl -->

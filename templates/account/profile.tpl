@@ -165,5 +165,3 @@
 
 </div>
 
-<!-- IMPORT partials/variables/account.tpl -->
-<!-- IMPORT partials/variables/account/profile.tpl -->

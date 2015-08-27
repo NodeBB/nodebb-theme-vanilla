@@ -14,5 +14,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- IMPORT partials/variables/tag.tpl -->
