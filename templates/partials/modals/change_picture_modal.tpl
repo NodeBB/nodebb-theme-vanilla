@@ -24,6 +24,7 @@
 					<!-- IF config.hasImageUploadPlugin -->
 					<a id="uploadFromUrlBtn" href="#">[[user:upload_new_picture_from_url]]</a>
 					<!-- ENDIF config.hasImageUploadPlugin -->
+					<a id="removeUploadedPictureBtn" href="#" class="<!-- IF !uploadedpicture -->hide<!-- ENDIF !uploadedpicture -->">[[user:remove_uploaded_picture]]</a>
 					<!-- ENDIF config.allowProfileImageUploads -->
 				</div>
 				<div class="modal-footer">
