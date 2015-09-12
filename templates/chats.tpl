@@ -1,3 +1,6 @@
+
+<!-- IMPORT partials/breadcrumbs.tpl -->
+
 <div class="row">
 	<div class="col-sm-9">
 		<!-- IF !allowed -->
