@@ -1,3 +1,4 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="motd">
 	<div widget-area="motd"></div>
 </div>

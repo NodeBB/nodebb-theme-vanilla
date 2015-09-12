@@ -1,4 +1,4 @@
-
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="account-username-box" data-userslug="{userslug}" data-uid="{uid}">
 	<ul class="nav nav-pills account-sub-links">
 		<li>
