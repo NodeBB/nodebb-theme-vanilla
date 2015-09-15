@@ -62,62 +62,8 @@
 		</div>
 		<!-- ENDIF !topics.length -->
 
-		<ul component="category" id="topics-container" itemscope itemtype="http://www.schema.org/ItemList" data-nextstart="{nextStart}">
-			<meta itemprop="itemListOrder" content="descending">
-			<!-- BEGIN topics -->
-			<li component="category/topic" class="category-item {function.generateTopicClass}" data-tid="{topics.tid}" data-index="{topics.index}" data-cid="{topics.cid}" itemprop="itemListElement">
+		<!-- IMPORT partials/topics_list.tpl -->
 
-				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
-					<!-- IF privileges.editable -->
-						<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
-					<!-- ENDIF privileges.editable -->
-					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
-						<img src="<!-- IF topics.thumb -->{topics.thumb}<!-- ELSE -->{topics.user.picture}<!-- ENDIF topics.thumb -->" class="img-rounded user-img" title="{topics.user.username}"/>
-					</a>
-
-					<h3 component="topic/header">
-						<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">
-							<meta itemprop="name" content="{function.stripTags, title}">
-
-							<strong><i component="topic/pinned" class="fa fa-thumb-tack<!-- IF !topics.pinned --> hide<!-- ENDIF !topics.pinned -->"></i> <i component="topic/locked" class="fa fa-lock<!-- IF !topics.locked --> hide<!-- ENDIF !topics.locked -->"></i></strong>
-							<span class="topic-title">{topics.title}</span>
-						</a>
-					</h3>
-
-					<small>
-						<span class="topic-stats">
-							[[global:posts]]
-							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
-						</span>
-						|
-						<span class="topic-stats">
-							[[global:views]]
-							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
-						</span>
-						|
-						<span>
-							[[global:posted_ago, <span class="timeago" title="{topics.relativeTime}"></span>]]
-						</span>
-
-						<span class="pull-right">
-							<!-- IF topics.unreplied -->
-							[[category:no_replies]]
-							<!-- ELSE -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
-								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
-							</a>
-							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
-								[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
-							</a>
-							<!-- ENDIF topics.unreplied -->
-						</span>
-
-						<!-- IMPORT partials/category_tags.tpl -->
-					</small>
-				</div>
-			</li>
-			<!-- END topics -->
-		</ul>
 		<!-- IF config.usePagination -->
 			<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->

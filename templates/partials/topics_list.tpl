@@ -12,10 +12,15 @@
 					</a>
 
 					<h3>
+						<!-- IF !topics.noAnchor -->
 						<a href="{config.relative_path}/topic/{topics.slug}">
 							<strong><!-- IF topics.pinned --><i class="fa fa-thumb-tack"></i><!-- ENDIF topics.pinned --> <!-- IF topics.locked --><i class="fa fa-lock"></i><!-- ENDIF topics.locked --></strong>
 							<span class="topic-title">{topics.title}</span>
 						</a>
+						<!-- ELSE -->
+						<strong><!-- IF topics.pinned --><i class="fa fa-thumb-tack"></i><!-- ENDIF topics.pinned --> <!-- IF topics.locked --><i class="fa fa-lock"></i><!-- ENDIF topics.locked --></strong>
+						<span class="topic-title">{topics.title}</span>
+						<!-- ENDIF !topics.noAnchor -->
 					</h3>
 
 					<small>
@@ -28,6 +33,7 @@
 							[[global:views]]
 							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
 						</span>
+						<!-- IF !template.category -->
 						|
 						<span>
 							<!-- IF topics.user.userslug -->
@@ -36,7 +42,7 @@
 								[[global:posted_in_ago_by_guest, <a href="{config.relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>]]
 							<!-- ENDIF topics.user.userslug -->
 						</span>
-
+						<!-- ENDIF !template.category -->
 
 						<span class="pull-right">
 							<!-- IF topics.unreplied -->
