@@ -42,11 +42,7 @@
 			<div class="panel-body">
 				<ul class="chats-list">
 					<!-- BEGIN contacts -->
-					<li data-username="{contacts.username}" data-uid="{contacts.uid}">
-						<i component="user/status" title="[[global:{contacts.status}]]" class="fa fa-circle status {contacts.status}"></i>
-						<img class="user-img" src="{contacts.picture}">
-						<span>{contacts.username}</span>
-					</li>
+					<!-- IMPORT partials/chat_contact.tpl -->
 					<!-- END contacts -->
 				</ul>
 			</div>
@@ -58,11 +54,7 @@
 			<div class="panel-body">
 				<ul class="chats-list recent-chats" data-nextstart="{nextStart}">
 					<!-- BEGIN chats -->
-					<li data-username="{chats.username}" data-uid="{chats.uid}" class="<!-- IF chats.unread -->unread<!-- ENDIF chats.unread -->">
-						<i component="user/status" title="[[global:{chats.status}]]" class="fa fa-circle status {chats.status}"></i>
-						<img class="user-img" src="{chats.picture}">
-						<span>{chats.username}</span>
-					</li>
+					<!-- IMPORT partials/chat_contact.tpl -->
 					<!-- END chats -->
 				</ul>
 			</div>
