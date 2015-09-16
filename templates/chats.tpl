@@ -40,7 +40,7 @@
 				<h2 class="panel-title">[[modules:chat.contacts]]</h2>
 			</div>
 			<div class="panel-body">
-				<ul class="chats-list">
+				<ul component="chat/contacts" class="chats-list">
 					<!-- BEGIN contacts -->
 					<!-- IMPORT partials/chat_contact.tpl -->
 					<!-- END contacts -->
@@ -52,7 +52,7 @@
 				<h2 class="panel-title">[[modules:chat.recent-chats]]</h2>
 			</div>
 			<div class="panel-body">
-				<ul class="chats-list recent-chats" data-nextstart="{nextStart}">
+				<ul component="chat/recent" class="chats-list" data-nextstart="{nextStart}">
 					<!-- BEGIN chats -->
 					<!-- IMPORT partials/chat_contact.tpl -->
 					<!-- END chats -->
