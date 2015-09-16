@@ -2,7 +2,7 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
-	<div class="col-sm-9">
+	<div class="col-md-9">
 		<!-- IF !allowed -->
 		<div class="alert alert-warning">
 			[[error:chat-restricted]]
@@ -34,7 +34,7 @@
 		</div>
 		<!-- ENDIF meta -->
 	</div>
-	<div class="col-sm-3">
+	<div class="col-md-3 hidden-sm hidden-xs">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h2 class="panel-title">[[modules:chat.contacts]]</h2>
