@@ -148,9 +148,6 @@
 		<!-- IMPORT partials/paginator.tpl -->
 	<!-- ENDIF config.usePagination -->
 
-	<!-- IMPORT partials/move_thread_modal.tpl -->
-	<!-- IMPORT partials/fork_thread_modal.tpl -->
-	<!-- IMPORT partials/move_post_modal.tpl -->
 </div>
 
 <div widget-area="footer" class="col-xs-12"></div>
