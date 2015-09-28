@@ -13,7 +13,11 @@
 
 				<div class="col-md-1 profile-image-block hidden-xs hidden-sm sub-post">
 					<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
-						<img src="{posts.user.picture}" align="left" class="img-thumbnail" itemprop="image" />
+						<!-- IF posts.user.picture -->
+						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" />
+						<!-- ELSE -->
+						<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
+						<!-- ENDIF posts.user.picture -->
 						<!-- IF posts.user.banned -->
 						<span class="label label-danger">[[user:banned]]</span>
 						<!-- ENDIF posts.user.banned -->
@@ -26,7 +30,11 @@
 				<div class="col-md-11 panel panel-default post-block topic-item">
 
 					<a class="main-post avatar" href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
-						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" width=150 height=150 />
+						<!-- IF posts.user.picture -->
+						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" />
+						<!-- ELSE -->
+						<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
+						<!-- ENDIF posts.user.picture -->
 					</a>
 					<h3 class="main-post">
 						<p component="post/header" class="topic-title" itemprop="name"><i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span component="topic/title">{title}</span></p>

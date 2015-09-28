@@ -200,11 +200,15 @@
 			}
 		}
 
-		.img-thumbnail {
+		.img-thumbnail, .user-icon {
 			float:none;
 			padding: 2px;
 			border-radius: 0;
 			margin-bottom: 5px;
+			width: 65px;
+			height: 65px;
+			line-height: 65px;
+			font-size: 3.8rem;
 		}
 	}
 
@@ -215,6 +219,13 @@
 
 		.main-post {
 			display: block;
+
+			img, .user-icon {
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				font-size: 2.6rem;
+			}
 		}
 
 		.col-md-11 {
@@ -288,9 +299,11 @@
 .thread_active_users {
 
 	a[data-uid] {
-		img {
+		img, .user-icon {
 			height:24px;
 			width:24px;
+			line-height: 24px;
+			font-size: 1.3rem;
 		}
 
 		&::after {

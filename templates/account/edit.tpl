@@ -5,7 +5,15 @@
 	<div class="row">
 		<div class="col-md-2" style="text-align: center; margin-bottom:20px;">
 			<div class="account-picture-block text-center">
-				<img id="user-current-picture" class="user-profile-picture img-thumbnail" src="{picture}" /><br /><br />
+				<div class="row">
+					<div class="col-xs-12">
+						<!-- IF picture -->
+						<img id="user-current-picture" class="user-profile-picture img-thumbnail" src="{picture}" />
+						<!-- ELSE -->
+						<div class="user-icon user-profile-picture" style="background-color: {icon:bgColor};">{icon:text}</div>
+						<!-- ENDIF picture -->
+					</div>
+				</div>
 				<a id="changePictureBtn" href="#" class="btn btn-primary">[[user:change_picture]]</a>
 				<br/><br/>
 				<!-- IF config.allowAccountDelete -->

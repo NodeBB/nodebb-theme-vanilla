@@ -94,7 +94,11 @@
 
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
+							<!-- IF user.picture -->
 							<img component="header/userpicture" src="{user.picture}"/>
+							<!-- ELSE -->
+							<div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};">{user.icon:text}</div>
+							<!-- ENDIF user.picture -->
 						</a>
 						<ul component="header/usercontrol" id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
