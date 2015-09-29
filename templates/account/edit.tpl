@@ -138,6 +138,7 @@
 
 					<hr />
 
+					<!-- IF sso.length -->
 					<label class="control-label">[[user:sso.title]]</label>
 					<div class="list-group">
 						<!-- BEGIN sso -->
@@ -148,6 +149,7 @@
 						</a>
 						<!-- END sso -->
 					</div>
+					<!-- ENDIF sso.length -->
 				</form>
 			</div>
 		</div>
