@@ -28,13 +28,13 @@
 							[[global:posts]]
 							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
 						</span>
-						|
+						&bull;
 						<span class="topic-stats">
 							[[global:views]]
 							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
 						</span>
 						<!-- IF !template.category -->
-						|
+						&bull;
 						<span>
 							<!-- IF topics.user.userslug -->
 								[[global:posted_in_ago_by, <a href="{config.relative_path}/category/{topics.category.slug}"><i class="fa {topics.category.icon}"></i> {topics.category.name}</a>, <span class="timeago" title="{topics.relativeTime}"></span>, {topics.user.username}]]
