@@ -59,11 +59,6 @@
 
 
 						<div class="btn-group">
-							<!-- IF !posts.index -->
-							<button component="topic/follow" class="btn btn-sm btn-default <!-- IF isFollowing -->hidden<!-- ENDIF isFollowing -->" type="button" title="[[topic:watch.title]]"><i class="fa fa-eye"></i></button>
-							<button component="topic/unfollow" class="btn btn-sm btn-default <!-- IF !isFollowing -->hidden<!-- ENDIF !isFollowing -->" type="button" title="[[topic:unwatch.title]]"><i class="fa fa-eye-slash"></i></button>
-							<!-- ENDIF !posts.index -->
-
 							<!-- IF !posts.selfPost -->
 							<button component="post/flag" class="btn btn-sm btn-default" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
 							<!-- ENDIF !posts.selfPost -->
