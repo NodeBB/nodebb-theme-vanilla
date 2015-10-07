@@ -201,14 +201,11 @@
 		}
 
 		.img-thumbnail, .user-icon {
+			.user-icon-style(65px, 3.8rem);
 			float:none;
 			padding: 2px;
 			border-radius: 0;
 			margin-bottom: 5px;
-			width: 65px;
-			height: 65px;
-			line-height: 65px;
-			font-size: 3.8rem;
 		}
 	}
 
@@ -221,10 +218,7 @@
 			display: block;
 
 			img, .user-icon {
-				width: 100px;
-				height: 100px;
-				line-height: 100px;
-				font-size: 2.6rem;
+				.user-icon-style(100px, 2.6rem);
 			}
 		}
 
@@ -285,6 +279,10 @@
 				button.show {
 					display: inline-block!important;
 				}
+
+				.user-icon {
+					.user-icon-style(18px, 1rem);
+				}
 			}
 		}
 	}
@@ -319,10 +317,7 @@
 
 	a[data-uid] {
 		img, .user-icon {
-			height:24px;
-			width:24px;
-			line-height: 24px;
-			font-size: 1.3rem;
+			.user-icon-style(24px, 1.3rem);
 		}
 
 		&::after {
