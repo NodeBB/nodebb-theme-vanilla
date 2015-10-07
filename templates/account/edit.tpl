@@ -146,6 +146,7 @@
 
 					<hr />
 
+					<!-- IF sso.length -->
 					<label class="control-label">[[user:sso.title]]</label>
 					<div class="list-group">
 						<!-- BEGIN sso -->
@@ -156,11 +157,9 @@
 						</a>
 						<!-- END sso -->
 					</div>
+					<!-- ENDIF sso.length -->
 				</form>
 			</div>
 		</div>
 	</div>
-
-	<!-- IMPORT partials/modals/change_picture_modal.tpl -->
-	<!-- IMPORT partials/modals/upload_picture_from_url_modal.tpl -->
 </div>

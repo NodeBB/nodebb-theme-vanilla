@@ -6,7 +6,7 @@
 	<ul component="topic" id="post-container" class="posts" data-tid="{tid}">
 		<!-- BEGIN posts -->
 			<li component="post" class="post-row <!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
-				<a component="post/anchor" name="{posts.index}"></a>
+				<a component="post/anchor" data-index="{posts.index}" name="{posts.index}"></a>
 
 				<meta itemprop="datePublished" content="{posts.relativeTime}">
 				<meta itemprop="dateModified" content="{posts.relativeEditTime}">
@@ -67,11 +67,6 @@
 
 
 						<div class="btn-group">
-							<!-- IF !posts.index -->
-							<button component="topic/follow" class="btn btn-sm btn-default <!-- IF isFollowing -->hidden<!-- ENDIF isFollowing -->" type="button" title="[[topic:watch.title]]"><i class="fa fa-eye"></i></button>
-							<button component="topic/unfollow" class="btn btn-sm btn-default <!-- IF !isFollowing -->hidden<!-- ENDIF !isFollowing -->" type="button" title="[[topic:unwatch.title]]"><i class="fa fa-eye-slash"></i></button>
-							<!-- ENDIF !posts.index -->
-
 							<!-- IF !posts.selfPost -->
 							<button component="post/flag" class="btn btn-sm btn-default" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
 							<!-- ENDIF !posts.selfPost -->
@@ -156,6 +151,17 @@
 	<!-- IF config.usePagination -->
 		<!-- IMPORT partials/paginator.tpl -->
 	<!-- ENDIF config.usePagination -->
+
+	<div class="visible-xs visible-sm pagination-block text-center">
+		<div class="progress-bar"></div>
+		<div class="wrapper">
+			<i class="fa fa-2x fa-angle-double-up pointer fa-fw pagetop"></i>
+			<i class="fa fa-2x fa-angle-up pointer fa-fw pageup"></i>
+			<span class="pagination-text"></span>
+			<i class="fa fa-2x fa-angle-down pointer fa-fw pagedown"></i>
+			<i class="fa fa-2x fa-angle-double-down pointer fa-fw pagebottom"></i>
+		</div>
+	</div>
 
 </div>
 

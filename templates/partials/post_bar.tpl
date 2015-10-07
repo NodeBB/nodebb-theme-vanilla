@@ -7,12 +7,12 @@
 	</span>
 
 	<!-- IF tags.length -->
-	<span>|</span>
+	<span>&bull;</span>
 	<!-- ENDIF tags.length -->
 
 	<small class="topic-stats">
 		<span>[[global:posts]]</span>
-		<strong><span component="topic/post-count" class="human-readable-number" title="{postcount}">{postcount}</span></strong> |
+		<strong><span component="topic/post-count" class="human-readable-number" title="{postcount}">{postcount}</span></strong> &bull;
 		<span>[[global:views]]</span>
 		<strong><span class="human-readable-number" title="{viewcount}">{viewcount}</span></strong>
 	</small>
@@ -33,7 +33,9 @@
 
 	<!-- IMPORT partials/topic/reply-button.tpl -->
 
-	<!-- IMPORT partials/thread_sort.tpl -->
+	<!-- IMPORT partials/topic/watch.tpl -->
+
+	<!-- IMPORT partials/topic/sort.tpl -->
 
 	<!-- IMPORT partials/thread_tools.tpl -->
 </div>
