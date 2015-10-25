@@ -92,14 +92,7 @@
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
 
-						<div class="pull-right">
-							<div class="dropdown moderator-tools" component="post/tools">
-								<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
-								<ul class="dropdown-menu dropdown-menu-right" role="menu">
-									<!-- IMPORT partials/topic/post-menu.tpl -->
-								</ul>
-							</div>
-						</div>
+						<!-- IMPORT partials/topic/post-menu.tpl -->
 					</div>
 
 					<div component="post/content" class="post-content" itemprop="text">{posts.content}</div>
