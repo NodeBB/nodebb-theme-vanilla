@@ -118,18 +118,11 @@
 					</div>
 				</div>
 				<div style="clear:both;"></div>
-				<!-- IF !posts.index -->
-				<div class="well post-bar" data-index="{posts.index}">
-					<!-- IMPORT partials/post_bar.tpl -->
-				</div>
-			<!-- ENDIF !posts.index -->
 			</li>
-
-
 		<!-- END posts -->
 	</ul>
 
-	<div class="well col-md-11 col-xs-12 pull-right post-bar bottom-post-bar <!-- IF unreplied -->hide<!-- ENDIF unreplied -->">
+	<div class="well col-md-11 col-xs-12 pull-right post-bar">
 		<!-- IMPORT partials/post_bar.tpl -->
 	</div>
 
