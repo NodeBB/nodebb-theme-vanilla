@@ -1,10 +1,13 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
+
 <div component="groups/container" class="details row">
 	<div class="col-xs-12" component="groups/cover" style="background-origin: content-box; background-image: url({group.cover:url}); background-position: {group.cover:position};">
-		<div class="change">[[groups:cover-change]] <i class="fa fa-fw fa-pencil-square-o"></i></div>
+		<div class="controls">
+			<span class="upload"><i class="fa fa-fw fa-4x fa-upload"></i></span>
+			<span class="resize"><i class="fa fa-fw fa-4x fa-arrows-alt"></i></span>
+		</div>
 		<div class="save">[[groups:cover-save]] <i class="fa fa-fw fa-floppy-o"></i></div>
 		<div class="indicator">[[groups:cover-saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
-		<div class="instructions">[[groups:cover-instructions]]</div>
 	</div>
 	<div class="col-lg-6 col-xs-12">
 		<div class="panel panel-default">
@@ -143,20 +146,20 @@
 						<label for="name">[[groups:details.description]]</label>
 						<textarea class="form-control" name="description" id="description" type="text">{group.description}</textarea>
 					</div>
-					<div class="form-group">
+					<div class="form-group user-title-option">
 						<label for="userTitle">[[groups:details.badge_text]]</label>
 						<input component="groups/userTitleOption" class="form-control" name="userTitle" id="userTitle" type="text" value="{group.userTitle}"<!-- IF !group.userTitleEnabled --> disabled<!-- ENDIF !group.userTitleEnabled --> />
 					</div>
-					<div class="form-group">
-						<label>[[groups:details.badge_preview]]</label><br />
 
+					<div class="form-group user-title-option">
+						<label>[[groups:details.badge_preview]]</label><br />
 						<span class="label<!-- IF !group.userTitleEnabled --> hide<!-- ENDIF !group.userTitleEnabled -->" style="background-color: {group.labelColor}"><i class="fa {group.icon} icon"></i> <!-- IF group.userTitle -->{group.userTitle}<!-- ELSE -->{group.displayName}<!-- ENDIF group.userTitle --></span>
 
 						<button component="groups/userTitleOption" type="button" class="btn btn-default btn-sm" data-action="icon-select"<!-- IF !group.userTitleEnabled --> disabled<!-- ENDIF !group.userTitleEnabled -->>[[groups:details.change_icon]]</button>
 						<button component="groups/userTitleOption" type="button" class="btn btn-default btn-sm" data-action="color-select"<!-- IF !group.userTitleEnabled --> disabled<!-- ENDIF !group.userTitleEnabled -->>[[groups:details.change_colour]]</button>
 						<input type="hidden" name="labelColor" value="<!-- IF group.labelColor -->{group.labelColor}<!-- ENDIF group.labelColor -->" />
 						<input type="hidden" name="icon" value="<!-- IF group.icon -->{group.icon}<!-- ENDIF group.icon -->" />
-						<div id="icons" style="display:none;">
+						<div id="icons" class="hidden">
 							<div class="icon-container">
 								<div class="row fa-icons">
 									<i class="fa fa-doesnt-exist"></i>
@@ -194,6 +197,7 @@
 			</div>
 		</div>
 		<!-- ENDIF group.isOwner -->
+
 		<div>
 			<!-- IF !posts.length -->
 			<div class="alert alert-info">[[groups:details.has_no_posts]]</div>
