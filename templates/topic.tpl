@@ -14,7 +14,7 @@
 				<div class="col-md-1 profile-image-block hidden-xs hidden-sm sub-post">
 					<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 						<!-- IF posts.user.picture -->
-						<img itemprop="image" data-component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
+						<img itemprop="image" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
 						<!-- ELSE -->
 						<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
 						<!-- ENDIF posts.user.picture -->
@@ -31,7 +31,7 @@
 
 					<a class="main-post avatar" href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
 						<!-- IF posts.user.picture -->
-						<img itemprop="image" data-component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
+						<img itemprop="image" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
 						<!-- ELSE -->
 						<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
 						<!-- ENDIF posts.user.picture -->
@@ -48,7 +48,7 @@
 								<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
 								<span class="visible-xs-inline">
 									<!-- IF posts.user.picture -->
-									<img class="" data-component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" width=18 height=18 />
+									<img class="" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" width=18 height=18 />
 									<!-- ELSE -->
 									<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
 									<!-- ENDIF posts.user.picture -->
