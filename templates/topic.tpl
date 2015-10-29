@@ -106,14 +106,7 @@
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
 
-						<div class="pull-right">
-							<div class="dropdown moderator-tools" component="post/tools">
-								<button title="[[topic:tools]]" class="btn btn-sm btn-default" data-toggle="dropdown" href="#"><i class="fa fa-gear"></i></button>
-								<ul class="dropdown-menu dropdown-menu-right" role="menu">
-									<!-- IMPORT partials/topic/post-menu.tpl -->
-								</ul>
-							</div>
-						</div>
+						<!-- IMPORT partials/topic/post-menu.tpl -->
 					</div>
 
 					<div component="post/content" class="post-content" itemprop="text">{posts.content}</div>
@@ -139,18 +132,11 @@
 					</div>
 				</div>
 				<div style="clear:both;"></div>
-				<!-- IF !posts.index -->
-				<div class="well post-bar" data-index="{posts.index}">
-					<!-- IMPORT partials/post_bar.tpl -->
-				</div>
-			<!-- ENDIF !posts.index -->
 			</li>
-
-
 		<!-- END posts -->
 	</ul>
 
-	<div class="well col-md-11 col-xs-12 pull-right post-bar bottom-post-bar <!-- IF unreplied -->hide<!-- ENDIF unreplied -->">
+	<div class="well col-md-11 col-xs-12 pull-right post-bar">
 		<!-- IMPORT partials/post_bar.tpl -->
 	</div>
 

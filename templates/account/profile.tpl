@@ -1,6 +1,5 @@
-<!-- IMPORT partials/account_menu.tpl -->
-
 <div class="account">
+	<!-- IMPORT partials/account_menu.tpl -->
 
 	<div class="row">
 		<div class="col-md-5 account-block">
@@ -9,7 +8,7 @@
 				<div class="panel-body">
 					<div class="text-center">
 						<!-- IF picture -->
-						<img src="{picture}" class="user-profile-picture img-thumbnail" />
+						<img src="{picture}" class="user-profile-picture" />
 						<!-- ELSE -->
 						<div class="user-icon user-profile-picture" style="background-color: {icon:bgColor};" title="{username}">{icon:text}</div>
 						<!-- ENDIF picture -->
@@ -32,6 +31,7 @@
 
 							<!-- IF isAdmin -->
 							<br/><br/>
+
 							<a id="banAccountBtn" href="#" class="btn btn-danger btn-sm <!-- IF banned -->hide<!-- ENDIF banned -->">[[user:ban_account]]</a>
 							<a id="unbanAccountBtn" href="#" class="btn btn-danger btn-sm <!-- IF !banned -->hide<!-- ENDIF !banned -->">[[user:unban_account]]</a>
 							<a id="deleteAccountBtn" href="#" class="btn btn-danger btn-sm">[[user:delete_account]]</a><br/><br/>
@@ -43,6 +43,7 @@
 						<div id="banLabel" class="text-center <!-- IF !banned -->hide<!-- ENDIF !banned -->">
 							<span class="label label-danger">[[user:banned]]</span>
 						</div>
+
 						<!-- IF aboutme -->
 						<hr/>
 						<div component="aboutme" class="text-center">
@@ -69,6 +70,7 @@
 								<span class="account-bio-label">[[user:profile_views]]</span>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -155,17 +157,16 @@
 
 		</div>
 
-
 		<div class="col-md-7">
-			<!-- IF !posts.length -->
-			<div class="alert alert-warning">[[user:has_no_posts]]</div>
-			<!-- ENDIF !posts.length -->
-			<!-- IMPORT partials/posts_list.tpl -->
+		<!-- IF !posts.length -->
+		<div class="alert alert-warning">[[user:has_no_posts]]</div>
+		<!-- ENDIF !posts.length -->
+		<!-- IMPORT partials/posts_list.tpl -->
 		</div>
+
 	</div>
 
 	<br/>
 	<div id="user-action-alert" class="alert alert-success hide"></div>
 
 </div>
-

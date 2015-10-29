@@ -1,7 +1,7 @@
-	</div><!--END container -->
+	</div><!-- END container -->
 
 	<div class="hide">
-	<!-- IMPORT 500.tpl -->
+	<!-- IMPORT 500-embed.tpl -->
 	</div>
 
 	<div class="topic-search hidden">
