@@ -3,11 +3,6 @@
 
 <div class="row">
 	<div class="col-md-9">
-		<!-- IF !allowed -->
-		<div class="alert alert-warning">
-			[[error:chat-restricted]]
-		</div>
-		<!-- ENDIF !allowed -->
 		<!-- IF roomId -->
 		<div component="chat/messages" class="panel panel-default expanded-chat" data-roomid="{roomId}">
 			<div class="panel-heading">
