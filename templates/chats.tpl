@@ -43,6 +43,7 @@
 					<!-- BEGIN rooms -->
 					<li component="chat/recent/room" data-roomid="{rooms.roomId}" class="<!-- IF ../unread -->unread<!-- ENDIF ../unread -->">
 
+						<!-- IF rooms.lastUser.uid -->
 						<div data-username="{rooms.lastUser.username}" data-uid="{rooms.lastUser.uid}">
 							<!-- IF rooms.lastUser.picture -->
 							<img class="user-img" src="{rooms.lastUser.picture}">
@@ -52,6 +53,9 @@
 							<i component="user/status" title="[[global:{rooms.lastUser.status}]]" class="fa fa-circle status {rooms.lastUser.status}"></i>
 							<span class="username">{rooms.usernames}</span>
 						</div>
+						<!-- ELSE -->
+						[[modules:chat.no-users-in-room]]
+						<!-- ENDIF rooms.lastUser.uid -->
 
 						<span class="teaser-content">{rooms.teaser.content}</span>
 						<span class="teaser-timestamp timeago pull-right" title="{rooms.teaser.timestampISO}"></span>
