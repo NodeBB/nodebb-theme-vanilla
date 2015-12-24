@@ -55,6 +55,7 @@
 		<i class="fa fa-fw fa-eraser"></i> [[topic:thread_tools.purge]]
 	</a>
 </li>
+<li><a component="topic/delete/posts" href="#"><i class="fa fa-fw fa-trash-o"></i> [[topic:thread_tools.delete-posts]]</a></li>
 
 <!-- BEGIN thread_tools -->
 <li>
