@@ -10,9 +10,11 @@
 				<h2 class="panel-title">[[modules:chat.message-history]]</h2>
 			</div>
 			<div class="panel-body">
+				<!-- IF showUserInput -->
 				<div class="users-tag-container">
  					<input class="users-tag-input" type="text" class="form-control" placeholder="enter users here" tabindex="4"/>
  				</div>
+ 				<!-- ENDIF showUserInput -->
  				<input class="form-control" component="chat/room/name" value="{roomName}" <!-- IF !isOwner -->disabled<!-- ENDIF !isOwner -->/>
 				<span class="since-bar"><a href="#" class="selected" data-since="recent">[[recent:title]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
 				<ul class="chat-content">
