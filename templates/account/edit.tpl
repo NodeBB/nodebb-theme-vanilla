@@ -1,6 +1,6 @@
 <div class="account">
 	<!-- IMPORT partials/account_menu.tpl -->
-	
+
 	<div class="row">
 		<div class="col-md-2 col-sm-4">
 			<div class="account-picture-block text-center">
@@ -14,7 +14,9 @@
 					<!-- IF !username:disableEdit -->
 					<a href="{config.relative_path}/user/{userslug}/edit/username" class="list-group-item">[[user:change_username]]</a>
 					<!-- ENDIF !username:disableEdit -->
+					<!-- IF !email:disableEdit -->
 					<a href="{config.relative_path}/user/{userslug}/edit/email" class="list-group-item">[[user:change_email]]</a>
+					<!-- ENDIF !email:disableEdit -->
 					<a href="{config.relative_path}/user/{userslug}/edit/password" class="list-group-item">[[user:change_password]]</a>
 				</ul>
 
