@@ -15,12 +15,12 @@
 		</span>
 		<br/>
 		<div title="reputation" class="reputation">
-			<i class='fa fa-star'></i>
-			<span class='formatted-number'>{users.reputation}</span>
+			<i class="fa fa-star"></i>
+			<span class="formatted-number">{users.reputation}</span>
 		</div>
 		<div title="post count" class="post-count">
-			<i class='fa fa-pencil'></i>
-			<span class='formatted-number'>{users.postcount}</span>
+			<i class="fa fa-pencil"></i>
+			<span class="formatted-number">{users.postcount}</span>
 		</div>
 	</div>
 </li>
