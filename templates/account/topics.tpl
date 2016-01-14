@@ -2,7 +2,7 @@
 	<!-- IMPORT partials/account_menu.tpl -->
 
 	<!-- IF !topics.length -->
-		<div class="alert alert-warning">[[user:has_no_topics]]</div>
+		<div class="alert alert-warning">{noItemsFoundKey}</div>
 	<!-- ENDIF !topics.length -->
 
 	<div class="category">

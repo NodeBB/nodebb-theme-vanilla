@@ -4,7 +4,7 @@
 	<div class="favourites">
 
 		<!-- IF !posts.length -->
-		<div class="alert alert-warning">[[user:has_no_posts]]</div>
+		<div class="alert alert-warning">{noItemsFoundKey}</div>
 		<!-- ENDIF !posts.length -->
 
 		<div class="row">
