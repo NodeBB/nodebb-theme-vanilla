@@ -4,7 +4,7 @@
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
 
 					<!-- IF showSelect -->
-					<i class="fa fa-fw fa-square-o pull-left select pointer"></i>
+					<i class="fa fa-fw fa-square-o pull-left select pointer" component="topic/select"></i>
 					<!-- ENDIF showSelect -->
 
 					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
@@ -16,13 +16,15 @@
 					</a>
 
 					<h3>
+						<strong>
+							<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !topics.pinned -->hide<!-- ENDIF !topics.pinned -->"></i>
+							<i component="topic/locked" class="fa fa-lock <!-- IF !topics.locked -->hide<!-- ENDIF !topics.locked -->"></i>
+						</strong>
 						<!-- IF !topics.noAnchor -->
 						<a href="{config.relative_path}/topic/{topics.slug}">
-							<strong><!-- IF topics.pinned --><i class="fa fa-thumb-tack"></i><!-- ENDIF topics.pinned --> <!-- IF topics.locked --><i class="fa fa-lock"></i><!-- ENDIF topics.locked --></strong>
 							<span class="topic-title">{topics.title}</span>
 						</a>
 						<!-- ELSE -->
-						<strong><!-- IF topics.pinned --><i class="fa fa-thumb-tack"></i><!-- ENDIF topics.pinned --> <!-- IF topics.locked --><i class="fa fa-lock"></i><!-- ENDIF topics.locked --></strong>
 						<span class="topic-title">{topics.title}</span>
 						<!-- ENDIF !topics.noAnchor -->
 					</h3>
