@@ -1,6 +1,6 @@
 		<ul component="category" id="topics-container" data-nextstart="{nextStart}">
 			<!-- BEGIN topics -->
-			<li component="category/topic" class="category-item {function.generateTopicClass}" data-tid="{topics.tid}" data-cid="{topics.cid}">
+			<li component="category/topic" class="category-item {function.generateTopicClass}" <!-- IMPORT partials/data/category.tpl -->>
 				<div class="col-md-12 col-xs-12 panel panel-default topic-row">
 
 					<!-- IF showSelect -->
