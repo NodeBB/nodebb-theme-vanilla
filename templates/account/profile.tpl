@@ -29,11 +29,12 @@
  							<a component="account/follow" href="#" class="btn btn-success btn-sm <!-- IF isFollowing -->hide<!-- ENDIF isFollowing -->">[[user:follow]]</a>
  							<a component="account/unfollow" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
 
-							<!-- IF isAdmin -->
+							<!-- IF canBan -->
 							<br/><br/>
-
 							<a component="account/ban" href="#" class="btn btn-danger btn-sm <!-- IF banned -->hide<!-- ENDIF banned -->">[[user:ban_account]]</a>
 							<a component="account/unban" href="#" class="btn btn-danger btn-sm <!-- IF !banned -->hide<!-- ENDIF !banned -->">[[user:unban_account]]</a>
+							<!-- ENDIF canBan -->
+							<!-- IF isAdmin -->
 							<a component="account/delete" href="#" class="btn btn-danger btn-sm">[[user:delete_account]]</a><br/><br/>
 							<!-- ENDIF isAdmin -->
 							<!-- ENDIF !isSelf -->
