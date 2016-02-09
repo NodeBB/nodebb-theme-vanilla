@@ -37,6 +37,16 @@
 	</div>
 	<div class="col-md-3 hidden-sm hidden-xs">
 		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="chat-search">
+					<input class="form-control" type="text" component="chat/search" placeholder="[[users:enter_username]]" />
+				</div>
+				<ul component="chat/search/list" class="chat-search-list">
+					
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h2 class="panel-title">[[modules:chat.recent-chats]]</h2>
 			</div>
