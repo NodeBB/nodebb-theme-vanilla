@@ -22,10 +22,10 @@
 						</strong>
 						<!-- IF !topics.noAnchor -->
 						<a href="{config.relative_path}/topic/{topics.slug}">
-							<span class="topic-title">{topics.title}</span>
+							<span class="topic-title">{topics.titleEscaped}</span>
 						</a>
 						<!-- ELSE -->
-						<span class="topic-title">{topics.title}</span>
+						<span class="topic-title">{topics.titleEscaped}</span>
 						<!-- ENDIF !topics.noAnchor -->
 					</h3>
 
