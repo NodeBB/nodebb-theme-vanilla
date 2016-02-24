@@ -60,6 +60,7 @@
 							<!-- IF topics.unreplied -->
 							<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a>
 							<!-- ELSE -->
+							<!-- IF topics.teaser.pid -->
 							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
 								<!-- IF topics.teaser.user.picture -->
 								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
@@ -70,6 +71,7 @@
 							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								<span class="timeago" title="{topics.teaser.timestamp}"></span>
 							</a>
+							<!-- ENDIF topics.teaser.pid -->
 							<!-- ENDIF topics.unreplied -->
 						</span>
 						<!-- IMPORT partials/category_tags.tpl -->
