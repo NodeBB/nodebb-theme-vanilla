@@ -53,7 +53,7 @@
 							<!-- ENDIF topics.user.uid -->
 						</span>
 						&bull;
-						<span class="timeago" title="{topics.relativeTime}"></span>
+						<span class="timeago" title="{topics.timestampISO}"></span>
 						<!-- ENDIF !template.category -->
 
 						<span class="pull-right">
@@ -69,7 +69,7 @@
 								<!-- ENDIF topics.teaser.user.picture -->
 							</a>
 							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
-								<span class="timeago" title="{topics.teaser.timestamp}"></span>
+								<span class="timeago" title="{topics.teaser.timestampISO}"></span>
 							</a>
 							<!-- ENDIF topics.teaser.pid -->
 							<!-- ENDIF topics.unreplied -->
