@@ -9,7 +9,7 @@
 
 					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
 						<!-- IF topics.user.picture -->
-						<img class="img-rounded user-img" src="{topics.user.picture}" title="{topics.user.username}" />
+						{function.renderTopicImage}
 						<!-- ELSE -->
 						<div class="user-icon" style="background-color: {topics.user.icon:bgColor};" title="{topics.user.username}">{topics.user.icon:text}</div>
 						<!-- ENDIF topics.user.picture -->
