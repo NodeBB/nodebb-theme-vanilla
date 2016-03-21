@@ -162,11 +162,11 @@
 					</div>
 					<div class="form-group">
 						<label for="name">[[groups:details.description]]</label>
-						<textarea class="form-control" name="description" id="description" type="text">{group.description}</textarea>
+						<textarea class="form-control" name="description" id="description" type="text" maxlength="255">{group.description}</textarea>
 					</div>
 					<div class="form-group user-title-option">
 						<label for="userTitle">[[groups:details.badge_text]]</label>
-						<input component="groups/userTitleOption" class="form-control" name="userTitle" id="userTitle" type="text" value="{group.userTitle}"<!-- IF !group.userTitleEnabled --> disabled<!-- ENDIF !group.userTitleEnabled --> />
+						<input component="groups/userTitleOption" class="form-control" name="userTitle" id="userTitle" type="text" maxlength="40" value="{group.userTitle}"<!-- IF !group.userTitleEnabled --> disabled<!-- ENDIF !group.userTitleEnabled --> />
 					</div>
 
 					<div class="form-group user-title-option">
@@ -195,6 +195,11 @@
 					<div class="checkbox">
 						<label>
 							<input name="private" type="checkbox"<!-- IF group.private --> checked<!-- ENDIF group.private -->> <strong>[[groups:details.private]]</strong>
+							<!-- IF !allowPrivateGroups -->
+							<p class="help-block">
+								[[groups:details.private_system_help]]
+							</p>
+							<!-- ENDIF !allowPrivateGroups -->
 							<p class="help-block">
 								[[groups:details.private_help]]
 							</p>

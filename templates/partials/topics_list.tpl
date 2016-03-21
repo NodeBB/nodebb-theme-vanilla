@@ -7,9 +7,9 @@
 					<i class="fa fa-fw fa-square-o pull-left select pointer" component="topic/select"></i>
 					<!-- ENDIF showSelect -->
 
-					<a href="{config.relative_path}/user/{topics.user.userslug}" class="pull-left">
+					<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
 						<!-- IF topics.user.picture -->
-						<img class="img-rounded user-img" src="{topics.user.picture}" title="{topics.user.username}" />
+						{function.renderTopicImage}
 						<!-- ELSE -->
 						<div class="user-icon" style="background-color: {topics.user.icon:bgColor};" title="{topics.user.username}">{topics.user.icon:text}</div>
 						<!-- ENDIF topics.user.picture -->
@@ -53,7 +53,7 @@
 							<!-- ENDIF topics.user.uid -->
 						</span>
 						&bull;
-						<span class="timeago" title="{topics.relativeTime}"></span>
+						<span class="timeago" title="{topics.timestampISO}"></span>
 						<!-- ENDIF !template.category -->
 
 						<span class="pull-right">
@@ -69,7 +69,7 @@
 								<!-- ENDIF topics.teaser.user.picture -->
 							</a>
 							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
-								<span class="timeago" title="{topics.teaser.timestamp}"></span>
+								<span class="timeago" title="{topics.teaser.timestampISO}"></span>
 							</a>
 							<!-- ENDIF topics.teaser.pid -->
 							<!-- ENDIF topics.unreplied -->

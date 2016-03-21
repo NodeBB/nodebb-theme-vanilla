@@ -87,6 +87,7 @@
 									</li>
 								</ul>
 							</li>
+							<li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">[[modules:chat.mark_all_read]]</a></li>
 							<li class="notif-dropdown-link"><a href="{relative_path}/chats">[[modules:chat.see_all]]</a></li>
 						</ul>
 					</li>
@@ -94,11 +95,8 @@
 
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
-							<!-- IF user.picture -->
-							<img component="header/userpicture" src="{user.picture}"/>
-							<!-- ELSE -->
-							<div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};">{user.icon:text}</div>
-							<!-- ENDIF user.picture -->
+							<img component="header/userpicture" src="{user.picture}"<!-- IF !user.picture --> style="display:none;"<!-- ENDIF !user.picture -->/>
+							<div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};<!-- IF user.picture --> display:none;<!-- ENDIF user.picture -->">{user.icon:text}</div>
 						</a>
 						<ul component="header/usercontrol" id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
