@@ -1,6 +1,16 @@
 
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
+<div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};">
+	<div class="controls">
+		<span class="upload"><i class="fa fa-fw fa-4x fa-upload"></i></span>
+		<span class="resize"><i class="fa fa-fw fa-4x fa-arrows-alt"></i></span>
+		<span class="remove"><i class="fa fa-fw fa-4x fa-times"></i></span>
+	</div>
+	<div class="save">[[groups:cover-save]] <i class="fa fa-fw fa-floppy-o"></i></div>
+	<div class="indicator">[[groups:cover-saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
+</div>
+
 <div class="account-username-box" data-userslug="{userslug}" data-uid="{uid}">
 	<ul class="nav nav-pills account-sub-links">
 		<li>
@@ -44,14 +54,4 @@
 		<li><a href="{config.relative_path}/user/{userslug}/edit"><i class="fa fa-pencil-square-o"></i> [[user:edit]]</a></li>
 		<!-- ENDIF showHidden -->
 	</ul>
-</div>
-
-<div class="cover" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};">
-	<div class="controls">
-		<span class="upload"><i class="fa fa-fw fa-4x fa-upload"></i></span>
-		<span class="resize"><i class="fa fa-fw fa-4x fa-arrows-alt"></i></span>
-		<span class="remove"><i class="fa fa-fw fa-4x fa-times"></i></span>
-	</div>
-	<div class="save">[[groups:cover-save]] <i class="fa fa-fw fa-floppy-o"></i></div>
-	<div class="indicator">[[groups:cover-saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
 </div>
