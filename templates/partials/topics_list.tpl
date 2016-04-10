@@ -56,7 +56,7 @@
 						<span class="timeago" title="{topics.timestampISO}"></span>
 						<!-- ENDIF !template.category -->
 
-						<span class="pull-right">
+						<span class="pull-right" component="teaser">
 							<!-- IF topics.unreplied -->
 							<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a>
 							<!-- ELSE -->
