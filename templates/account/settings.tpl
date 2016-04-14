@@ -121,22 +121,6 @@
 				</div>
 			</div>
 
-			<h4>[[groups:groups]]</h4>
-			<div class="well">
-				<div class="form-group">
-					<label for="grouptitle">[[user:grouptitle]]</label>
-					<select class="form-control" id="grouptitle" data-property="groupTitle">
-						<option value="">[[user:no-group-title]]</option>
-						<!-- BEGIN userGroups -->
-						<!-- IF userGroups.userTitleEnabled -->
-						<option value="{userGroups.name}" <!-- IF userGroups.selected -->selected<!-- ENDIF userGroups.selected -->>{userGroups.userTitle}</option>
-						<!-- ENDIF userGroups.userTitleEnabled -->
-						<!-- END userGroups -->
-					</select>
-				</div>
-			</div>
-
-
 			<h4>[[global:pagination]]</h4>
 			<div class="well">
 				<div class="checkbox">
