@@ -3,7 +3,7 @@
 
 	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
 
-	<ul component="topic" id="post-container" class="posts" data-tid="{tid}">
+	<ul component="topic" id="post-container" class="posts" data-tid="{tid}" data-cid="{cid}">
 		<!-- BEGIN posts -->
 			<li component="post" class="post-row <!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
 				<a component="post/anchor" data-index="{posts.index}" name="{posts.index}"></a>
