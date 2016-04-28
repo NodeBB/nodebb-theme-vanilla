@@ -4,13 +4,13 @@
 	<li role="presentation" class="dropdown-header">[[category:share_this_category]]</li>
 	<!-- IF !config.disableSocialButtons -->
 	<li role="presentation">
-		<a role="menuitem" class="facebook-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span> Facebook</a>
+		<a role="menuitem" component="share/facebook" class="facebook-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span> Facebook</a>
 	</li>
 	<li role="presentation">
-		<a role="menuitem" class="twitter-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-twitter"></i></span> Twitter</a>
+		<a role="menuitem" component="share/twitter" class="twitter-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-twitter"></i></span> Twitter</a>
 	</li>
 	<li role="presentation">
-		<a role="menuitem" class="google-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-google-plus"></i></span> Google+</a>
+		<a role="menuitem" component="share/google" class="google-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-google-plus"></i></span> Google+</a>
 	</li>
 	<!-- ENDIF !config.disableSocialButtons -->
 	<li class="text-center">
