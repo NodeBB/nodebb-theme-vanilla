@@ -50,7 +50,7 @@
 				<ul class="dropdown-menu" role="menu">
 					<!-- BEGIN filters -->
 					<li role="presentation" class="category">
-						<a role="menu-item" href="{config.relative_path}/{filters.url}"><i class="fa fa-fw <!-- IF filters.selected -->fa-check<!-- ENDIF filters.selected -->"></i>{filters.name}</a>
+						<a role="menu-item" href="{config.relative_path}/{filters.url}{querystring}"><i class="fa fa-fw <!-- IF filters.selected -->fa-check<!-- ENDIF filters.selected -->"></i>{filters.name}</a>
 					</li>
 					<!-- END filters -->
 				</ul>
@@ -65,7 +65,7 @@
 			<strong>[[unread:no_unread_topics]]</strong>
 		</div>
 
-		<a href="{config.relative_path}/{selectedFilter.url}">
+		<a href="{config.relative_path}/{selectedFilter.url}{querystring}">
 			<div class="alert alert-warning hide" id="new-topics-alert"></div>
 		</a>
 		<div class="col-md-12">
