@@ -24,5 +24,8 @@
 		<div class="col-md-12">
 			<!-- IMPORT partials/topics_list.tpl -->
 		</div>
+		<!-- IF config.usePagination -->
+			<!-- IMPORT partials/paginator.tpl -->
+		<!-- ENDIF config.usePagination -->
 	</div>
 </div>
