@@ -109,7 +109,7 @@
 			</div>
 			<!-- ENDIF !disableEmailSubscriptions -->
 
-			<h4>[[user:follow]]</h4>
+			<h4>[[topic:watch]]</h4>
 			<div class="well">
 				<div class="checkbox">
 					<label>
