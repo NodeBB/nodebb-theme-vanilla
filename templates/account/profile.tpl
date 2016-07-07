@@ -143,19 +143,6 @@
 			</div>
 			<!-- ENDIF groups.length -->
 
-			<!-- IF ips.length -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">[[global:recentips]]</h3>
-				</div>
-				<div class="panel-body">
-				<!-- BEGIN ips -->
-					<div>{ips.ip}</div>
-				<!-- END ips -->
-				</div>
-			</div>
-			<!-- ENDIF ips.length -->
-
 		</div>
 
 		<div class="col-md-7">
