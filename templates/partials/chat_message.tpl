@@ -11,15 +11,15 @@
 						<strong><span class="chat-user">{messages.fromUser.username}</span></strong>
 					</div>
 					<div component="chat/message/body" class="message-body">
-						<!-- IF ../edited -->
+						<!-- IF messages.edited -->
 						<small class="text-muted pull-right" title="[[global:edited]] {../editedISO}"><i class="fa fa-edit"></i></span></small>
-						<!-- ENDIF ../edited -->
-						<!-- IF ../self -->
+						<!-- ENDIF messages.edited -->
+						<!-- IF messages.self -->
 						<div class="pull-right btn-group controls">
 							<button class="btn btn-xs btn-warning" data-action="edit"><i class="fa fa-pencil"></i></button>
 							<button class="btn btn-xs btn-danger" data-action="delete"><i class="fa fa-times"></i></button>
 						</div>
-						<!-- ENDIF ../self -->
+						<!-- ENDIF messages.self -->
 						{messages.content}
 					</div>
 				</li>
