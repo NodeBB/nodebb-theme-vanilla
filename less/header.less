@@ -107,17 +107,10 @@
 			padding: 0.5em;
 			clear: both;
 
-			img, .user-icon {
-				.user-icon-style();
-				float: left;
-			}
-
 			a {
 				color: @text-color;
 				white-space: normal;
-				overflow: hidden;
 				margin: 0;
-				// padding: 3px 5px 3px 20px;
 				text-overflow: ellipsis;
 
 				.text {
@@ -180,15 +173,10 @@
 
 		li {
 			.pointer;
-			width: 200px;
+			width: 300px;
 
 			a {
-				display: block;
-				line-height: 30px;
-
-				.avatar {
-					margin-right: 1rem;
-				}
+				position: relative;
 			}
 
 			&.no_active a {
