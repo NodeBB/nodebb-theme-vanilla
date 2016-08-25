@@ -83,7 +83,7 @@
 							<li>
 								<ul id="chat-list" component="chat/list">
 									<li>
-										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
+										<i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]
 									</li>
 								</ul>
 							</li>
