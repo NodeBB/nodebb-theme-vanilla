@@ -27,12 +27,11 @@
 		};
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{config.cache-buster}"></script>
-	<!-- IMPORT partials/requirejs-config.tpl -->
 
 	<!-- BEGIN scripts -->
 	<script type="text/javascript" src="{scripts.src}"></script>
 	<!-- END scripts -->
-	
+
 	<!-- IF useCustomJS -->
 	{{customJS}}
 	<!-- ENDIF useCustomJS -->
