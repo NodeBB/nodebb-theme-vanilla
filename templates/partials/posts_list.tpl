@@ -23,7 +23,7 @@
 				<small>
 					<span class="pull-right">
 						<a href="{config.relative_path}/category/{posts.category.slug}">[[global:posted_in, {posts.category.name}]] <i class="fa {posts.category.icon}"></i> <span class="timeago" title="{posts.timestampISO}"></span></a> &bull;
-						<a href="{config.relative_path}/topic/{posts.topic.slug}/{posts.index}">[[global:read_more]]</a>
+						<a href="{config.relative_path}/post/{posts.pid}">[[global:read_more]]</a>
 					</span>
 				</small>
 			</div>
