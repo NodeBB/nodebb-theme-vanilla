@@ -1,6 +1,6 @@
 
 <div class="category row">
-	<div class="col-md-9" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
+	<div class="col-md-12 col-sm-12" has-widget-class="col-lg-9 col-sm-12" has-widget-target="sidebar">
 
 		<!-- IMPORT partials/breadcrumbs.tpl -->
 
