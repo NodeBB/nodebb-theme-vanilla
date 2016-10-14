@@ -19,7 +19,6 @@
 
 				<ul class="chat-content">
 					<!-- IMPORT partials/chat_messages.tpl -->
-					<span class="user-typing pull-right hide"><i class="fa fa-pencil"></i> [[modules:chat.user_typing, {meta.username}]]</span>
 				</ul>
 				<div class="input-group">
 					<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input mousetrap" rows="1"></textarea>
