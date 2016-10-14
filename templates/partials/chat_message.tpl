@@ -1,4 +1,4 @@
-				<li component="chat/message" class="chat-message clear" data-mid="{messages.messageId}" data-uid="{messages.fromuid}" data-self="{messages.self}" data-break="{messages.newSet}">
+				<li component="chat/message" class="chat-message clear" data-index="{messages.index}" data-mid="{messages.messageId}" data-uid="{messages.fromuid}" data-self="{messages.self}" data-break="{messages.newSet}">
 					<div class="message-header">
 						<span class="chat-timestamp pull-right timeago" title="{messages.timestampISO}"></span>
 						<a href="{config.relative_path}/user/{messages.fromUser.userslug}">
