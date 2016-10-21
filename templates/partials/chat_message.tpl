@@ -15,10 +15,12 @@
 		<small class="text-muted pull-right" title="[[global:edited]] {messages.editedISO}"><i class="fa fa-edit"></i></span></small>
 		<!-- ENDIF messages.edited -->
 		<!-- IF messages.self -->
+		<!-- IF !config.disableChatMessageEditing -->
 		<div class="pull-right btn-group controls">
 			<button class="btn btn-xs btn-warning" data-action="edit"><i class="fa fa-pencil"></i></button>
 			<button class="btn btn-xs btn-danger" data-action="delete"><i class="fa fa-times"></i></button>
 		</div>
+		<!-- ENDIF !config.disableChatMessageEditing -->
 		<!-- ENDIF messages.self -->
 		{messages.content}
 	</div>
