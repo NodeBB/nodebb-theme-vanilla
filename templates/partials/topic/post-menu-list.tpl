@@ -41,6 +41,17 @@
 	</a>
 </li>
 
+<!-- IF posts.tools -->
+<li role="presentation" class="divider"></li>
+<!-- ENDIF posts.tools -->
+<!-- BEGIN posts.tools -->
+<li role="presentation">
+	<a component="{posts.tools.action}" role="menuitem" tabindex="-1" href="#">
+		<span class="menu-icon"><i class="fa {posts.tools.icon}"></i></span> {{posts.tools.html}}
+	</a>
+</li>
+<!-- END posts.tools -->
+
 <!-- IF postSharing.length -->
 <li role="presentation" class="divider"></li>
 <li role="presentation" class="dropdown-header">[[topic:share_this_post]]</li>
