@@ -1,6 +1,6 @@
 
 <div class="category row">
-	<div class="col-md-12 col-sm-12" has-widget-class="col-lg-9 col-sm-12" has-widget-target="sidebar">
+	<div class="col-md-12 col-sm-12" data-has-widget-class="col-lg-9 col-sm-12" data-has-widget-target="sidebar">
 
 		<!-- IMPORT partials/breadcrumbs.tpl -->
 
@@ -43,7 +43,7 @@
 	</div>
 
 	<!-- IF topics.length -->
-	<div widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar"></div>
+	<div data-widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar"></div>
 	<!-- ENDIF topics.length -->
 </div>
 

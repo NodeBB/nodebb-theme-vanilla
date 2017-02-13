@@ -146,7 +146,7 @@
 			</div>
 		</div>
 		<!-- ENDIF group.isOwner -->
-		<div widget-area="left"></div>
+		<div data-widget-area="left"></div>
 	</div>
 	<div class="col-lg-6 col-xs-12">
 		<!-- IF group.isOwner -->
@@ -236,6 +236,6 @@
 			<!-- ENDIF !posts.length -->
 			<!-- IMPORT partials/posts_list.tpl -->
 		</div>
-		<div widget-area="right"></div>
+		<div data-widget-area="right"></div>
 	</div>
 </div>
