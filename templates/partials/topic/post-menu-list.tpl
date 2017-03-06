@@ -41,9 +41,9 @@
 	</a>
 </li>
 
-<!-- IF posts.tools -->
+<!-- IF posts.tools.length -->
 <li role="presentation" class="divider"></li>
-<!-- ENDIF posts.tools -->
+<!-- ENDIF posts.tools.length -->
 <!-- BEGIN posts.tools -->
 <li role="presentation">
 	<a component="{posts.tools.action}" role="menuitem" tabindex="-1" href="#">
