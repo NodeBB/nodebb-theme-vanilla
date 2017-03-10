@@ -107,10 +107,17 @@
 				</h3>
 			</div>
 			<div class="panel-body">
-				<input class="form-control" type="text" component="groups/members/invite" placeholder="[[groups:invited.search]]"/><br/>
+				<div class="form-group">
+					<input class="form-control" type="text" component="groups/members/invite" placeholder="[[groups:invited.search]]"/>
+				</div>
 
-				<textarea class="form-control" component="groups/members/bulk-invite" placeholder="[[groups:bulk-invite-instructions]]"></textarea>
-				<button class="btn btn-default btn-sm pull-right" component="groups/members/bulk-invite-button">[[groups:bulk-invite]]</button><br/><br/>
+				<div class="form-group">
+					<textarea class="form-control" component="groups/members/bulk-invite" placeholder="[[groups:bulk-invite-instructions]]"></textarea>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-default btn-sm pull-right" component="groups/members/bulk-invite-button">[[groups:bulk-invite]]</button>
+				</div>
 
 				<table component="groups/invited" class="table table-striped table-hover">
 					<!-- IF !group.invited.length -->
