@@ -26,6 +26,7 @@
 						<button class="btn btn-primary" type="button" data-action="send">[[modules:chat.send]]</button>
 					</span>
 				</div>
+				<span component="chat/message/length">0</span>/<span>{maximumChatMessageLength}</span>
 			</div>
 		</div>
 		<!-- ELSE -->

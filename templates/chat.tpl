@@ -31,6 +31,7 @@
 						<button id="chat-message-send-btn" class="btn btn-primary" href="#" type="button">[[modules:chat.send]]</button>
 					</span>
 				</div>
+				<span component="chat/message/length">0</span>/<span>{maximumChatMessageLength}</span>
 			</div>
 		</div>
 	</div>
