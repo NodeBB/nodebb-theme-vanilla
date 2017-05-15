@@ -26,6 +26,7 @@
 				<li>
 					<a component="account/flag" href="#">[[user:flag-profile]]</a>
 				</li>
+				<!-- ENDIF !isSelf -->
 				<li><a href="{config.relative_path}/user/{userslug}/following"><i class="fa fa-fw fa-users"></i> [[user:following]]</a></li>
 				<li><a href="{config.relative_path}/user/{userslug}/followers"><i class="fa fa-fw fa-users"></i> [[user:followers]]</a></li>
 				<li class="divider"></li>
