@@ -1,4 +1,4 @@
-<div component="category-selector" class="btn-group">
+<div component="category-selector" class="btn-group <!-- IF pullRight -->pull-right<!-- ENDIF pullRight -->">
 	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 		<span component="category-selector-selected">[[topic:thread_tools.select_category]]</span> <span class="caret"></span>
 	</button>
