@@ -1,6 +1,3 @@
-
-<!-- IMPORT partials/breadcrumbs.tpl -->
-
 <div class="row">
 	<div class="col-md-9" component="chat/main-wrapper">
 		<!-- IMPORT partials/chats/message-window.tpl -->
