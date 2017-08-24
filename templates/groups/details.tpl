@@ -70,7 +70,7 @@
 					<!-- IF !group.pending.length -->
 					<div class="alert alert-info">[[groups:pending.none]]</div>
 					<!-- ENDIF !group.pending.length -->
-					<!-- BEGIN pending -->
+					<!-- BEGIN group.pending -->
 					<tr data-uid="{group.pending.uid}">
 						<td>
 							<a href="{config.relative_path}/user/{group.pending.userslug}">
@@ -96,7 +96,7 @@
 							</div>
 						</td>
 					</tr>
-					<!-- END pending -->
+					<!-- END group.pending -->
 				</table>
 			</div>
 		</div>
@@ -123,7 +123,7 @@
 					<!-- IF !group.invited.length -->
 					<div class="alert alert-info">[[groups:invited.none]]</div>
 					<!-- ENDIF !group.invited.length -->
-					<!-- BEGIN invited -->
+					<!-- BEGIN group.invited -->
 					<tr data-uid="{group.invited.uid}">
 						<td>
 							<a href="{config.relative_path}/user/{group.invited.userslug}">
@@ -148,12 +148,16 @@
 							</div>
 						</td>
 					</tr>
-					<!-- END invited -->
+					<!-- END group.invited -->
 				</table>
 			</div>
 		</div>
 		<!-- ENDIF group.isOwner -->
-		<div widget-area="left"></div>
+		<div widget-area="left">
+			<!-- BEGIN widgets.left -->
+			{{widgets.left.html}}
+			<!-- END widgets.left -->
+		</div>
 	</div>
 	<div class="col-lg-6 col-xs-12">
 		<!-- IF group.isOwner -->
@@ -243,6 +247,10 @@
 			<!-- ENDIF !posts.length -->
 			<!-- IMPORT partials/posts_list.tpl -->
 		</div>
-		<div widget-area="right"></div>
+		<div widget-area="right">
+			<!-- BEGIN widgets.right -->
+			{{widgets.right.html}}
+			<!-- END widgets.right -->
+		</div>
 	</div>
 </div>

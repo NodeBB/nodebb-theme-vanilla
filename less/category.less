@@ -57,9 +57,9 @@
 			white-space: nowrap;
 			text-overflow:ellipsis;
 			overflow: hidden;
+
 			a {
-				width:100%;
-				display:inline-block;
+				display: inline;
 			}
 
 			.topic-title {
@@ -138,7 +138,7 @@ h4.category-title {
 	.pointer;
 	margin-bottom: 10px;
 	overflow:hidden;
-	
+
 	&:hover {
 		filter: brightness(115%);
 		-webkit-filter: brightness(115%);
@@ -189,4 +189,15 @@ h4.category-title {
 	-o-background-size: contain!important;
 	background-size: contain!important;
 	background-position: center!important;
+}
+
+[component="category-selector"], .category-dropdown-container {
+	.fa-stack {
+		font-size: 65%;
+	}
+}
+
+.category-dropdown-menu {
+	max-height: 500px;
+	overflow-y: auto;
 }

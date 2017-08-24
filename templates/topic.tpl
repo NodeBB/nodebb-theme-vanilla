@@ -160,7 +160,11 @@
 
 </div>
 
-<div widget-area="footer" class="col-xs-12"></div>
+<div widget-area="footer" class="col-xs-12">
+	<!-- BEGIN widgets.footer -->
+	{{widgets.footer.html}}
+	<!-- END widgets.footer -->
+</div>
 
 <!-- IF !config.usePagination -->
 <noscript>

@@ -1,10 +1,14 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="motd">
-	<div widget-area="motd"></div>
+	<div widget-area="motd">
+		<!-- BEGIN widgets.motd -->
+		{{widgets.motd.html}}
+		<!-- END widgets.motd -->
+	</div>
 </div>
 
 <div class="row categories" itemscope itemtype="http://www.schema.org/ItemList">
-	<div class="col-lg-12 col-sm-12 clearfix" has-widget-class="col-lg-9 col-sm-12" has-widget-target="sidebar">
+	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length --> clearfix">
 		<div class="row">
 			<!-- BEGIN categories -->
 			<div component="categories/category" class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
@@ -61,5 +65,9 @@
 		</div>
 	</div>
 
-	<div widget-area="sidebar" class="col-lg-3 col-sm-12"></div>
+	<div widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
+		<!-- BEGIN widgets.sidebar -->
+		{{widgets.sidebar.html}}
+		<!-- END widgets.sidebar -->
+	</div>
 </div>
