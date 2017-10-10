@@ -1,5 +1,9 @@
 	</div><!-- END container -->
 
+	<div class="hide">
+	<!-- IMPORT 500-embed.tpl -->
+	</div>
+
 	<div class="topic-search hidden">
 		<div class="btn-group">
 			<button type="button" class="btn btn-default count"></button>
@@ -15,20 +19,8 @@
 		</div>
 	</div>
 
-	<script src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
-
-	<!-- BEGIN scripts -->
-	<script type="text/javascript" src="{scripts.src}"></script>
-	<!-- END scripts -->
-
 	<script>
-		window.addEventListener('load', function () {
-			require(['forum/footer']);
-		});
+		require(['forum/footer']);
 	</script>
-
-	<div class="hide">
-	<!-- IMPORT 500-embed.tpl -->
-	</div>
 </body>
 </html>
