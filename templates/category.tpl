@@ -35,6 +35,10 @@
 		</div>
 		<!-- ENDIF !topics.length -->
 
+		<a href="{url}">
+			<div class="alert alert-warning hide" id="new-topics-alert"></div>
+		</a>
+
 		<!-- IMPORT partials/topics_list.tpl -->
 
 		<!-- IF config.usePagination -->
