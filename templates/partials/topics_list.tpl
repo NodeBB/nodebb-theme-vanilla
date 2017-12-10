@@ -35,6 +35,11 @@
 
 					<small>
 						<span class="topic-stats">
+							[[global:votes]]
+							<strong class="human-readable-number" title="{topics.votes}">{topics.votes}</strong>
+						</span>
+						&bull;
+						<span class="topic-stats">
 							[[global:posts]]
 							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
 						</span>
