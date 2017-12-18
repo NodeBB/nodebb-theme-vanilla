@@ -105,9 +105,24 @@
 		li.chat-message {
 			list-style-type: none;
 			font-weight: 300;
+			transition: opacity .5s ease;
 
 			&[data-break="true"] {
 				margin-top: 7px;
+			}
+
+			&.deleted {
+				opacity: 0.3;
+
+				.controls {
+					[data-action] {
+						display: none;
+					}
+
+					[data-action="restore"] {
+						display: inline;
+					}
+				}
 			}
 
 			.chat-user-image {
@@ -145,6 +160,10 @@
 
 			.controls {
 				display: none;
+
+				[data-action="restore"] {
+					display: none;
+				}
 			}
 
 			&:hover {
