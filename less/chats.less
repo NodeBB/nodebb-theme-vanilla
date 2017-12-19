@@ -1,3 +1,4 @@
+// Make chats page edge-to-edge
 .page-user-chats {
 	padding-top: 50px;
 
@@ -17,7 +18,12 @@
 
 	[component="chat/nav-wrapper"] {
 		flex: 1;
-		overflow-y: scroll;
+		flex-direction: column;
+
+		.chats-list {
+			flex: 1;
+			overflow-y: auto;
+		}
 
 		.chat-search {
 			height: 3em;
@@ -28,11 +34,6 @@
 
 	[component="chat/main-wrapper"] {
 		flex: 3;
-		flex-direction: column;
-
-		.chats-list {
-			flex: 1;
-		}
 	}
 
 	[component="chat/messages"] {
