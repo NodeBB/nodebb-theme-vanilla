@@ -12,7 +12,8 @@
 	}
 }
 
-.chats-full {
+/* Styles common to both full chat and chat modal */
+.chats-full, .chat-modal {
 	display: flex;
 	flex-wrap: nowrap;
 
@@ -38,6 +39,26 @@
 
 			ul {
 				width: 100%;
+			}
+		}
+
+		[component="chat/search/list"] {
+			padding: 0px;
+
+			li {
+				clear: both;
+				list-style-type: none;
+				padding: 0.5em;
+				.pointer;
+			}
+
+			.user-icon, img {
+				width:24px;
+				height:24px;
+				line-height:24px;
+				font-size: 1.5rem;
+				margin-left: 0.5em;
+				margin-right: 0.5em;
 			}
 		}
 	}
@@ -169,7 +190,8 @@
 	}
 }
 
-.expanded-chat, .chat-modal {
+/* Chat modal specific styles */
+.chat-modal {
 	.modal-header {
 		padding: 0.25em 1em;
 
@@ -196,9 +218,20 @@
 		}
 	}
 
+	.modal-body {
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+
+		.chat-content {
+			flex: 1;
+		}
+	}
+}
+
+.expanded-chat, .chat-modal {
 	.chat-content {
 		.fix-lists;
-		height: 250px;
 		overflow-y: auto;
 		overflow-x: hidden;
 		resize: none;
@@ -246,6 +279,7 @@
 			.message-body {
 				margin-left: 14px;
 				clear: both;
+				overflow-y: hidden;
 
 				p {
 					margin: 7px 0 0 0;
@@ -298,26 +332,5 @@
 		display: block;
 		padding: 1rem 0;
 		text-align: center;
-	}
-}
-
-[component="chat/search/list"] {
-
-	padding: 0px;
-
-	li {
-		clear: both;
-		list-style-type: none;
-		padding: 0.5em;
-		.pointer;
-	}
-
-	.user-icon, img {
-		width:24px;
-		height:24px;
-		line-height:24px;
-		font-size: 1.5rem;
-		margin-left: 0.5em;
-		margin-right: 0.5em;
 	}
 }

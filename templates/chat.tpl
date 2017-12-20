@@ -25,13 +25,11 @@
 					<!-- IMPORT partials/chats/messages.tpl -->
 				</ul>
 
-				<div class="input-group">
-					<textarea component="chat/input" id="chat-message-input" rows="1" placeholder="[[modules:chat.placeholder]]" name="chat-message" class="form-control"></textarea>
-					<span class="input-group-btn">
-						<button id="chat-message-send-btn" class="btn btn-primary" href="#" type="button">[[modules:chat.send]]</button>
-					</span>
+				<div component="chat/composer">
+					<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input mousetrap" rows="1"></textarea>
+					<button class="btn btn-primary" type="button" data-action="send">[[modules:chat.send]]</button>
+					<span component="chat/message/remaining">{maximumChatMessageLength}</span>
 				</div>
-				<span component="chat/message/length">0</span>/<span>{maximumChatMessageLength}</span>
 			</div>
 		</div>
 	</div>
