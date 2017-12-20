@@ -65,6 +65,10 @@
 
 	[component="chat/main-wrapper"] {
 		flex: 3;
+
+		.alert {
+			margin: 1em;
+		}
 	}
 
 	[component="chat/messages"] {
@@ -332,5 +336,24 @@
 		display: block;
 		padding: 1rem 0;
 		text-align: center;
+	}
+}
+
+/* Mobile handling of chat page */
+@media (max-width: @screen-sm) {
+	.page-user-chats {
+		padding-bottom: 0;
+
+		[component="chat/nav-wrapper"][data-loaded="1"] {
+			display: none;
+		}
+
+		[component="chat/nav-wrapper"][data-loaded="0"] + [component="chat/main-wrapper"] {
+			display: none;
+		}
+	}
+
+	[data-action="pop-out"] {
+		display: none;
 	}
 }
