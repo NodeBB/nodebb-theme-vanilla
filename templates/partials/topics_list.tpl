@@ -56,7 +56,7 @@
 						&bull;
 						<span>
 							<!-- IF topics.user.uid -->
-							<a href="{config.relative_path/user/{topics.user.userslug}">{topics.user.username}</a>
+							<a href="{config.relative_path}/user/{topics.user.userslug}">{topics.user.username}</a>
 							<!-- ELSE -->
 							[[global:guest]]
 							<!-- ENDIF topics.user.uid -->
