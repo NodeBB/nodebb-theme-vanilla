@@ -4,8 +4,8 @@
 		<button type="button" class="close" data-action="pop-out"><span aria-hidden="true"><i class="fa fa-compress"></i></span><span class="sr-only">[[modules:chat.pop-out]]</span></button>
 		
 		<div class="dropdown">
-			<button class="close" data-toggle="dropdown" component="expanded-chat/controlsToggle"><i class="fa fa-gear"></i></button>
-			<ul class="dropdown-menu dropdown-menu-right" component="expanded-chat/controls">
+			<button class="close" data-toggle="dropdown" component="chat/controlsToggle"><i class="fa fa-gear"></i></button>
+			<ul class="dropdown-menu dropdown-menu-right" component="chat/controls">
 				<!-- IF users.length -->
 				<li class="dropdown-header">[[modules:chat.in-room]]</li>
 				<!-- BEGIN users -->
@@ -22,10 +22,13 @@
 				<!-- END -->
 				<li class="dropdown-header">[[modules:chat.options]]</li>
 				<li>
-					<a href="#" data-action="add"><i class="fa fa-fw fa-plus"></i> [[modules:chat.add-users-to-room]]</a>
+					<a href="#" data-action="members"><i class="fa fa-fw fa-plus"></i> [[modules:chat.add-users-to-room]]</a>
 				</li>
 				<li>
 					<a href="#" data-action="rename"><i class="fa fa-fw fa-edit"></i> [[modules:chat.rename-room]]</a>
+				</li>
+				<li>
+					<a href="#" data-action="leave"><i class="fa fa-fw fa-sign-out"></i> [[modules:chat.leave]]</a>
 				</li>
 			</ul>
 		</div>
@@ -41,7 +44,7 @@
 	</ul>
 	<div component="chat/composer">
 		<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input mousetrap" rows="2"></textarea>
-		<button class="btn btn-primary" type="button" data-action="send">[[modules:chat.send]]</button>
+		<button class="btn btn-primary" type="button" data-action="send"><i class="fa fa-fw fa-2x fa-paper-plane"></i></button>
 		<span component="chat/message/remaining">{maximumChatMessageLength}</span>
 	</div>
 </div>

@@ -129,6 +129,7 @@
 			box-shadow: none;
 			border: 0;
 			border: 1px solid @gray-lighter;
+			border-radius: 0;
 		}
 
 		[data-action="send"] {
@@ -357,6 +358,17 @@
 		display: block;
 		padding: 1rem 0;
 		text-align: center;
+	}
+}
+
+[component="chat/manage-modal"] {
+	.list-group-item .avatar {
+		border-radius: 0;
+		margin-right: 1em;
+	}
+
+	div+span {
+		margin: -4px;
 	}
 }
 
