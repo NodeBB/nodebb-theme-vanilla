@@ -36,7 +36,7 @@
 					</ul>
 				</div>
 
-				<h4><!-- IF roomName -->{roomName}<!-- ELSE -->{usernames}<!-- ENDIF roomName --></h4>
+				<h4 component="chat/room/name"><!-- IF roomName -->{roomName}<!-- ELSE -->{usernames}<!-- ENDIF roomName --></h4>
 			</div>
 
 			<div class="modal-body">
