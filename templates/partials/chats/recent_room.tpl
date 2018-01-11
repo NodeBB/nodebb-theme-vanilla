@@ -1,7 +1,9 @@
 <li component="chat/recent/room" data-roomid="{rooms.roomId}" class="<!-- IF rooms.unread -->unread<!-- ENDIF rooms.unread -->">
-	<i class="fa fa-times pull-right leave" component="chat/leave"></i>
 	<div>
-		<p><!-- IF rooms.roomName -->{rooms.roomName}<!-- ELSE -->{rooms.usernames}<!-- ENDIF rooms.roomName --></p>
+		<p component="chat/title"><!-- IF rooms.roomName -->{rooms.roomName}<!-- ELSE -->{rooms.usernames}<!-- ENDIF rooms.roomName --></p>
+		<small class="teaser-timestamp timeago text-muted" title="{../teaser.timestampISO}"></small>
+		<!-- IF ../teaser.content -->
+		<!-- END -->
 		<ul class="members">
 			<!-- BEGIN rooms.users -->
 			<li>
@@ -19,9 +21,4 @@
 			<!-- ENDIF !rooms.lastUser.uid -->
 		</ul>
 	</div>
-
-	<!-- IF rooms.teaser.content -->
-	<span class="teaser-content">{rooms.teaser.content}</span>
-	<span class="teaser-timestamp timeago pull-right" title="{rooms.teaser.timestampISO}"></span>
-	<!-- ENDIF rooms.teaser.content -->
 </li>
