@@ -52,13 +52,14 @@
 							<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]" value="{fullname}">
 						</div>
 					</div>
-
+					<!-- IF allowWebsite -->
 					<div class="control-group">
 						<label class="control-label" for="inputWebsite">[[user:website]]</label>
 						<div class="controls">
 							<input class="form-control" type="text" id="inputWebsite" placeholder="http://..." value="{website}">
 						</div>
 					</div>
+					<!-- ENDIF allowWebsite -->
 
 					<div class="control-group">
 						<label class="control-label" for="inputLocation">[[user:location]]</label>
@@ -87,13 +88,16 @@
 							</select>
 						</div>
 					</div>
-
+					<!-- IF allowAboutMe -->
 					<div class="control-group">
 						<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
 						<div class="controls">
 							<textarea class="form-control" id="inputAboutMe" rows="5">{aboutme}</textarea>
 						</div>
 					</div>
+					<!-- ENDIF allowAboutMe -->
+
+					<!-- IF allowSignature -->
 					<!-- IF !disableSignatures -->
 					<div class="control-group">
 						<label class="control-label" for="inputSignature">[[user:signature]]</label> <small><label id="signatureCharCountLeft"></label></small>
@@ -102,6 +106,7 @@
 						</div>
 					</div>
 					<!-- ENDIF !disableSignatures -->
+					<!-- ENDIF allowSignature -->
 
 					<input type="hidden" id="inputUID" value="{uid}"><br />
 
