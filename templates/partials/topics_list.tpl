@@ -34,17 +34,17 @@
 					</h3>
 
 					<small>
-						<span class="topic-stats">
+						<span class="topic-stats stats-votes">
 							[[global:votes]]
 							<strong class="human-readable-number" title="{topics.votes}">{topics.votes}</strong>
 						</span>
 						&bull;
-						<span class="topic-stats">
+						<span class="topic-stats stats-postcount">
 							[[global:posts]]
 							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong>
 						</span>
 						&bull;
-						<span class="topic-stats">
+						<span class="topic-stats stats-viewcount">
 							[[global:views]]
 							<strong class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</strong>
 						</span>
