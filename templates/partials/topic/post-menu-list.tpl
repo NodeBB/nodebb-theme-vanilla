@@ -26,6 +26,15 @@
 		<span class="menu-icon"><i class="fa fa-arrows"></i></span> [[topic:move]]
 	</a>
 </li>
+
+<!-- IF posts.display_history -->
+<li role="presentation">
+	<a component="post/view-history" role="menuitem" tabindex="-1" href="#">
+		<span class="menu-icon"><i class="fa fa-history"></i></span> [[topic:view-history]]
+	</a>
+</li>
+<!-- END -->
+
 <!-- ENDIF posts.display_move_tools -->
 <li role="presentation" class="divider"></li>
 <!-- ENDIF posts.display_moderator_tools -->

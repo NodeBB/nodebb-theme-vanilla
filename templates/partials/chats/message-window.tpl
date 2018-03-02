@@ -1,27 +1,51 @@
 <!-- IF roomId -->
-<div component="chat/messages" class="panel panel-default expanded-chat" data-roomid="{roomId}">
-	<div class="panel-heading">
+<div component="chat/messages" class="expanded-chat" data-roomid="{roomId}">
+	<div component="chat/header">
 		<button type="button" class="close" data-action="pop-out"><span aria-hidden="true"><i class="fa fa-compress"></i></span><span class="sr-only">[[modules:chat.pop-out]]</span></button>
-		<h2 class="panel-title">[[modules:chat.message-history]]</h2>
-	</div>
-	<div class="panel-body">
-		<!-- IF showUserInput -->
-		<div class="users-tag-container">
-			 <input class="users-tag-input" type="text" class="form-control" placeholder="enter users here" tabindex="4"/>
-		 </div>
-		 <!-- ENDIF showUserInput -->
-		 <input class="form-control" component="chat/room/name" value="{roomName}" <!-- IF !isOwner -->disabled<!-- ENDIF !isOwner -->/>
-
-		<ul class="chat-content">
-			<!-- IMPORT partials/chats/messages.tpl -->
-		</ul>
-		<div class="input-group">
-			<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input mousetrap" rows="1"></textarea>
-			<span class="input-group-btn">
-				<button class="btn btn-primary" type="button" data-action="send">[[modules:chat.send]]</button>
-			</span>
+		
+		<div class="dropdown pull-right">
+			<button class="close" data-toggle="dropdown" component="chat/controlsToggle"><i class="fa fa-gear"></i></button>
+			<ul class="dropdown-menu dropdown-menu-right pull-right" component="chat/controls">
+				<!-- IF users.length -->
+				<li class="dropdown-header">[[modules:chat.in-room]]</li>
+				<!-- BEGIN users -->
+				<li>
+					<a href="{config.relative_path}/uid/{../uid}">
+						<!-- IF ../picture -->
+						<img class="avatar avatar-sm" component="user/picture" src="{../picture}" itemprop="image" />
+						<!-- ELSE -->
+						<div class="avatar avatar-sm" component="user/picture" style="background-color: {../icon:bgColor};">{../icon:text}</div><!-- END -->{../username}
+					</a>
+				</li>
+				<!-- END -->
+				<li role="separator" class="divider"></li>
+				<!-- END -->
+				<li class="dropdown-header">[[modules:chat.options]]</li>
+				<li>
+					<a href="#" data-action="members"><i class="fa fa-fw fa-plus"></i> [[modules:chat.add-users-to-room]]</a>
+				</li>
+				<li>
+					<a href="#" data-action="rename"><i class="fa fa-fw fa-edit"></i> [[modules:chat.rename-room]]</a>
+				</li>
+				<li>
+					<a href="#" data-action="leave"><i class="fa fa-fw fa-sign-out"></i> [[modules:chat.leave]]</a>
+				</li>
+			</ul>
 		</div>
-		<span component="chat/message/length">0</span>/<span>{maximumChatMessageLength}</span>
+		<span class="members">
+			[[modules:chat.chatting_with]]:
+			<!-- BEGIN users -->
+			<a href="{config.relative_path}/uid/{../uid}">{../username}</a><!-- IF !@last -->,<!-- END -->
+			<!-- END -->
+		</span>
+	</div>
+	<ul class="chat-content">
+		<!-- IMPORT partials/chats/messages.tpl -->
+	</ul>
+	<div component="chat/composer">
+		<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input mousetrap" rows="2"></textarea>
+		<button class="btn btn-primary" type="button" data-action="send"><i class="fa fa-fw fa-2x fa-paper-plane"></i></button>
+		<span component="chat/message/remaining">{maximumChatMessageLength}</span>
 	</div>
 </div>
 <!-- ELSE -->
