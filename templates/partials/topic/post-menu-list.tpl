@@ -36,8 +36,18 @@
 <!-- END -->
 
 <!-- ENDIF posts.display_move_tools -->
-<li role="presentation" class="divider"></li>
 <!-- ENDIF posts.display_moderator_tools -->
+
+<!-- BEGIN posts.tools -->
+<li role="presentation">
+	<a component="{posts.tools.action}" role="menuitem" tabindex="-1" href="#">
+		<span class="menu-icon"><i class="fa {posts.tools.icon}"></i></span> {{posts.tools.html}}
+	</a>
+</li>
+<!-- END posts.tools -->
+<!-- IF posts.toolsVisible -->
+<li role="presentation" class="divider"></li>
+<!-- ENDIF posts.toolsVisible -->
 
 <li role="presentation">
 	<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
@@ -49,17 +59,6 @@
 		<i component="post/bookmark/off" class="fa fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
 	</a>
 </li>
-
-<!-- IF posts.tools.length -->
-<li role="presentation" class="divider"></li>
-<!-- ENDIF posts.tools.length -->
-<!-- BEGIN posts.tools -->
-<li role="presentation">
-	<a component="{posts.tools.action}" role="menuitem" tabindex="-1" href="#">
-		<span class="menu-icon"><i class="fa {posts.tools.icon}"></i></span> {{posts.tools.html}}
-	</a>
-</li>
-<!-- END posts.tools -->
 
 <!-- IF postSharing.length -->
 <li role="presentation" class="divider"></li>
