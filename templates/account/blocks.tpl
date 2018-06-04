@@ -1,5 +1,5 @@
 <div class="account">
-	<!-- IMPORT partials/account/header.tpl -->
+	<!-- IMPORT partials/account_menu.tpl -->
 
 	<h2>[[pages:account/blocks, {username}]]</h2>
 	<div class="users row">
