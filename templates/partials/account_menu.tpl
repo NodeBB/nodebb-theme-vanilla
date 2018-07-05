@@ -26,6 +26,9 @@
 				<li>
 					<a component="account/flag" href="#">[[user:flag-profile]]</a>
 				</li>
+				<li>
+					<a component="account/block" href="#"><!-- IF !../isBlocked -->[[user:block_user]]<!-- ELSE -->[[user:unblock_user]]<!-- END --></a>
+				</li>
 				<!-- ENDIF !isSelf -->
 				<li><a href="{config.relative_path}/user/{userslug}/following"><i class="fa fa-fw fa-users"></i> [[user:following]]</a></li>
 				<li><a href="{config.relative_path}/user/{userslug}/followers"><i class="fa fa-fw fa-users"></i> [[user:followers]]</a></li>
