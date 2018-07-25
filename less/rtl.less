@@ -17,6 +17,20 @@ html[data-dir="rtl"] {
 		}
 	}
 
+	[component="chat/list"] {
+		.avatar-placeholder, .main-avatar {
+			right: 0;
+			left: auto;
+		}
+
+		.room-name, .teaser-content {
+			padding-right: 80px;
+			padding-left: 0;
+			text-align: right;
+		}
+
+	}
+
 	[component="chat/composer"] {
 		[component="chat/message/remaining"] {
 			right: auto;
@@ -31,5 +45,24 @@ html[data-dir="rtl"] {
 	.chats-full [component="chat/header"] .dropdown .avatar, .chat-modal [component="chat/header"] .dropdown .avatar {
 		margin-right: 0;
 		margin-left: 0.5em;
+	}
+
+	.chats-list > li .teaser-content, .chats-list > li .room-name {
+		padding-left: 0;
+		padding-right: 80px;
+	}
+
+	.chats-list > li {
+		.avatar-placeholder, .main-avatar {
+			left: auto;
+			right: 0;
+		}
+
+		.members {
+			right: 53px;
+			left: auto;
+			padding-left: 0;
+			padding-right: 1rem;
+		}
 	}
 }
