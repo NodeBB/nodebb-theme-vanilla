@@ -1,5 +1,5 @@
 <div class="account">
-	<!-- IMPORT partials/account/header.tpl -->
+	<!-- IMPORT partials/account_menu.tpl -->
 
 	<!-- IF sessions.length -->
 	<div class="row">
