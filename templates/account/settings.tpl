@@ -73,11 +73,13 @@
 					</label>
 				</div>
 				<!-- ENDIF !hideFullname -->
+				<!-- IF !config.disableChat -->
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" data-property="restrictChat" <!-- IF settings.restrictChat -->checked<!-- ENDIF settings.restrictChat -->/> <strong>[[user:restrict_chats]]</strong>
 					</label>
 				</div>
+				<!-- ENDIF !config.disableChat -->
 			</div>
 
 			<!-- IF !disableEmailSubscriptions -->
@@ -155,6 +157,7 @@
 					</div>
 				</div>
 
+				<!-- IF !config.disableChat -->
 				<label for="chat-incoming">[[user:incoming-message-sound]]</label>
 				<div class="row">
 					<div class="form-group col-xs-9">
@@ -184,6 +187,7 @@
 						<button type="button" class="form-control btn btn-sm btn-default" data-action="play"><span class="hidden-xs">[[global:play]] </span><i class="fa fa-play"></i></button>
 					</div>
 				</div>
+				<!-- ENDIF !config.disableChat -->
 			</div>
 
 			<h4>[[global:language]]</h4>
