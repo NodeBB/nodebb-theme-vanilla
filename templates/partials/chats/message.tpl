@@ -7,7 +7,7 @@
 			<div class="user-icon chat-user-image" style="background-color: {messages.fromUser.icon:bgColor};">{messages.fromUser.icon:text}</div>
 			<!-- ENDIF messages.fromUser.picture -->
 		</a>
-		<strong><span class="chat-user">{messages.fromUser.username}</span></strong>
+		<strong><span class="chat-user">{function.showDisplayName, messages.fromUser}</span></strong>
 		<span class="chat-timestamp timeago" title="{messages.timestampISO}"></span>
 	</div>
 	<div component="chat/message/body" class="message-body">

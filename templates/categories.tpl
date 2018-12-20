@@ -50,7 +50,7 @@
 							<div component="category/posts" class="category-box">
 								<div class="post-preview">
 									<img src="{categories.posts.user.picture}" class="pull-left" />
-									<p class=""><strong>{categories.posts.user.username}</strong>: {categories.posts.content}</p>
+									<p class=""><strong>{function.showDisplayName, categories.posts.user}</strong>: {categories.posts.content}</p>
 								</div>
 							</div>
 							<!-- END posts -->

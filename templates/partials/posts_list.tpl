@@ -7,14 +7,14 @@
 			<div class="panel-body">
 				<a href="{config.relative_path}/user/{posts.user.userslug}">
 					<!-- IF posts.user.picture -->
-					<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
+					<img title="{function.showDisplayName, posts.user}" class="img-rounded user-img" src="{posts.user.picture}">
 					<!-- ELSE -->
-					<div class="user-icon user-img" style="background-color: {posts.user.icon:bgColor};" title="{posts.user.username}">{posts.user.icon:text}</div>
+					<div class="user-icon user-img" style="background-color: {posts.user.icon:bgColor};" title="{function.showDisplayName, posts.user}">{posts.user.icon:text}</div>
 					<!-- ENDIF posts.user.picture -->
 				</a>
 
 				<a href="{config.relative_path}/user/{posts.user.userslug}">
-					<strong><span>{posts.user.username}</span></strong>
+					<strong><span>{function.showDisplayName, posts.user}</span></strong>
 				</a>
 				<div component="post/content" class="content">
 					<p>{posts.content}</p>

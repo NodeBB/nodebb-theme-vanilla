@@ -17,8 +17,9 @@
 					<div>
 						<div class="text-center">
 							<span>
+								<!-- IF fullname --><p class="lead">{fullname}</p><!-- ENDIF fullname -->
 								<i component="user/status" class="fa fa-circle status {status}" title="[[global:{status}]]"></i>
-								<span class="account-username"> {username}</span>
+								<span class="account-username"> {username}</span><br />
 							</span>
 
 							<!-- IF !isSelf -->

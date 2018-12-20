@@ -15,7 +15,7 @@
 						<!-- IF ../picture -->
 						<img class="avatar avatar-sm" component="user/picture" src="{../picture}" itemprop="image" />
 						<!-- ELSE -->
-						<div class="avatar avatar-sm" component="user/picture" style="background-color: {../icon:bgColor};">{../icon:text}</div><!-- END -->{../username}
+						<div class="avatar avatar-sm" component="user/picture" style="background-color: {../icon:bgColor};">{../icon:text}</div><!-- END -->{function.showDisplayName, ../username}
 					</a>
 				</li>
 				<!-- END -->
@@ -36,7 +36,7 @@
 		<span class="members">
 			[[modules:chat.chatting_with]]:
 			<!-- BEGIN users -->
-			<a href="{config.relative_path}/uid/{../uid}">{../username}</a><!-- IF !@last -->,<!-- END -->
+			<a href="{config.relative_path}/uid/{../uid}">{function.showDisplayName, ../username}</a><!-- IF !@last -->,<!-- END -->
 			<!-- END -->
 		</span>
 	</div>

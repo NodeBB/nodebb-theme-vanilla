@@ -101,7 +101,7 @@
 						<ul component="header/usercontrol" id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
 								<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
-									<i class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
+									<i class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{function.showDisplayName, user}</span>
 								</a>
 							</li>
 							<li role="presentation" class="divider"></li>
