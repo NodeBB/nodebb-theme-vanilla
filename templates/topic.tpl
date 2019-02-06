@@ -1,7 +1,7 @@
 <div class="topic">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
-	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
+	<!-- IMPORT partials/topic/deleted-message.tpl -->
 
 	<ul component="topic" id="post-container" class="posts" data-tid="{tid}" data-cid="{cid}">
 		<!-- BEGIN posts -->
