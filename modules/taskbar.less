@@ -1,8 +1,12 @@
 @import "../less/keyframes";
 
+.modal-unfocused {
+	z-index: @zindex-modal - 5;
+}
+
 .taskbar {
 	display: none;
-	z-index: 10001;
+	z-index: @zindex-popover;
 	-moz-opacity: 0.75;
 	opacity: 0.75;
 	margin-top: 0;
@@ -15,7 +19,7 @@
 
 	// Bootswatch fix
 	&.navbar-fixed-bottom {
-		z-index: 10001;
+		z-index: @zindex-popover;
 		left: auto;
 	}
 
@@ -70,13 +74,5 @@
 			50% { background: #e5e5e5; }
 			100% { background: none; }
 		}
-	}
-
-
-	@media (max-width: 979px) {
-		/*
-	 		Gets in the way of entering text when writing posts
-		*/
-		display: none !important;
 	}
 }

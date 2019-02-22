@@ -34,8 +34,23 @@
 					<div class="panel-body search-options collapse <!-- IF expandSearch -->in<!-- ENDIF expandSearch -->">
 
 						<div class="form-group post-search-item">
-							<label>[[search:posted-by]]</label>
-							<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
+							<div class="row">
+								<div class="col-md-3">
+									<label>[[search:match-words]]</label>
+									<select id="match-words-filter" class="form-control">
+										<option value="all">[[search:all]]</option>
+										<option value="any">[[search:any]]</option>
+									</select>
+								</div>
+								<div class="col-md-3">
+									<label>[[search:posted-by]]</label>
+									<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
+								</div>
+								<div class="col-md-6">
+									<label>[[search:has-tags]]</label>
+									<input type="text" class="form-control" id="has-tags">
+								</div>
+							</div>
 						</div>
 
 						<div class="form-group post-search-item">
@@ -46,11 +61,6 @@
 								<!-- END categories -->
 							</select>
 							<input type="checkbox" id="search-children"> [[search:search-child-categories]]
-						</div>
-
-						<div class="form-group post-search-item">
-							<label>[[search:has-tags]]</label>
-							<input type="text" class="form-control" id="has-tags">
 						</div>
 
 						<div class="form-group post-search-item">
@@ -99,10 +109,12 @@
 									<select id="post-sort-by" class="form-control">
 										<option value="relevance">[[search:relevance]]</option>
 										<option value="timestamp">[[search:post-time]]</option>
-										<option value="teaser.timestamp">[[search:last-reply-time]]</option>
+										<option value="votes">[[search:votes]]</option>
+										<option value="topic.lastposttime">[[search:last-reply-time]]</option>
 										<option value="topic.title">[[search:topic-title]]</option>
 										<option value="topic.postcount">[[search:number-of-replies]]</option>
 										<option value="topic.viewcount">[[search:number-of-views]]</option>
+										<option value="topic.votes">[[search:topic-votes]]</option>
 										<option value="topic.timestamp">[[search:topic-start-date]]</option>
 										<option value="user.username">[[search:username]]</option>
 										<option value="category.name">[[search:category]]</option>

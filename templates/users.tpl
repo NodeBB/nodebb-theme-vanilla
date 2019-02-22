@@ -13,7 +13,7 @@
 			<!-- ENDIF loggedIn -->
 			<!-- ENDIF inviteOnly -->
 		</div>
-		<!-- IF function.displayUserSearch, {config.allowGuestUserSearching} -->
+		<!-- IF displayUserSearch -->
 		<div class="col-lg-3 col-xs-9">
 			<div class="search">
 				<div class="input-group">
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- ENDIF function.displayUserSearch -->
+		<!-- ENDIF displayUserSearch -->
 	</div>
 
 	<ul id="users-container" class="users-container">

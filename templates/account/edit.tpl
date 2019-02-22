@@ -10,7 +10,9 @@
 				<div class="user-icon user-profile-picture" style="background-color: {icon:bgColor};">{icon:text}</div>
 				<!-- ENDIF picture -->
 				<ul class="list-group">
+					<!-- IF allowProfilePicture -->
 					<a id="changePictureBtn" href="#" class="list-group-item">[[user:change_picture]]</a>
+					<!-- ENDIF allowProfilePicture -->
 					<!-- IF !username:disableEdit -->
 					<a href="{config.relative_path}/user/{userslug}/edit/username" class="list-group-item">[[user:change_username]]</a>
 					<!-- ENDIF !username:disableEdit -->
@@ -78,7 +80,7 @@
 					<div class="control-group">
 						<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
 						<div class="controls">
-							<select class="form-control" id="groupTitle" data-property="groupTitle">
+							<select class="form-control" id="groupTitle" data-property="groupTitle" <!-- IF allowMultipleBadges --> multiple<!-- ENDIF allowMultipleBadges -->>
 								<option value="">[[user:no-group-title]]</option>
 								<!-- BEGIN groups -->
 								<!-- IF groups.userTitleEnabled -->

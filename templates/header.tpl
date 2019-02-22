@@ -5,8 +5,7 @@
 	<!-- BEGIN metaTags -->
 	{function.buildMetaTag}
 	<!-- END metaTags -->
-	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/stylesheet.css?{config.cache-buster}" />
-	<!-- IF bootswatchCSS --><link id="bootswatchCSS" href="{bootswatchCSS}" rel="stylesheet" media="screen"><!-- ENDIF bootswatchCSS -->
+	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client<!-- IF bootswatchSkin -->-{bootswatchSkin}<!-- END -->.css?{config.cache-buster}" />
 	<!-- BEGIN linkTags -->
 	{function.buildLinkTag}
 	<!-- END linkTags -->
@@ -35,7 +34,7 @@
 	<!-- END -->
 </head>
 
-<body class="{bodyClass}">
+<body class="{bodyClass} skin-<!-- IF bootswatchSkin -->{bootswatchSkin}<!-- ELSE -->noskin<!-- END -->">
 	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" id="header-menu" component="navbar">
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->

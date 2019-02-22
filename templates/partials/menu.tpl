@@ -28,7 +28,7 @@
 					<li class="{navigation.class}">
 						<a class="navigation-link" href="{navigation.route}" title="{navigation.title}" id="{navigation.id}"<!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
 							<!-- IF navigation.iconClass -->
-							<i class="fa fa-fw {navigation.iconClass}"></i>
+							<i class="fa fa-fw {navigation.iconClass}" data-content="{navigation.content}"></i>
 							<!-- ENDIF navigation.iconClass -->
 
 							<!-- IF navigation.text -->
@@ -49,7 +49,7 @@
 						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
 								<ul id="notif-list" component="notifications/list">
-									<li>
+									<li class="loading-text">
 										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
 									</li>
 								</ul>
@@ -82,8 +82,8 @@
 						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
 								<ul id="chat-list" component="chat/list">
-									<li>
-										<i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]
+									<li class="loading-text">
+										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
 									</li>
 								</ul>
 							</li>
@@ -178,12 +178,15 @@
 							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
 							<div class="hidden" id="search-fields">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
+									<input autocomplete="off" type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
 									<a href="#"><i class="fa fa-gears fa-fw advanced-search-link"></i></a>
 								</div>
 								<button type="submit" class="btn btn-default hide">[[global:search]]</button>
 							</div>
 						</form>
+						<ul id="quick-search-results" class="dropdown-menu quick-search-results hidden">
+							<!-- IMPORT partials/quick-search-results.tpl -->
+						</ul>
 					</li>
 				</ul>
 				<!-- ENDIF config.searchEnabled -->

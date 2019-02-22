@@ -7,8 +7,10 @@
 	</div>
 	<!-- ENDIF !tags.length -->
 
+	<!-- IF displayTagSearch -->
 	<input class="form-control" type="text" id="tag-search" placeholder="[[global:search]]"/>
 	<br/>
+	<!-- ENDIF displayTagSearch -->
 
 	<div class="category row">
 		<div class="col-md-12 clearfix tag-list" data-nextstart="{nextStart}">
