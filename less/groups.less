@@ -1,3 +1,15 @@
+.group-label {
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: middle;
+	padding: 4px;
+	border-radius: 2px;
+	max-width: 150px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .groups.details {
 	margin-top: 200px;
 
@@ -114,9 +126,14 @@
 		}
 	}
 
+	h1 {
+		overflow-wrap: break-word;
+		margin-top: 0;
+	}
+
 	@media (min-width: @screen-md-min) {
 		margin-top: 300px;
-		
+
 		[component="groups/cover"] {
 			min-height: 300px;
 
@@ -124,6 +141,12 @@
 				min-height: 300px;
 				line-height: 300px;
 			}
+		}
+	}
+
+	.options {
+		.user-title-option span.label {
+			.group-label;
 		}
 	}
 }
@@ -148,6 +171,10 @@
 				color: white;
 				font-weight: bold;
 				text-transform: capitalize;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow-x: hidden;
+				max-width: 100%;
 			}
 		}
 
