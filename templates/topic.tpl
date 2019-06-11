@@ -13,11 +13,7 @@
 
 				<div class="col-md-1 profile-image-block hidden-xs hidden-sm sub-post">
 					<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
-						<!-- IF posts.user.picture -->
-						<img itemprop="image" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
-						<!-- ELSE -->
-						<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
-						<!-- ENDIF posts.user.picture -->
+						{buildAvatar(posts.user, "lg")}
 						<!-- IF posts.user.banned -->
 						<span class="label label-danger">[[user:banned]]</span>
 						<!-- ENDIF posts.user.banned -->
@@ -30,11 +26,7 @@
 				<div class="col-md-11 panel panel-default post-block topic-item">
 
 					<a class="main-post avatar" href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
-						<!-- IF posts.user.picture -->
-						<img itemprop="image" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" class="img-thumbnail" />
-						<!-- ELSE -->
-						<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
-						<!-- ENDIF posts.user.picture -->
+						{buildAvatar(posts.user, "lg")}
 					</a>
 					<h3 class="main-post">
 						<p component="post/header" class="topic-title" itemprop="name"><i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span component="topic/title">{title}</span></p>
@@ -46,13 +38,7 @@
 
 							<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button" title="<!-- IF posts.user.userslug -->[[topic:posted_by, {posts.user.username}]]<!-- ELSE -->[[topic:posted_by_guest]]<!-- ENDIF posts.user.userslug -->">
 								<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
-								<span class="visible-xs-inline">
-									<!-- IF posts.user.picture -->
-									<img class="" component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" width=18 height=18 />
-									<!-- ELSE -->
-									<div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
-									<!-- ENDIF posts.user.picture -->
-								</span>
+								<span class="visible-xs-inline">{buildAvatar(posts.user, "xs")}</span>
 								<span href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}&nbsp;</span>
 								<span class="caret"></span>
 							</button>

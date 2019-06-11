@@ -9,13 +9,9 @@
 
 					<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
 						<!-- IF topics.thumb -->
-						<img src="{topics.thumb}" class="user-img" title="{topics.user.username}" />
+						<img src="{topics.thumb}" class="avatar avatar-md" title="{topics.user.username}" />
 						<!-- ELSE -->
-						<!-- IF topics.user.picture -->
-						<img component="user/picture" data-uid="{topics.user.uid}" src="{topics.user.picture}" class="user-img" title="{topics.user.username}" />
-						<!-- ELSE -->
-						<div class="user-icon" style="background-color: {topics.user.icon:bgColor};" title="{topics.user.username}">{topics.user.icon:text}</div>
-						<!-- ENDIF topics.user.picture -->
+						{buildAvatar(topics.user, "md", false)}
 						<!-- ENDIF topics.thumb -->
 					</a>
 
@@ -70,13 +66,7 @@
 							<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">[[category:no_replies]]</a>
 							<!-- ELSE -->
 							<!-- IF topics.teaser.pid -->
-							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">
-								<!-- IF topics.teaser.user.picture -->
-								<img class="teaser-pic" src="{topics.teaser.user.picture}" title="{topics.teaser.user.username}"/>
-								<!-- ELSE -->
-								<div class="teaser-pic user-icon" style="background-color: {topics.teaser.user.icon:bgColor};" title="{topics.teaser.user.username}">{topics.teaser.user.icon:text}</div>
-								<!-- ENDIF topics.teaser.user.picture -->
-							</a>
+							<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->">{buildAvatar(topics.teaser.user, "sm", false, "teaser-pic")}</a>
 							<a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 								<span class="timeago" title="{topics.teaser.timestampISO}"></span>
 							</a>
