@@ -34,14 +34,14 @@
 						<!-- ENDIF children.icon -->
 						<div class="category-box" itemprop="description">{children.description}</div>
 
-						<!-- BEGIN posts -->
+						{{{each posts}}}
 						<div class="category-box">
 							<div class="post-preview">
 								<img src="{children.posts.user.picture}" class="pull-left" />
 								<p class=""><strong>{children.posts.user.username}</strong>: {children.posts.content}</p>
 							</div>
 						</div>
-						<!-- END posts -->
+						{{{end}}}
 						<!-- IF children.icon -->
 						<div class="category-box"><i class="fa {children.icon} fa-4x"></i></div>
 						<!-- ENDIF children.icon -->

@@ -2,13 +2,13 @@
 <html lang="{function.localeToHTML, defaultLang}" <!-- IF languageDirection -->data-dir="{languageDirection}" style="direction: {languageDirection};" <!-- ENDIF languageDirection -->>
 <head>
 	<title>{browserTitle}</title>
-	<!-- BEGIN metaTags -->
+	{{{each metaTags}}}
 	{function.buildMetaTag}
-	<!-- END metaTags -->
+	{{{end}}}
 	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client<!-- IF bootswatchSkin -->-{bootswatchSkin}<!-- END -->.css?{config.cache-buster}" />
-	<!-- BEGIN linkTags -->
+	{{{each linkTags}}}
 	{function.buildLinkTag}
-	<!-- END linkTags -->
+	{{{end}}}
 
 	<!--[if lt IE 9]>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>

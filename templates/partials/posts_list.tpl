@@ -1,6 +1,6 @@
 <ul component="posts" class="posts-list" data-nextstart="{nextStart}">
 
-	<!-- BEGIN posts -->
+	{{{each posts}}}
 	<li component="post" class="posts-list-item" data-pid="{posts.pid}" data-uid="{posts.uid}">
 
 		<div class="panel panel-default">
@@ -24,7 +24,7 @@
 		</div>
 
 	</li>
-	<!-- END posts -->
+	{{{end}}}
 </ul>
 <div component="posts/loading" class="loading-indicator text-center hidden">
 	<i class="fa fa-refresh fa-spin"></i>

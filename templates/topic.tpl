@@ -4,7 +4,7 @@
 	<!-- IMPORT partials/topic/deleted-message.tpl -->
 
 	<ul component="topic" id="post-container" class="posts" data-tid="{tid}" data-cid="{cid}">
-		<!-- BEGIN posts -->
+		{{{each posts}}}
 			<li component="post" class="post-row <!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
 				<a component="post/anchor" data-index="{posts.index}" name="{posts.index}"></a>
 
@@ -109,9 +109,9 @@
 						<span class="pull-left">
 							[[global:reputation]]: <i class='fa fa-star'></i> <span component="user/reputation" data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number' component="user/postcount" data-uid="{posts.uid}" data-postcount="{posts.user.postcount}">{posts.user.postcount}</span>
 							<!-- IF posts.user.custom_profile_info.length -->
-								<!-- BEGIN custom_profile_info -->
+								{{{each custom_profile_info}}}
 								| {posts.user.custom_profile_info.content}
-								<!-- END custom_profile_info -->
+								{{{end}}}
 							<!-- ENDIF posts.user.custom_profile_info.length -->
 						</span>
 						<div style="clear:both;"></div>
@@ -122,7 +122,7 @@
 				<div class="post-bar-placeholder"></div>
 				<!-- ENDIF !posts.index -->
 			</li>
-		<!-- END posts -->
+		{{{end}}}
 	</ul>
 
 	<div class="well col-md-11 col-xs-12 pull-right post-bar">
@@ -147,9 +147,9 @@
 </div>
 
 <div widget-area="footer" class="col-xs-12">
-	<!-- BEGIN widgets.footer -->
+	{{{each widgets.footer}}}
 	{{widgets.footer.html}}
-	<!-- END widgets.footer -->
+	{{{end}}}
 </div>
 
 <!-- IF !config.usePagination -->

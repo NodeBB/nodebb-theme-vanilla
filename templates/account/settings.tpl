@@ -7,9 +7,9 @@
 			<h4>[[user:select-skin]]</h4>
 			<div class="well">
 				<select class="form-control" id="bootswatchSkin" data-property="bootswatchSkin">
-					<!-- BEGIN bootswatchSkinOptions -->
+					{{{each bootswatchSkinOptions}}}
 					<option value="{bootswatchSkinOptions.value}" <!-- IF bootswatchSkinOptions.selected -->selected<!-- ENDIF bootswatchSkinOptions.selected -->>{bootswatchSkinOptions.name}</option>
-					<!-- END bootswatchSkinOptions -->
+					{{{end}}}
 				</select>
 			</div>
 			<!-- ENDIF !disableCustomUserSkins -->
@@ -21,9 +21,9 @@
 					<label for="dailyDigestFreq">[[user:homepage]]</label>
 					<select class="form-control" data-property="homePageRoute">
 						<option value="none">None</option>
-						<!-- BEGIN homePageRoutes -->
+						{{{each homePageRoutes}}}
 						<option value="{homePageRoutes.route}" <!-- IF homePageRoutes.selected -->selected="1"<!-- ENDIF homePageRoutes.selected -->>{homePageRoutes.name}</option>
-						<!-- END homePageRoutes -->
+						{{{end}}}
 					</select>
 					<p class="help-block">[[user:homepage_description]]</p>
 				</div>
@@ -88,9 +88,9 @@
 				<div class="form-group">
 					<label for="dailyDigestFreq">[[user:digest_label]]</label>
 					<select class="form-control" id="dailyDigestFreq" data-property="dailyDigestFreq" autocomplete="off">
-						<!-- BEGIN dailyDigestFreqOptions -->
+						{{{each dailyDigestFreqOptions}}}
 						<option value="{dailyDigestFreqOptions.value}" <!-- IF dailyDigestFreqOptions.selected -->selected="1"<!-- ENDIF dailyDigestFreqOptions.selected -->>{dailyDigestFreqOptions.name}</option>
-						<!-- END dailyDigestFreqOptions -->
+						{{{end}}}
 					</select>
 					<p class="help-block">[[user:digest_description]]</p>
 				</div>
@@ -134,7 +134,7 @@
 			<h4>[[user:notifications_and_sounds]]</h4>
 			<div class="well">
 
-				<!-- BEGIN notificationSettings -->
+				{{{each notificationSettings}}}
 				<div class="row">
 					<div class="form-group col-xs-7">
 						<label>{notificationSettings.label}</label>
@@ -148,16 +148,16 @@
 						</select>
 					</div>
 				</div>
-				<!-- END notificationSettings -->
+				{{{end}}}
 
 				<label for="notification">[[user:notification-sound]]</label>
 				<div class="row">
 					<div class="form-group col-xs-9">
 						<select class="form-control" id="notification" name="notification" data-property="notificationSound">
 							<option value="">[[user:no-sound]]</option>
-							<!-- BEGIN notificationSound -->
+							{{{each notificationSound}}}
 							<option value="{notificationSound.name}" <!-- IF notificationSound.selected -->selected<!-- ENDIF notificationSound.selected -->>{notificationSound.name}</option>
-							<!-- END notificationSound -->
+							{{{end}}}
 						</select>
 					</div>
 					<div class="btn-group col-xs-3">
@@ -171,9 +171,9 @@
 					<div class="form-group col-xs-9">
 						<select class="form-control" id="chat-incoming" name="chat-incoming" data-property="incomingChatSound">
 							<option value="">[[user:no-sound]]</option>
-							<!-- BEGIN incomingChatSound -->
+							{{{each incomingChatSound}}}
 							<option value="{incomingChatSound.name}" <!-- IF incomingChatSound.selected -->selected<!-- ENDIF incomingChatSound.selected -->>{incomingChatSound.name}</option>
-							<!-- END incomingChatSound -->
+							{{{end}}}
 						</select>
 					</div>
 					<div class="btn-group col-xs-3">
@@ -186,9 +186,9 @@
 					<div class="form-group col-xs-9">
 						<select class="form-control" id="chat-outgoing" name="chat-outgoing" data-property="outgoingChatSound">
 							<option value="">[[user:no-sound]]</option>
-							<!-- BEGIN outgoingChatSound -->
+							{{{each outgoingChatSound}}}
 							<option value="{outgoingChatSound.name}" <!-- IF outgoingChatSound.selected -->selected<!-- ENDIF outgoingChatSound.selected -->>{outgoingChatSound.name}</option>
-							<!-- END outgoingChatSound -->
+							{{{end}}}
 						</select>
 					</div>
 					<div class="btn-group col-xs-3">
@@ -203,9 +203,9 @@
 				<div class="row">
 					<div class="form-group col-lg-12">
 						<select data-property="userLang" class="form-control">
-							<!-- BEGIN languages -->
+							{{{each languages}}}
 							<option value="{languages.code}" <!-- IF languages.selected -->selected<!-- ENDIF languages.selected -->>{languages.name} ({languages.code})</option>
-							<!-- END languages -->
+							{{{end}}}
 						</select>
 					</div>
 				</div>
@@ -215,9 +215,9 @@
 				<div class="row">
 					<div class="form-group col-lg-12">
 						<select data-property="acpLang" class="form-control">
-							<!-- BEGIN acpLanguages -->
+							{{{each acpLanguages}}}
 							<option value="{acpLanguages.code}" <!-- IF acpLanguages.selected -->selected<!-- ENDIF acpLanguages.selected -->>{acpLanguages.name} ({acpLanguages.code})</option>
-							<!-- END acpLanguages -->
+							{{{end}}}
 						</select>
 					</div>
 				</div>
@@ -225,12 +225,12 @@
 				<!-- ENDIF isAdmin -->
 			</div>
 
-			<!-- BEGIN customSettings -->
+			{{{each customSettings}}}
 			<h4>{customSettings.title}</h4>
 			<div class="well">
 				{customSettings.content}
 			</div>
-			<!-- END customSettings -->
+			{{{end}}}
 		</div>
 	</div>
 
