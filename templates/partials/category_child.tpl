@@ -1,6 +1,7 @@
 		<div class="{children.class}" data-cid="{children.cid}" data-numRecentReplies="{children.numRecentReplies}">
 			<meta itemprop="name" content="{children.name}">
 			<h4 class="category-title">
+				WOT
 				<!-- IF !children.link -->
 				<span class="badge {children.unread-class}">{children.totalTopicCount} </span>
 				<!-- ENDIF !children.link -->

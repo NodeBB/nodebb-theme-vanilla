@@ -49,7 +49,7 @@
 							<!-- BEGIN posts -->
 							<div component="category/posts" class="category-box">
 								<div class="post-preview">
-									<img src="{categories.posts.user.picture}" class="pull-left" />
+									{buildAvatar(categories.posts.user, "sm", false, "pull-left")}
 									<p class=""><strong>{categories.posts.user.username}</strong>: {categories.posts.content}</p>
 								</div>
 							</div>

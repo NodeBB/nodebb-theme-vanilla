@@ -73,20 +73,14 @@
 					<!-- BEGIN group.pending -->
 					<tr data-uid="{group.pending.uid}">
 						<td>
-							<a href="{config.relative_path}/user/{group.pending.userslug}">
-								<!-- IF group.pending.picture -->
-								<img src="{group.pending.picture}" />
-								<!-- ELSE -->
-								<div class="user-icon" style="background-color: {group.pending.icon:bgColor};">{group.pending.icon:text}</div>
-								<!-- ENDIF group.pending.picture -->
-							</a>
+							<a href="{config.relative_path}/user/{group.pending.userslug}">{buildAvatar(group.pending, "md")}</a>
 						</td>
 						<td class="member-name">
 							<a href="{config.relative_path}/user/{group.pending.userslug}">{group.pending.username}</a>
 						</td>
 						<td>
 							<div class="btn-group pull-right">
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 									[[global:more]] <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu" role="menu">
@@ -126,20 +120,14 @@
 					<!-- BEGIN group.invited -->
 					<tr data-uid="{group.invited.uid}">
 						<td>
-							<a href="{config.relative_path}/user/{group.invited.userslug}">
-								<!-- IF group.invited.picture -->
-								<img src="{group.invited.picture}" />
-								<!-- ELSE -->
-								<div class="user-icon" style="background-color: {group.invited.icon:bgColor};">{group.invited.icon:text}</div>
-								<!-- ENDIF group.invited.picture -->
-							</a>
+							<a href="{config.relative_path}/user/{group.invited.userslug}">{buildAvatar(group.invited, "md")}</a>
 						</td>
 						<td class="member-name">
 							<a href="{config.relative_path}/user/{group.invited.userslug}">{group.invited.username}</a>
 						</td>
 						<td>
 							<div class="btn-group pull-right">
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 									[[global:more]] <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu" role="menu">
