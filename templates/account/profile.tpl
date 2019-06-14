@@ -136,9 +136,9 @@
 					<h3 class="panel-title">[[groups:groups]]</h3>
 				</div>
 				<div class="panel-body">
-				<!-- BEGIN groups -->
+				{{{each groups}}}
 					<a href="{config.relative_path}/groups/{groups.slug}"><span class="label group-label inline-block" style="background-color: {groups.labelColor};"><!-- IF groups.icon --><i class="fa {groups.icon}"></i> <!-- ENDIF groups.icon -->{groups.userTitle}</span></a>
-				<!-- END groups -->
+				{{{end}}}
 				</div>
 			</div>
 			<!-- ENDIF groups.length -->

@@ -23,7 +23,7 @@
 			<div class="navbar-collapse collapse navbar-ex1-collapse" id="nav-dropdown">
 				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
-					<!-- BEGIN navigation -->
+					{{{each navigation}}}
 					<!-- IF function.displayMenuItem, @index -->
 					<li class="{navigation.class}">
 						<a class="navigation-link" href="{navigation.route}" title="{navigation.title}" id="{navigation.id}"<!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
@@ -37,7 +37,7 @@
 						</a>
 					</li>
 					<!-- ENDIF function.displayMenuItem -->
-					<!-- END navigation -->
+					{{{end}}}
 				</ul>
 
 				<!-- IF config.loggedIn -->

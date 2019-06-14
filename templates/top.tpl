@@ -18,11 +18,11 @@
 			{selectedFilter.name} <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu" role="menu">
-				<!-- BEGIN filters -->
+				{{{each filters}}}
 				<li role="presentation" class="category">
 					<a role="menu-item" href="{config.relative_path}/{filters.url}"><i class="fa fa-fw <!-- IF filters.selected -->fa-check<!-- ENDIF filters.selected -->"></i>{filters.name}</a>
 				</li>
-				<!-- END filters -->
+				{{{end}}}
 			</ul>
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 		<ul component="category" id="topics-container" data-nextstart="{nextStart}">
-			<!-- BEGIN topics -->
+			{{{each topics}}}
 			<li component="category/topic" class="category-item {function.generateTopicClass}" <!-- IMPORT partials/data/category.tpl -->>
 				<div class="panel panel-default topic-row">
 
@@ -77,5 +77,5 @@
 					</small>
 				</div>
 			</li>
-			<!-- END topics -->
+			{{{end}}}
 		</ul>

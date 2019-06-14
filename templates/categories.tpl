@@ -1,16 +1,16 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 <div class="motd">
 	<div widget-area="motd">
-		<!-- BEGIN widgets.motd -->
+		{{{each widgets.motd}}}
 		{{widgets.motd.html}}
-		<!-- END widgets.motd -->
+		{{{end}}}
 	</div>
 </div>
 
 <div class="row categories" itemscope itemtype="http://www.schema.org/ItemList">
 	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length --> clearfix">
 		<div class="row">
-			<!-- BEGIN categories -->
+			{{{each categories}}}
 			<div component="categories/category" class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 				<meta itemprop="name" content="{categories.name}">
 				<h4 class="category-title">
@@ -46,14 +46,14 @@
 							<!-- ENDIF categories.icon -->
 							<div class="category-box" itemprop="description">{categories.descriptionParsed}</div>
 
-							<!-- BEGIN posts -->
+							{{{each posts}}}
 							<div component="category/posts" class="category-box">
 								<div class="post-preview">
 									{buildAvatar(categories.posts.user, "sm", false, "pull-left")}
 									<p class=""><strong>{categories.posts.user.username}</strong>: {categories.posts.content}</p>
 								</div>
 							</div>
-							<!-- END posts -->
+							{{{end}}}
 							<!-- IF categories.icon -->
 							<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
 							<!-- ENDIF categories.icon -->
@@ -61,13 +61,13 @@
 					</div>
 				</a>
 			</div>
-			<!-- END categories -->
+			{{{end}}}
 		</div>
 	</div>
 
 	<div widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
-		<!-- BEGIN widgets.sidebar -->
+		{{{each widgets.sidebar}}}
 		{{widgets.sidebar.html}}
-		<!-- END widgets.sidebar -->
+		{{{end}}}
 	</div>
 </div>

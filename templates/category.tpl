@@ -5,9 +5,9 @@
 		<!-- IMPORT partials/breadcrumbs.tpl -->
 
 		<div class="subcategories row">
-			<!-- BEGIN children -->
+			{{{each children}}}
 			<!-- IMPORT partials/category_child.tpl -->
-			<!-- END children -->
+			{{{end}}}
 		</div>
 
 		<div class="header category-tools clearfix">
@@ -47,9 +47,9 @@
 
 	<!-- IF topics.length -->
 	<div widget-area="sidebar" class="col-md-3 col-xs-12 category-sidebar <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
-		<!-- BEGIN widgets.sidebar -->
+		{{{each widgets.sidebar}}}
 		{{widgets.sidebar.html}}
-		<!-- END widgets.sidebar -->
+		{{{end}}}
 	</div>
 	<!-- ENDIF topics.length -->
 </div>
