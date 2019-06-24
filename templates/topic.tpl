@@ -146,7 +146,7 @@
 
 </div>
 
-<div widget-area="footer" class="col-xs-12">
+<div data-widget-area="footer" class="col-xs-12">
 	{{{each widgets.footer}}}
 	{{widgets.footer.html}}
 	{{{end}}}
