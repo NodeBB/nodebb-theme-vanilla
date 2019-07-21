@@ -48,7 +48,7 @@
 						<!-- IF aboutme -->
 						<hr/>
 						<div component="aboutme" class="text-center">
-						{aboutme}
+						{aboutmeParsed}
 						</div>
 						<!-- ENDIF aboutme -->
 						<hr/>
