@@ -1,10 +1,10 @@
 <div component="topic/reply/container" class="btn-group action-bar <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">
 	<button class="btn btn-primary" component="topic/reply">[[topic:reply]]</button>
-	<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+	<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-label="Dropdown menu">
 		<span class="caret"></span>
 	</button>
 	<ul class="dropdown-menu pull-right" role="menu">
-		<li><a href="#" component="topic/reply-as-topic">[[topic:reply-as-topic]]</a></li>
+		<li><a href="#" component="topic/reply-as-topic" role="menuitem">[[topic:reply-as-topic]]</a></li>
 	</ul>
 </div>
 
