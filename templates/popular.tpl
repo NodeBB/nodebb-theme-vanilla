@@ -23,7 +23,7 @@
 		</button>
 		<ul class="dropdown-menu" role="menu">
 			{{{each terms}}}
-			<li role="presentation" class="category">
+			<li role="presentation" class="category {{{if filters.selected}}}selected{{{end}}}">
 				<a role="menu-item" href="{config.relative_path}/{terms.url}"><i class="fa fa-fw <!-- IF terms.selected -->fa-check<!-- ENDIF terms.selected -->"></i>{terms.name}</a>
 			</li>
 			{{{end}}}
