@@ -36,6 +36,6 @@
     "url": "https://github.com/NodeBB/nodebb-theme-vanilla/issues"
   },
   "nbbpm": {
-    "compatibility": "^1.13.0"
+    "compatibility": "^1.14.0"
   }
 }
