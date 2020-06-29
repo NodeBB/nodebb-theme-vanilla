@@ -1,36 +1,36 @@
 <!-- IF posts.display_moderator_tools -->
-<li role="presentation" class="dropdown-header">[[topic:tools]]</li>
-<li role="presentation">
+<li class="dropdown-header">[[topic:tools]]</li>
+<li>
 	<a component="post/edit" role="menuitem" tabindex="-1" href="#">
 		<span class="menu-icon"><i class="fa fa-fw fa-pencil"></i></span> [[topic:edit]]
 	</a>
 </li>
-<li role="presentation">
+<li>
 	<a component="post/delete" role="menuitem" tabindex="-1" href="#" class="<!-- IF posts.deleted -->hidden<!-- ENDIF posts.deleted -->">
 		<div class="inline menu-icon"><i class="fa fa-fw fa-trash-o"></i></div> <span>[[topic:delete]]</span>
 	</a>
 </li>
-<li role="presentation">
+<li>
 	<a component="post/restore" role="menuitem" tabindex="-1" href="#" class="<!-- IF !posts.deleted -->hidden<!-- ENDIF !posts.deleted -->">
 		<div class="inline menu-icon"><i class="fa fa-fw fa-history"></i></div> <span>[[topic:restore]]</span>
 	</a>
 </li>
 <!-- IF posts.display_purge_tools -->
-<li role="presentation">
+<li>
 	<a component="post/purge" role="menuitem" tabindex="-1" href="#" class="<!-- IF !posts.deleted -->hidden<!-- ENDIF !posts.deleted -->">
 		<span class="menu-icon"><i class="fa fa-fw fa-eraser"></i></span> [[topic:purge]]
 	</a>
 </li>
 <!-- END -->
 <!-- IF posts.display_move_tools -->
-<li role="presentation">
+<li>
 	<a component="post/move" role="menuitem" tabindex="-1" href="#">
 		<span class="menu-icon"><i class="fa fa-fw fa-arrows"></i></span> [[topic:move]]
 	</a>
 </li>
 
 <!-- IF posts.display_history -->
-<li role="presentation">
+<li>
 	<a component="post/view-history" role="menuitem" tabindex="-1" href="#">
 		<span class="menu-icon"><i class="fa fa-fw fa-history"></i></span> [[topic:view-history]]
 	</a>
@@ -41,17 +41,17 @@
 <!-- ENDIF posts.display_moderator_tools -->
 
 {{{each posts.tools}}}
-<li role="presentation">
+<li>
 	<a component="{posts.tools.action}" role="menuitem" tabindex="-1" href="#">
 		<span class="menu-icon"><i class="fa fa-fw {posts.tools.icon}"></i></span> {{posts.tools.html}}
 	</a>
 </li>
 {{{end}}}
 <!-- IF posts.toolsVisible -->
-<li role="presentation" class="divider"></li>
+<li class="divider"></li>
 <!-- ENDIF posts.toolsVisible -->
 
-<li role="presentation">
+<li>
 	<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
 
 		<span class="bookmark-text">[[topic:bookmark]]</span>
@@ -63,21 +63,18 @@
 </li>
 
 <!-- IF postSharing.length -->
-<li role="presentation" class="divider"></li>
-<li role="presentation" class="dropdown-header">[[topic:share_this_post]]</li>
+<li class="divider"></li>
+<li class="dropdown-header">[[topic:share_this_post]]</li>
 <!-- ENDIF postSharing.length -->
 {{{each postSharing}}}
-	<li role="presentation">
+	<li>
 		<a role="menuitem" component="share/{postSharing.id}" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-fw {postSharing.class}"></i></span> {postSharing.name}</a>
 	</li>
 {{{end}}}
 
-<li role="presentation" class="divider"></li>
 
 <!-- IF posts.display_flag_tools -->
-<li role="presentation">
-	<a component="post/flag" role="menuitem" tabindex="-1" href="#">
-		[[topic:flag_title]]
-	</a>
-</li>
+<li class="divider"></li>
+<li><a component="post/flag" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:flag_post]]</a></li>
+<li><a component="post/flagUser" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:flag_user]]</a></li>
 <!-- ENDIF posts.display_flag_tools -->
