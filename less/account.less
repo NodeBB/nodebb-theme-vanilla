@@ -95,7 +95,7 @@
 
 	@media (min-width: @screen-md-min) {
 		margin-top: 300px;
-		
+
 		.cover {
 			min-height: 300px;
 
@@ -105,7 +105,7 @@
 			}
 		}
 	}
-	
+
 	.show-success {
 		.form-control {
 			border-color: #5cb85c;
@@ -116,14 +116,14 @@
 		    -webkit-background-size: 1.25rem 1.25rem;
 		    background-size: 1.25rem 1.25rem;
 		}
-		
+
 		.form-feedback {
 			color: #5cb85c;
 			display: block;
 			margin-top: .25rem;
 		}
 	}
-	
+
 	.show-danger {
 		.form-control {
 			border-color: #d9534f;
@@ -134,7 +134,7 @@
 		    -webkit-background-size: 1.25rem 1.25rem;
 		    background-size: 1.25rem 1.25rem;
 		}
-		
+
 		.form-feedback {
 			color: #d9534f;
 			display: block;
@@ -142,8 +142,14 @@
 		}
 	}
 
-	[component="account/moderation-note/list"] .icon {
-		margin-right: 10px;
+	[component="account/moderation-note/list"] {
+		.icon {
+			margin-right: 10px;
+		}
+
+		.content {
+			white-space: pre-line;
+		}
 	}
 }
 
@@ -151,7 +157,7 @@
 
 
 
-// 
+//
 .nav-pills.account-sub-links {
 	border:none;
 
