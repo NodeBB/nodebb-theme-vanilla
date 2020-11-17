@@ -29,14 +29,6 @@
 	</a>
 </li>
 
-<!-- IF posts.display_history -->
-<li>
-	<a component="post/view-history" role="menuitem" tabindex="-1" href="#">
-		<span class="menu-icon"><i class="fa fa-fw fa-history"></i></span> [[topic:view-history]]
-	</a>
-</li>
-<!-- END -->
-
 <!-- ENDIF posts.display_move_tools -->
 <!-- ENDIF posts.display_moderator_tools -->
 
@@ -48,26 +40,36 @@
 </li>
 {{{end}}}
 
-<li>
-	<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
-
-		<span class="bookmark-text">[[topic:bookmark]]</span>
-		<span component="post/bookmark-count" class="bookmarkCount" data-bookmarks="{posts.bookmarks}">{posts.bookmarks}</span>&nbsp;
-
-		<i component="post/bookmark/on" class="fa fa-fw fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
-		<i component="post/bookmark/off" class="fa fa-fw fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
-	</a>
-</li>
-
-<!-- IF postSharing.length -->
-<li class="divider"></li>
-<li class="dropdown-header">[[topic:share_this_post]]</li>
-<!-- ENDIF postSharing.length -->
-{{{each postSharing}}}
+<!-- IF !posts.deleted -->
+	<!-- IF posts.display_history -->
 	<li>
-		<a role="menuitem" component="share/{postSharing.id}" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-fw {postSharing.class}"></i></span> {postSharing.name}</a>
+		<a component="post/view-history" role="menuitem" tabindex="-1" href="#">
+			<span class="menu-icon"><i class="fa fa-fw fa-history"></i></span> [[topic:view-history]]
+		</a>
 	</li>
-{{{end}}}
+	<!-- END -->
+
+	<li>
+		<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
+
+			<span class="bookmark-text">[[topic:bookmark]]</span>
+			<span component="post/bookmark-count" class="bookmarkCount" data-bookmarks="{posts.bookmarks}">{posts.bookmarks}</span>&nbsp;
+
+			<i component="post/bookmark/on" class="fa fa-fw fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
+			<i component="post/bookmark/off" class="fa fa-fw fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
+		</a>
+	</li>
+
+	<!-- IF postSharing.length -->
+	<li class="divider"></li>
+	<li class="dropdown-header">[[topic:share_this_post]]</li>
+	<!-- ENDIF postSharing.length -->
+	{{{each postSharing}}}
+		<li>
+			<a role="menuitem" component="share/{postSharing.id}" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-fw {postSharing.class}"></i></span> {postSharing.name}</a>
+		</li>
+	{{{end}}}
+<!-- ENDIF !posts.deleted -->
 
 <!-- IF posts.display_flag_tools -->
 <li role="presentation" class="divider"></li>
