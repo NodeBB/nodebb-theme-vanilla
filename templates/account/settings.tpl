@@ -52,6 +52,11 @@
 				<!-- ENDIF inTopicSearchAvailable -->
 				<div class="checkbox">
 					<label>
+						<input type="checkbox" data-property="updateUrlWithPostIndex" {{{ if settings.updateUrlWithPostIndex }}}checked{{{ end }}}/> <strong>[[user:update_url_with_post_index]]</strong>
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
 						<input type="checkbox" data-property="scrollToMyPost" <!-- IF settings.scrollToMyPost -->checked<!-- ENDIF settings.scrollToMyPost -->/> <strong>[[user:scroll_to_my_post]]</strong>
 					</label>
 				</div>
