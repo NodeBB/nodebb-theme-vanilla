@@ -50,7 +50,7 @@
 							<div component="category/posts" class="category-box">
 								<div class="post-preview">
 									{buildAvatar(categories.posts.user, "sm", false, "pull-left")}
-									<p class=""><strong>{categories.posts.user.username}</strong>: {categories.posts.content}</p>
+									<p class=""><strong>{categories.posts.user.displayname}</strong>: {categories.posts.content}</p>
 								</div>
 							</div>
 							{{{end}}}

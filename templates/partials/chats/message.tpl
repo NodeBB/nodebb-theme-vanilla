@@ -1,7 +1,7 @@
 <li component="chat/message" class="chat-message clear<!-- IF ../deleted --> deleted<!-- END -->" data-index="{messages.index}" data-mid="{messages.messageId}" data-uid="{messages.fromuid}" data-self="{messages.self}" data-break="{messages.newSet}" data-timestamp="{messages.timestamp}">
 	<div class="message-header">
 		<a href="{config.relative_path}/user/{messages.fromUser.userslug}">{buildAvatar(messages.fromUser, "md", true, "not-responsive")}</a>
-		<strong><span class="chat-user">{messages.fromUser.username}</span></strong>
+		<strong><span class="chat-user">{messages.fromUser.displayname}</span></strong>
 		<span class="chat-timestamp timeago" title="{messages.timestampISO}"></span>
 	</div>
 	<div component="chat/message/body" class="message-body">

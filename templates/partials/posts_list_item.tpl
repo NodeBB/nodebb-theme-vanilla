@@ -4,7 +4,7 @@
             <a href="{config.relative_path}/user/{../user.userslug}">{buildAvatar(../user, "sm", true)}</a>
 
             <a href="{config.relative_path}/user/{../user.userslug}">
-                <strong><span>{../user.username}</span></strong>
+                <strong><span>{../user.displayname}</span></strong>
             </a>
             <div component="post/content" class="content">
                 <p>{../content}</p>
