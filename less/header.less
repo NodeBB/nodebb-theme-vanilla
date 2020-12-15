@@ -37,59 +37,6 @@
 		}
 	}
 
-	.pagination-block {
-		margin-right: 10px !important;
-		transition: opacity 250ms ease-in;
-		opacity: 0;
-		pointer-events: none;
-
-		&.ready {
-			opacity: 1;
-			pointer-events: inherit;
-		}
-
-		.progress-container {
-			height: 2px;
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			background: #666;
-			width: 90%;
-			margin: auto;
-
-			.progress-bar {
-				background-color: #eee;
-				height: 2px;
-			}
-		}
-
-		.dropdown-toggle {
-			display: inline-block;
-			padding-left: 5px;
-			padding-right: 5px;
-		}
-
-		.open>a {
-			background-color: rgba(0, 0, 0, 0)!important;
-		}
-
-
-		.dropdown-menu {
-			padding: 10px;
-		}
-
-		@media (max-width: 767px) {
-			.progress-container {
-				display: inline-block;
-				position: static;
-				bottom: 0px;
-				margin-left: 1em;
-				width: 100px;
-				margin-bottom: 3px;
-			}
-		}
-	}
-
 	#notif-list {
 		overflow-x: hidden;
 		overflow-y: auto;
