@@ -12,15 +12,18 @@
 
 			<form class="form-horizontal" role="form" method="post" target="login" id="login-form">
 				<div class="form-group">
-					<label for="username" class="col-lg-2 control-label">{allowLoginWith}</label>
-					<div class="col-lg-10">
+					<div class="col-lg-offset-2 col-lg-10">
+						<label for="username" class="control-label">{allowLoginWith}</label>
 						<input class="form-control" type="text" placeholder="{allowLoginWith}" name="username" id="username" autocorrect="off" autocapitalize="off" value="{username}"/>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="password" class="col-lg-2 control-label">[[user:password]]</label>
-					<div class="col-lg-10">
+					<div class="col-lg-offset-2 col-lg-10">
+						<label for="password" class="control-label">[[user:password]]</label>
 						<input class="form-control" type="password" placeholder="[[user:password]]" name="password" id="password" <!-- IF username -->autocomplete="off"<!-- ENDIF username -->/>
+						<p id="caps-lock-warning" class="text-danger hidden">
+							<i class="fa fa-exclamation-triangle"></i> [[login:caps-lock-enabled]]
+						</p>
 					</div>
 				</div>
 				<div class="form-group">
