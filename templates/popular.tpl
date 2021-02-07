@@ -2,7 +2,7 @@
 
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
-	<!-- IMPORT partials/category-filter.tpl -->
+	<!-- IMPORT partials/category-filter-right.tpl -->
 
 	<div class="btn-group pull-right <!-- IF !filters.length -->hidden<!-- ENDIF !filters.length -->">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">

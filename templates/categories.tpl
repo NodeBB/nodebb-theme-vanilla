@@ -9,6 +9,9 @@
 
 <div class="row categories" itemscope itemtype="http://www.schema.org/ItemList">
 	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length --> clearfix">
+		{{{ if pagination.pages.length }}}
+		<div><!-- IMPORT partials/category-selector.tpl --></div>
+		{{{ end }}}
 		<div class="row">
 			{{{each categories}}}
 			<div component="categories/category" class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">

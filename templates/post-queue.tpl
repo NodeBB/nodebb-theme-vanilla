@@ -1,5 +1,8 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
-
+<div class="btn-toolbar">
+	<!-- IMPORT partials/category-filter-right.tpl -->
+</div>
+<hr/>
 <div class="row">
 	<div class="col-xs-12">
 		<div class="post-queue panel panel-primary preventSlideout">
