@@ -75,7 +75,9 @@
 <li role="presentation" class="divider"></li>
 {{{ if !posts.flags.flagged }}}
 <li><a component="post/flag" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:flag-post]]</a></li>
+{{{ if (!posts.selfPost && posts.uid) }}}
 <li><a component="post/flagUser" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:flag-user]]</a></li>
+{{{ end }}}
 {{{ else }}}
 <li class="disabled text-muted"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw fa-flag"></i> [[topic:already-flagged]]</li>
 {{{ end }}}
