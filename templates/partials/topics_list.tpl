@@ -9,11 +9,11 @@
 					<!-- ENDIF showSelect -->
 
 					<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
-						<!-- IF topics.thumb -->
-						<img src="{topics.thumb}" class="avatar avatar-md" title="{topics.user.username}" />
-						<!-- ELSE -->
-						{buildAvatar(topics.user, "md", false)}
-						<!-- ENDIF topics.thumb -->
+						{{{ if ./thumbs.length }}}
+						<img src="{./thumbs.0.url}" class="avatar avatar-md" />
+						{{{ else }}}
+						{buildAvatar(./user, "md", false)}
+						{{{ end }}}
 					</a>
 
 					<h3>
