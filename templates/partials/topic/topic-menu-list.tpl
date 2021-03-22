@@ -19,6 +19,7 @@
 		<i class="fa fa-fw fa-code-fork"></i> [[topic:thread_tools.fork]]
 	</a>
 </li>
+{{{ if !scheduled }}}
 <li>
 	<a component="topic/pin" href="#" class="<!-- IF pinned -->hidden<!-- ENDIF pinned -->">
 		<i class="fa fa-fw fa-thumb-tack"></i> [[topic:thread_tools.pin]]
@@ -29,6 +30,7 @@
 		<i class="fa fa-fw fa-thumb-tack fa-rotate-90"></i> [[topic:thread_tools.unpin]]
 	</a>
 </li>
+{{{ end }}}
 <li>
 	<a component="topic/mark-unread-for-all" href="#">
 		<i class="fa fa-fw fa-inbox"></i> [[topic:thread_tools.markAsUnreadForAll]]
@@ -43,11 +45,13 @@
 		<i class="fa fa-fw fa-trash-o"></i> [[topic:thread_tools.delete]]
 	</a>
 </li>
+{{{ if !scheduled }}}
 <li>
 	<a component="topic/restore" href="#" class="<!-- IF !deleted -->hidden<!-- ENDIF !deleted -->">
 		<i class="fa fa-fw fa-history"></i> [[topic:thread_tools.restore]]
 	</a>
 </li>
+{{{ end }}}
 <!-- IF privileges.purge -->
 <li>
 	<a component="topic/purge" href="#" class="<!-- IF !deleted -->hidden<!-- ENDIF !deleted -->">
