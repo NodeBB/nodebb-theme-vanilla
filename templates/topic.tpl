@@ -1,7 +1,9 @@
 <div class="topic">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
+	{{{ if !scheduled }}}
 	<!-- IMPORT partials/topic/deleted-message.tpl -->
+	{{{ end }}}
 
 	<ul component="topic" id="post-container" class="posts" data-tid="{tid}" data-cid="{cid}">
 		{{{each posts}}}
@@ -30,7 +32,8 @@
 					</a>
 					<h3 class="main-post">
 						<p component="post/header" class="topic-title" itemprop="name">
-							<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->" title="{{{ if !pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry, {pinExpiryISO}]]{{{ end }}}"></i>
+							<i component="topic/scheduled" class="fa fa-clock-o <!-- IF !scheduled -->hidden<!-- ENDIF !scheduled -->" title="[[topic:scheduled]]"></i>
+							<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF (scheduled || !pinned) -->hidden<!-- ENDIF (scheduled || !pinned) -->" title="{{{ if !pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry, {pinExpiryISO}]]{{{ end }}}"></i>
 							<i component="topic/locked" class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i>
 							<span component="topic/title">{title}</span>
 						</p>
