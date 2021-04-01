@@ -3,7 +3,7 @@
 		<div class="panel-body collapse" id="flags-daily-wrapper" aria-expanded="false">
 			<div><canvas id="flags:daily" height="150"></canvas></div>
 		</div>
-		<div class="panel-footer" aria-controls="#flags-daily-wrapper"><small>[[flags:graph-label]]</small>&nbsp;<span class="caret"></span></div>
+		<div class="panel-footer" data-toggle="collapse" data-target="#flags-daily-wrapper" aria-controls="#flags-daily-wrapper"><small>[[flags:graph-label]]</small>&nbsp;<span class="caret"></span></div>
 	</div>
 </div>
 
@@ -65,20 +65,20 @@
 				</div>
 			</fieldset>
 
-			<fieldset class="collapse" id="more-filters" aria-expanded="false">
+			<fieldset class="collapse{{{ if expanded }}} in{{{ end }}}" id="more-filters" aria-expanded="{expanded}">
 				<div class="form-group">
 					<label for="filter-assignee">[[flags:filter-assignee]]</label>
-					<input type="number" class="form-control" id="filter-assignee" name="assignee" min="0" />
+					<input type="text" class="form-control" id="filter-assignee" name="assignee" />
 				</div>
 
 				<div class="form-group">
 					<label for="filter-targetUid">[[flags:filter-targetUid]]</label>
-					<input type="number" class="form-control" id="filter-targetUid" name="targetUid" min="0" />
+					<input type="text" class="form-control" id="filter-targetUid" name="targetUid" />
 				</div>
 
 				<div class="form-group">
 					<label for="filter-reporterId">[[flags:filter-reporterId]]</label>
-					<input type="number" class="form-control" id="filter-reporterId" name="reporterId" min="0" />
+					<input type="text" class="form-control" id="filter-reporterId" name="reporterId" />
 				</div>
 			</fieldset>
 
