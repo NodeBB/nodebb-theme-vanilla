@@ -129,6 +129,7 @@
 				<div class="post-bar-placeholder"></div>
 				<!-- ENDIF !posts.index -->
 			</li>
+			{renderTopicEvents(@index)}
 		{{{end}}}
 	</ul>
 
