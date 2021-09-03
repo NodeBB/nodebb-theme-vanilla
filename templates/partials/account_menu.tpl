@@ -32,9 +32,9 @@
 				<!-- ENDIF !isSelf -->
 				<li><a href="{config.relative_path}/user/{userslug}/following"><i class="fa fa-fw fa-users"></i> [[user:following]]</a></li>
 				<li><a href="{config.relative_path}/user/{userslug}/followers"><i class="fa fa-fw fa-users"></i> [[user:followers]]</a></li>
-				<!-- IF showHidden -->
+				<!-- IF canEdit -->
 				<li><a href="{config.relative_path}/user/{userslug}/blocks"><i class="fa fa-fw fa-ban"></i> [[user:blocks]]</a></li>
-				<!-- ENDIF showHidden -->
+				<!-- ENDIF canEdit -->
 				<li class="divider"></li>
 				<li><a href="{config.relative_path}/user/{userslug}/topics"><i class="fa fa-fw fa-book"></i> [[global:topics]]</a></li>
 				<li><a href="{config.relative_path}/user/{userslug}/posts"><i class="fa fa-fw fa-pencil"></i> [[global:posts]]</a></li>
@@ -42,7 +42,7 @@
 				<li><a href="{config.relative_path}/user/{userslug}/best"><i class="fa fa-fw fa-star"></i> [[global:best]]</a></li>
 				<!-- ENDIF !reputation:disabled -->
 				<li><a href="{config.relative_path}/user/{userslug}/groups"><i class="fa fa-fw fa-users"></i> [[global:header.groups]]</a></li>
-				<!-- IF showHidden -->
+				<!-- IF canEdit -->
 				<li><a href="{config.relative_path}/user/{userslug}/bookmarks"><i class="fa fa-fw fa-heart"></i> [[user:bookmarks]]</a></li>
 				<li><a href="{config.relative_path}/user/{userslug}/watched"><i class="fa fa-fw fa-eye"></i> [[user:watched]]</a></li>
 				<li><a href="{config.relative_path}/user/{userslug}/ignored"><i class="fa fa-fw fa-eye"></i> [[user:ignored]]</a></li>
@@ -54,7 +54,7 @@
 				<!-- ENDIF !downvote:disabled -->
 				<!-- ENDIF !reputation:disabled -->
 
-				<!-- ENDIF showHidden -->
+				<!-- ENDIF canEdit -->
 				{{{each profile_links}}}
 				<!-- IF @first -->
 				<li class="divider"></li>
@@ -66,9 +66,9 @@
 		<li>
 			<a href="{config.relative_path}/user/{userslug}" class="inline-block" id="profile"><i class="fa fa-user"></i> [[user:profile]]</a>
 		</li>
-		<!-- IF showHidden -->
+		<!-- IF canEdit -->
 		<li><a href="{config.relative_path}/user/{userslug}/edit"><i class="fa fa-pencil-square-o"></i> [[user:edit]]</a></li>
 		<li><a href="{config.relative_path}/user/{userslug}/settings"><i class="fa fa-gear"></i> [[user:settings]]</a></li>
-		<!-- ENDIF showHidden -->
+		<!-- ENDIF canEdit -->
 	</ul>
 </div>
