@@ -1,7 +1,7 @@
 <li component="post" class="posts-list-item" data-pid="{../pid}" data-uid="{../uid}">
     <div class="panel panel-default">
         <div class="panel-body">
-            <a href="{config.relative_path}/user/{../user.userslug}">{buildAvatar(../user, "sm", true)}</a>
+            <a href="{config.relative_path}/user/{../user.userslug}">{buildAvatar(../user, "sm", true, "not-responsive")}</a>
 
             <a href="{config.relative_path}/user/{../user.userslug}">
                 <strong><span>{../user.displayname}</span></strong>
