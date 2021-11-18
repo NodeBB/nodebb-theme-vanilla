@@ -129,7 +129,7 @@
 				<div class="post-bar-placeholder"></div>
 				<!-- ENDIF !posts.index -->
 			</li>
-			{renderTopicEvents(@index)}
+			{renderTopicEvents(@index, config.topicPostSort)}
 		{{{end}}}
 	</ul>
 
