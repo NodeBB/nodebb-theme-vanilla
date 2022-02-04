@@ -40,6 +40,7 @@
 				<li><a href="{config.relative_path}/user/{userslug}/posts"><i class="fa fa-fw fa-pencil"></i> [[global:posts]]</a></li>
 				<!-- IF !reputation:disabled -->
 				<li><a href="{config.relative_path}/user/{userslug}/best"><i class="fa fa-fw fa-star"></i> [[global:best]]</a></li>
+				<li><a href="{config.relative_path}/user/{userslug}/controversial"><i class="fa fa-fw fa-thumbs-down"></i> [[global:controversial]]</a></li>
 				<!-- ENDIF !reputation:disabled -->
 				<li><a href="{config.relative_path}/user/{userslug}/groups"><i class="fa fa-fw fa-users"></i> [[global:header.groups]]</a></li>
 				<!-- IF canEdit -->
