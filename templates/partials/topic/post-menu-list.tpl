@@ -49,6 +49,7 @@
 	</li>
 	<!-- END -->
 
+	{{{ if config.loggedIn }}}
 	<li>
 		<a component="post/bookmark" role="menuitem" tabindex="-1" href="#" data-bookmarked="{posts.bookmarked}">
 
@@ -57,6 +58,13 @@
 
 			<i component="post/bookmark/on" class="fa fa-fw fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
 			<i component="post/bookmark/off" class="fa fa-fw fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
+		</a>
+	</li>
+	{{{ end }}}
+
+	<li>
+		<a role="menuitem" tabindex="-1" href="#" data-clipboard-text="{posts.absolute_url}">
+			<i class="fa fa-fw fa-link"></i> [[topic:copy-permalink]]
 		</a>
 	</li>
 
